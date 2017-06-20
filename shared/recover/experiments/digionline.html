@@ -1,0 +1,40 @@
+<html><head><title>JW Player Digi Online Test</title>
+</head><body>
+<script type='text/javascript' src='../../../../tools/common/index.js'></script>
+<script type='text/javascript' src='https://content.jwplatform.com/libraries/DbXZPMBQ.js'></script>
+<script>
+var form="Channel:<select id='channel'>"+
+                         "<option value='disneychannel'>Disney Channel</option>"+
+                          "<option value='disneyjunior'>Disney Junior</option>"+
+                          "<option value='nickelodeon'>Nickelodeon</option>"+
+                          "<option value='minimax'>Minimax</option>"+
+                          "<option value='megamax'>Megamax</option>"+
+                  "</select>"+
+"Quality:<select id='quality'>"+
+                "<option value='lq'>Low</option>"+
+                "<option value='mq'>Medium</option>"+
+                "<option value='hq'>High</option>"+                               
+        "</select>"+
+"<input type='button' value='Play' onclick='submit();'/><br>";
+var channel=$_GET('channel');
+var quality=$_GET('quality');
+document.write(form);
+function submit(){
+var submitURL=window.location.protocol + '//' + window.location.hostname + window.location.pathname;
+submitURL+=formsubmit('channel',readform('channel'),true);
+submitURL+=formsubmit('quality',readform('quality'));
+window.location=submitURL;
+window.location;
+}
+function getid(cname){
+         if(cname=='disneyjunior'){cid=18;}
+         if(cname=='disneychannel'){cid=17;}
+         if(cname=='nickelodeon'){cid=28;}
+         if(cname=='minimax'){cid=37;}
+         if(cname=='megamax'){cid=47;}
+         return cid;
+}
+
+if(!channel=='') document.write("<iframe src='../../../../tools/jwembed/index.html?media=http%3A%2F%2F82.76.40.81%2Fdigiedge2%2F"+channel+"e"+quality+"%2Findex.m3u8%3Fis%3D"+getid(channel)+"%26src%3Ddigi-online.ro%26t%3D00000000000000000000000000000000&isembedded=1' width='75%' height='75%' allowfullscreen='true'/>");
+</script>
+</body></html>

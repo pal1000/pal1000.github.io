@@ -1,0 +1,135 @@
+@echo off
+
+:: BatchGotAdmin
+:-------------------------------------
+REM  --> Check for permissions
+    IF "%PROCESSOR_ARCHITECTURE%" EQU "amd64" (
+>nul 2>&1 "%SYSTEMROOT%\SysWOW64\cacls.exe" "%SYSTEMROOT%\SysWOW64\config\system"
+) ELSE (
+>nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
+)
+
+REM --> If error flag set, we do not have admin.
+if '%errorlevel%' NEQ '0' (
+    echo Requesting administrative privileges...
+    goto UACPrompt
+) else ( goto gotAdmin )
+
+:UACPrompt
+    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
+    set params = %*:"=""
+    echo UAC.ShellExecute "cmd.exe", "/c ""%~s0"" %params%", "", "runas", 1 >> "%temp%\getadmin.vbs"
+
+    "%temp%\getadmin.vbs"
+    del "%temp%\getadmin.vbs"
+    exit /B
+
+:gotAdmin
+    pushd "%CD%"
+    CD /D "%~dp0"
+:--------------------------------------
+
+@rem FOR /F "tokens=4 delims= " %%i in ('route print  ^| find " 255.255.255.255"') do set localIp=%%i
+@cd /d "%userprofile%\Desktop\TV Online\"
+@set interface={a0186793-5422-4445-b943-826bcd26dba9}
+@GOTO Web-filter
+
+:Menu
+@echo Select action:
+@echo 1. Start Web Filter
+@echo 2. Stop web Filter
+@echo 3. Start Hola
+@echo 4. Stop Hola
+@echo 5. Exit
+@set /p choice=Enter choice: 
+@if %choice%==1 GOTO Web-filter
+@if %choice%==2 GOTO Unrestricted
+@if %choice%==3 GOTO Start-Hola
+@if %choice%==4 GOTO Stop-Hola
+@if %choice%==5 GOTO Exit
+
+:Web-filter
+@net start NxFilter
+@REG ADD "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\%interface%" /v NameServer /t REG_SZ /d 10.0.2.15 /f
+@set /p jw=Update JW Player on remote server? y/n: 
+@if %jw%==y (
+@start /d "C:\Program Files\Mozilla Firefox\" firefox.exe "http://10.0.2.2/webhosting/tools/jwembed/index.php"
+)
+@GOTO Menu
+
+:Unrestricted
+@REG ADD "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\%interface%" /v NameServer /t REG_SZ /d "" /f
+@start /d "c:\nxfilter\bin\" shutdown.bat ^&^& @exit
+)
+@GOTO Menu
+
+:Start-Hola
+@net start hola_svc
+@net start hola_updater
+@sc config hola_svc start=demand
+@sc config hola_updater start=demand
+@GOTO Menu
+
+:Stop-Hola
+@net stop hola_svc
+@net stop hola_updater
+@sc config hola_svc start=demand
+@sc config hola_updater start=demand
+@GOTO Menu
+
+:Exit
+exit
+
+@if 1==0 (
+-SopCast Sandboxie shortcut: "C:\Program Files\Sandboxie\Start.exe" /box:DefaultBox "C:\Program Files\Internet Explorer\iexplore.exe"
+
+-Cool TV Online flash format: http://127.0.0.1:7667/strobe/strobemp.swf?src=http%3A%2F%2F127.0.0.1%3A53123%2F%3Fchannel%3D
+
+Cartoon Network: cartoon (broken)
+Boomerang: bomerang (broken)
+Nickelodeon: nickelodeon
+Disney Channel: disney 
+Disney Junior: disneyjr 
+
+-Minimax flash format: http://pal1000.3x.ro/tools/flashembed/index.php?src=http%3A%2F%2Fwebtv.md%2Fswf%2FWebTV.swf%3Fred5Server%3Drtmp%3A%2F%2F83.218.202.202%2Flive%26stream%3Dwt_paprika.stream
+-Disney Junior flash format: http://mywebtv.info/disney-junior/sursa-2
+                             http://pal1000.3x.ro/tools/jwembed/index.php?media=http%3A%2F%2F178.21.120.198%3A1935%2Flive3%2F_definst_%2Fmp4%3Adisneyjr%2Fplaylist.m3u8
+-Disney Channel flash format: http://mywebtv.info/disney-channel/sursa-2
+                              http://pal1000.3x.ro/tools/jwembed/index.php?media=http%3A%2F%2F178.21.120.198%3A1935%2Flive3%2F_definst_%2Fmp4%3Adisney%2Fplaylist.m3u8
+-Nickelodeon flash format: http://mywebtv.info/nickelodeon/sursa-2
+                           http://pal1000.3x.ro/tools/jwembed/index.php?media=http%3A%2F%2F178.21.120.198%3A1935%2Flive3%2F_definst_%2Fmp4%3Anickelodeon%2Fplaylist.m3u8
+                           
+-Digi Online (requires Hola VPN and set to Romania):
+Disney Junior: http://pal1000.3x.ro/tools/jwembed/index.php?media=http%3A%2F%2F82.76.249.33%2Fdigiedge2%2Fdisneyjuniorelq%2Findex.m3u8%3Fis%3D18%26src%3Ddigi-online.ro%26t%3D00000000000000000000000000000000
+               http://mywebtv.info/disney-junior/sursa-3 
+               http://mywebtv.info/disney-junior/sursa-4
+Disney Channel: http://pal1000.3x.ro/tools/jwembed/index.php?media=http%3A%2F%2F82.76.249.33%2Fdigiedge2%2Fdisneychannelelq%2Findex.m3u8%3Fis%3D17%26src%3Ddigi-online.ro%26t%3D00000000000000000000000000000000
+                http://mywebtv.info/disney-channel/sursa-3
+                http://mywebtv.info/disney-channel/sursa-4
+Nickelodeon: http://pal1000.3x.ro/tools/jwembed/index.php?media=http%3A%2F%2F82.76.249.33%2Fdigiedge2%2Fnickelodeonemq%2Findex.m3u8%3Fis%3D28%26src%3Ddigi-online.ro%26t%3D00000000000000000000000000000000 LQ=wrong audio track
+             http://mywebtv.info/nickelodeon/sursa-3
+             http://mywebtv.info/nickelodeon/sursa-4 
+Minimax: http://pal1000.3x.ro/tools/jwembed/index.php?media=http%3A%2F%2F82.76.249.33%2Fdigiedge2%2Fminimaxelq%2Findex.m3u8%3Fis%3D37%26src%3Ddigi-online.ro%26t%3D00000000000000000000000000000000
+         http://mywebtv.info/minimax/sursa-2
+         http://mywebtv.info/minimax/sursa-5
+Megamax: http://pal1000.3x.ro/tools/jwembed/index.php?media=http%3A%2F%2F82.76.249.33%2Fdigiedge2%2Fmegamaxelq%2Findex.m3u8%3Fis%3D47%26src%3Ddigi-online.ro%26t%3D00000000000000000000000000000000
+         http://mywebtv.info/megamax/sursa-2
+         http://mywebtv.info/megamax/sursa-3
+         http://mywebtv.info/megamax/sursa-4
+
+-Sopcast
+Cartoon Network:  http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://mywebtv.info/cartoon-network
+                  http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://cool-tv.net/ch/cartoon.html  
+Boomerang:        http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://mywebtv.info/boomerang
+                  http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://cool-tv.net/ch/boomerang.html
+Nickelodeon       http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://mywebtv.info/nickelodeon
+                  http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://cool-tv.net/ch/nickelodeon.html
+Disney Junior:    http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://mywebtv.info/disney-junior
+                  http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://cool-tv.net/ch/jetix-junior.html
+Disney Channel    http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://mywebtv.info/disney-channel
+                  http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://cool-tv.net/ch/jetix-cartoon.html
+Minimax           http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://mywebtv.info/minimax
+                  http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://cool-tv.net/ch/minimaxro.html
+Megamax           http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://mywebtv.info/megamax                       
+)
+

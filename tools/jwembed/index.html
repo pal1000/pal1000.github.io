@@ -1,0 +1,77 @@
+<html><head><title>JW Embedder</title>
+</head><body>
+<script type='text/javascript' src='../common/index.js'></script>
+<script type='text/javascript' src='https://content.jwplatform.com/libraries/DbXZPMBQ.js'></script>
+<div id="container"></div>
+<script>
+var form="Enter streamming server URL (if any):<input type='text' size='50' id='streammer'/><br>"+
+         "Enter media file URL:<input type='text' size='50' id='media'/><br/>"+
+         "Enter media type:<select id='mediatype'>"+                                                 
+                                  "<option value='file'>Single file</option>"+
+                                  "<option value='playlist'>Playlist</option>"+
+                          "</select>"+
+         "Enter background image (ignored by playlists):<input type='text' size='50' id='image'/><br/>"+
+         "Enter player width:<input type='text' id='width' value='75%'/>"+
+         "Enter player height:<input type='text' id='height' value='75%'/>"+
+         "Aspect ratio:<select id='ratio'>"+                                                 
+                              "<option value='16:9'>16:9</option>"+
+                              "<option value='4:3'>4:3</option>"+
+                       "</select>"+
+         "<input type='hidden' id='isembedded' value='0'>"+
+         "<input type='button' value='Submit' onclick='submit()'><br>";
+
+if ($_GET('media')=='') document.write(form);
+function submit(){
+var submitURL=window.location.protocol + '//' + window.location.hostname + window.location.pathname;
+submitURL+=formsubmit('media',readform('media'),true);
+submitURL+=formsubmit('mediatype',readform('mediatype'));
+submitURL+=formsubmit('streammer',readform('streammer'));
+submitURL+=formsubmit('image',readform('image'));
+submitURL+=formsubmit('width',readform('width'));
+submitURL+=formsubmit('height',readform('height'));
+submitURL+=formsubmit('ratio',readform('ratio'));
+window.location=submitURL;
+window.location;
+}
+function embedcode(){
+var embedURL=window.location.protocol + '//' + window.location.hostname + window.location.pathname;
+embedURL+='?media='+$_GET('media');
+embedURL+='&mediatype='+$_GET('mediatype');
+embedURL+='&streammer='+$_GET('streammer');
+embedURL+='&image='+$_GET('image');
+embedURL+='&width='+$_GET('width');
+embedURL+='&height='+$_GET('height');
+embedURL+='&ratio='+$_GET('ratio');
+embedURL+='&isembedded=1';
+var embedcode="&lt;iframe src=&apos;"+embedURL+"&apos; width=&apos;"+$_GET('width')+"&apos; height=&apos;"+$_GET('height')+"&apos;/&gt;";
+var out='Embed code: <input type="text" size="148" value="'+embedcode+'" readyonly>'; 
+return out;
+}
+
+function play (){
+var jwparams={};
+if (!$_GET('streammer')=='') jwparams["streammer"]=decodeURIComponent($_GET('streammer'));
+if (!$_GET('image')=='') jwparams["image"]=decodeURIComponent($_GET('image'));
+var mediatype="file";
+if ($_GET('mediatype')=='playlist') mediatype="playlist";
+jwparams[mediatype]=decodeURIComponent($_GET('media'));
+var width='75%';
+var height='75%';
+var ratio='16:9';
+if (!$_GET('width')=='') width=decodeURIComponent($_GET('width'));
+if (!$_GET('height')=='') height=decodeURIComponent($_GET('height'));
+if (!$_GET('ratio')=='') ratio=decodeURIComponent($_GET('ratio'));
+jwparams['width']=width;
+jwparams['height']=height;
+jwparams['ratio']=ratio;
+jwparams['autostart']=false;
+jwparams['mute']='false';
+jwparams['volume']='100';
+
+jwplayer("container").setup(jwparams);
+if (!$_GET('isembedded')=='1') document.write(embedcode()+"<br><a href='index.html'>Restart</a><br>");
+}
+if (!$_GET('media')=='') play();
+if (!$_GET('isembedded')=='1') document.write("<a href='../'>Exit</a>");
+</script>
+</body></html>
