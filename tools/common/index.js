@@ -20,3 +20,10 @@ return sep+paramname+'='+encodeURIComponent(value);
 function readform(paramname){
 return document.getElementById(paramname).value;
 }
+
+function index(filename,extension){
+         var list='';
+         if (extension==null) list="<li><a href='"+encodeURIComponent(filename)+"/'>"+filename+"</a></li>";
+         else list="<li><a href='"+encodeURIComponent(filename)+"."+encodeURIComponent(extension)+"'>"+filename+"."+extension+"</a></li>";
+         return list;
+}
