@@ -1,0 +1,2 @@
+-https://connect.microsoft.com/IE/feedback/details/832775/rendering-glitch-in-intel-driver-update-utility-website
+-https://connect.microsoft.com/IE/feedback/details/798447/compatibility-view-list-is-lost-if-browsing-history-is-erased-or-site-uses-meta-tag
