@@ -1,6 +1,6 @@
 function $_GET(key, default_)
 {
-  if (default_==null) default_=""; 
+  if (default_==null) default_="";
   key = key.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
   var regex = new RegExp("[\\?&]"+key+"=([^&#]*)");
   var qs = regex.exec(window.location.href);
