@@ -99,20 +99,20 @@ Disney Junior: disneyjr
 -Nickelodeon flash format: http://mywebtv.info/nickelodeon/sursa-2
                            http://pal1000.3x.ro/tools/jwembed/index.php?media=http%3A%2F%2F178.21.120.198%3A1935%2Flive3%2F_definst_%2Fmp4%3Anickelodeon%2Fplaylist.m3u8
                            
--Digi Online (requires Hola VPN and set to Romania):
-Disney Junior: http://pal1000.3x.ro/tools/jwembed/index.php?media=http%3A%2F%2F82.76.249.33%2Fdigiedge2%2Fdisneyjuniorelq%2Findex.m3u8%3Fis%3D18%26src%3Ddigi-online.ro%26t%3D00000000000000000000000000000000
+-Digi Online:
+Disney Junior: http://82.76.40.81/digiedge2/disneyjuniorelelq/index.m3u8?is=18&src=digi-online.ro&t=00000000000000000000000000000000
                http://mywebtv.info/disney-junior/sursa-3 
                http://mywebtv.info/disney-junior/sursa-4
-Disney Channel: http://pal1000.3x.ro/tools/jwembed/index.php?media=http%3A%2F%2F82.76.249.33%2Fdigiedge2%2Fdisneychannelelq%2Findex.m3u8%3Fis%3D17%26src%3Ddigi-online.ro%26t%3D00000000000000000000000000000000
+Disney Channel: http://82.76.40.81/digiedge2/disneychannelelq/index.m3u8?is=17&src=digi-online.ro&t=00000000000000000000000000000000
                 http://mywebtv.info/disney-channel/sursa-3
                 http://mywebtv.info/disney-channel/sursa-4
-Nickelodeon: http://pal1000.3x.ro/tools/jwembed/index.php?media=http%3A%2F%2F82.76.249.33%2Fdigiedge2%2Fnickelodeonemq%2Findex.m3u8%3Fis%3D28%26src%3Ddigi-online.ro%26t%3D00000000000000000000000000000000 LQ=wrong audio track
+Nickelodeon: http://82.76.40.81/digiedge2/nickelodeonelq/index.m3u8?is=28&src=digi-online.ro&t=00000000000000000000000000000000
              http://mywebtv.info/nickelodeon/sursa-3
              http://mywebtv.info/nickelodeon/sursa-4 
-Minimax: http://pal1000.3x.ro/tools/jwembed/index.php?media=http%3A%2F%2F82.76.249.33%2Fdigiedge2%2Fminimaxelq%2Findex.m3u8%3Fis%3D37%26src%3Ddigi-online.ro%26t%3D00000000000000000000000000000000
+Minimax: http://82.76.40.81/digiedge2/minimaxelq/index.m3u8?is=37&src=digi-online.ro&t=00000000000000000000000000000000
          http://mywebtv.info/minimax/sursa-2
          http://mywebtv.info/minimax/sursa-5
-Megamax: http://pal1000.3x.ro/tools/jwembed/index.php?media=http%3A%2F%2F82.76.249.33%2Fdigiedge2%2Fmegamaxelq%2Findex.m3u8%3Fis%3D47%26src%3Ddigi-online.ro%26t%3D00000000000000000000000000000000
+Megamax: http://82.76.40.81/digiedge2/meganaxelq/index.m3u8?is=47&src=digi-online.ro&t=00000000000000000000000000000000
          http://mywebtv.info/megamax/sursa-2
          http://mywebtv.info/megamax/sursa-3
          http://mywebtv.info/megamax/sursa-4
