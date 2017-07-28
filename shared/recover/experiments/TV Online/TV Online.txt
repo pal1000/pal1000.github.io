@@ -52,7 +52,7 @@ if '%errorlevel%' NEQ '0' (
 @net start NxFilter
 @REG ADD "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\%interface%" /v NameServer /t REG_SZ /d 10.0.2.15 /f
 @set /p jw=Update JW Player on remote server? y/n: 
-@if %jw%==y (
+@if "%jw%"=="y" (
 @start /d "C:\Program Files\Mozilla Firefox\" firefox.exe "http://10.0.2.2/webhosting/tools/jwembed/index.php"
 )
 @GOTO Menu
