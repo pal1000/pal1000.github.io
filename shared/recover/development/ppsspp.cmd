@@ -1,3 +1,4 @@
+@cd ..\..\..\..\..\
 @set PATH=%CD%\Git\bin;%CD%\Git\mingw64\bin;%CD%\Git\cmd;%PATH%
 @if not exist "%HOME%" @set HOME=%HOMEDRIVE%%HOMEPATH%
 @if not exist "%HOME%" @set HOME=%USERPROFILE%
@@ -5,13 +6,13 @@
 @set PLINK_PROTOCOL=ssh
 @if not defined TERM set TERM=msys
 @cd projects
-@If NOT exist "desmume"\ (
-git clone https://github.com/TASVideos/desmume.git desmume
-@cd desmume
+@If NOT exist "ppsspp"\ (
+git clone https://github.com/hrydgard/ppsspp.git ppsspp
+@cd ppsspp
 git submodule update --init --recursive
 )
-@If exist "desmume"\ (
-@cd desmume
+@If exist "ppsspp"\ (
+@cd ppsspp
 )
 git branch work
 
@@ -49,7 +50,10 @@ git branch work
 @if %choice%==13 GOTO Exit
   
 :Start_VS
-@desmume\src\frontend\windows\DeSmuME.sln
+@set /p update-ver="Update git version before building in Visual studio Y/N? "
+@if %update-ver%==y @START Windows\git-version-gen.cmd ^&^& exit
+@if %update-ver%==Y @START Windows\git-version-gen.cmd ^&^& exit
+@Windows\PPSSPP.sln
 @GOTO Choice
 
 :Update_local
@@ -63,15 +67,21 @@ git rebase master
 @GOTO Choice
 
 :Update_remote
-git remote add upstream https://github.com/pal1000/desmume.git
+git remote add upstream https://github.com/pal1000/ppsspp.git
 git fetch upstream
-git push -f --all upstream
+@set /p push=Update your fork (y/n):
+if /I "%push%"=="y" git push -f --all upstream
 @GOTO Choice
 
 :Update_build
-RD /S /Q ..\..\..\NDS\states
-DEL ..\..\..\NDS\DeSmuME-VS2015-x64-Release.exe
-COPY desmume\src\frontend\windows\__bins\DeSmuME-VS2015-x64-Release.exe ..\..\..\NDS
+RD /S /Q ..\..\..\ppsspp\assets
+RD /S /Q "..\..\..\ppsspp\memstick\PSP\PPSSPP_STATE"
+DEL "..\..\..\ppsspp\PPSSPPWindows64.exe"
+DEL "..\..\..\ppsspp\PPSSPPWindows.exe"
+DEL ..\..\..\ppsspp\memstick\PSP\SYSTEM\ppsspp.ini
+XCOPY assets ..\..\..\ppsspp\assets /S /E /I /Q
+copy "PPSSPPWindows64.exe" ..\..\..\ppsspp
+copy "PPSSPPWindows.exe" ..\..\..\ppsspp
 @GOTO Choice
  
 :GUI

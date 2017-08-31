@@ -1,3 +1,4 @@
+@cd ..\..\..\..\..\
 @set PATH=%CD%\Git\bin;%CD%\Git\mingw64\bin;%CD%\Git\cmd;%PATH%
 @set PLINK_PROTOCOL=ssh
 @if not defined TERM set TERM=msys

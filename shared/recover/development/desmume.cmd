@@ -1,32 +1,30 @@
-@set PATH=%CD%\Git\bin;%CD%\Git\mingw64\bin;%CD%\Git\cmd;%CD%\..\Java\JDK\bin;C:\Program Files\Java\JDK\bin;%CD%\..\7-ZipPortable\App\7-Zip64;%PATH%
+@cd ..\..\..\..\..\
+@set PATH=%CD%\Git\bin;%CD%\Git\mingw64\bin;%CD%\Git\cmd;%PATH%
 @if not exist "%HOME%" @set HOME=%HOMEDRIVE%%HOMEPATH%
 @if not exist "%HOME%" @set HOME=%USERPROFILE%
 
 @set PLINK_PROTOCOL=ssh
 @if not defined TERM set TERM=msys
 @cd projects
-@If NOT exist "jpcsp"\ (
-git clone https://github.com/jpcsp/jpcsp.git jpcsp
-@cd jpcsp
+@If NOT exist "desmume"\ (
+git clone https://github.com/TASVideos/desmume.git desmume
+@cd desmume
 git submodule update --init --recursive
 )
-@If exist "jpcsp"\ (
-@cd jpcsp
+@If exist "desmume"\ (
+@cd desmume
 )
 git branch work
 
-@set netbeanspath=..\..\..\
-@if not exist %netbeanspath%netbeans @set netbeanspath=C:\Progra~1\
-
 :Choice
-@echo.
+@ECHO. 
 @echo ----------------------- 
 @echo What do you want to do?
 @echo -----------------------
-@echo 1. Start NetBeans
-@echo 2. Build project
-@echo 3. Update local repository
-@echo 4. Update forked repository
+@echo 1. Start Visual Studio
+@echo 2. Update local repository
+@echo 3. Update forked repository
+@echo 4. Update personal build
 @echo 5. Launch GIT GUI
 @echo 6. Update submodules
 @echo 7. View repository status
@@ -36,12 +34,11 @@ git branch work
 @echo 11. Clean build and untracked files and folders
 @echo 12. Insert commands manually
 @echo 13. Exit
-
 @set /p choice="Enter your Choice here:"
-@if %choice%==1 GOTO Start_NetBeans 
-@if %choice%==2 GOTO Build
-@if %choice%==3 GOTO Update_local
-@if %choice%==4 GOTO Update_remote
+@if %choice%==1 GOTO Start_VS 
+@if %choice%==2 GOTO Update_local
+@if %choice%==3 GOTO Update_remote
+@if %choice%==4 GOTO Update_build
 @if %choice%==5 GOTO GUI
 @if %choice%==6 GOTO Update_submodules  
 @if %choice%==7 GOTO Status
@@ -51,18 +48,9 @@ git branch work
 @if %choice%==11 GOTO Clean_build
 @if %choice%==12 GOTO Command
 @if %choice%==13 GOTO Exit
-
-
-:Start_NetBeans
-@%netbeanspath%netbeans\bin\netbeans64.exe
-@GOTO Choice
-
-:Build
-@copy dist\jpcsp-windows-amd64\Settings.properties .
-@RD /S /Q bin
-@RD /S /Q ms0\PSP\SAVEDATA
-@RD /S /Q dist\jpcsp-windows-amd64\ms0\PSP\SAVEDATA
-@start %netbeanspath%netbeans\extide\ant\bin\ant -f build-auto.xml dist-windows-amd64 ^&^& del dist\*.7z ^&^& mklink /J dist\jpcsp-windows-amd64\ms0\PSP\SAVEDATA ..\..\..\ppsspp\memstick\PSP\SAVEDATA ^&^& copy Settings.properties dist\jpcsp-windows-amd64 ^&^& copy jpcsp-old-java.cmd dist\jpcsp-windows-amd64 ^&^& copy openswr.cmd dist\jpcsp-windows-amd64 ^&^& pause ^&^& exit
+  
+:Start_VS
+@desmume\src\frontend\windows\DeSmuME.sln
 @GOTO Choice
 
 :Update_local
@@ -76,11 +64,18 @@ git rebase master
 @GOTO Choice
 
 :Update_remote
-git remote add upstream https://github.com/pal1000/jpcsp.git
+git remote add upstream https://github.com/pal1000/desmume.git
 git fetch upstream
-git push -f --all upstream
+@set /p push=Update your fork (y/n):
+if /I "%push%"=="y" git push -f --all upstream
 @GOTO Choice
 
+:Update_build
+RD /S /Q ..\..\..\NDS\states
+DEL ..\..\..\NDS\DeSmuME-VS2017-x64-Release.exe
+COPY desmume\src\frontend\windows\__bins\DeSmuME-VS2017-x64-Release.exe ..\..\..\NDS
+@GOTO Choice
+ 
 :GUI
 @git gui
 @GOTO Choice
@@ -115,7 +110,7 @@ git clean -d -f -x
 @GOTO Choice
 
 :Command
-start %COMSPEC%
+@start %COMSPEC%
 @GOTO Choice
 
 :Update_submodules
@@ -124,3 +119,5 @@ git submodule update --init --recursive
 
 :Exit
 exit
+
+

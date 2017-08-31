@@ -1,3 +1,4 @@
+@cd ..\..\..\..\..\
 @set PATH=%CD%\Git\bin;%CD%\Git\mingw64\bin;%CD%\Git\cmd;%PATH%
 @set PLINK_PROTOCOL=ssh
 @if not defined TERM set TERM=msys
@@ -39,12 +40,13 @@ git clone https://github.com/pal1000/mesa-dist-win.git mesa-dist-win
 @GOTO Choice
 
 :Update_local
-git pull -v --progress origin master
+git pull -v --progress origin
 @GOTO Choice
 
 :Update_remote
 git fetch origin master
-git push -f origin master
+@set /p push=Update your fork (y/n):
+if /I "%push%"=="y" git push -f origin master
 @GOTO Choice
 
 :GUI
