@@ -50,6 +50,7 @@ git branch work
 :Start_VS
 @del pcsx2\windows\VCprojects\svnrev.h
 @PCSX2_suite.sln
+@rem old_plugins.sln
 @GOTO Choice
 
 :Update_local
@@ -65,7 +66,8 @@ git rebase master
 :Update_remote
 git remote add upstream https://github.com/pal1000/pcsx2.git
 git fetch upstream
-git push -f --all upstream
+@set /p push=Update your fork (y/n):
+if /I "%push%"=="y" git push -f --all upstream
 @GOTO Choice
 
 :GUI
@@ -99,6 +101,8 @@ git checkout work
 
 :Clean_build
 git clean -d -f -x
+@RD /S /Q bin\inis
+@echo RunWizard=1 > bin\portable.ini
 @GOTO Choice
 
 :Command
