@@ -1,3 +1,4 @@
+@TITLE PCSX2
 @cd ..\..\..\..\..\
 @set PATH=%CD%\Git\bin;%CD%\Git\mingw64\bin;%CD%\Git\cmd;%PATH%
 @set DXSDK_DIR=%CD%\projects\ppsspp\dx9sdk\

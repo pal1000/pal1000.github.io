@@ -1,3 +1,4 @@
+@TITLE PPSSPP
 @cd ..\..\..\..\..\
 @set PATH=%CD%\Git\bin;%CD%\Git\mingw64\bin;%CD%\Git\cmd;%PATH%
 @if not exist "%HOME%" @set HOME=%HOMEDRIVE%%HOMEPATH%
