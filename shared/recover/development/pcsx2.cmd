@@ -103,7 +103,6 @@ git checkout work
 
 :Clean_build
 git clean -d -f -x
-@RD /S /Q bin\inis
 @echo RunWizard=1 > bin\portable.ini
 @GOTO Choice
 
