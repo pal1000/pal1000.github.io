@@ -1,0 +1,4 @@
+Disable these scheduled tasks:
+- Microsoft\Windows\.NET Framework\*
+- Microsoft\Windows\Defrag\*
+- Microsoft\Windows\DiskCleanup\*

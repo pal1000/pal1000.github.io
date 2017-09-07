@@ -1,0 +1,17 @@
+82.76.40.81
+awhoer.net
+content.jwplatform.com
+digiapis.rcs-rds.ro
+googlevideo.com
+pal1000.tk
+ssl.p.jwpcdn.com
+vkcache.com
+http://awhoer.net
+http://googlevideo.com
+http://pal1000.tk
+http://vkcache.com
+https://awhoer.net
+https://googlevideo.com
+https://pal1000.tk
+https://vkcache.com
+[UNTRUSTED]

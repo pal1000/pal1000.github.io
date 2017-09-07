@@ -1,0 +1,2 @@
+network.IDN_show_punycode=true
+dom.popup_allowed_events=[empty string]
