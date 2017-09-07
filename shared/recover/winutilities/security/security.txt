@@ -1,4 +1,6 @@
 Firewall
 --------
 - Block all inbound
-- Block all outbound SMB connections (remote ports 137-139, 445 both TCP and UDP) 
+- Block all outbound SMB connections (remote ports 137-139, 445 both TCP and UDP)
+
+DO NOT APPLY IN A VM
