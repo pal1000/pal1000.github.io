@@ -74,7 +74,9 @@ if /I "%push%"=="y" git push -f --all upstream
 :Update_build
 RD /S /Q ..\..\..\NDS\states
 DEL ..\..\..\NDS\DeSmuME-VS2017-x64-Release.exe
+DEL "..\..\..\NDS\DeSmuME-VS2017-x64-Release FastBuild.exe"
 COPY desmume\src\frontend\windows\__bins\DeSmuME-VS2017-x64-Release.exe ..\..\..\NDS
+COPY "desmume\src\frontend\windows\__bins\DeSmuME-VS2017-x64-Release FastBuild.exe" ..\..\..\NDS
 @GOTO Choice
  
 :GUI
