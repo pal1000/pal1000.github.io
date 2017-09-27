@@ -1,0 +1,4 @@
+In ssf.ini and in Setting\Saturn\[GAME_ID].ini replace the first very 
+long line's part of value that doesn't contain 0 with this:
+
+2/200/2/208/2/203/2/205/2/57/2/157/2/45/2/207/2/44/2/46/2/30/2/32/2/28

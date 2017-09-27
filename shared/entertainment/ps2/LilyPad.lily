@@ -1,0 +1,133 @@
+[General Settings]
+Force Cursor Hide=0
+Mouse Unfocus=0
+Background=1
+Multiple Bindings=0
+DirectInput Game Devices=1
+XInput=1
+DualShock 3=0
+Multitap 1=0
+Multitap 2=0
+Escape Fullscreen Hack=0
+Disable Screen Saver=0
+Logging=0
+Save State in Title=0
+GH2=0
+Close Hack=0
+Keyboard Mode=2
+Mouse Mode=2
+[Pad Settings]
+Configure On Bind=0
+[Pad 0 0]
+Mode=1
+Auto Analog=0
+[Pad 0 1]
+Mode=1
+Auto Analog=0
+[Pad 0 2]
+Mode=1
+Auto Analog=0
+[Pad 0 3]
+Mode=1
+Auto Analog=0
+[Pad 1 0]
+Mode=1
+Auto Analog=0
+[Pad 1 1]
+Mode=1
+Auto Analog=0
+[Pad 1 2]
+Mode=1
+Auto Analog=0
+[Pad 1 3]
+Mode=1
+Auto Analog=0
+[Device 0]
+Display Name=WM Keyboard
+Instance ID=WM Keyboard
+API=2
+Type=1
+Binding 0=0x0004000D, 0, 28, 65536, 0, 0, 0, 0, 1
+Binding 1=0x00040020, 0, 30, 65536, 0, 0, 0, 0, 1
+Binding 2=0x00040021, 0, 24, 65536, 0, 0, 0, 0, 1
+Binding 3=0x00040022, 0, 25, 65536, 0, 0, 0, 0, 1
+Binding 4=0x00040025, 0, 23, 65536, 0, 0, 0, 0, 1
+Binding 5=0x00040026, 0, 20, 65536, 0, 0, 0, 0, 1
+Binding 6=0x00040027, 0, 21, 65536, 0, 0, 0, 0, 1
+Binding 7=0x00040028, 0, 22, 65536, 0, 0, 0, 0, 1
+Binding 8=0x00040041, 0, 39, 65536, 0, 0, 0, 0, 1
+Binding 9=0x00040043, 0, 18, 65536, 0, 0, 0, 0, 1
+Binding 10=0x00040044, 0, 37, 65536, 0, 0, 0, 0, 1
+Binding 11=0x00040045, 0, 27, 65536, 0, 0, 0, 0, 1
+Binding 12=0x0004004D, 0, 16, 65536, 0, 0, 0, 0, 1
+Binding 13=0x00040050, 0, 19, 65536, 0, 0, 0, 0, 1
+Binding 14=0x00040051, 0, 26, 65536, 0, 0, 0, 0, 1
+Binding 15=0x00040053, 0, 38, 65536, 0, 0, 0, 0, 1
+Binding 16=0x00040057, 0, 36, 65536, 0, 0, 0, 0, 1
+Binding 17=0x0004005A, 0, 17, 65536, 0, 0, 0, 0, 1
+Binding 18=0x000400A1, 0, 31, 65536, 0, 0, 0, 0, 1
+Binding 19=0x000400A3, 0, 29, 65536, 0, 0, 0, 0, 1
+[Device 1]
+Display Name=WM Mouse
+Instance ID=WM Mouse
+API=2
+Type=2
+[Device 2]
+Display Name=Raw KB: Standard PS/2 Keyboard
+Instance ID=\\?\ACPI#DLLK059B#4&2f217cd5&1#{884b96c3-56ef-11d1-bc8c-00a0c91405dd}
+API=3
+Type=1
+[Device 3]
+Display Name=Raw MS: PS/2 Compatible Mouse
+Instance ID=\\?\ACPI#DLL059B#4&2f217cd5&1#{378de44c-56ef-11d1-bc8c-00a0c91405dd}
+Product ID=\\?\ACPI\DLL059B
+API=3
+Type=2
+[Device 4]
+Display Name=Simulated Keyboard
+Instance ID=Simulated Keyboard
+API=3
+Type=1
+[Device 5]
+Display Name=Simulated Mouse
+Instance ID=Simulated Mouse
+API=3
+Type=2
+[Device 6]
+Display Name=XInput Pad 0
+Instance ID=XInput Pad 0
+API=4
+Type=3
+[Device 7]
+Display Name=XInput Pad 1
+Instance ID=XInput Pad 1
+API=4
+Type=3
+[Device 8]
+Display Name=XInput Pad 2
+Instance ID=XInput Pad 2
+API=4
+Type=3
+[Device 9]
+Display Name=XInput Pad 3
+Instance ID=XInput Pad 3
+API=4
+Type=3
+[Device 10]
+Display Name=DX Mouse
+Instance ID=6F1D2B60-D5A0-11CF-BFC7-444553540000
+Product ID=6F1D2B60-D5A0-11CF-BFC7-444553540000
+API=1
+Type=2
+Binding 0=0x01010000, 0, 33, 65536, 0, 0, 13172, 1, 1
+Binding 1=0x02010000, 0, 35, 65536, 0, 0, 13172, 1, 1
+Binding 2=0x01010001, 0, 34, 65536, 0, 0, 13172, 1, 1
+Binding 3=0x02010001, 0, 32, 65536, 0, 0, 13172, 1, 1
+Binding 4=0x00040003, 0, 40, 65536, 0, 0, 0, 0, 1
+Binding 5=0x00040004, 0, 15, 65536, 0, 0, 0, 0, 1
+[Device 11]
+Display Name=DX Keyboard
+Instance ID=6F1D2B61-D5A0-11CF-BFC7-444553540000
+Product ID=6F1D2B61-D5A0-11CF-BFC7-444553540000
+API=1
+Type=1

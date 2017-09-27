@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\epsxe\config]
+"Pad1"="203,205,200,208,28,157,57,54,201,44,209,46,25,50,16,21"
+

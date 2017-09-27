@@ -1,0 +1,2 @@
+{ +, 1, 0, 1, 0xF8264E, 150, "No time limit" }
+{ -, 1, 0, 1, 0xF822B2, 80, "Infinite oxygen" }
