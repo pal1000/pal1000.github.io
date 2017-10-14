@@ -45,9 +45,9 @@ git pull -v --progress origin
 @GOTO Choice
 
 :Update_remote
-git fetch origin master
+git fetch origin
 @set /p push=Update your fork (y/n):
-if /I "%push%"=="y" git push -f origin master
+if /I "%push%"=="y" git push -f --all origin
 @GOTO Choice
 
 :GUI
