@@ -7,8 +7,7 @@ var form="Enter iframe source URL: <input type='text' size='50' id='src'/><br>"+
          "Enter width:<input type='text' id='width' value='75%'/>"+
          "Enter height:<input type='text' id='height' value='75%'/>"+
          "<input type='button' value='Submit' onclick='submit()'><br>";
-
-if ($_GET('src')=='') document.write(form);
+document.write(form);
 
 function submit(){
 var submitURL=window.location.protocol + '//' + window.location.hostname + window.location.pathname;
