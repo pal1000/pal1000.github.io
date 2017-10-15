@@ -23,13 +23,13 @@ var form="Enter streamming server URL (if any):<input type='text' size='50' id='
 if ($_GET('media')=='') document.write(form);
 function submit(){
 var submitURL=window.location.protocol + '//' + window.location.hostname + window.location.pathname;
-submitURL+=formsubmit('media',readform('media'),true);
-submitURL+=formsubmit('mediatype',readform('mediatype'));
-submitURL+=formsubmit('streammer',readform('streammer'));
-submitURL+=formsubmit('image',readform('image'));
-submitURL+=formsubmit('width',readform('width'));
-submitURL+=formsubmit('height',readform('height'));
-submitURL+=formsubmit('ratio',readform('ratio'));
+submitURL+=formsubmit('media',true);
+submitURL+=formsubmit('mediatype');
+submitURL+=formsubmit('streammer');
+submitURL+=formsubmit('image');
+submitURL+=formsubmit('width');
+submitURL+=formsubmit('height');
+submitURL+=formsubmit('ratio');
 window.location=submitURL;
 window.location;
 }

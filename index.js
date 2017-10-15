@@ -10,15 +10,11 @@ function $_GET(key, default_)
   return ret;
 }
 
-function formsubmit(paramname, value, isfirst){
+function formsubmit(paramname, isfirst){
 var sep='&';
 if (isfirst == null) isfirst = false;
 if (isfirst) sep='?';
-return sep+paramname+'='+encodeURIComponent(value);
-}
-
-function readform(paramname){
-return document.getElementById(paramname).value;
+return sep+paramname+'='+encodeURIComponent(document.getElementById(paramname).value);
 }
 
 function index(filename,extension){

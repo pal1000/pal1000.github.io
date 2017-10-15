@@ -1,0 +1,31 @@
+<html><head><title>Iframe embed</title>
+</head><body>
+<script type='text/javascript' src='../../index.js'></script>
+<script>
+
+var form="Enter iframe source URL: <input type='text' size='50' id='src'/><br>"+
+         "Enter width:<input type='text' id='width' value='75%'/>"+
+         "Enter height:<input type='text' id='height' value='75%'/>"+
+         "<input type='button' value='Submit' onclick='submit()'><br>";
+
+if ($_GET('src')=='') document.write(form);
+
+function submit(){
+var submitURL=window.location.protocol + '//' + window.location.hostname + window.location.pathname;
+submitURL+=formsubmit('src',true);
+submitURL+=formsubmit('width');
+submitURL+=formsubmit('height');
+window.location=submitURL;
+window.location;
+}
+if (!$_GET('src')==''){
+    src=decodeURIComponent($_GET('src'));
+    var width='75%';
+    var height='75%';
+    if (!$_GET('width')=='') width=decodeURIComponent($_GET('width'));
+    if (!$_GET('height')=='') height=decodeURIComponent($_GET('height'));
+    document.write("<iframe src='"+src+"' width='"+width+"' height='"+height+"' allowfullscreen='true'/><br>");
+    document.write('<a href="index.html">Restart</a><br>');
+}
+</script>
+<a href='../index.html'>Exit</a></body></html>

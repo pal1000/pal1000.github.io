@@ -20,8 +20,8 @@ var quality=$_GET('quality');
 document.write(form);
 function submit(){
 var submitURL=window.location.protocol + '//' + window.location.hostname + window.location.pathname;
-submitURL+=formsubmit('channel',readform('channel'),true);
-submitURL+=formsubmit('quality',readform('quality'));
+submitURL+=formsubmit('channel',true);
+submitURL+=formsubmit('quality');
 window.location=submitURL;
 window.location;
 }
