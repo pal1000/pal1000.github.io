@@ -4,10 +4,9 @@ function $_GET(key, default_)
   key = key.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
   var regex = new RegExp("[\\?&]"+key+"=([^&#]*)");
   var qs = regex.exec(window.location.href);
-  var ret = default_;
-  if(qs == null) ret = default_;
-  else ret=qs[1];
-  return ret;
+  if(qs == null) qs=default_;
+  else qs=qs[1];
+  return qs;
 }
 
 function formsubmit(paramname, isfirst){
