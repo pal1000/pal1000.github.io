@@ -1,44 +1,48 @@
 <html><head><title>JW Player Digi Online Test</title>
 </head><body>
-<table border='1'>
-<tr><th>Disney Channel</th><th>Disney Junior</th><th>Nickelodeon</th><th>Minimax</th><th>Megamax</th></tr>
-<tr>
-<td><a href='digionline.html?channel=disneychannel&quality=lq'>Low Quality</a></td>
-<td><a href='digionline.html?channel=disneyjunior&quality=lq'>Low Quality</a></td>
-<td><a href='digionline.html?channel=nickelodeon&quality=lq'>Low Quality</a></td>
-<td><a href='digionline.html?channel=minimax&quality=lq'>Low Quality</a></td>
-<td><a href='digionline.html?channel=megamax&quality=lq'>Low Quality</a></td>
-</tr>
-<tr>
-<td><a href='digionline.html?channel=disneychannel&quality=mq'>Medium Quality</a></td>
-<td><a href='digionline.html?channel=disneyjunior&quality=mq'>Medium Quality</a></td>
-<td><a href='digionline.html?channel=nickelodeon&quality=mq'>Medium Quality</a></td>
-<td><a href='digionline.html?channel=minimax&quality=mq'>Medium Quality</a></td>
-<td><a href='digionline.html?channel=megamax&quality=mq'>Medium Quality</a></td>
-</tr>
-<tr>
-<td><a href='digionline.html?channel=disneychannel&quality=hq'>High Quality</a></td>
-<td><a href='digionline.html?channel=disneyjunior&quality=hq'>High Quality</a></td>
-<td><a href='digionline.html?channel=nickelodeon&quality=hq'>High Quality</a></td>
-<td><a href='digionline.html?channel=minimax&quality=hq'>High Quality</a></td>
-<td><a href='digionline.html?channel=megamax&quality=hq'>High Quality</a></td>
-</tr>
-</table>
-
 <script type='text/javascript' src='../../../../index.js'></script>
 <script>
 var channel=$_GET('channel');
 var quality=$_GET('quality');
 
-function getid(cname){
-         if(cname=='disneyjunior'){cid=18;}
-         if(cname=='disneychannel'){cid=17;}
-         if(cname=='nickelodeon'){cid=28;}
-         if(cname=='minimax'){cid=37;}
-         if(cname=='megamax'){cid=47;}
-         return cid;
+function getchprop(propname,index){
+var ret=''
+if (propname=='fchname'){
+if (index==0) ret='Disney Channel';
+if (index==1) ret='Disney Junior';
+if (index==2) ret='Nickelodeon';
+if (index==3) ret='Minimax';
+if (index==4) ret='Megamax';
+}
+if (propname=='chname'){
+if (index==0) ret='disneychannel';
+if (index==1) ret='disneyjunior';
+if (index==2) ret='nickelodeon';
+if (index==3) ret='minimax';
+if (index==4) ret='megamax';
+}
+if (propname=='chid'){
+if (index==0) ret=17;
+if (index==1) ret=18;
+if (index==2) ret=28;
+if (index==3) ret=37;
+if (index==4) ret=47;
+}
+if (propname=='qname'){
+if (index==0) ret='lq';
+if (index==1) ret='mq';
+if (index==2) ret='hq';
+}
+return ret;
 }
 
-if(!channel=='') document.write("<iframe src='../../../../tools/jwembed/index.html?media=http%3A%2F%2F82.76.40.81%2Fdigiedge2%2F"+channel+"e"+quality+"%2Findex.m3u8%3Fis%3D"+getid(channel)+"%26src%3Ddigi-online.ro%26t%3D00000000000000000000000000000000&width=95%25&height=95%25&isembedded=1' width='95%' height='95%' allowfullscreen='true'/>");
+document.write("<table border='1'><tr>");
+for (i=0; i<5; i++){
+     document.write("<td>"+getchprop('fchname',i)+"</td>");
+     for (j=0; j<3; j++) document.write("<td><a href='digionline.html?channel="+i+"&quality="+j+"'>"+getchprop('qname',j).toUpperCase()+"</a></td>");
+}
+document.write("</tr></table>");
+
+if(!channel=='') document.write("<center>"+getchprop('fchname',channel)+" "+getchprop('qname',quality).toUpperCase()+"</center><iframe src='../../../../tools/jwembed/index.html?media=http%3A%2F%2F82.76.40.81%2Fdigiedge2%2F"+getchprop('chname',channel)+"e"+getchprop('qname',quality)+"%2Findex.m3u8%3Fis%3D"+getchprop('chid',channel)+"%26src%3Ddigi-online.ro%26t%3D00000000000000000000000000000000&width=97%25&height=97%25&isembedded=1' width='97%' height='97%' allowfullscreen='true'/>");
 </script>
 </body></html>
