@@ -33,6 +33,11 @@ if (index==0) ret='lq';
 if (index==1) ret='mq';
 if (index==2) ret='hq';
 }
+if (propname=='fqname'){
+if (index==0) ret='Low Quality';
+if (index==1) ret='Medium Quality';
+if (index==2) ret='High Quality';
+}
 return ret;
 }
 
@@ -43,6 +48,6 @@ for (i=0; i<5; i++){
 }
 document.write("</tr></table>");
 
-if(!channel=='') document.write("<center>"+getchprop('fchname',channel)+" "+getchprop('qname',quality).toUpperCase()+"</center><iframe src='../../../../tools/jwembed/index.html?media=http%3A%2F%2F82.76.40.81%2Fdigiedge2%2F"+getchprop('chname',channel)+"e"+getchprop('qname',quality)+"%2Findex.m3u8%3Fis%3D"+getchprop('chid',channel)+"%26src%3Ddigi-online.ro%26t%3D00000000000000000000000000000000&width=97%25&height=97%25&isembedded=1' width='97%' height='97%' allowfullscreen='true'/>");
+if(!channel=='') document.write("<center>"+getchprop('fchname',channel)+" "+getchprop('fqname',quality)+"</center><iframe src='../../../../tools/jwembed/index.html?media=http%3A%2F%2F82.76.40.81%2Fdigiedge2%2F"+getchprop('chname',channel)+"e"+getchprop('qname',quality)+"%2Findex.m3u8%3Fis%3D"+getchprop('chid',channel)+"%26src%3Ddigi-online.ro%26t%3D00000000000000000000000000000000&width=97%25&height=97%25&isembedded=1' width='97%' height='97%' allowfullscreen='true'/>");
 </script>
 </body></html>
