@@ -5,8 +5,8 @@ function $_GET(key, default_)
   var regex = new RegExp("[\\?&]"+key+"=([^&#]*)");
   var qs = regex.exec(window.location.href);
   var ret = default_;
-  if(qs == null) ret = default_
-  else ret=qs[1]
+  if(qs == null) ret = default_;
+  else ret=qs[1];
   return ret;
 }
 
@@ -18,8 +18,8 @@ return sep+paramname+'='+encodeURIComponent(document.getElementById(paramname).v
 }
 
 function index(filename,extension){
-         var list='';
-         if (extension==null) list="<li><a href='"+encodeURIComponent(filename)+"/index.html'>"+filename+"</a></li>";
-         else list="<li><a href='"+encodeURIComponent(filename)+"."+encodeURIComponent(extension)+"'>"+filename+"."+extension+"</a></li>";
+         var list="<li><a href='"+encodeURIComponent(filename);
+         if (extension==null) list+="/index.html'>"+filename+"</a></li>";
+         else list+="."+encodeURIComponent(extension)+"'>"+filename+"."+extension+"</a></li>";
          return list;
 }
