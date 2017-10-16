@@ -1,6 +1,12 @@
-Firewall
---------
+1. Firewall
+   --------
 - Block all inbound
 - Block all outbound SMB connections (remote ports 137-139, 445 both TCP and UDP)
 
 DO NOT APPLY IN A VM
+
+2. Mitigate DNSMasq vulnerability
+   ------------------------------
+- Configure all devices to use a public DNS: OpenDNS, Google, etc.
+- If you are really paranoid switch router connection to PPOE Bridged and do PPOE on PC.
+However if you do this only that PC can be connected to Internet though.
