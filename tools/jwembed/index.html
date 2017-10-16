@@ -50,7 +50,7 @@ embedURL+='&width='+$_GET('width');
 embedURL+='&height='+$_GET('height');
 embedURL+='&ratio='+$_GET('ratio');
 embedURL+='&isembedded=1';
-var embedcode="&lt;iframe src=&apos;"+embedURL+"&apos; width=&apos;"+width+"&apos; height=&apos;"+height+"&apos;/&gt;";
+var embedcode="&lt;iframe src=&apos;"+embedURL+"&apos; width=&apos;"+width+"&apos; height=&apos;"+height+"&apos; allowfullscreen=&apos;true&apos;/&gt;";
 var out='Embed code: <input type="text" size="148" value="'+embedcode+'" readyonly>'; 
 return out;
 }
