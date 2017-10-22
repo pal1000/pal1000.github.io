@@ -56,7 +56,7 @@ git branch work
 
 
 :Start_NetBeans
-@%netbeanspath%netbeans\bin\netbeans64.exe
+@%netbeanspath%netbeans\bin\netbeans64.exe --console suppress
 @GOTO Choice
 
 :Build
