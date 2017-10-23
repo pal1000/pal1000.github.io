@@ -11,6 +11,7 @@
 git clone https://github.com/jpcsp/jpcsp.git jpcsp
 @cd jpcsp
 git submodule update --init --recursive
+@cd ..
 )
 @If exist "jpcsp"\ (
 @cd jpcsp

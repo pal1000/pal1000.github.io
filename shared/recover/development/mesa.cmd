@@ -6,7 +6,6 @@
 @cd projects\mesa
 @If NOT exist "mesa-dist-win"\ (
 git clone https://github.com/pal1000/mesa-dist-win.git mesa-dist-win
-@cd mesa-dist-win
 )
 @If exist "mesa-dist-win"\ (
 @cd mesa-dist-win

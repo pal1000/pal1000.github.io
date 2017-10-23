@@ -12,6 +12,7 @@
 git clone https://github.com/pcsx2/pcsx2.git pcsx2
 @cd pcsx2
 git submodule update --init --recursive
+@cd ..
 )
 @If exist "pcsx2"\ (
 @cd pcsx2

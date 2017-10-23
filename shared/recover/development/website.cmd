@@ -6,7 +6,6 @@
 @cd projects
 @If NOT exist "pal1000.github.io"\ (
 git clone https://github.com/pal1000/pal1000.github.io.git pal1000.github.io
-@cd pal1000.github.io
 )
 @If exist "pal1000.github.io"\ (
 @cd pal1000.github.io

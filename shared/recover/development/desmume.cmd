@@ -11,6 +11,7 @@
 git clone https://github.com/TASVideos/desmume.git desmume
 @cd desmume
 git submodule update --init --recursive
+@cd ..
 )
 @If exist "desmume"\ (
 @cd desmume

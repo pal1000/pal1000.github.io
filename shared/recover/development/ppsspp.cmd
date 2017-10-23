@@ -11,6 +11,7 @@
 git clone https://github.com/hrydgard/ppsspp.git ppsspp
 @cd ppsspp
 git submodule update --init --recursive
+@cd ..
 )
 @If exist "ppsspp"\ (
 @cd ppsspp
