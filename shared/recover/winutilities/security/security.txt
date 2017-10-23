@@ -1,12 +1,20 @@
-1. Firewall
-   --------
-- Block all inbound
-- Block all outbound SMB connections (remote ports 137-139, 445 both TCP and UDP)
+1. Router settings
+------------------
+- Disable uPnP;
+- Disable voice and IPTV WAN connections (mitigate CRACK attack);
+- Use WPA2 AES protected Wi-Fi with good password;
+- Don't use a repeater (mitigate CRACK attack);
+- Disable USB;
+- Never enable remote administration and Wi-Fi WPS;
+- On client devices use web browsers equipped with script blockers to reduce attack surface of the whole network. NoScript for Firefox configured with maximum security will protect both the client running it and the router.
 
-DO NOT APPLY IN A VM
+2. Firewall
+-----------
+- Block all inbound connections;
+- Block all outbound SMB connections (remote ports 137-139, 445 both TCP and UDP). DO NOT APPLY IN A VM. Virtualbox networking requires SMB to work in guest OS for DNS to work as well.
 
-2. Mitigate DNSMasq vulnerability
-   ------------------------------
+3. Mitigate DNSMasq vulnerability
+---------------------------------
 - Configure all devices to use a public DNS: OpenDNS, Google, etc.
 - If you are really paranoid switch router connection to PPOE Bridged and do PPOE on PC.
 However if you do this only that PC can be connected to Internet though.
