@@ -72,6 +72,7 @@ if /I "%push%"=="y" git push -f --all upstream
 @GOTO Choice
 
 :Update_build
+IF NOT EXIST ..\..\..\NDS MD ..\..\..\NDS
 RD /S /Q ..\..\..\NDS\states
 DEL ..\..\..\NDS\DeSmuME-VS2017-x64-Release.exe
 DEL "..\..\..\NDS\DeSmuME-VS2017-x64-Release FastBuild.exe"

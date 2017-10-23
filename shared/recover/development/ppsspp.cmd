@@ -52,8 +52,7 @@ git branch work
   
 :Start_VS
 @set /p update-ver="Update git version before building in Visual studio Y/N? "
-@if %update-ver%==y @START Windows\git-version-gen.cmd ^&^& exit
-@if %update-ver%==Y @START Windows\git-version-gen.cmd ^&^& exit
+@if /I "%update-ver%"=="y" START Windows\git-version-gen.cmd ^&^& exit
 @Windows\PPSSPP.sln
 @GOTO Choice
 
@@ -80,7 +79,7 @@ RD /S /Q "..\..\..\ppsspp\memstick\PSP\PPSSPP_STATE"
 DEL "..\..\..\ppsspp\PPSSPPWindows64.exe"
 DEL "..\..\..\ppsspp\PPSSPPWindows.exe"
 DEL ..\..\..\ppsspp\memstick\PSP\SYSTEM\ppsspp.ini
-XCOPY assets ..\..\..\ppsspp\assets /S /E /I /Q
+XCOPY assets ..\..\..\ppsspp\assets /E /I /Q
 copy "PPSSPPWindows64.exe" ..\..\..\ppsspp
 copy "PPSSPPWindows.exe" ..\..\..\ppsspp
 @GOTO Choice
