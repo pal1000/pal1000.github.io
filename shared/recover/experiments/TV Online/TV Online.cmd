@@ -51,10 +51,6 @@ if '%errorlevel%' NEQ '0' (
 :Web-filter
 @net start NxFilter
 @REG ADD "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\%interface%" /v NameServer /t REG_SZ /d 10.0.2.15 /f
-@set /p jw=Update JW Player on remote server? y/n: 
-@if "%jw%"=="y" (
-@start /d "C:\Program Files\Mozilla Firefox\" firefox.exe "http://10.0.2.2/webhosting/tools/jwembed/index.php"
-)
 @GOTO Menu
 
 :Unrestricted
@@ -81,17 +77,6 @@ if '%errorlevel%' NEQ '0' (
 exit
 
 @if 1==0 (
--SopCast Sandboxie shortcut: "C:\Program Files\Sandboxie\Start.exe" /box:DefaultBox "C:\Program Files\Internet Explorer\iexplore.exe"
-
--Cool TV Online flash format: http://127.0.0.1:7667/strobe/strobemp.swf?src=http%3A%2F%2F127.0.0.1%3A53123%2F%3Fchannel%3D
-
-Cartoon Network: cartoon (broken)
-Boomerang: bomerang (broken)
-Nickelodeon: nickelodeon
-Disney Channel: disney 
-Disney Junior: disneyjr 
-
--Minimax flash format: http://pal1000.3x.ro/tools/flashembed/index.php?src=http%3A%2F%2Fwebtv.md%2Fswf%2FWebTV.swf%3Fred5Server%3Drtmp%3A%2F%2F83.218.202.202%2Flive%26stream%3Dwt_paprika.stream
 -Disney Junior flash format: http://mywebtv.info/disney-junior/sursa-2
                              http://pal1000.3x.ro/tools/jwembed/index.php?media=http%3A%2F%2F178.21.120.198%3A1935%2Flive3%2F_definst_%2Fmp4%3Adisneyjr%2Fplaylist.m3u8
 -Disney Channel flash format: http://mywebtv.info/disney-channel/sursa-2
@@ -117,19 +102,6 @@ Megamax: http://82.76.40.81/digiedge2/meganaxelq/index.m3u8?is=47&src=digi-onlin
          http://mywebtv.info/megamax/sursa-3
          http://mywebtv.info/megamax/sursa-4
 
--Sopcast
-Cartoon Network:  http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://mywebtv.info/cartoon-network
-                  http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://cool-tv.net/ch/cartoon.html  
-Boomerang:        http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://mywebtv.info/boomerang
-                  http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://cool-tv.net/ch/boomerang.html
-Nickelodeon       http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://mywebtv.info/nickelodeon
-                  http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://cool-tv.net/ch/nickelodeon.html
-Disney Junior:    http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://mywebtv.info/disney-junior
-                  http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://cool-tv.net/ch/jetix-junior.html
-Disney Channel    http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://mywebtv.info/disney-channel
-                  http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://cool-tv.net/ch/jetix-cartoon.html
-Minimax           http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://mywebtv.info/minimax
-                  http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://cool-tv.net/ch/minimaxro.html
-Megamax           http://pal1000.3x.ro/tools/sopchnlfind/?sop=http://mywebtv.info/megamax                       
+-Sopcast: Coolitv.net, mywebtv.info, cool-etv.net                       
 )
 
