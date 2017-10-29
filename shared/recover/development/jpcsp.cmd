@@ -18,54 +18,44 @@ git submodule update --init --recursive
 )
 git branch work
 
-@set netbeanspath=..\..\..\
-@if not exist %netbeanspath%netbeans @set netbeanspath=C:\Progra~1\
-
 :Choice
 @echo.
 @echo ----------------------- 
 @echo What do you want to do?
 @echo -----------------------
-@echo 1. Start NetBeans
-@echo 2. Build project
-@echo 3. Update local repository
-@echo 4. Update forked repository
-@echo 5. Launch GIT GUI
-@echo 6. Update submodules
-@echo 7. View repository status
-@echo 8. Wipe all uncommited changes
-@echo 9. Wipe all local commits and their effects
-@echo 10. Fully reset local repository
-@echo 11. Clean build and untracked files and folders
-@echo 12. Insert commands manually
-@echo 13. Exit
+@echo 1. Build project
+@echo 2. Update local repository
+@echo 3. Update forked repository
+@echo 4. Launch GIT GUI
+@echo 5. Update submodules
+@echo 6. View repository status
+@echo 7. Wipe all uncommited changes
+@echo 8. Wipe all local commits and their effects
+@echo 9. Fully reset local repository
+@echo 10. Clean build and untracked files and folders
+@echo 11. Insert commands manually
+@echo 12. Exit
 
 @set /p choice="Enter your Choice here:"
-@if %choice%==1 GOTO Start_NetBeans 
-@if %choice%==2 GOTO Build
-@if %choice%==3 GOTO Update_local
-@if %choice%==4 GOTO Update_remote
-@if %choice%==5 GOTO GUI
-@if %choice%==6 GOTO Update_submodules  
-@if %choice%==7 GOTO Status
-@if %choice%==8 GOTO wipe_uncommited_changes
-@if %choice%==9 GOTO Wipe_local_commits
-@if %choice%==10 GOTO Full_Reset
-@if %choice%==11 GOTO Clean_build
-@if %choice%==12 GOTO Command
-@if %choice%==13 GOTO Exit
-
-
-:Start_NetBeans
-@%netbeanspath%netbeans\bin\netbeans64.exe --console suppress
-@GOTO Choice
+@if %choice%==1 GOTO Build
+@if %choice%==2 GOTO Update_local
+@if %choice%==3 GOTO Update_remote
+@if %choice%==4 GOTO GUI
+@if %choice%==5 GOTO Update_submodules
+@if %choice%==6 GOTO Status
+@if %choice%==7 GOTO wipe_uncommited_changes
+@if %choice%==8 GOTO Wipe_local_commits
+@if %choice%==9 GOTO Full_Reset
+@if %choice%==10 GOTO Clean_build
+@if %choice%==11 GOTO Command
+@if %choice%==12 GOTO Exit
 
 :Build
 @copy dist\jpcsp-windows-amd64\Settings.properties .
 @RD /S /Q bin
 @RD /S /Q ms0\PSP\SAVEDATA
 @RD /S /Q dist\jpcsp-windows-amd64\ms0\PSP\SAVEDATA
-@start %netbeanspath%netbeans\extide\ant\bin\ant -f build-auto.xml dist-windows-amd64 ^&^& del dist\*.7z ^&^& mklink /J dist\jpcsp-windows-amd64\ms0\PSP\SAVEDATA ..\..\..\ppsspp\memstick\PSP\SAVEDATA ^&^& copy Settings.properties dist\jpcsp-windows-amd64 ^&^& pause ^&^& exit
+@start ..\..\..\apache-ant\bin\ant -f build-auto.xml dist-windows-amd64 ^&^& del dist\*.7z ^&^& mklink /J dist\jpcsp-windows-amd64\ms0\PSP\SAVEDATA ..\..\..\ppsspp\memstick\PSP\SAVEDATA ^&^& copy Settings.properties dist\jpcsp-windows-amd64 ^&^& pause ^&^& exit
 @GOTO Choice
 
 :Update_local
