@@ -1,9 +1,7 @@
-<html><head><title>JW Player Digi Online Test</title>
+<html><head><title>Digi Online Test</title>
 </head><body>
 <script type='text/javascript' src='../../../../index.js'></script>
 <script>
-var channel=$_GET('channel');
-var quality=$_GET('quality');
 
 function getchprop(propname,index){
 var ret=''
@@ -38,19 +36,46 @@ if (index==0) ret='Low Quality';
 if (index==1) ret='Medium Quality';
 if (index==2) ret='High Quality';
 }
+if (propname=='player'){
+if (index==0) ret='JW';
+if (index==1) ret='HLS-JS';
+}
 return ret;
 }
 
-document.write("<table border='1'><tr>");
-for (i=0; i<5; i++){
-     document.write("<td>"+getchprop('fchname',i)+"</td>");
-     for (j=0; j<3; j++) document.write("<td><a href='digionline.html?channel="+i+"&quality="+j+"'>"+getchprop('qname',j).toUpperCase()+"</a></td>");
+function submit(){
+var submitURL=window.location.protocol + '//' + window.location.hostname + window.location.pathname;
+submitURL+=formsubmit('channel',true);
+submitURL+=formsubmit('quality');
+//submitURL+=formsubmit('player');
+window.location=submitURL;
+window.location;
 }
-document.write("</tr></table>");
+
+var channel=0;
+var quality=1;
+//var player=1;
+if (!$_GET('channel')=='') channel=$_GET('channel');
+if (!$_GET('quality')=='') quality=$_GET('quality');
+//if (!$_GET('player')=='') player=$_GET('player');
+
+document.write("<select id='channel'></select>");
+channelselect = document.getElementById('channel');
+for(i=0;i<5;i++) channelselect.options[channelselect.options.length] = new Option(getchprop('fchname',i),i);
+
+document.write("<select id='quality'></select>");
+qualityselect = document.getElementById('quality');
+for(i=0;i<3;i++) qualityselect.options[qualityselect.options.length] = new Option(getchprop('fqname',i),i);
+
+document.write("<input type='button' value='Submit' onclick='submit()'><br>");
+channelselect.selectedIndex=channel;
+qualityselect.selectedIndex=quality;
+
 
 if(!channel==''){
    var mediafile="http://82.76.40.81/digiedge2/"+getchprop('chname',channel)+"e"+getchprop('qname',quality)+"/index.m3u8?is="+getchprop('chid',channel)+"&src=digi-online.ro&t=00000000000000000000000000000000";
-   document.write("<center><a href='"+mediafile+"'>"+getchprop('fchname',channel)+" "+getchprop('fqname',quality)+"</a></center><iframe src='../../../../tools/jwembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&isembedded=1' width='97%' height='97%' allowfullscreen='true'/>");
+   document.write("<center><a href='"+mediafile+"'>"+getchprop('fchname',channel)+" "+getchprop('fqname',quality)+"</a></center>");
+   document.write("<iframe src='../../../../tools/jwembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&isembedded=1' width='97%' height='97%' allowfullscreen='true'/>");
 }
 </script>
 </body></html>
