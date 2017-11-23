@@ -1,0 +1,73 @@
+<html>
+<body>
+<script type='text/javascript' src='../../index.js'></script>
+<script>
+function getmirrors(index){
+var ret='';
+if (index==0) ret='https://video-dev.github.io/hls.js/dist/hls.js';
+if (index==1) ret='https://cdn.jsdelivr.net/npm/hls.js@latest';
+if (index==2) ret='http://cdn.jsdelivr.net/npm/hls.js@latest';
+if (index==3) ret='http://streambox.fr/mse/hls.js/dist/hls.js';
+return ret;
+}
+var mediafile=decodeURIComponent($_GET('media'));
+var width='75%';
+var height='75%';
+var scriptmirror=0;
+if (!$_GET('width')=='') width=decodeURIComponent($_GET('width'));
+if (!$_GET('height')=='') height=decodeURIComponent($_GET('height'));
+if (!$_GET('mirror')=='') scriptmirror=$_GET('mirror');
+if (mediafile=='') {
+    document.write("Enter media file URL:<input type='text' size='50' id='media'/><br/>"+
+                   "Enter player width:<input type='text' id='width' value='75%'/>"+
+                   "Enter player height:<input type='text' id='height' value='75%'/>");
+    document.write("Cloud script mirror<select id='mirror'></select>");
+    scriptmirrorselect = document.getElementById('mirror');
+    for(i=0;i<4;i++) scriptmirrorselect.options[scriptmirrorselect.options.length] = new Option(getmirrors(i),i);
+    document.write("<input type='hidden' id='isembedded' value='0'>"+
+                    "<input type='button' value='Submit' onclick='submit()'><br>");
+    scriptmirrorselect.selectedIndex=scriptmirror;  
+}
+
+function submit(){
+var submitURL=window.location.protocol + '//' + window.location.hostname + window.location.pathname;
+submitURL+=formsubmit('media',true);
+submitURL+=formsubmit('width');
+submitURL+=formsubmit('height');
+submitURL+=formsubmit('mirror');
+window.location=submitURL;
+window.location;
+}
+
+function embedcode(){
+var embedURL=window.location.protocol + '//' + window.location.hostname + window.location.pathname;
+embedURL+='?media='+$_GET('media');
+embedURL+='&width='+$_GET('width');
+embedURL+='&height='+$_GET('height');
+embedURL+='&mirror='+$_GET('mirror');
+embedURL+='&isembedded=1';
+var embedcode="&lt;iframe src=&apos;"+embedURL+"&apos; width=&apos;"+width+"&apos; height=&apos;"+height+"&apos; allowfullscreen=&apos;true&apos;/&gt;";
+var out='Embed code: <input type="text" size="148" value="'+embedcode+'" readyonly>'; 
+return out;
+}
+
+function play(media,mirror){
+document.write('<video id="video" width="'+width+'" height="'+height+'" controls></video>');
+var script = document.createElement("script");
+script.type = "text/javascript";
+script.src = getmirrors(mirror);
+script.onload = function(){
+if(Hls.isSupported()) {
+    var video = document.getElementById('video');
+    var hls = new Hls();
+    hls.loadSource(media);
+    hls.attachMedia(video);
+}}
+document.body.appendChild(script);
+}
+
+if (!$_GET('media')==''&&!$_GET('isembedded')=='1') document.write(embedcode()+"<br><a href='index.html'>Restart</a><br>");
+if (!$_GET('media')=='') play(mediafile,scriptmirror);
+if (!$_GET('isembedded')=='1') document.write("<a href='../index.html'>Exit</a>");
+</script>
+</body></html>
