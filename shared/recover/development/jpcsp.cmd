@@ -1,6 +1,6 @@
 @TITLE Jpcsp
 @cd ..\..\..\..\..\
-@set PATH=%CD%\Git\bin;%CD%\Git\mingw64\bin;%CD%\Git\cmd;%CD%\..\Java\JDK\bin;%ProgramFiles%\Java\JDK\bin;%CD%\..\7-ZipPortable\App\64;%PATH%
+@set PATH=%CD%\Git\bin;%CD%\Git\mingw64\bin;%CD%\Git\cmd;%CD%\..\Java\JDK\bin;%ProgramFiles%\Java\JDK\bin;%CD%\..\7-ZipPortable\App\7-zip;%CD%\..\7-ZipPortable\App\64;%PATH%
 @if not exist "%HOME%" @set HOME=%HOMEDRIVE%%HOMEPATH%
 @if not exist "%HOME%" @set HOME=%USERPROFILE%
 
