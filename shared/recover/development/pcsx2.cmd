@@ -52,6 +52,7 @@ git branch work
 
 :Start_VS
 @del pcsx2\windows\VCprojects\svnrev.h
+@if NOT EXIST bin\pcsx2.exe echo RunWizard=1 > bin\portable.ini
 @PCSX2_suite.sln
 @rem old_plugins.sln
 @GOTO Choice
@@ -104,7 +105,6 @@ git checkout work
 
 :Clean_build
 git clean -d -f -x
-@echo RunWizard=1 > bin\portable.ini
 @GOTO Choice
 
 :Command
