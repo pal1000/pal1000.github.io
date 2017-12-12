@@ -52,18 +52,20 @@ git branch work
 
 :Start_VS
 @del pcsx2\windows\VCprojects\svnrev.h
-@if NOT EXIST bin\pcsx2.exe echo RunWizard=1 > bin\portable.ini
+@if NOT EXIST bin\inis echo RunWizard=1 > bin\portable.ini
 @PCSX2_suite.sln
 @rem old_plugins.sln
 @GOTO Choice
 
 :Update_local
+git checkout bin\portable.ini
 git checkout master
 git pull -v --progress "origin"
 git submodule update --init --recursive
 git branch work
 git checkout work
 git rebase master
+@if NOT EXIST bin\inis echo RunWizard=1 > bin\portable.ini
 @echo Update completed.
 @GOTO Choice
 
