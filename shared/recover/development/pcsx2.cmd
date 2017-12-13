@@ -58,7 +58,7 @@ git branch work
 @GOTO Choice
 
 :Update_local
-git checkout bin\portable.ini
+@if NOT EXIST bin\inis git checkout bin\portable.ini
 git checkout master
 git pull -v --progress "origin"
 git submodule update --init --recursive
