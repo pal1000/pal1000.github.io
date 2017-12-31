@@ -81,7 +81,7 @@ qualityselect.selectedIndex=quality;
 playerselect.selectedIndex=player;
 
 if(!channel==''){
-   var mediafile="http://edge81.rdsnet.ro/digiedge2/"+getchprop('chname',channel)+"e"+getchprop('qname',quality)+"/index.m3u8?is="+getchprop('chid',channel)+"&src=digi-online.ro&t=00000000000000000000000000000000";
+   var mediafile="http://82.76.40.81/digiedge2/"+getchprop('chname',channel)+"e"+getchprop('qname',quality)+"/index.m3u8?is="+getchprop('chid',channel)+"&src=digi-online.ro&t=00000000000000000000000000000000";
    document.write("<center><a href='"+mediafile+"'>Stream URL</a>&nbsp;&nbsp;&nbsp;<a href='"+window.location+"'>Reload</a></center>");
    if(player==0) document.write("<iframe src='../../../../tools/jwembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&isembedded=1' width='97%' height='97%' allowfullscreen='true'/>");
    if(player>0) document.write("<iframe src='../../../../tools/hlsembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&mirror="+parseInt(player-1)+"&isembedded=1' width='97%' height='97%' allowfullscreen='true'/>");
