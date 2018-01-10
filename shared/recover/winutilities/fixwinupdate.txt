@@ -1,8 +1,0 @@
-@echo off
-net stop wuauserv
-net stop BITS
-CD %systemroot%\SoftwareDistribution
-RD Download /S /Q
-MD Download
-pause
-net start BITS
