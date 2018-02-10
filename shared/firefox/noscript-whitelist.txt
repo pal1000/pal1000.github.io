@@ -1,23 +1,65 @@
-82.76.40.81
-awhoer.net
-content.jwplatform.com
-digiapis.rcs-rds.ro
-edge.api.brightcove.com
-github.com
-googlevideo.com
-media.brightcove.com
-pal1000.github.io
-players.brightcove.net
-secure.brightcove.com
-ssl.p.jwpcdn.com
-vkcache.com
-http://awhoer.net
-http://github.com
-http://googlevideo.com
-http://vkcache.com
-https://adss.ascertia.com:8778
-https://awhoer.net
-https://github.com
-https://googlevideo.com
-https://vkcache.com
-[UNTRUSTED]
+{
+  "policy": {
+    "DEFAULT": {
+      "capabilities": [],
+      "temp": false
+    },
+    "TRUSTED": {
+      "capabilities": [
+        "script",
+        "media",
+        "frame",
+        "font",
+        "fetch"
+      ],
+      "temp": false
+    },
+    "UNTRUSTED": {
+      "capabilities": [],
+      "temp": false
+    },
+    "sites": {
+      "trusted": [
+        "https://edge.api.brightcove.com",
+        "https://f1.media.brightcove.com",
+        "https://secure.brightcove.com",
+        "https://players.brightcove.net",
+        "https://www.csoonline.com",
+        "http://cdn.jsdelivr.net",
+        "https://ssl.p.jwpcdn.com",
+        "https://content.jwplatform.com",
+        "https://pal1000.github.io",
+        "http://digiapis.rcs-rds.ro",
+        "https://video-dev.github.io",
+        "vkcache.com",
+        "disqus.com",
+        "https://reg.idgenterprise.com",
+        "http://streambox.fr",
+        "https://c.disquscdn.com",
+        "https://cdn.jsdelivr.net",
+        "http://82.76.40.81"
+      ],
+      "untrusted": [
+        "https://www.google-analytics.com",
+        "https://redirector.googlevideo.com",
+        "https://ssl.google-analytics.com",
+        "https://analytics.twitter.com"
+      ],
+      "custom": {}
+    },
+    "enforced": true,
+    "autoAllowTop": false
+  },
+  "local": {
+    "debug": true,
+    "storage": "local",
+    "uuid": "fc6261f5-563a-43a0-aa73-de28c17e3dc8"
+  },
+  "sync": {
+    "global": false,
+    "xss": true,
+    "clearclick": true,
+    "storage": "sync"
+  },
+  "xssUserChoices": {}
+}
