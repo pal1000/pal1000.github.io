@@ -29,7 +29,7 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------
 
-@rem FOR /F "tokens=4 delims= " %%i in ('route print  ^| find " 255.255.255.255"') do set localIp=%%i
+@FOR /F "tokens=4 delims= " %%i in ('route print  ^| find " 255.255.255.255"') do set localIp=%%i
 @cd /d "%userprofile%\Desktop\TV Online\"
 @set interface={a0186793-5422-4445-b943-826bcd26dba9}
 @GOTO Web-filter
@@ -50,7 +50,7 @@ if '%errorlevel%' NEQ '0' (
 
 :Web-filter
 @net start NxFilter
-@REG ADD "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\%interface%" /v NameServer /t REG_SZ /d 10.0.2.15 /f
+@REG ADD "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\%interface%" /v NameServer /t REG_SZ /d %localIp% /f
 @GOTO Menu
 
 :Unrestricted
