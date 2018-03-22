@@ -37,20 +37,22 @@ git branch work
 @echo 12. Insert commands manually
 @echo 13. Exit
 @set /p choice="Enter your Choice here:"
-@if %choice%==1 GOTO Start_VS 
-@if %choice%==2 GOTO Update_local
-@if %choice%==3 GOTO Update_remote
-@if %choice%==4 GOTO Update_build
-@if %choice%==5 GOTO GUI
-@if %choice%==6 GOTO Update_submodules  
-@if %choice%==7 GOTO Status
-@if %choice%==8 GOTO wipe_uncommited_changes
-@if %choice%==9 GOTO Wipe_local_commits
-@if %choice%==10 GOTO Full_Reset
-@if %choice%==11 GOTO Clean_build
-@if %choice%==12 GOTO Command
-@if %choice%==13 GOTO Exit
-  
+@if "%choice%"=="1" GOTO Start_VS
+@if "%choice%"=="2" GOTO Update_local
+@if "%choice%"=="3" GOTO Update_remote
+@if "%choice%"=="4" GOTO Update_build
+@if "%choice%"=="5" GOTO GUI
+@if "%choice%"=="6" GOTO Update_submodules
+@if "%choice%"=="7" GOTO Status
+@if "%choice%"=="8" GOTO wipe_uncommited_changes
+@if "%choice%"=="9" GOTO Wipe_local_commits
+@if "%choice%"=="10" GOTO Full_Reset
+@if "%choice%"=="11" GOTO Clean_build
+@if "%choice%"=="12" GOTO Command
+@if "%choice%"=="13" GOTO Exit
+@echo Invaild entry
+@GOTO Choice
+
 :Start_VS
 @desmume\src\frontend\windows\DeSmuME.sln
 @GOTO Choice

@@ -37,18 +37,20 @@ git branch work
 @echo 12. Exit
 
 @set /p choice="Enter your Choice here:"
-@if %choice%==1 GOTO Build
-@if %choice%==2 GOTO Update_local
-@if %choice%==3 GOTO Update_remote
-@if %choice%==4 GOTO GUI
-@if %choice%==5 GOTO Update_submodules
-@if %choice%==6 GOTO Status
-@if %choice%==7 GOTO wipe_uncommited_changes
-@if %choice%==8 GOTO Wipe_local_commits
-@if %choice%==9 GOTO Full_Reset
-@if %choice%==10 GOTO Clean_build
-@if %choice%==11 GOTO Command
-@if %choice%==12 GOTO Exit
+@if "%choice%"=="1" GOTO Build
+@if "%choice%"=="2" GOTO Update_local
+@if "%choice%"=="3" GOTO Update_remote
+@if "%choice%"=="4" GOTO GUI
+@if "%choice%"=="5" GOTO Update_submodules
+@if "%choice%"=="6" GOTO Status
+@if "%choice%"=="7" GOTO wipe_uncommited_changes
+@if "%choice%"=="8" GOTO Wipe_local_commits
+@if "%choice%"=="9" GOTO Full_Reset
+@if "%choice%"=="10" GOTO Clean_build
+@if "%choice%"=="11" GOTO Command
+@if "%choice%"=="12" GOTO Exit
+@echo Invaild entry
+@GOTO Choice
 
 :Build
 @copy dist\jpcsp-windows-amd64\Settings.properties .

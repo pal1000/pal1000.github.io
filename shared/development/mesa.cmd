@@ -24,13 +24,15 @@ git clone https://github.com/pal1000/mesa-dist-win.git mesa-dist-win
 @echo 6. Insert commands manually
 @echo 7. Exit
 @set /p choice="Enter your Choice here:"
-@if %choice%==1 GOTO Build_mesa
-@if %choice%==2 GOTO Update_local
-@if %choice%==3 GOTO Update_remote
-@if %choice%==4 GOTO GUI
-@if %choice%==5 GOTO wipe_uncommited_changes
-@if %choice%==6 GOTO Command
-@if %choice%==7 GOTO Exit
+@if "%choice%"=="1" GOTO Build_mesa
+@if "%choice%"=="2" GOTO Update_local
+@if "%choice%"=="3" GOTO Update_remote
+@if "%choice%"=="4" GOTO GUI
+@if "%choice%"=="5" GOTO wipe_uncommited_changes
+@if "%choice%"=="6" GOTO Command
+@if "%choice%"=="7" GOTO Exit
+@echo Invaild entry
+@GOTO Choice
 
 :Build_mesa
 @set cdir=%CD%

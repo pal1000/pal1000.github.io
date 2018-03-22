@@ -23,12 +23,14 @@ git clone https://github.com/pal1000/MEUpdateEasy.git MEUpdateEasy
 @echo 5. Insert commands manually
 @echo 6. Exit
 @set /p choice="Enter your Choice here:"
-@if %choice%==1 GOTO Update_local
-@if %choice%==2 GOTO Update_remote
-@if %choice%==3 GOTO GUI
-@if %choice%==4 GOTO wipe_uncommited_changes
-@if %choice%==5 GOTO Command
-@if %choice%==6 GOTO Exit
+@if "%choice%"=="1" GOTO Update_local
+@if "%choice%"=="2" GOTO Update_remote
+@if "%choice%"=="3" GOTO GUI
+@if "%choice%"=="4" GOTO wipe_uncommited_changes
+@if "%choice%"=="5" GOTO Command
+@if "%choice%"=="6" GOTO Exit
+@echo Invaild entry
+@GOTO Choice
 
 :Update_local
 git pull -v --progress origin
