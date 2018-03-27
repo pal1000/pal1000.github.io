@@ -1,12 +1,13 @@
 @TITLE PCSX2
-@cd ..\..\..\..\
-@set PATH=%CD%\Git\bin;%CD%\Git\mingw64\bin;%CD%\Git\cmd;%PATH%
-@set DXSDK_DIR=%CD%\projects\ppsspp\dx9sdk\
-@if not exist "%HOME%" @set HOME=%HOMEDRIVE%%HOMEPATH%
-@if not exist "%HOME%" @set HOME=%USERPROFILE%
-
-@set PLINK_PROTOCOL=ssh
-@if not defined TERM set TERM=msys
+@where /q git.exe
+@IF ERRORLEVEL 1 cd ..\..\..\..\
+@set ERRORLEVEL=0
+@where /q git.exe
+@IF ERRORLEVEL 1 "%CD%\Git\git-cmd.exe" %0
+@set ERRORLEVEL=0
+@where /q git.exe
+@IF ERRORLEVEL 1 exit
+@set ERRORLEVEL=0
 @cd projects
 @If NOT exist "pcsx2"\ (
 git clone https://github.com/pcsx2/pcsx2.git pcsx2

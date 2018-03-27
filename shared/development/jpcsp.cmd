@@ -1,11 +1,14 @@
 @TITLE Jpcsp
-@cd ..\..\..\..\
-@set PATH=%CD%\Git\bin;%CD%\Git\mingw64\bin;%CD%\Git\cmd;%CD%\..\Java\JDK\bin;%ProgramFiles%\Java\JDK\bin;%CD%\..\7-ZipPortable\App\7-zip64;%ProgramFiles%\7-Zip;%PATH%
-@if not exist "%HOME%" @set HOME=%HOMEDRIVE%%HOMEPATH%
-@if not exist "%HOME%" @set HOME=%USERPROFILE%
-
-@set PLINK_PROTOCOL=ssh
-@if not defined TERM set TERM=msys
+@where /q git.exe
+@IF ERRORLEVEL 1 cd ..\..\..\..\
+@set ERRORLEVEL=0
+@where /q git.exe
+@IF ERRORLEVEL 1 "%CD%\Git\git-cmd.exe" %0
+@set ERRORLEVEL=0
+@where /q git.exe
+@IF ERRORLEVEL 1 exit
+@set ERRORLEVEL=0
+@set PATH=%CD%\..\Java\JDK\bin;%ProgramFiles%\Java\JDK\bin;%CD%\..\7-ZipPortable\App\7-zip64;%ProgramFiles%\7-Zip;%PATH%
 @cd projects
 @If NOT exist "jpcsp"\ (
 git clone https://github.com/jpcsp/jpcsp.git jpcsp
