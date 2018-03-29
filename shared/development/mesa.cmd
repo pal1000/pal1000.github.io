@@ -28,6 +28,7 @@ git clone https://github.com/pal1000/mesa-dist-win.git mesa-dist-win
 @echo 5. Wipe all uncommited changes
 @echo 6. Insert commands manually
 @echo 7. Exit
+@set choice=0
 @set /p choice="Enter your Choice here:"
 @if "%choice%"=="1" GOTO Build_mesa
 @if "%choice%"=="2" GOTO Update_local
@@ -52,6 +53,7 @@ git pull -v --progress origin
 
 :Update_remote
 git fetch origin
+@set push=n
 @set /p push=Update your fork (y/n):
 if /I "%push%"=="y" git push -f --all origin
 @GOTO Choice

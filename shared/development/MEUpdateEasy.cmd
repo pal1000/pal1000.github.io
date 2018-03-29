@@ -27,6 +27,7 @@ git clone https://github.com/pal1000/MEUpdateEasy.git MEUpdateEasy
 @echo 4. Wipe all uncommited changes
 @echo 5. Insert commands manually
 @echo 6. Exit
+@set choice=0
 @set /p choice="Enter your Choice here:"
 @if "%choice%"=="1" GOTO Update_local
 @if "%choice%"=="2" GOTO Update_remote
@@ -43,6 +44,7 @@ git pull -v --progress origin
 
 :Update_remote
 git fetch origin
+@set push=n
 @set /p push=Update your fork (y/n):
 if /I "%push%"=="y" git push -f --all origin
 @GOTO Choice

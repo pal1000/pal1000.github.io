@@ -38,6 +38,7 @@ git branch work
 @echo 11. Clean build and untracked files and folders
 @echo 12. Insert commands manually
 @echo 13. Exit
+@set choice=0
 @set /p choice="Enter your Choice here:"
 @if "%choice%"=="1" GOTO Start_VS
 @if "%choice%"=="2" GOTO Update_local
@@ -74,6 +75,7 @@ git rebase master
 :Update_remote
 git remote add upstream https://github.com/pal1000/ppsspp.git
 git fetch upstream
+@set push=n
 @set /p push=Update your fork (y/n):
 if /I "%push%"=="y" git push -f --all upstream
 @GOTO Choice
