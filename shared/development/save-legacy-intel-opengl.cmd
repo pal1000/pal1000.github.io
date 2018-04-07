@@ -39,7 +39,7 @@ git clone https://github.com/pal1000/save-legacy-intel-opengl.git save-legacy-in
 @GOTO Choice
 
 :Update_local
-git pull -v --progress origin
+git pull -v --progress origin master
 @GOTO Choice
 
 :Update_remote
