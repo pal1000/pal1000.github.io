@@ -60,8 +60,16 @@ script.onload = function(){
 if(Hls.isSupported()) {
     var video = document.getElementById('video');
     var hls = new Hls();
-    hls.loadSource(media);
     hls.attachMedia(video);
+    var playcounter=0;
+    video.addEventListener(
+    'play',
+    function() {
+        if (playcounter==0) hls.loadSource(media);
+        video.play();
+        playcounter=1;
+    },
+    false);
 }}
 document.body.appendChild(script);
 }
