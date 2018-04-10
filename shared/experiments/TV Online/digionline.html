@@ -2,15 +2,17 @@
 </head><body>
 <script type='text/javascript' src='../../../index.js'></script>
 <script>
-
+var maxindex=6;
 function getchprop(propname,index){
-var ret=''
+var ret='';
 if (propname=='fchname'){
 if (index==0) ret='Disney Channel';
 if (index==1) ret='Disney Junior';
 if (index==2) ret='Nickelodeon';
 if (index==3) ret='Minimax';
 if (index==4) ret='Megamax';
+if (index==5) ret='Cartoon Network';
+if (index==6) ret='Boomerang';
 }
 if (propname=='chname'){
 if (index==0) ret='disneychannel';
@@ -18,6 +20,8 @@ if (index==1) ret='disneyjunior';
 if (index==2) ret='nickelodeon';
 if (index==3) ret='minimax';
 if (index==4) ret='megamax';
+if (index==5) ret='cartoonnetwork';
+if (index==6) ret='boomerang';
 }
 if (propname=='chid'){
 if (index==0) ret=17;
@@ -25,6 +29,12 @@ if (index==1) ret=18;
 if (index==2) ret=28;
 if (index==3) ret=37;
 if (index==4) ret=47;
+if (index==5) ret=89;
+if (index==6) ret=90;
+}
+if (propname=='edge'){
+if (index>=0&&index<=4) ret=2;
+if (index>=5&&index<=maxindex) ret=3;
 }
 if (propname=='qname'){
 if (index==0) ret='lq';
@@ -42,7 +52,6 @@ if (index==1) ret='HLS-JS HTTPS 1';
 if (index==2) ret='HLS-JS HTTPS 2';
 if (index==3) ret='HLS-JS HTTP 1';
 if (index==4) ret='HLS-JS HTTP 2';
-
 }
 return ret;
 }
@@ -65,7 +74,7 @@ if (!$_GET('player')=='') player=$_GET('player');
 
 document.write("Channel<select id='channel'></select>");
 channelselect = document.getElementById('channel');
-for(i=0;i<5;i++) channelselect.options[channelselect.options.length] = new Option(getchprop('fchname',i),i);
+for(i=0;i<=maxindex;i++) channelselect.options[channelselect.options.length] = new Option(getchprop('fchname',i),i);
 
 document.write("Quality<select id='quality'></select>");
 qualityselect = document.getElementById('quality');
@@ -81,7 +90,7 @@ qualityselect.selectedIndex=quality;
 playerselect.selectedIndex=player;
 
 if(!channel==''){
-   var mediafile="http://82.76.40.81/digiedge2/"+getchprop('chname',channel)+"e"+getchprop('qname',quality)+"/index.m3u8?is="+getchprop('chid',channel)+"&src=digi-online.ro&t=00000000000000000000000000000000";
+   var mediafile="http://82.76.40.81/digiedge"+getchprop('edge',channel)+"/"+getchprop('chname',channel)+"e"+getchprop('qname',quality)+"/index.m3u8?is="+getchprop('chid',channel)+"&src=digi-online.ro&t=00000000000000000000000000000000";
    document.write("<center><a href='"+mediafile+"'>Stream URL</a>&nbsp;&nbsp;&nbsp;<a href='"+window.location+"'>Reload</a></center>");
    if(player==0) document.write("<iframe src='../../../tools/jwembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&isembedded=1' width='97%' height='97%' allowfullscreen='true'/>");
    if(player>0) document.write("<iframe src='../../../tools/hlsembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&mirror="+parseInt(player-1)+"&isembedded=1' width='97%' height='97%' allowfullscreen='true'/>");
