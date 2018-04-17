@@ -6,11 +6,13 @@ function getchprop(propname,index){
 var ret='';
 if (propname=='serveraddress'){
 if (index==0) ret='https://edge81.rcs-rds.ro';
-if (index==1) ret='http://82.76.40.81';
+if (index==1) ret='http://edge81.rdsnet.ro';
+if (index==2) ret='http://82.76.40.81';
 }
 if (propname=='serverprotocol'){
 if (index==0) ret='HTTPS';
-if (index==1) ret='HTTP';
+if (index==1) ret='HTTP 1';
+if (index==2) ret='HTTP 2';
 }
 if (propname=='fchname'){
 if (index==0) ret='Disney Channel';
@@ -77,14 +79,14 @@ var server=0;
 var channel=0;
 var quality=1;
 var player=0;
-if (!$_GET('server')=='') channel=$_GET('server');
+if (!$_GET('server')=='') server=$_GET('server');
 if (!$_GET('channel')=='') channel=$_GET('channel');
 if (!$_GET('quality')=='') quality=$_GET('quality');
 if (!$_GET('player')=='') player=$_GET('player');
 
 document.write("Server<select id='server'></select>");
 serverselect = document.getElementById('server');
-for(i=0;i<=1;i++) serverselect.options[serverselect.options.length] = new Option(getchprop('serverprotocol',i),i);
+for(i=0;i<=2;i++) serverselect.options[serverselect.options.length] = new Option(getchprop('serverprotocol',i),i);
 
 document.write("Channel<select id='channel'></select>");
 channelselect = document.getElementById('channel');
