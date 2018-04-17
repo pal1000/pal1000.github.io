@@ -2,9 +2,16 @@
 </head><body>
 <script type='text/javascript' src='../../../index.js'></script>
 <script>
-var maxindex=6;
 function getchprop(propname,index){
 var ret='';
+if (propname=='serveraddress'){
+if (index==0) ret='https://edge81.rcs-rds.ro';
+if (index==1) ret='http://82.76.40.81';
+}
+if (propname=='serverprotocol'){
+if (index==0) ret='HTTPS';
+if (index==1) ret='HTTP';
+}
 if (propname=='fchname'){
 if (index==0) ret='Disney Channel';
 if (index==1) ret='Disney Junior';
@@ -34,7 +41,7 @@ if (index==6) ret=90;
 }
 if (propname=='edge'){
 if (index>=0&&index<=4) ret=2;
-if (index>=5&&index<=maxindex) ret=3;
+if (index>=5&&index<=6) ret=3;
 }
 if (propname=='qname'){
 if (index==0) ret='lq';
@@ -58,23 +65,30 @@ return ret;
 
 function submit(){
 var submitURL=window.location.protocol + '//' + window.location.hostname + window.location.pathname;
-submitURL+=formsubmit('channel',true);
+submitURL+=formsubmit('server',true);
+submitURL+=formsubmit('channel');
 submitURL+=formsubmit('quality');
 submitURL+=formsubmit('player');
 window.location=submitURL;
 window.location;
 }
 
+var server=0;
 var channel=0;
 var quality=1;
 var player=0;
+if (!$_GET('server')=='') channel=$_GET('server');
 if (!$_GET('channel')=='') channel=$_GET('channel');
 if (!$_GET('quality')=='') quality=$_GET('quality');
 if (!$_GET('player')=='') player=$_GET('player');
 
+document.write("Server<select id='server'></select>");
+serverselect = document.getElementById('server');
+for(i=0;i<=1;i++) serverselect.options[serverselect.options.length] = new Option(getchprop('serverprotocol',i),i);
+
 document.write("Channel<select id='channel'></select>");
 channelselect = document.getElementById('channel');
-for(i=0;i<=maxindex;i++) channelselect.options[channelselect.options.length] = new Option(getchprop('fchname',i),i);
+for(i=0;i<=6;i++) channelselect.options[channelselect.options.length] = new Option(getchprop('fchname',i),i);
 
 document.write("Quality<select id='quality'></select>");
 qualityselect = document.getElementById('quality');
@@ -85,12 +99,13 @@ playerselect = document.getElementById('player');
 for(i=0;i<5;i++) playerselect.options[playerselect.options.length] = new Option(getchprop('player',i),i);
 
 document.write("<input type='button' value='Submit' onclick='submit()'><br>");
+serverselect.selectedIndex=server;
 channelselect.selectedIndex=channel;
 qualityselect.selectedIndex=quality;
 playerselect.selectedIndex=player;
 
 if(!channel==''){
-   var mediafile="http://82.76.40.81/digiedge"+getchprop('edge',channel)+"/"+getchprop('chname',channel)+"e"+getchprop('qname',quality)+"/index.m3u8?is="+getchprop('chid',channel)+"&src=digi-online.ro&t=00000000000000000000000000000000";
+   var mediafile=getchprop('serveraddress',server)+"/digiedge"+getchprop('edge',channel)+"/"+getchprop('chname',channel)+"e"+getchprop('qname',quality)+"/index.m3u8?is="+getchprop('chid',channel)+"&src=digi-online.ro&t=00000000000000000000000000000000";
    document.write("<center><a href='"+mediafile+"'>Stream URL</a>&nbsp;&nbsp;&nbsp;<a href='"+window.location+"'>Reload</a></center>");
    if(player==0) document.write("<iframe src='../../../tools/jwembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&isembedded=1' width='97%' height='97%' allowfullscreen='true'/>");
    if(player>0) document.write("<iframe src='../../../tools/hlsembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&mirror="+parseInt(player-1)+"&isembedded=1' width='97%' height='97%' allowfullscreen='true'/>");
