@@ -71,6 +71,7 @@ submitURL+=formsubmit('server',true);
 submitURL+=formsubmit('channel');
 submitURL+=formsubmit('quality');
 submitURL+=formsubmit('player');
+submitURL+="&stop=0";
 window.location=submitURL;
 window.location;
 }
@@ -79,10 +80,12 @@ var server=0;
 var channel=0;
 var quality=1;
 var player=0;
+var stop=0;
 if (!$_GET('server')=='') server=$_GET('server');
 if (!$_GET('channel')=='') channel=$_GET('channel');
 if (!$_GET('quality')=='') quality=$_GET('quality');
 if (!$_GET('player')=='') player=$_GET('player');
+if (!$_GET('stop')=='') stop=$_GET('stop');
 
 document.write("Server<select id='server'></select>");
 serverselect = document.getElementById('server');
@@ -100,7 +103,8 @@ document.write("Player<select id='player'></select>");
 playerselect = document.getElementById('player');
 for(i=0;i<5;i++) playerselect.options[playerselect.options.length] = new Option(getchprop('player',i),i);
 
-document.write("<input type='button' value='Submit' onclick='submit()'><br>");
+document.write("<input type='hidden' id='stop' value='0'/>");
+document.write("<input type='button' value='Submit' onclick='submit()'/><br/>");
 serverselect.selectedIndex=server;
 channelselect.selectedIndex=channel;
 qualityselect.selectedIndex=quality;
@@ -108,9 +112,9 @@ playerselect.selectedIndex=player;
 
 if(!channel==''){
    var mediafile=getchprop('serveraddress',server)+"/digiedge"+getchprop('edge',channel)+"/"+getchprop('chname',channel)+"e"+getchprop('qname',quality)+"/index.m3u8?is="+getchprop('chid',channel)+"&src=digi-online.ro&t=00000000000000000000000000000000";
-   document.write("<center><a href='"+mediafile+"'>Stream URL</a>&nbsp;&nbsp;&nbsp;<a href='"+window.location+"'>Reload</a></center>");
-   if(player==0) document.write("<iframe src='../../../tools/jwembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&isembedded=1' width='97%' height='97%' allowfullscreen='true'/>");
-   if(player>0) document.write("<iframe src='../../../tools/hlsembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&mirror="+parseInt(player-1)+"&isembedded=1' width='97%' height='97%' allowfullscreen='true'/>");
+   document.write("<center><a href='"+mediafile+"'>Stream URL</a>&nbsp;&nbsp;&nbsp;<a href='"+window.location.toString().substr(0,window.location.toString().length-1)+"0'>Reload</a>&nbsp;&nbsp;&nbsp;<a href='"+window.location.toString().substr(0,window.location.toString().length-1)+"1'>Stop</a></center>");
+   if(player==0&&stop==0) document.write("<iframe src='../../../tools/jwembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&isembedded=1' width='97%' height='97%' allowfullscreen='true'/>");
+   if(player>0&&stop==0) document.write("<iframe src='../../../tools/hlsembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&mirror="+parseInt(player-1)+"&isembedded=1' width='97%' height='97%' allowfullscreen='true'/>");
 }
 </script>
 </body></html>
