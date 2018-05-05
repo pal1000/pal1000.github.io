@@ -8,7 +8,9 @@
 @where /q git.exe
 @IF ERRORLEVEL 1 exit
 @set ERRORLEVEL=0
-@cd projects\mesa
+@cd projects
+@IF NOT EXIST mesa md mesa
+@cd mesa
 @If NOT exist "mesa-dist-win"\ (
 git clone https://github.com/pal1000/mesa-dist-win.git mesa-dist-win
 )
