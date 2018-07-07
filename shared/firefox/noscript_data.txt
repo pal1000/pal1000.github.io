@@ -1,0 +1,92 @@
+{
+  "policy": {
+    "DEFAULT": {
+      "capabilities": [],
+      "temp": false
+    },
+    "TRUSTED": {
+      "capabilities": [
+        "script",
+        "media",
+        "frame",
+        "font",
+        "fetch",
+        "other"
+      ],
+      "temp": false
+    },
+    "UNTRUSTED": {
+      "capabilities": [],
+      "temp": false
+    },
+    "sites": {
+      "trusted": [
+        "https://www.csoonline.com",
+        "https://hqq.watch",
+        "https://c.hqq.watch",
+        "§:vkcache.com",
+        "https://html5-player.libsyn.com",
+        "https://static.libsyn.com",
+        "https://traffic.libsyn.com",
+        "https://secure-hwcdn.libsyn.com",
+        "§:googlevideo.com",
+        "https://www.horizon.tv",
+        "https://web-api-pepper.horizon.tv",
+        "https://video-dev.github.io",
+        "https://disqus.com",
+        "https://c.disquscdn.com",
+        "https://players.brightcove.net",
+        "https://edge.api.brightcove.com",
+        "https://manifest.prod.boltdns.net",
+        "https://house-fastly-signed-us-east-1-prod.brightcovecdn.com",
+        "https://blog.malwarebytes.com",
+        "https://www.malwarebytes.com",
+        "https://malwarebytesunpacked.disqus.com",
+        "https://pal1000.github.io",
+        "https://openload.co",
+        "https://tt1.openload.co",
+        "§:oloadcdn.net",
+        "https://ssl.p.jwpcdn.com",
+        "https://content.jwplatform.com",
+        "http://digiapis.rcs-rds.ro",
+        "https://edge81.rcs-rds.ro",
+        "https://widget.sndcdn.com",
+        "https://w.soundcloud.com",
+        "https://api.soundcloud.com",
+        "https://cf-hls-media.sndcdn.com"
+      ],
+      "untrusted": [],
+      "custom": {
+        "https://securelist.com": {
+          "capabilities": [
+            "script",
+            "media",
+            "frame",
+            "font",
+            "fetch",
+            "other",
+            "webgl"
+          ],
+          "temp": false
+        }
+      }
+    },
+    "enforced": true,
+    "autoAllowTop": false
+  },
+  "local": {
+    "debug": true,
+    "showCtxMenuItem": false,
+    "showCountBadge": true,
+    "showFullAddresses": true,
+    "storage": "local",
+    "uuid": "ed2ec63c-b0c4-4e35-b8a4-62897e48c7bc"
+  },
+  "sync": {
+    "global": false,
+    "xss": true,
+    "clearclick": true,
+    "storage": "sync"
+  },
+  "xssUserChoices": {}
+}
