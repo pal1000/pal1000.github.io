@@ -11,16 +11,6 @@ REM  --> Check for permissions
 
 REM --> If error flag set, we do not have admin.
 if '%errorlevel%' NEQ '0' (
-    echo Install-PackageProvider -Name nuget > temp.txt
-    echo Install-Module -Name SpeculationControl >> temp.txt
-    echo $SaveExecutionPolicy = Get-ExecutionPolicy >> temp.txt
-    echo Set-ExecutionPolicy RemoteSigned -Scope Currentuser >> temp.txt
-    echo Import-Module SpeculationControl >> temp.txt
-    echo Get-SpeculationControlSettings >> temp.txt
-    echo Set-ExecutionPolicy $SaveExecutionPolicy -Scope Currentuser >> temp.txt
-    echo UnInstall-Module -Name SpeculationControl >> temp.txt
-    echo exit >> temp.txt
-    echo. >> temp.txt
     echo Requesting administrative privileges...
     goto UACPrompt
 ) else ( goto gotAdmin )
@@ -39,6 +29,17 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------
 @IF EXIST "%ProgramFiles%\PackageManagement\ProviderAssemblies\nuget" RD /S /Q "%ProgramFiles%\PackageManagement\ProviderAssemblies\nuget"
-@powershell
+(
+@echo Install-PackageProvider -Name nuget
+@echo Y
+@echo Install-Module -Name SpeculationControl
+@echo Y
+@echo $SaveExecutionPolicy = Get-ExecutionPolicy -Scope CurrentUser
+@echo Set-ExecutionPolicy Bypass -Scope CurrentUser
+@echo Import-Module SpeculationControl
+@echo Get-SpeculationControlSettings
+@echo Set-ExecutionPolicy $SaveExecutionPolicy -Scope CurrentUser
+@echo UnInstall-Module -Name SpeculationControl
+) | powershell
 @IF EXIST "%ProgramFiles%\PackageManagement\ProviderAssemblies\nuget" RD /S /Q "%ProgramFiles%\PackageManagement\ProviderAssemblies\nuget"
 @pause
