@@ -3,7 +3,7 @@
 @IF ERRORLEVEL 1 cd ..\..\..\..\
 @set ERRORLEVEL=0
 @where /q git.exe
-@IF ERRORLEVEL 1 "%CD%\Git\git-cmd.exe" %0
+@IF ERRORLEVEL 1 "%CD%\Git\git-cmd.exe" --command=%0
 @set ERRORLEVEL=0
 @where /q git.exe
 @IF ERRORLEVEL 1 exit
