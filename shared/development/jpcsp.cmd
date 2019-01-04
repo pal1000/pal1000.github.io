@@ -8,7 +8,7 @@
 @where /q git.exe
 @IF ERRORLEVEL 1 exit
 @set ERRORLEVEL=0
-@set PATH=%CD%\..\Java\JDK\bin;%ProgramFiles%\Java\JDK\bin;%CD%\..\7-ZipPortable\App\7-zip64;%ProgramFiles%\7-Zip;%PATH%
+@set PATH=%CD%\..\Java\JDK\bin;%ProgramFiles%\Java\JDK\bin;%CD%\..\7-ZipPortable\App\7-zip64;%CD%\..\7-ZipPortable\App\64;%ProgramFiles%\7-Zip;%PATH%
 @cd projects
 @If NOT exist "jpcsp"\ (
 git clone https://github.com/jpcsp/jpcsp.git jpcsp
