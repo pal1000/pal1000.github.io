@@ -19,8 +19,8 @@ git clone https://github.com/pal1000/mesa-dist-win.git mesa-dist-win
 )
 
 :Choice
-@ECHO. 
-@echo ----------------------- 
+@ECHO.
+@echo -----------------------
 @echo What do you want to do?
 @echo -----------------------
 @echo 1. Build Mesa3D (normal mode)
@@ -69,7 +69,7 @@ git gui
 
 :wipe_uncommited_changes
 git reset --hard
-@GOTO Choice 
+@GOTO Choice
 
 :Command
 @start %COMSPEC%
