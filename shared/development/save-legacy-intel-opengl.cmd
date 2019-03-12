@@ -17,8 +17,8 @@ git clone https://github.com/pal1000/save-legacy-intel-opengl.git save-legacy-in
 )
 
 :Choice
-@ECHO. 
-@echo ----------------------- 
+@ECHO.
+@echo -----------------------
 @echo What do you want to do?
 @echo -----------------------
 @echo 1. Update local repository
@@ -55,7 +55,7 @@ git gui
 
 :wipe_uncommited_changes
 git reset --hard
-@GOTO Choice 
+@GOTO Choice
 
 :Command
 @start %COMSPEC%

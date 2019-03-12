@@ -21,8 +21,8 @@ git submodule update --init --recursive
 git branch work
 
 :Choice
-@ECHO. 
-@echo ----------------------- 
+@ECHO.
+@echo -----------------------
 @echo What do you want to do?
 @echo -----------------------
 @echo 1. Start Visual Studio
@@ -102,7 +102,7 @@ copy "PPSSPPWindows.exe" ..\..\..\ppsspp
 :wipe_uncommited_changes
 git reset --hard
 git submodule foreach --recursive git reset --hard
-@GOTO Choice 
+@GOTO Choice
 
 :Wipe_local_commits
 git checkout master
