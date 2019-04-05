@@ -65,11 +65,20 @@
         "https://f.vimeocdn.com",
         "https://www.youtube-nocookie.com",
         "https://digiapis.rcs-rds.ro",
-        "https://pal1000.github.io"
+        "https://pal1000.github.io",
+        "https://www.feedroll.com",
+        "https://players.brightcove.net",
+        "https://edge.api.brightcove.com",
+        "https://www.catalog.update.microsoft.com",
+        "file:///C:/Software/Development/projects/pal1000.github.io/tools/strlen/index.html",
+        "https://uup.rg-adguard.net",
+        "https://support.microsoft.com",
+        "https://block.malwarebytes.com"
       ],
       "untrusted": [
         "https://www.googletagmanager.com",
-        "https://www.google-analytics.com"
+        "https://www.google-analytics.com",
+        "https://fonts.gstatic.com"
       ],
       "custom": {
         "https://lqxgcyk808.execute-api.us-east-1.amazonaws.com": {
@@ -94,6 +103,10 @@
   "sync": {
     "global": false,
     "xss": true,
+    "cascadeRestrictions": false,
+    "xssScanRequestBody": true,
+    "xssBlockUnscannedPOST": false,
+    "overrideTorBrowserPolicy": false,
     "clearclick": true,
     "storage": "sync"
   },
