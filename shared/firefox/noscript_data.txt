@@ -73,17 +73,34 @@
         "file:///C:/Software/Development/projects/pal1000.github.io/tools/strlen/index.html",
         "https://uup.rg-adguard.net",
         "https://support.microsoft.com",
-        "https://block.malwarebytes.com"
+        "https://block.malwarebytes.com",
+        "https://openload.co",
+        "https://text-compare.com",
+        "https://www1.putlockerr.is",
+        "https://www5.putlockerr.is",
+        "https://vidsrc.me",
+        "https://www.vidsource.me",
+        "https://www.mailinator.com",
+        "https://captcha.realtek.com",
+        "http://portal.just.ro",
+        "https://tt1.openload.co"
       ],
       "untrusted": [
-        "https://www.googletagmanager.com",
         "https://www.google-analytics.com",
-        "https://fonts.gstatic.com"
+        "https://fonts.gstatic.com",
+        "https://www.googletagmanager.com",
+        "https://www.googletagservices.com"
       ],
       "custom": {
         "https://lqxgcyk808.execute-api.us-east-1.amazonaws.com": {
           "capabilities": [
             "fetch"
+          ],
+          "temp": false
+        },
+        "https://fvs.io/redirector": {
+          "capabilities": [
+            "media"
           ],
           "temp": false
         }
@@ -103,7 +120,7 @@
   "sync": {
     "global": false,
     "xss": true,
-    "cascadeRestrictions": false,
+    "cascadeRestrictions": true,
     "xssScanRequestBody": true,
     "xssBlockUnscannedPOST": false,
     "overrideTorBrowserPolicy": false,
