@@ -83,13 +83,20 @@
         "https://www.mailinator.com",
         "https://captcha.realtek.com",
         "http://portal.just.ro",
-        "https://tt1.openload.co"
+        "https://tt1.openload.co",
+        "https://vidlox.me",
+        "https://www.station-drivers.com",
+        "https://station-drivers.com",
+        "https://bl.rutube.ru",
+        "https://rutube.ru",
+        "https://static.rutube.ru"
       ],
       "untrusted": [
         "https://www.google-analytics.com",
         "https://fonts.gstatic.com",
         "https://www.googletagmanager.com",
-        "https://www.googletagservices.com"
+        "https://www.googletagservices.com",
+        "https://chromium.woolyss.com"
       ],
       "custom": {
         "https://lqxgcyk808.execute-api.us-east-1.amazonaws.com": {
@@ -110,12 +117,12 @@
     "autoAllowTop": false
   },
   "local": {
-    "debug": true,
+    "debug": false,
     "showCtxMenuItem": false,
     "showCountBadge": true,
     "showFullAddresses": true,
     "storage": "local",
-    "uuid": "f9c6f495-4ef9-4c14-8e6a-0170651e1943"
+    "uuid": "d8c84118-eef1-44c1-bf19-6394e826fe0a"
   },
   "sync": {
     "global": false,
