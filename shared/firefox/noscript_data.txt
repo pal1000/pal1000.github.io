@@ -95,8 +95,7 @@
         "https://www.google-analytics.com",
         "https://fonts.gstatic.com",
         "https://www.googletagmanager.com",
-        "https://www.googletagservices.com",
-        "https://chromium.woolyss.com"
+        "https://www.googletagservices.com"
       ],
       "custom": {
         "https://lqxgcyk808.execute-api.us-east-1.amazonaws.com": {
