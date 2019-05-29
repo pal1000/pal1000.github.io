@@ -89,7 +89,9 @@
         "https://station-drivers.com",
         "https://bl.rutube.ru",
         "https://rutube.ru",
-        "https://static.rutube.ru"
+        "https://static.rutube.ru",
+        "https://github.githubassets.com",
+        "https://github.com"
       ],
       "untrusted": [
         "https://www.google-analytics.com",
@@ -127,10 +129,10 @@
     "global": false,
     "xss": true,
     "cascadeRestrictions": true,
-    "xssScanRequestBody": true,
-    "xssBlockUnscannedPOST": false,
     "overrideTorBrowserPolicy": false,
     "clearclick": true,
+    "xssScanRequestBody": true,
+    "xssBlockUnscannedPOST": false,
     "storage": "sync"
   },
   "xssUserChoices": {}
