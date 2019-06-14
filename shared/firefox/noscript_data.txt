@@ -123,7 +123,7 @@
     "showCountBadge": true,
     "showFullAddresses": true,
     "storage": "local",
-    "uuid": "d8c84118-eef1-44c1-bf19-6394e826fe0a"
+    "uuid": "ee5b21c2-107e-4636-b055-3bb97d22e1e4"
   },
   "sync": {
     "global": false,
@@ -131,8 +131,6 @@
     "cascadeRestrictions": true,
     "overrideTorBrowserPolicy": false,
     "clearclick": true,
-    "xssScanRequestBody": true,
-    "xssBlockUnscannedPOST": false,
     "storage": "sync"
   },
   "xssUserChoices": {}
