@@ -106,13 +106,14 @@
         "http://tv4embed.com",
         "http://online.123tv.live",
         "https://www.streamlive.to",
-        "https://nl2.streamlive.to"
+        "https://nl2.streamlive.to",
+        "https://vkcdnservice.appspot.com.storage.googleapis.com"
       ],
       "untrusted": [
         "https://www.google-analytics.com",
-        "https://fonts.gstatic.com",
         "https://www.googletagmanager.com",
-        "https://www.googletagservices.com"
+        "https://www.googletagservices.com",
+        "https://fonts.gstatic.com"
       ],
       "custom": {
         "https://lqxgcyk808.execute-api.us-east-1.amazonaws.com": {
