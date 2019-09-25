@@ -107,7 +107,9 @@
         "http://online.123tv.live",
         "https://www.streamlive.to",
         "https://nl2.streamlive.to",
-        "https://vkcdnservice.appspot.com.storage.googleapis.com"
+        "https://vkcdnservice.appspot.com.storage.googleapis.com",
+        "http://peer2.savitar.tv",
+        "http://peer3.savitar.tv"
       ],
       "untrusted": [
         "https://www.google-analytics.com",
