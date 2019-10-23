@@ -109,7 +109,12 @@
         "https://nl2.streamlive.to",
         "https://vkcdnservice.appspot.com.storage.googleapis.com",
         "http://peer2.savitar.tv",
-        "http://peer3.savitar.tv"
+        "http://peer3.savitar.tv",
+        "http://peer1.savitar.tv",
+        "https://cembed.cartooncrazy.tv",
+        "https://www1.cartooncrazy.tv",
+        "https://player.cartooncrazy.net",
+        "https://wwwstatic.chia-anime.tv"
       ],
       "untrusted": [
         "https://www.google-analytics.com",
