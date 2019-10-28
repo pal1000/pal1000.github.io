@@ -99,7 +99,7 @@ if (!$_GET('stop')=='') stop=$_GET('stop');
 
 document.write("Server<select id='server'></select>");
 serverselect = document.getElementById('server');
-for(i=0;i<=2;i++) serverselect.options[serverselect.options.length] = new Option(getchprop('servername',i),i);
+for(i=0;i<=7;i++) serverselect.options[serverselect.options.length] = new Option(getchprop('servername',i),i);
 
 document.write("Channel<select id='channel'></select>");
 channelselect = document.getElementById('channel');
