@@ -5,14 +5,24 @@
 function getchprop(propname,index){
 var ret='';
 if (propname=='serveraddress'){
-if (index==0) ret='https://edge81.rcs-rds.ro';
-if (index==1) ret='http://edge81.rdsnet.ro';
-if (index==2) ret='http://82.76.40.81';
+if (index==0) ret='https://edge30.rcs-rds.ro';
+if (index==1) ret='https://edge81.rcs-rds.ro';
+if (index==2) ret='http://edge30.rcs-rds.ro';
+if (index==3) ret='http://edge81.rcs-rds.ro';
+if (index==4) ret='http://edge30.rdsnet.ro';
+if (index==5) ret='http://edge81.rdsnet.ro';
+if (index==6) ret='http://82.76.252.30';
+if (index==7) ret='http://82.76.40.81';
 }
-if (propname=='serverprotocol'){
-if (index==0) ret='HTTPS';
-if (index==1) ret='HTTP 1';
-if (index==2) ret='HTTP 2';
+if (propname=='servername'){
+if (index==0) ret='HTTPS New Server New Domain';
+if (index==1) ret='HTTPS Old Server New Domain';
+if (index==2) ret='HTTP New Server New Domain';
+if (index==3) ret='HTTP Old Server New Domain';
+if (index==4) ret='HTTP New Server Old Domain';
+if (index==5) ret='HTTP Old Server Old Domain';
+if (index==6) ret='HTTP New Server IP Address';
+if (index==7) ret='HTTP Old Server IP Address';
 }
 if (propname=='fchname'){
 if (index==0) ret='Disney Channel';
@@ -89,7 +99,7 @@ if (!$_GET('stop')=='') stop=$_GET('stop');
 
 document.write("Server<select id='server'></select>");
 serverselect = document.getElementById('server');
-for(i=0;i<=2;i++) serverselect.options[serverselect.options.length] = new Option(getchprop('serverprotocol',i),i);
+for(i=0;i<=2;i++) serverselect.options[serverselect.options.length] = new Option(getchprop('servername',i),i);
 
 document.write("Channel<select id='channel'></select>");
 channelselect = document.getElementById('channel');
