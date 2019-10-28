@@ -114,7 +114,8 @@
         "https://cembed.cartooncrazy.tv",
         "https://www1.cartooncrazy.tv",
         "https://player.cartooncrazy.net",
-        "https://wwwstatic.chia-anime.tv"
+        "https://wwwstatic.chia-anime.tv",
+        "https://edge30.rcs-rds.ro"
       ],
       "untrusted": [
         "https://www.google-analytics.com",
