@@ -35,6 +35,8 @@ if '%errorlevel%' NEQ '0' (
 @GOTO Web-filter
 
 :Menu
+@cls
+@pause
 @echo Select action:
 @echo 1. Start Web Filter
 @echo 2. Stop web Filter
@@ -54,9 +56,8 @@ if '%errorlevel%' NEQ '0' (
 @GOTO Menu
 
 :Unrestricted
-@REG ADD "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\%interface%" /v NameServer /t REG_SZ /d "" /f
+@REG ADD "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\%interface%" /v NameServer /t REG_SZ /d "1.1.1.1 1.0.0.1" /f
 @start /d "c:\nxfilter\bin\" shutdown.bat ^&^& @exit
-)
 @GOTO Menu
 
 :Start-Hola
