@@ -59,7 +59,11 @@ script.src = getmirrors(mirror);
 script.onload = function(){
 if(Hls.isSupported()) {
     var video = document.getElementById('video');
-    var hls = new Hls();
+    var config = {
+       maxMaxBufferLength : 3600,
+       maxBufferSize : 1024*1024*1024
+    };
+    var hls = new Hls(config);
     hls.attachMedia(video);
     var playcounter=0;
     video.addEventListener(
