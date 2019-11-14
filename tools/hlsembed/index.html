@@ -60,8 +60,10 @@ script.onload = function(){
 if(Hls.isSupported()) {
     var video = document.getElementById('video');
     var config = {
-       maxMaxBufferLength : 3600,
-       maxBufferSize : 1024*1024*1024
+       liveBackBufferLength : 3600,
+       maxBufferLength: 30,
+       maxBufferSize : 1024*1024*1024,
+       maxMaxBufferLength : 3600
     };
     var hls = new Hls(config);
     hls.attachMedia(video);
