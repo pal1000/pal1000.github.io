@@ -69,6 +69,8 @@ jwparams['autostart']=false;
 jwparams['mute']='false';
 jwparams['volume']='100';
 jwparams['playbackRateControls']=[0.75, 1, 1.12, 1.25, 1.5];
+jwparams['rewind']='Rewind';
+jwparams['liveBroadcast']='Live';
 
 jwplayer("container").setup(jwparams);
 if (!$_GET('isembedded')=='1') document.write(embedcode()+"<br><a href='index.html'>Restart</a><br>");
