@@ -21,7 +21,6 @@
     },
     "sites": {
       "trusted": [
-        "file:///C:/Software/Development/projects/pal1000.github.io/index.js",
         "file:///C:/Software/Development/projects/pal1000.github.io/shared/experiments/TV%20Online/digionline.html",
         "file:///C:/Software/Development/projects/pal1000.github.io/tools/hlsembed/index.html",
         "https://video-dev.github.io",
@@ -115,7 +114,10 @@
         "https://www1.cartooncrazy.tv",
         "https://player.cartooncrazy.net",
         "https://wwwstatic.chia-anime.tv",
-        "https://edge30.rcs-rds.ro"
+        "https://edge30.rcs-rds.ro",
+        "https://edge84.rcs-rds.ro",
+        "https://edge24.rcs-rds.ro",
+        "file:///C:/Software/Development/projects/pal1000.github.io/index.js"
       ],
       "untrusted": [
         "https://www.google-analytics.com",
@@ -133,6 +135,18 @@
         "https://fvs.io/redirector": {
           "capabilities": [
             "media"
+          ],
+          "temp": false
+        },
+        "https://openbenchmarking.org/embed.php": {
+          "capabilities": [
+            "script",
+            "media",
+            "frame",
+            "font",
+            "fetch",
+            "other",
+            "object"
           ],
           "temp": false
         }
