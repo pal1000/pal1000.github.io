@@ -117,13 +117,20 @@
         "https://edge30.rcs-rds.ro",
         "https://edge84.rcs-rds.ro",
         "https://edge24.rcs-rds.ro",
-        "file:///C:/Software/Development/projects/pal1000.github.io/index.js"
+        "file:///C:/Software/Development/projects/pal1000.github.io/index.js",
+        "https://peer1.ustv.to",
+        "https://peer3.ustv.to",
+        "https://peer2.ustv.to",
+        "https://majorgeekscom.disqus.com",
+        "https://hls-js.netlify.com"
       ],
       "untrusted": [
         "https://www.google-analytics.com",
         "https://www.googletagmanager.com",
         "https://www.googletagservices.com",
-        "https://fonts.gstatic.com"
+        "https://fonts.gstatic.com",
+        "https://pagead2.googlesyndication.com",
+        "https://ra.majorgeeks.com"
       ],
       "custom": {
         "https://lqxgcyk808.execute-api.us-east-1.amazonaws.com": {
