@@ -67,8 +67,7 @@ if (propname=='player'){
 if (index==0) ret='JW';
 if (index==1) ret='HLS-JS HTTPS 1';
 if (index==2) ret='HLS-JS HTTPS 2';
-if (index==3) ret='HLS-JS HTTP 1';
-if (index==4) ret='HLS-JS HTTP 2';
+if (index==3) ret='HLS-JS HTTP';
 }
 return ret;
 }
@@ -109,7 +108,7 @@ for(i=0;i<3;i++) qualityselect.options[qualityselect.options.length] = new Optio
 
 document.write("Player<select id='player'></select>");
 playerselect = document.getElementById('player');
-for(i=0;i<5;i++) playerselect.options[playerselect.options.length] = new Option(getchprop('player',i),i);
+for(i=0;i<4;i++) playerselect.options[playerselect.options.length] = new Option(getchprop('player',i),i);
 
 document.write("<input type='hidden' id='stop' value='0'/>");
 document.write("<input type='button' value='Submit' onclick='submit()'/><br/>");

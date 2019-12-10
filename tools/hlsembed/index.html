@@ -4,10 +4,9 @@
 <script>
 function getmirrors(index){
 var ret='';
-if (index==0) ret='https://video-dev.github.io/hls.js/latest/dist/hls.js';
+if (index==0) ret='https://hls-js.netlify.com/dist/hls.js';
 if (index==1) ret='https://cdn.jsdelivr.net/npm/hls.js@latest';
 if (index==2) ret='http://cdn.jsdelivr.net/npm/hls.js@latest';
-if (index==3) ret='http://streambox.fr/mse/hls.js/dist/hls.js';
 return ret;
 }
 var mediafile=decodeURIComponent($_GET('media'));
@@ -23,7 +22,7 @@ if (mediafile=='') {
                    "Enter player height:<input type='text' id='height' value='75%'/>");
     document.write("Cloud script mirror<select id='mirror'></select>");
     scriptmirrorselect = document.getElementById('mirror');
-    for(i=0;i<4;i++) scriptmirrorselect.options[scriptmirrorselect.options.length] = new Option(getmirrors(i),i);
+    for(i=0;i<3;i++) scriptmirrorselect.options[scriptmirrorselect.options.length] = new Option(getmirrors(i),i);
     document.write("<input type='hidden' id='isembedded' value='0'>"+
                     "<input type='button' value='Submit' onclick='submit()'><br>");
     scriptmirrorselect.selectedIndex=scriptmirror;  
