@@ -43,7 +43,6 @@
         "file:///C:/Software/Development/projects/pal1000.github.io/tools/iframe/index.html",
         "https://c.hqq.tv",
         "https://hqq.tv",
-        "§:vkcache.com",
         "https://player.hqq.tv",
         "https://arstechnica.com",
         "https://cdn.arstechnica.net",
@@ -122,7 +121,9 @@
         "https://peer3.ustv.to",
         "https://peer2.ustv.to",
         "https://majorgeekscom.disqus.com",
-        "https://hls-js.netlify.com"
+        "https://hls-js.netlify.com",
+        "§:vkcache.com",
+        "https://deliver.vkcdnservice.com"
       ],
       "untrusted": [
         "https://www.google-analytics.com",
@@ -168,7 +169,8 @@
     "showCountBadge": true,
     "showFullAddresses": true,
     "storage": "local",
-    "uuid": "ee5b21c2-107e-4636-b055-3bb97d22e1e4"
+    "uuid": "ee5b21c2-107e-4636-b055-3bb97d22e1e4",
+    "highContrast": false
   },
   "sync": {
     "global": false,
