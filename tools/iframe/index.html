@@ -4,8 +4,8 @@
 <script>
 
 var form="Enter iframe source URL: <input type='text' size='50' id='src'/><br>"+
-         "Enter width:<input type='text' id='width' value='75%'/>"+
-         "Enter height:<input type='text' id='height' value='75%'/>"+
+         "Enter width:<input type='text' id='width' value='"+Math.floor((window.screen.height*100)/window.screen.width)+"%'/>"+
+         "Enter height:<input type='text' id='height' value='"+Math.floor((window.screen.height*100)/window.screen.width)+"%'/>"+
          "<input type='button' value='Submit' onclick='submit()'><br>";
 document.write(form);
 
@@ -19,8 +19,8 @@ window.location;
 }
 if (!$_GET('src')==''){
     src=decodeURIComponent($_GET('src'));
-    var width='75%';
-    var height='75%';
+    var width=Math.floor((window.screen.height*100)/window.screen.width)+'%';
+    var height=Math.floor((window.screen.height*100)/window.screen.width)+'%';
     if (!$_GET('width')=='') width=decodeURIComponent($_GET('width'));
     if (!$_GET('height')=='') height=decodeURIComponent($_GET('height'));
     document.write("<iframe src='"+src+"' width='"+width+"' height='"+height+"' allowfullscreen='true'/><br>");

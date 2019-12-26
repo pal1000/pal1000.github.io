@@ -11,8 +11,8 @@ var form="Enter streamming server URL (if any):<input type='text' size='50' id='
                                   "<option value='playlist'>Playlist</option>"+
                           "</select>"+
          "Enter background image (ignored by playlists):<input type='text' size='50' id='image'/><br/>"+
-         "Enter player width:<input type='text' id='width' value='75%'/>"+
-         "Enter player height:<input type='text' id='height' value='75%'/>"+
+         "Enter player width:<input type='text' id='width' value='"+Math.floor((window.screen.height*100)/window.screen.width)+"%'/>"+
+         "Enter player height:<input type='text' id='height' value='"+Math.floor((window.screen.height*100)/window.screen.width)+"%'/>"+
          "Aspect ratio:<select id='ratio'>"+                                                 
                               "<option value='16:9'>16:9</option>"+
                               "<option value='4:3'>4:3</option>"+
@@ -21,8 +21,8 @@ var form="Enter streamming server URL (if any):<input type='text' size='50' id='
          "<input type='button' value='Submit' onclick='submit()'><br>";
 
 if ($_GET('media')=='') document.write(form);
-var width='75%';
-var height='75%';
+var width=Math.floor((window.screen.height*100)/window.screen.width)+'%';
+var height=Math.floor((window.screen.height*100)/window.screen.width)+'%';
 var ratio='16:9';
 if (!$_GET('width')=='') width=decodeURIComponent($_GET('width'));
 if (!$_GET('height')=='') height=decodeURIComponent($_GET('height'));

@@ -10,16 +10,16 @@ if (index==2) ret='http://cdn.jsdelivr.net/npm/hls.js@latest';
 return ret;
 }
 var mediafile=decodeURIComponent($_GET('media'));
-var width='75%';
-var height='75%';
+var width=Math.floor((window.screen.height*100)/window.screen.width)+'%';
+var height=Math.floor((window.screen.height*100)/window.screen.width)+'%';
 var scriptmirror=0;
 if (!$_GET('width')=='') width=decodeURIComponent($_GET('width'));
 if (!$_GET('height')=='') height=decodeURIComponent($_GET('height'));
 if (!$_GET('mirror')=='') scriptmirror=$_GET('mirror');
 if (mediafile=='') {
     document.write("Enter media file URL:<input type='text' size='50' id='media'/><br/>"+
-                   "Enter player width:<input type='text' id='width' value='75%'/>"+
-                   "Enter player height:<input type='text' id='height' value='75%'/>");
+                   "Enter player width:<input type='text' id='width' value='"+Math.floor((window.screen.height*100)/window.screen.width)+"%'/>"+
+                   "Enter player height:<input type='text' id='height' value='"+Math.floor((window.screen.height*100)/window.screen.width)+"%'/>");
     document.write("Cloud script mirror<select id='mirror'></select>");
     scriptmirrorselect = document.getElementById('mirror');
     for(i=0;i<3;i++) scriptmirrorselect.options[scriptmirrorselect.options.length] = new Option(getmirrors(i),i);
