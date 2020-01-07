@@ -11,7 +11,8 @@
         "frame",
         "font",
         "fetch",
-        "other"
+        "other",
+        "ping"
       ],
       "temp": false
     },
@@ -123,15 +124,17 @@
         "https://majorgeekscom.disqus.com",
         "https://hls-js.netlify.com",
         "§:vkcache.com",
-        "https://deliver.vkcdnservice.com"
+        "https://deliver.vkcdnservice.com",
+        "https://www1.cartooncrazy.net",
+        "https://player.cartooncrazy.tv"
       ],
       "untrusted": [
-        "https://www.google-analytics.com",
+        "https://ra.majorgeeks.com",
+        "https://pagead2.googlesyndication.com",
         "https://www.googletagmanager.com",
         "https://www.googletagservices.com",
         "https://fonts.gstatic.com",
-        "https://pagead2.googlesyndication.com",
-        "https://ra.majorgeeks.com"
+        "https://www.google-analytics.com"
       ],
       "custom": {
         "https://lqxgcyk808.execute-api.us-east-1.amazonaws.com": {
