@@ -2,11 +2,10 @@
 @set ERRORLEVEL=0
 @where /q git.exe
 @IF ERRORLEVEL 1 (
-@IF EXIST ..\..\..\..\Git\git-cmd.exe (
+@IF NOT EXIST ..\..\..\..\Git\git-cmd.exe exit
 @set oldcd=%cd%
 @cd ..\..\..\..\Git
 @git-cmd.exe --command=%0
-)
 )
 @if defined oldcd cd "%oldcd%"
 @if defined oldcd set "oldcd="
