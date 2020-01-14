@@ -1,19 +1,25 @@
-@TITLE Save Legacy Intel OpenGL
-@where /q git.exe
-@IF ERRORLEVEL 1 cd ..\..\..\..\
+@TITLE Save Legacy Intel graphics
 @set ERRORLEVEL=0
 @where /q git.exe
-@IF ERRORLEVEL 1 "%CD%\Git\git-cmd.exe" --command=%0
+@IF ERRORLEVEL 1 (
+@IF EXIST ..\..\..\..\Git\git-cmd.exe (
+@set oldcd=%cd%
+@cd ..\..\..\..\Git
+@git-cmd.exe --command=%0
+)
+)
+@if defined oldcd cd "%oldcd%"
+@if defined oldcd set "oldcd="
 @set ERRORLEVEL=0
 @where /q git.exe
 @IF ERRORLEVEL 1 exit
 @set ERRORLEVEL=0
-@cd projects
-@If NOT exist "save-legacy-intel-opengl"\ (
-git clone https://github.com/pal1000/save-legacy-intel-opengl.git save-legacy-intel-opengl
+@cd ..\..\..\
+@If NOT exist "save-legacy-intel-graphics"\ (
+git clone https://github.com/pal1000/save-legacy-intel-graphics.git save-legacy-intel-graphics
 )
-@If exist "save-legacy-intel-opengl"\ (
-@cd save-legacy-intel-opengl
+@If exist "save-legacy-intel-graphics"\ (
+@cd save-legacy-intel-graphics
 )
 
 :Choice

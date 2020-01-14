@@ -1,15 +1,22 @@
 @TITLE Jpcsp
-@where /q git.exe
-@IF ERRORLEVEL 1 cd ..\..\..\..\
 @set ERRORLEVEL=0
 @where /q git.exe
-@IF ERRORLEVEL 1 "%CD%\Git\git-cmd.exe" --command=%0
+@IF ERRORLEVEL 1 (
+@IF EXIST ..\..\..\..\Git\git-cmd.exe (
+@set oldcd=%cd%
+@cd ..\..\..\..\Git
+@git-cmd.exe --command=%0
+)
+)
+@if defined oldcd cd "%oldcd%"
+@if defined oldcd set "oldcd="
 @set ERRORLEVEL=0
 @where /q git.exe
 @IF ERRORLEVEL 1 exit
 @set ERRORLEVEL=0
-@set PATH=%CD%\..\Java\JDK\bin;%ProgramFiles%\Java\JDK\bin;%CD%\..\7-ZipPortable\App\7-zip64;%CD%\..\7-ZipPortable\App\64;%ProgramFiles%\7-Zip;%PATH%
-@cd projects
+@cd ..\..\..\..\..\
+@set PATH=%CD%\Java\JDK\bin;%ProgramFiles%\Java\JDK\bin;%CD%\7-ZipPortable\App\7-zip64;%CD%\7-ZipPortable\App\64;%ProgramFiles%\7-Zip;%PATH%
+@cd development\projects
 @If NOT exist "jpcsp"\ (
 git clone https://github.com/jpcsp/jpcsp.git jpcsp
 @cd jpcsp

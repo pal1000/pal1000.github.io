@@ -1,14 +1,20 @@
 @TITLE PCSX2
-@where /q git.exe
-@IF ERRORLEVEL 1 cd ..\..\..\..\
 @set ERRORLEVEL=0
 @where /q git.exe
-@IF ERRORLEVEL 1 "%CD%\Git\git-cmd.exe" --command=%0
+@IF ERRORLEVEL 1 (
+@IF EXIST ..\..\..\..\Git\git-cmd.exe (
+@set oldcd=%cd%
+@cd ..\..\..\..\Git
+@git-cmd.exe --command=%0
+)
+)
+@if defined oldcd cd "%oldcd%"
+@if defined oldcd set "oldcd="
 @set ERRORLEVEL=0
 @where /q git.exe
 @IF ERRORLEVEL 1 exit
 @set ERRORLEVEL=0
-@cd projects
+@cd ..\..\..\
 @If NOT exist "pcsx2"\ (
 git clone https://github.com/pcsx2/pcsx2.git pcsx2
 @cd pcsx2
