@@ -9,10 +9,10 @@
         "script",
         "media",
         "frame",
-        "font",
         "fetch",
         "other",
-        "ping"
+        "ping",
+        "object"
       ],
       "temp": false
     },
@@ -126,7 +126,10 @@
         "§:vkcache.com",
         "https://deliver.vkcdnservice.com",
         "https://www1.cartooncrazy.net",
-        "https://player.cartooncrazy.tv"
+        "https://player.cartooncrazy.tv",
+        "https://www.anaf.ro",
+        "https://pfinternet.anaf.ro",
+        "https://openbenchmarking.org"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -146,18 +149,6 @@
         "https://fvs.io/redirector": {
           "capabilities": [
             "media"
-          ],
-          "temp": false
-        },
-        "https://openbenchmarking.org/embed.php": {
-          "capabilities": [
-            "script",
-            "media",
-            "frame",
-            "font",
-            "fetch",
-            "other",
-            "object"
           ],
           "temp": false
         }
