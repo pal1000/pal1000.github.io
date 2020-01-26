@@ -73,14 +73,7 @@ return ret;
 }
 
 function submit(){
-var submitURL=window.location.protocol + '//' + window.location.hostname + window.location.pathname;
-submitURL+=formsubmit('server',true);
-submitURL+=formsubmit('channel');
-submitURL+=formsubmit('quality');
-submitURL+=formsubmit('player');
-submitURL+="&stop=0";
-window.location=submitURL;
-window.location;
+formsubmit(['server','channel','quality','player','stop']);
 }
 
 var server=0;

@@ -29,13 +29,7 @@ if (mediafile=='') {
 }
 
 function submit(){
-var submitURL=window.location.protocol + '//' + window.location.hostname + window.location.pathname;
-submitURL+=formsubmit('media',true);
-submitURL+=formsubmit('width');
-submitURL+=formsubmit('height');
-submitURL+=formsubmit('mirror');
-window.location=submitURL;
-window.location;
+formsubmit(['media','width','height','mirror']);
 }
 
 function embedcode(){
