@@ -21,3 +21,8 @@ function index(filename,extension){
          else list+="."+encodeURIComponent(extension)+"'>"+filename+"."+extension+"</a></li>";
          return list;
 }
+
+function embedcode(){
+var embedcode="&lt;iframe src=&apos;"+window.location.href+"&isembedded=1&apos; width=&apos;"+width+"&apos; height=&apos;"+height+"&apos; allowfullscreen=&apos;true&apos;/&gt;";
+return 'Embed code: <input type="text" size="'+window.screen.width/8+'" value="'+embedcode+'" readonly>';
+}

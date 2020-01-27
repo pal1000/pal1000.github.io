@@ -33,18 +33,6 @@ window.location=formsubmit(['media','width','height','mirror']);
 window.location;
 }
 
-function embedcode(){
-var embedURL=window.location.protocol + '//' + window.location.hostname + window.location.pathname;
-embedURL+='?media='+$_GET('media');
-embedURL+='&width='+$_GET('width');
-embedURL+='&height='+$_GET('height');
-embedURL+='&mirror='+$_GET('mirror');
-embedURL+='&isembedded=1';
-var embedcode="&lt;iframe src=&apos;"+embedURL+"&apos; width=&apos;"+width+"&apos; height=&apos;"+height+"&apos; allowfullscreen=&apos;true&apos;/&gt;";
-var out='Embed code: <input type="text" size="148" value="'+embedcode+'" readyonly>'; 
-return out;
-}
-
 function play(media,mirror){
 document.write('<video id="video" width="'+width+'" height="'+height+'" controls></video>');
 var script = document.createElement("script");
