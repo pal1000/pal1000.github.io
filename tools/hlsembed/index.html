@@ -40,7 +40,6 @@ script.type = "text/javascript";
 script.src = getmirrors(mirror);
 script.onload = function(){
 if(Hls.isSupported()) {
-    var video = document.getElementById('video');
     var config = {
        liveBackBufferLength : 3600,
        maxBufferLength: 30,
@@ -48,13 +47,13 @@ if(Hls.isSupported()) {
        maxMaxBufferLength : 3600
     };
     var hls = new Hls(config);
-    hls.attachMedia(video);
+    hls.attachMedia(document.getElementById('video'));
     var playcounter=0;
-    video.addEventListener(
+    document.getElementById('video').addEventListener(
     'play',
     function() {
         if (playcounter==0) hls.loadSource(media);
-        video.play();
+        document.getElementById('video').play();
         playcounter=1;
     },
     false);
