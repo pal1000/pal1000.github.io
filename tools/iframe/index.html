@@ -10,7 +10,8 @@ var form="Enter iframe source URL: <input type='text' size='50' id='src'/><br>"+
 document.write(form);
 
 function submit(){
-formsubmit(['src','width','height']);
+window.location=formsubmit(['src','width','height']);
+window.location;
 }
 
 if (!$_GET('src')==''){
