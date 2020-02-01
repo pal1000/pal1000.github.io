@@ -14,11 +14,11 @@
 @IF ERRORLEVEL 1 exit
 @set ERRORLEVEL=0
 @cd ..\..\..\
-@If NOT exist "mesa-dist-win"\ (
-git clone https://github.com/pal1000/mesa-dist-win.git mesa-dist-win
+@If NOT exist "swiftshader"\ (
+git clone git clone --recurse-submodules https://swiftshader.googlesource.com/SwiftShader swiftshader
 )
-@If exist "mesa-dist-win"\ (
-@cd mesa-dist-win
+@If exist "swiftshader"\ (
+@cd swiftshader
 )
 
 :Choice
@@ -26,7 +26,7 @@ git clone https://github.com/pal1000/mesa-dist-win.git mesa-dist-win
 @echo -----------------------
 @echo What do you want to do?
 @echo -----------------------
-@echo 1. Build Mesa3D
+@echo 1. Build SwiftShader
 @echo 2. Update local repository
 @echo 3. Update remote repository
 @echo 4. Launch GIT GUI
@@ -35,29 +35,21 @@ git clone https://github.com/pal1000/mesa-dist-win.git mesa-dist-win
 @echo 7. Exit
 @set choice=0
 @set /p choice="Enter your Choice here:"
-@if "%choice%"=="1" GOTO Build_mesa
+@if "%choice%"=="1" GOTO Build_swiftshader
 @if "%choice%"=="2" GOTO Update_local
-@if "%choice%"=="3" GOTO Update_remote
-@if "%choice%"=="4" GOTO GUI
-@if "%choice%"=="5" GOTO wipe_uncommited_changes
-@if "%choice%"=="6" GOTO Command
-@if "%choice%"=="7" GOTO Exit
+@if "%choice%"=="3" GOTO GUI
+@if "%choice%"=="4" GOTO wipe_uncommited_changes
+@if "%choice%"=="5" GOTO Command
+@if "%choice%"=="6" GOTO Exit
 @echo Invaild entry
 @GOTO Choice
 
-:Build_mesa
+:Build_swiftshader
 @start buildscript\build.cmd
 @GOTO Choice
 
 :Update_local
 git pull -v --progress origin
-@GOTO Choice
-
-:Update_remote
-git fetch origin
-@set push=n
-@set /p push=Update your fork (y/n):
-if /I "%push%"=="y" git push -f --all origin
 @GOTO Choice
 
 :GUI
