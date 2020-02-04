@@ -15,7 +15,7 @@
 @set ERRORLEVEL=0
 @cd ..\..\..\
 @If NOT exist "swiftshader"\ (
-git clone git clone --recurse-submodules https://swiftshader.googlesource.com/SwiftShader swiftshader
+git clone --recurse-submodules https://swiftshader.googlesource.com/SwiftShader swiftshader
 )
 @If exist "swiftshader"\ (
 @cd swiftshader
@@ -28,11 +28,10 @@ git clone git clone --recurse-submodules https://swiftshader.googlesource.com/Sw
 @echo -----------------------
 @echo 1. Build SwiftShader
 @echo 2. Update local repository
-@echo 3. Update remote repository
-@echo 4. Launch GIT GUI
-@echo 5. Wipe all uncommited changes
-@echo 6. Insert commands manually
-@echo 7. Exit
+@echo 3. Launch GIT GUI
+@echo 4. Wipe all uncommited changes
+@echo 5. Insert commands manually
+@echo 6. Exit
 @set choice=0
 @set /p choice="Enter your Choice here:"
 @if "%choice%"=="1" GOTO Build_swiftshader
@@ -50,6 +49,7 @@ git clone git clone --recurse-submodules https://swiftshader.googlesource.com/Sw
 
 :Update_local
 git pull -v --progress origin
+git submodule update --init --recursive
 @GOTO Choice
 
 :GUI
