@@ -12,7 +12,8 @@
         "fetch",
         "other",
         "ping",
-        "object"
+        "object",
+        "font"
       ],
       "temp": false
     },
@@ -129,15 +130,17 @@
         "https://player.cartooncrazy.tv",
         "https://www.anaf.ro",
         "https://pfinternet.anaf.ro",
-        "https://openbenchmarking.org"
+        "https://openbenchmarking.org",
+        "https://gitlab.freedesktop.org",
+        "https://lh3.googleusercontent.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
         "https://pagead2.googlesyndication.com",
-        "https://www.googletagmanager.com",
         "https://www.googletagservices.com",
         "https://fonts.gstatic.com",
-        "https://www.google-analytics.com"
+        "https://www.google-analytics.com",
+        "https://www.googletagmanager.com"
       ],
       "custom": {
         "https://lqxgcyk808.execute-api.us-east-1.amazonaws.com": {

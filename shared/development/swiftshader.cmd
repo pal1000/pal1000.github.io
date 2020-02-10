@@ -1,4 +1,4 @@
-@TITLE Mesa3D
+@TITLE SwiftShader
 @set ERRORLEVEL=0
 @where /q git.exe
 @IF ERRORLEVEL 1 (
@@ -14,11 +14,11 @@
 @IF ERRORLEVEL 1 exit
 @set ERRORLEVEL=0
 @cd ..\..\..\
-@If NOT exist "swiftshader"\ (
-git clone --recurse-submodules https://swiftshader.googlesource.com/SwiftShader swiftshader
+@If NOT exist "swiftshader-dist-win"\ (
+git clone --recurse-submodules https://github.com/pal1000/swiftshader-dist-win swiftshader-dist-win
 )
-@If exist "swiftshader"\ (
-@cd swiftshader
+@If exist "swiftshader-dist-win"\ (
+@cd swiftshader-dist-win
 )
 
 :Choice
@@ -28,18 +28,20 @@ git clone --recurse-submodules https://swiftshader.googlesource.com/SwiftShader 
 @echo -----------------------
 @echo 1. Build SwiftShader
 @echo 2. Update local repository
-@echo 3. Launch GIT GUI
-@echo 4. Wipe all uncommited changes
-@echo 5. Insert commands manually
-@echo 6. Exit
+@echo 3. Update remote repository
+@echo 4. Launch GIT GUI
+@echo 5. Wipe all uncommited changes
+@echo 6. Insert commands manually
+@echo 7. Exit
 @set choice=0
 @set /p choice="Enter your Choice here:"
 @if "%choice%"=="1" GOTO Build_swiftshader
 @if "%choice%"=="2" GOTO Update_local
-@if "%choice%"=="3" GOTO GUI
-@if "%choice%"=="4" GOTO wipe_uncommited_changes
-@if "%choice%"=="5" GOTO Command
-@if "%choice%"=="6" GOTO Exit
+@if "%choice%"=="3" GOTO Update_remote
+@if "%choice%"=="4" GOTO GUI
+@if "%choice%"=="5" GOTO wipe_uncommited_changes
+@if "%choice%"=="6" GOTO Command
+@if "%choice%"=="7" GOTO Exit
 @echo Invaild entry
 @GOTO Choice
 
@@ -49,7 +51,13 @@ git clone --recurse-submodules https://swiftshader.googlesource.com/SwiftShader 
 
 :Update_local
 git pull -v --progress origin
-git submodule update --init --recursive
+@GOTO Choice
+
+:Update_remote
+git fetch origin
+@set push=n
+@set /p push=Update your fork (y/n):
+if /I "%push%"=="y" git push -f --all origin
 @GOTO Choice
 
 :GUI
