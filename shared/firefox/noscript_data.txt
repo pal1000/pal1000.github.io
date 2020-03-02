@@ -132,7 +132,8 @@
         "https://pfinternet.anaf.ro",
         "https://openbenchmarking.org",
         "https://gitlab.freedesktop.org",
-        "https://lh3.googleusercontent.com"
+        "https://lh3.googleusercontent.com",
+        "https://login.live.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
