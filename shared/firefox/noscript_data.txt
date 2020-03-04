@@ -141,7 +141,9 @@
         "https://www.googletagservices.com",
         "https://fonts.gstatic.com",
         "https://www.google-analytics.com",
-        "https://www.googletagmanager.com"
+        "https://www.googletagmanager.com",
+        "https://web.vortex.data.microsoft.com",
+        "https://ssl.google-analytics.com"
       ],
       "custom": {
         "https://lqxgcyk808.execute-api.us-east-1.amazonaws.com": {
