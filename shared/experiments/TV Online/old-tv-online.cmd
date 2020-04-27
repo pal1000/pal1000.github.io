@@ -76,33 +76,3 @@ if '%errorlevel%' NEQ '0' (
 
 :Exit
 exit
-
-@if 1==0 (
--Disney Junior flash format: http://mywebtv.info/disney-junior/sursa-2
-                             http://pal1000.3x.ro/tools/jwembed/index.php?media=http%3A%2F%2F178.21.120.198%3A1935%2Flive3%2F_definst_%2Fmp4%3Adisneyjr%2Fplaylist.m3u8
--Disney Channel flash format: http://mywebtv.info/disney-channel/sursa-2
-                              http://pal1000.3x.ro/tools/jwembed/index.php?media=http%3A%2F%2F178.21.120.198%3A1935%2Flive3%2F_definst_%2Fmp4%3Adisney%2Fplaylist.m3u8
--Nickelodeon flash format: http://mywebtv.info/nickelodeon/sursa-2
-                           http://pal1000.3x.ro/tools/jwembed/index.php?media=http%3A%2F%2F178.21.120.198%3A1935%2Flive3%2F_definst_%2Fmp4%3Anickelodeon%2Fplaylist.m3u8
-                           
--Digi Online:
-Disney Junior: http://82.76.40.81/digiedge2/disneyjuniorelelq/index.m3u8?is=18&src=digi-online.ro&t=00000000000000000000000000000000
-               http://mywebtv.info/disney-junior/sursa-3 
-               http://mywebtv.info/disney-junior/sursa-4
-Disney Channel: http://82.76.40.81/digiedge2/disneychannelelq/index.m3u8?is=17&src=digi-online.ro&t=00000000000000000000000000000000
-                http://mywebtv.info/disney-channel/sursa-3
-                http://mywebtv.info/disney-channel/sursa-4
-Nickelodeon: http://82.76.40.81/digiedge2/nickelodeonelq/index.m3u8?is=28&src=digi-online.ro&t=00000000000000000000000000000000
-             http://mywebtv.info/nickelodeon/sursa-3
-             http://mywebtv.info/nickelodeon/sursa-4 
-Minimax: http://82.76.40.81/digiedge2/minimaxelq/index.m3u8?is=37&src=digi-online.ro&t=00000000000000000000000000000000
-         http://mywebtv.info/minimax/sursa-2
-         http://mywebtv.info/minimax/sursa-5
-Megamax: http://82.76.40.81/digiedge2/meganaxelq/index.m3u8?is=47&src=digi-online.ro&t=00000000000000000000000000000000
-         http://mywebtv.info/megamax/sursa-2
-         http://mywebtv.info/megamax/sursa-3
-         http://mywebtv.info/megamax/sursa-4
-
--Sopcast: Coolitv.net, mywebtv.info, cool-etv.net                       
-)
-
