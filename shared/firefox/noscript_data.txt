@@ -12,8 +12,7 @@
         "fetch",
         "other",
         "ping",
-        "object",
-        "font"
+        "object"
       ],
       "temp": false
     },
@@ -26,7 +25,6 @@
         "file:///C:/Software/Development/projects/pal1000.github.io/shared/experiments/TV%20Online/digionline.html",
         "file:///C:/Software/Development/projects/pal1000.github.io/tools/hlsembed/index.html",
         "https://video-dev.github.io",
-        "https://edge81.rcs-rds.ro",
         "https://disqus.com",
         "https://c.disquscdn.com",
         "https://www.csoonline.com",
@@ -68,7 +66,6 @@
         "https://www.feedroll.com",
         "https://players.brightcove.net",
         "https://edge.api.brightcove.com",
-        "https://www.catalog.update.microsoft.com",
         "file:///C:/Software/Development/projects/pal1000.github.io/tools/strlen/index.html",
         "https://uup.rg-adguard.net",
         "https://support.microsoft.com",
@@ -115,15 +112,11 @@
         "https://www1.cartooncrazy.tv",
         "https://player.cartooncrazy.net",
         "https://wwwstatic.chia-anime.tv",
-        "https://edge30.rcs-rds.ro",
-        "https://edge84.rcs-rds.ro",
-        "https://edge24.rcs-rds.ro",
         "file:///C:/Software/Development/projects/pal1000.github.io/index.js",
         "https://peer1.ustv.to",
         "https://peer3.ustv.to",
         "https://peer2.ustv.to",
         "https://majorgeekscom.disqus.com",
-        "https://hls-js.netlify.com",
         "§:vkcache.com",
         "https://deliver.vkcdnservice.com",
         "https://www1.cartooncrazy.net",
@@ -133,17 +126,21 @@
         "https://openbenchmarking.org",
         "https://gitlab.freedesktop.org",
         "https://lh3.googleusercontent.com",
-        "https://login.live.com"
+        "https://login.live.com",
+        "https://www.catalog.update.microsoft.com",
+        "https://hls-js.netlify.app",
+        "https://edge76.rcs-rds.ro"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
         "https://pagead2.googlesyndication.com",
-        "https://www.googletagservices.com",
-        "https://fonts.gstatic.com",
-        "https://www.google-analytics.com",
-        "https://www.googletagmanager.com",
         "https://web.vortex.data.microsoft.com",
-        "https://ssl.google-analytics.com"
+        "https://ssl.google-analytics.com",
+        "https://www.googletagservices.com",
+        "https://www.googletagmanager.com",
+        "https://fonts.gstatic.com",
+        "http://fonts.gstatic.com",
+        "https://www.google-analytics.com"
       ],
       "custom": {
         "https://lqxgcyk808.execute-api.us-east-1.amazonaws.com": {
@@ -152,9 +149,11 @@
           ],
           "temp": false
         },
-        "https://fvs.io/redirector": {
+        "https://instnsp.maps.arcgis.com": {
           "capabilities": [
-            "media"
+            "script",
+            "webgl",
+            "fetch"
           ],
           "temp": false
         }

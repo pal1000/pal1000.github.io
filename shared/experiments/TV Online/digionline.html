@@ -5,22 +5,10 @@
 function getchprop(propname,index){
 var ret='';
 if (propname=='address'){
-if (index==0) ret='https://edge30.rcs-rds.ro';
-if (index==1) ret='https://edge81.rcs-rds.ro';
-if (index==2) ret='https://edge24.rcs-rds.ro';
-if (index==3) ret='https://edge84.rcs-rds.ro';
-if (index==4) ret='http://edge30.rcs-rds.ro';
-if (index==5) ret='http://edge81.rcs-rds.ro';
-if (index==6) ret='http://edge24.rcs-rds.ro';
-if (index==7) ret='http://edge84.rcs-rds.ro';
-if (index==8) ret='http://edge30.rdsnet.ro';
-if (index==9) ret='http://edge81.rdsnet.ro';
-if (index==10) ret='http://edge24.rdsnet.ro';
-if (index==11) ret='http://edge84.rdsnet.ro';
-if (index==12) ret='http://82.76.252.30';
-if (index==13) ret='http://82.76.40.81';
-if (index==14) ret='http://82.76.252.24';
-if (index==15) ret='http://82.76.40.84';
+if (index==0) ret='https://edge76.rcs-rds.ro';
+if (index==1) ret='http://edge76.rcs-rds.ro';
+if (index==2) ret='http://edge76.rdsnet.ro';
+if (index==3) ret='http://82.76.40.76';
 }
 if (propname=='fchname'){
 if (index==0) ret='Disney Channel';
@@ -90,7 +78,7 @@ if (!$_GET('stop')=='') stop=$_GET('stop');
 
 document.write("Server<select id='server'></select>");
 serverselect = document.getElementById('server');
-for(i=0;i<=15;i++) serverselect.options[serverselect.options.length] = new Option(getchprop('address',i),i);
+for(i=0;i<=3;i++) serverselect.options[serverselect.options.length] = new Option(getchprop('address',i),i);
 
 document.write("Channel<select id='channel'></select>");
 channelselect = document.getElementById('channel');
@@ -112,7 +100,7 @@ qualityselect.selectedIndex=quality;
 playerselect.selectedIndex=player;
 
 if(!channel==''){
-   var mediafile=getchprop('address',server)+"/digiedge"+getchprop('edge',channel)+"/"+getchprop('chname',channel)+"e"+getchprop('qname',quality)+"/index.m3u8?is="+getchprop('chid',channel)+"&src=digi-online.ro&t=00000000000000000000000000000000";
+   var mediafile=getchprop('address',server)+"/digiedge"+getchprop('edge',channel)+"/"+getchprop('chname',channel)+"e"+getchprop('qname',quality)+".stream/index.m3u8?is="+getchprop('chid',channel)+"&src=app&t=00000000000000000000000000000000";
    document.write("<center><a href='"+mediafile+"'>Stream URL</a>&nbsp;&nbsp;&nbsp;<a href='"+window.location.toString().substr(0,window.location.toString().length-1)+"0'>Reload</a>");
    if(player==0) document.write("&nbsp;&nbsp;&nbsp;<a href='"+window.location.toString().substr(0,window.location.toString().length-1)+"1'>Stop</a>");
    document.write("</center>");

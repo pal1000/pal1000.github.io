@@ -27,8 +27,8 @@ var embedcode="&lt;iframe src=&apos;"+window.location.href+"&isembedded=1&apos; 
 return 'Embed code: <input type="text" size="'+window.screen.width/8+'" value="'+embedcode+'" readonly>';
 }
 
-function file_get_contents(filename) {
-  fetch(filename)
-    .then(response => response.text())
-    .then(text => document.write(text));
+async function file_get_contents(filename){
+  var rawdownload=await fetch(filename);
+  var content=await rawdownload.text();
+  document.write(content);
 }
