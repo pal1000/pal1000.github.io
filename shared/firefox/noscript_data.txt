@@ -129,7 +129,8 @@
         "https://login.live.com",
         "https://www.catalog.update.microsoft.com",
         "https://hls-js.netlify.app",
-        "https://edge76.rcs-rds.ro"
+        "https://edge76.rcs-rds.ro",
+        "https://edge126.rcs-rds.ro"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
