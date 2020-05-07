@@ -6,9 +6,13 @@ function getchprop(propname,index){
 var ret='';
 if (propname=='address'){
 if (index==0) ret='https://edge76.rcs-rds.ro';
-if (index==1) ret='http://edge76.rcs-rds.ro';
-if (index==2) ret='http://edge76.rdsnet.ro';
-if (index==3) ret='http://82.76.40.76';
+if (index==1) ret='https://edge126.rcs-rds.ro';
+if (index==2) ret='http://edge76.rcs-rds.ro';
+if (index==3) ret='http://edge126.rcs-rds.ro';
+if (index==4) ret='http://edge76.rdsnet.ro';
+if (index==5) ret='http://edge126.rdsnet.ro';
+if (index==6) ret='http://82.76.40.76';
+if (index==7) ret='http://81.196.0.126';
 }
 if (propname=='fchname'){
 if (index==0) ret='Disney Channel';
@@ -78,7 +82,7 @@ if (!$_GET('stop')=='') stop=$_GET('stop');
 
 document.write("Server<select id='server'></select>");
 serverselect = document.getElementById('server');
-for(i=0;i<=3;i++) serverselect.options[serverselect.options.length] = new Option(getchprop('address',i),i);
+for(i=0;i<=7;i++) serverselect.options[serverselect.options.length] = new Option(getchprop('address',i),i);
 
 document.write("Channel<select id='channel'></select>");
 channelselect = document.getElementById('channel');
