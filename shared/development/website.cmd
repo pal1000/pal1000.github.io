@@ -1,7 +1,8 @@
 @TITLE Personal website
-@set ERRORLEVEL=0
+@set "ERRORLEVEL="
+@CMD /C EXIT 0
 @where /q git.exe
-@IF ERRORLEVEL 1 (
+@if NOT "%ERRORLEVEL%"=="0" (
 @IF NOT EXIST ..\..\..\..\Git\git-cmd.exe exit
 @set oldcd=%cd%
 @cd ..\..\..\..\Git
@@ -9,10 +10,9 @@
 )
 @if defined oldcd cd "%oldcd%"
 @if defined oldcd set "oldcd="
-@set ERRORLEVEL=0
+@CMD /C EXIT 0
 @where /q git.exe
-@IF ERRORLEVEL 1 exit
-@set ERRORLEVEL=0
+@if NOT "%ERRORLEVEL%"=="0" exit
 @cd ..\..\..\
 @If NOT exist "pal1000.github.io"\ (
 git clone https://github.com/pal1000/pal1000.github.io.git pal1000.github.io
