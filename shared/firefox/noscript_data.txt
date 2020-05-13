@@ -130,7 +130,16 @@
         "https://www.catalog.update.microsoft.com",
         "https://hls-js.netlify.app",
         "https://edge76.rcs-rds.ro",
-        "https://edge126.rcs-rds.ro"
+        "https://edge126.rcs-rds.ro",
+        "https://login.microsoftonline.com",
+        "https://amcdn.msftauth.net",
+        "https://dev.azure.com",
+        "https://spsprodweu2.vssps.visualstudio.com",
+        "https://aadcdn.msauth.net",
+        "https://logincdn.msauth.net",
+        "https://lgincdnvzeuno.azureedge.net",
+        "https://lgincdnmsftuswe2.azureedge.net",
+        "https://aadcdn.msftauth.net"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
