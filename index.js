@@ -16,7 +16,21 @@ return submitURL;
 }
 
 function index(filename,extension){
-         var list="<li><a href='"+encodeURIComponent(filename);
+         var list=window.location.protocol + '//' + window.location.hostname + window.location.pathname;
+         var trimmed=0;
+         if(trimmed == 0 && list.substring(list.length-11, list.length)=='/index.html') {
+            list=list.substring(0, list.length-11);
+            trimmed=1;
+         }
+         if(trimmed == 0 && list.substring(list.length-10, list.length)=='/index.htm') {
+            list=list.substring(0, list.length-10);
+            trimmed=1;
+         }
+         if(trimmed == 0 && list.substring(list.length-1, list.length)=='/') {
+            list=list.substring(0, list.length-1);
+            trimmed=1;
+         }
+         list="<li><a href='"+list+"/"+encodeURIComponent(filename);
          if (extension==null) list+="/index.html'>"+filename+"</a></li>";
          else list+="."+encodeURIComponent(extension)+"'>"+filename+"."+extension+"</a></li>";
          return list;
