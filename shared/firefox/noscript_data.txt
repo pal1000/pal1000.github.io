@@ -127,7 +127,6 @@
         "https://gitlab.freedesktop.org",
         "https://lh3.googleusercontent.com",
         "https://login.live.com",
-        "https://www.catalog.update.microsoft.com",
         "https://hls-js.netlify.app",
         "https://edge76.rcs-rds.ro",
         "https://edge126.rcs-rds.ro",
@@ -139,7 +138,10 @@
         "https://logincdn.msauth.net",
         "https://lgincdnvzeuno.azureedge.net",
         "https://lgincdnmsftuswe2.azureedge.net",
-        "https://aadcdn.msftauth.net"
+        "https://aadcdn.msftauth.net",
+        "https://www.catalog.update.microsoft.com",
+        "https://live3vox.antenaplay.ro",
+        "https://ivm.antenaplay.ro"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -147,10 +149,9 @@
         "https://web.vortex.data.microsoft.com",
         "https://ssl.google-analytics.com",
         "https://www.googletagservices.com",
-        "https://www.googletagmanager.com",
         "https://fonts.gstatic.com",
         "http://fonts.gstatic.com",
-        "https://www.google-analytics.com"
+        "https://www.googletagmanager.com"
       ],
       "custom": {
         "https://lqxgcyk808.execute-api.us-east-1.amazonaws.com": {
