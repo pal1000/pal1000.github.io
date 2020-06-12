@@ -27,26 +27,32 @@ git clone https://github.com/pal1000/mesa-dist-win.git mesa-dist-win
 @echo What do you want to do?
 @echo -----------------------
 @echo 1. Build Mesa3D
-@echo 2. Update local repository
-@echo 3. Update remote repository
-@echo 4. Launch GIT GUI
-@echo 5. Wipe all uncommited changes
-@echo 6. Insert commands manually
-@echo 7. Exit
+@echo 2. Build Mesa3D (out of tree patches disabled)
+@echo 3. Update local repository
+@echo 4. Update remote repository
+@echo 5. Launch GIT GUI
+@echo 6. Wipe all uncommited changes
+@echo 7. Insert commands manually
+@echo 8. Exit
 @set choice=0
 @set /p choice="Enter your Choice here:"
 @if "%choice%"=="1" GOTO Build_mesa
-@if "%choice%"=="2" GOTO Update_local
-@if "%choice%"=="3" GOTO Update_remote
-@if "%choice%"=="4" GOTO GUI
-@if "%choice%"=="5" GOTO wipe_uncommited_changes
-@if "%choice%"=="6" GOTO Command
-@if "%choice%"=="7" GOTO Exit
+@if "%choice%"=="2" GOTO Build_pristine_mesa
+@if "%choice%"=="3" GOTO Update_local
+@if "%choice%"=="4" GOTO Update_remote
+@if "%choice%"=="5" GOTO GUI
+@if "%choice%"=="6" GOTO wipe_uncommited_changes
+@if "%choice%"=="7" GOTO Command
+@if "%choice%"=="8" GOTO Exit
 @echo Invaild entry
 @GOTO Choice
 
 :Build_mesa
 @start buildscript\build.cmd
+@GOTO Choice
+
+:Build_pristine_mesa
+@start buildscript\build.cmd disablemesapatch
 @GOTO Choice
 
 :Update_local
