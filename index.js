@@ -43,6 +43,7 @@ return 'Embed code: <input type="text" size="'+window.screen.width/8+'" value="'
 
 async function file_get_contents(filename){
   var rawdownload=await fetch(filename);
-  var content=await rawdownload.text();
-  document.write(content);
+  return await rawdownload.text();
+// call with await file_get_contents(filename).
+// can only be called from another async function
 }
