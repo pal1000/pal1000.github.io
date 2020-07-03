@@ -1,0 +1,22 @@
+#EXTM3U
+
+#EXTINF:-1,1,Disney Channel
+https://edge76.rcs-rds.ro/digiedge2/disneychannelehq.stream/index.m3u8?is=17&src=app&t=00000000000000000000000000000000
+
+#EXTINF:-1,Disney Junior
+https://edge76.rcs-rds.ro/digiedge2/disneyjuniorehq.stream/index.m3u8?is=18&src=app&t=00000000000000000000000000000000
+
+#EXTINF:-1,Minimax
+https://edge76.rcs-rds.ro/digiedge2/minimaxehq.stream/index.m3u8?is=37&src=app&t=00000000000000000000000000000000
+
+#EXTINF:-1,Nickelodeon
+https://edge76.rcs-rds.ro/digiedge2/nickelodeonehq.stream/index.m3u8?is=28&src=app&t=00000000000000000000000000000000
+
+#EXTINF:-1,Cartoon Network
+http://tv.skynetmd.eu:25461/live/Corona/Virus/679.m3u8?checkedby:iptvcat.com
+
+#EXTINF:-1,Boomerang
+http://tv.skynetmd.eu:25461/live/Corona/Virus/678.m3u8?checkedby:iptvcat.com
+
+#EXTINF:-1,BOOMERANG (HU/RO)
+http://193.33.39.108:8107/30710
