@@ -59,7 +59,6 @@
         "https://traffic.libsyn.com",
         "https://hwcdn.libsyn.com",
         "https://player.vimeo.com",
-        "https://f.vimeocdn.com",
         "https://www.youtube-nocookie.com",
         "https://digiapis.rcs-rds.ro",
         "https://pal1000.github.io",
@@ -141,7 +140,9 @@
         "https://aadcdn.msftauth.net",
         "https://www.catalog.update.microsoft.com",
         "https://live3vox.antenaplay.ro",
-        "https://ivm.antenaplay.ro"
+        "https://ivm.antenaplay.ro",
+        "https://f.vimeocdn.com",
+        "https://genesis.malwarebytes.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -151,7 +152,8 @@
         "https://www.googletagservices.com",
         "https://fonts.gstatic.com",
         "http://fonts.gstatic.com",
-        "https://www.googletagmanager.com"
+        "https://www.googletagmanager.com",
+        "https://www.google-analytics.com"
       ],
       "custom": {
         "https://lqxgcyk808.execute-api.us-east-1.amazonaws.com": {
