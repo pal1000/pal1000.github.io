@@ -142,7 +142,8 @@
         "https://live3vox.antenaplay.ro",
         "https://ivm.antenaplay.ro",
         "https://f.vimeocdn.com",
-        "https://genesis.malwarebytes.com"
+        "https://genesis.malwarebytes.com",
+        "https://vod7digi.antenaplay.ro"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
