@@ -87,7 +87,6 @@
         "https://github-production-release-asset-2e65be.s3.amazonaws.com",
         "http://sv7.dailymotion.com.1cdn.host",
         "http://sv9.dailymotion.com.1cdn.host",
-        "https://www.youtube.com",
         "https://mail.yahoo.com",
         "http://sv6.dailymotion.com.1cdn.host",
         "http://sv5.dailymotion.com.1cdn.host",
@@ -143,7 +142,10 @@
         "https://ivm.antenaplay.ro",
         "https://f.vimeocdn.com",
         "https://genesis.malwarebytes.com",
-        "https://vod7digi.antenaplay.ro"
+        "https://vod7digi.antenaplay.ro",
+        "https://gazetanoua.ro",
+        "https://www.youtube.com",
+        "https://covid19.geo-spatial.org"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
