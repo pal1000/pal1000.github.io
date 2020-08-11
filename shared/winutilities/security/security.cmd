@@ -11,18 +11,6 @@
 @netsh interface teredo set state disabled
 @netsh interface isatap set state disabled
 @netsh winhttp reset proxy
-@net stop iphlpsvc
-@sc config iphlpsvc start= disabled
-@net stop WinHttpAutoProxySvc
-@sc config WinHttpAutoProxySvc start= disabled
-@sc config dmwappushservice start= disabled
-@net stop dmwappushservice
-@sc config SSDPSRV start= disabled
-@net stop SSDPSRV
-@sc config fdPHost start= disabled
-@net stop fdPHost
-@net stop LanmanWorkstation
-@sc config LanmanWorkstation start= disabled
 @pause
 
 
