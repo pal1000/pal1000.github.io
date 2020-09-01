@@ -12,17 +12,11 @@ https://edge76.rcs-rds.ro/digiedge2/minimaxehq.stream/index.m3u8?is=37&src=app&t
 #EXTINF:-1,Nickelodeon
 https://edge76.rcs-rds.ro/digiedge2/nickelodeonehq.stream/index.m3u8?is=28&src=app&t=00000000000000000000000000000000
 
-#EXTINF:-1,Cartoon Network (Cool-itv.net)
-http://127.0.0.1:6878/ace/getstream?id=f577c2681b6d3c62e2f616ba4d4a41e89825986d
-
-#EXTINF:-1,Cartoon Network (MyWebTv.info)
-http://127.0.0.1:6878/ace/getstream?id=1cb9905396aa4356883dfad42777ecd34c7f7f5a
-
-#EXTINF:-1,Cartoon Network (OLD)
-http://127.0.0.1:6878/ace/getstream?id=4d9ce52fca8ce6e42a7a247baedf2e7c9b9a016f
+#EXTINF:-1,Cartoon Network
+http://127.0.0.1:6878/ace/getstream?id=8b32f12af7a0a18a03b95e15b4b87a0266ac6b7c
 
 #EXTINF:-1,Boomerang
-http://127.0.0.1:6878/ace/getstream?id=b0a7335f9e31f02282983949ba3f238bba1da32f
+http://127.0.0.1:6878/ace/getstream?id=a8041c584432d015275fd975a772a69b047dbfb3
 
 #EXTINF:-1,BOOMERANG (HU/RO)
 http://193.33.39.108:8107/30710
