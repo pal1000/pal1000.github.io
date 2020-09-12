@@ -1,6 +1,6 @@
 #EXTM3U
 
-#EXTINF:-1,1,Disney Channel
+#EXTINF:-1,Disney Channel
 https://edge76.rcs-rds.ro/digiedge2/disneychannelehq.stream/index.m3u8?is=17&src=app&t=00000000000000000000000000000000
 
 #EXTINF:-1,Disney Junior
@@ -12,11 +12,14 @@ https://edge76.rcs-rds.ro/digiedge2/minimaxehq.stream/index.m3u8?is=37&src=app&t
 #EXTINF:-1,Nickelodeon
 https://edge76.rcs-rds.ro/digiedge2/nickelodeonehq.stream/index.m3u8?is=28&src=app&t=00000000000000000000000000000000
 
-#EXTINF:-1,Cartoon Network
-http://127.0.0.1:6878/ace/getstream?id=8b32f12af7a0a18a03b95e15b4b87a0266ac6b7c
+#EXTINF:-1,Cartoon Network (Cool-etv)
+http://127.0.0.1:6878/ace/getstream?id=2a8732f19acd7749e678752c48d834e5fad184cd
+
+#EXTINF:-1,Cartoon Network (webtvro)
+http://127.0.0.1:6878/ace/getstream?id=bfd638f49f2c885b93f95a1959c80f182f143de0
 
 #EXTINF:-1,Boomerang
-http://127.0.0.1:6878/ace/getstream?id=a8041c584432d015275fd975a772a69b047dbfb3
+http://127.0.0.1:6878/ace/getstream?id=4babe6dba97b0d1dd6045197320b747403bc2e36
 
 #EXTINF:-1,BOOMERANG (HU/RO)
 http://193.33.39.108:8107/30710

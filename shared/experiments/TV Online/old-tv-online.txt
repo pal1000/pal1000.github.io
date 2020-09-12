@@ -1,0 +1,11 @@
+VLC compatible M3U8 streams
+http://212.0.215.115/DisneyChannel/playlist.m3u8
+http://212.0.215.115/Minimax/playlist.m3u8
+
+SopCast streams
+Boomerang                 sop://185.122.59.8:3912/265031
+Cartoon Network           sop://185.122.59.8:3912/265032
+Disney Channel            sop://185.122.59.8:3912/265033
+Disney Junior             sop://185.122.59.8:3912/265034
+Minimax                   sop://185.122.59.8:3912/265035
+Nickelodeon               sop://185.122.59.8:3912/265041
