@@ -41,9 +41,6 @@
         "https://media.telekom.ro",
         "https://www.telekom.ro",
         "file:///C:/Software/Development/projects/pal1000.github.io/tools/iframe/index.html",
-        "https://c.hqq.tv",
-        "https://hqq.tv",
-        "https://player.hqq.tv",
         "https://arstechnica.com",
         "https://cdn.arstechnica.net",
         "https://api.cnevids.com",
@@ -145,7 +142,10 @@
         "https://vod7digi.antenaplay.ro",
         "https://gazetanoua.ro",
         "https://www.youtube.com",
-        "https://covid19.geo-spatial.org"
+        "https://covid19.geo-spatial.org",
+        "https://hqq.to",
+        "https://consent.youtube.com",
+        "https://consent.google.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -153,10 +153,10 @@
         "https://web.vortex.data.microsoft.com",
         "https://ssl.google-analytics.com",
         "https://www.googletagservices.com",
-        "https://fonts.gstatic.com",
         "http://fonts.gstatic.com",
         "https://www.googletagmanager.com",
-        "https://www.google-analytics.com"
+        "https://www.google-analytics.com",
+        "https://fonts.gstatic.com"
       ],
       "custom": {
         "https://lqxgcyk808.execute-api.us-east-1.amazonaws.com": {
