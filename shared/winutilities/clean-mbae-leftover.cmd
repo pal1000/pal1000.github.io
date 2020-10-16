@@ -10,3 +10,4 @@
 @IF EXIST "%ProgramFiles% (x86)\Malwarebytes Anti-Exploit\" RD /S /Q "%ProgramFiles% (x86)\Malwarebytes Anti-Exploit"
 @IF EXIST "%ALLUSERSPROFILE%\Malwarebytes Anti-Exploit\" RD /S /Q "%ALLUSERSPROFILE%\Malwarebytes Anti-Exploit"
 @REG DELETE "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Malwarebytes Anti-Exploit" /f
+@pause

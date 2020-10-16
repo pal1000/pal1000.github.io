@@ -28,9 +28,6 @@
         "https://disqus.com",
         "https://c.disquscdn.com",
         "https://www.csoonline.com",
-        "https://content.jwplatform.com",
-        "https://ssl.p.jwpcdn.com",
-        "file:///C:/Software/Development/projects/pal1000.github.io/tools/jwembed/index.html",
         "https://blog.malwarebytes.com",
         "https://www.malwarebytes.com",
         "https://malwarebytesunpacked.disqus.com",
@@ -145,7 +142,10 @@
         "https://covid19.geo-spatial.org",
         "https://hqq.to",
         "https://consent.youtube.com",
-        "https://consent.google.com"
+        "https://consent.google.com",
+        "https://content.jwplatform.com",
+        "https://ssl.p.jwpcdn.com",
+        "file:///C:/Software/Development/projects/pal1000.github.io/tools/jwembed/index.html"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -159,17 +159,30 @@
         "https://fonts.gstatic.com"
       ],
       "custom": {
+        "https://instnsp.maps.arcgis.com": {
+          "capabilities": [
+            "script",
+            "webgl",
+            "fetch"
+          ],
+          "temp": false
+        },
         "https://lqxgcyk808.execute-api.us-east-1.amazonaws.com": {
           "capabilities": [
             "fetch"
           ],
           "temp": false
         },
-        "https://instnsp.maps.arcgis.com": {
+        "https://accounts.google.com": {
           "capabilities": [
             "script",
-            "webgl",
-            "fetch"
+            "media",
+            "frame",
+            "fetch",
+            "other",
+            "ping",
+            "object",
+            "webgl"
           ],
           "temp": false
         }
