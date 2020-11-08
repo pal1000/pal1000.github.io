@@ -117,7 +117,6 @@
         "https://pfinternet.anaf.ro",
         "https://openbenchmarking.org",
         "https://gitlab.freedesktop.org",
-        "https://lh3.googleusercontent.com",
         "https://login.live.com",
         "https://hls-js.netlify.app",
         "https://edge76.rcs-rds.ro",
@@ -145,7 +144,10 @@
         "https://consent.google.com",
         "https://content.jwplatform.com",
         "https://ssl.p.jwpcdn.com",
-        "file:///C:/Software/Development/projects/pal1000.github.io/tools/jwembed/index.html"
+        "file:///C:/Software/Development/projects/pal1000.github.io/tools/jwembed/index.html",
+        "https://msx.linksgen.com",
+        "§:googleusercontent.com",
+        "https://entitlements.jwplayer.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
