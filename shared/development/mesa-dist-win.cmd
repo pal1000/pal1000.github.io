@@ -52,7 +52,7 @@ git clone https://github.com/pal1000/mesa-dist-win.git mesa-dist-win
 @GOTO Choice
 
 :Build_pristine_mesa
-@start buildscript\build.cmd disablemesapatch
+@start buildscript\build.cmd disableootpatch
 @GOTO Choice
 
 :Update_local

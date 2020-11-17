@@ -147,7 +147,8 @@
         "file:///C:/Software/Development/projects/pal1000.github.io/tools/jwembed/index.html",
         "https://msx.linksgen.com",
         "§:googleusercontent.com",
-        "https://entitlements.jwplayer.com"
+        "https://entitlements.jwplayer.com",
+        "https://edgecast-vod.yimg.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
