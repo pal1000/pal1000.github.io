@@ -1,0 +1,7 @@
+Computer\HKEY_CLASSES_ROOT\acestream\shell\open\command
+Computer\HKEY_CLASSES_ROOT\AceStream.file\shell\Open\command
+Computer\HKEY_CLASSES_ROOT\Applications\ace_player.exe\shell\Open\command
+
+Computer\HKEY_CURRENT_USER\SOFTWARE\Classes\acestream\shell\open\command
+Computer\HKEY_CURRENT_USER\SOFTWARE\Classes\AceStream.file\shell\Open\command
+Computer\HKEY_CURRENT_USER\SOFTWARE\Classes\Applications\ace_player.exe\shell\Open\command
