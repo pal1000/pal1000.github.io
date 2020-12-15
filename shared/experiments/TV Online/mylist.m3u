@@ -13,7 +13,7 @@ https://edge76.rcs-rds.ro/digiedge2/minimaxehq.stream/index.m3u8?is=37&src=app&t
 https://edge76.rcs-rds.ro/digiedge2/nickelodeonehq.stream/index.m3u8?is=28&src=app&t=00000000000000000000000000000000
 
 #EXTINF:-1,Cartoon Network
-http://127.0.0.1:6878/ace/getstream?id=4a28652e09923cf5c85710f53582d28431b6a830
+http://127.0.0.1:6878/ace/getstream?id=85353ffc044ef1be874177f124e8fccf0007f171
 
 #EXTINF:-1,Boomerang
 http://127.0.0.1:6878/ace/getstream?id=af58c0b0b4607c822d02cbd1ffc77ae4e3b853c3
