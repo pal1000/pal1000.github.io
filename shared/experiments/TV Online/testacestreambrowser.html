@@ -1,0 +1,58 @@
+<html><head><title>Test acestream in web browser</title>
+</head><body>
+<script type='text/javascript' src='../../../index.js'></script>
+<script>
+function getchprop(propname,index){
+var ret='';
+if (propname=='fchname'){
+if (index==0) ret='Cartoon Network';
+if (index==1) ret='Boomerang';
+}
+if (propname=='chid'){
+if (index==0) ret='b840fe2178cde9d274cace880321b64101ca5772';
+if (index==1) ret='af58c0b0b4607c822d02cbd1ffc77ae4e3b853c3';
+}
+if (propname=='player'){
+if (index==0) ret='JW';
+if (index==1) ret='HLS-JS HTTPS 1';
+if (index==2) ret='HLS-JS HTTPS 2';
+if (index==3) ret='HLS-JS HTTP';
+}
+return ret;
+}
+
+function submit(){
+window.location=formsubmit(['channel','player','stop']);
+window.location;
+}
+
+var channel=0;
+var player=0;
+var stop=0;
+if (!$_GET('channel')=='') channel=$_GET('channel');
+if (!$_GET('player')=='') player=$_GET('player');
+if (!$_GET('stop')=='') stop=$_GET('stop');
+
+document.write("Channel<select id='channel'></select>");
+channelselect = document.getElementById('channel');
+for(i=0;i<2;i++) channelselect.options[channelselect.options.length] = new Option(getchprop('fchname',i),i);
+
+document.write("Player<select id='player'></select>");
+playerselect = document.getElementById('player');
+for(i=0;i<4;i++) playerselect.options[playerselect.options.length] = new Option(getchprop('player',i),i);
+
+document.write("<input type='hidden' id='stop' value='0'/>");
+document.write("<input type='button' value='Submit' onclick='submit()'/><br/>");
+channelselect.selectedIndex=channel;
+playerselect.selectedIndex=player;
+
+if(!channel==''){
+   var mediafile='http://127.0.0.1:6878/ace/manifest.m3u8?id='+getchprop('chid',channel);
+   document.write("<center><a href='"+mediafile+"'>Stream URL</a>&nbsp;&nbsp;&nbsp;<a href='"+window.location.toString().substr(0,window.location.toString().length-1)+"0'>Reload</a>");
+   if(player==0) document.write("&nbsp;&nbsp;&nbsp;<a href='"+window.location.toString().substr(0,window.location.toString().length-1)+"1'>Stop</a>");
+   document.write("</center>");
+   if(player==0&&stop==0) document.write("<iframe src='../../../tools/jwembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&isembedded=1' width='97%' height='97%' allowfullscreen='true'/>");
+   if(player>0) document.write("<iframe src='../../../tools/hlsembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&mirror="+parseInt(player-1)+"&isembedded=1' width='97%' height='97%' allowfullscreen='true'/>");
+}
+</script>
+</body></html>
