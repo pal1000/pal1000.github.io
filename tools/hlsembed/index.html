@@ -3,12 +3,13 @@
 <script type='text/javascript' src='../../index.js'></script>
 <script>
 function getmirrors(index){
-var ret='';
-if (index==0) ret='https://hls-js.netlify.app/dist/hls.js';
-if (index==1) ret='https://cdn.jsdelivr.net/npm/hls.js@latest';
-if (index==2) ret='http://cdn.jsdelivr.net/npm/hls.js@latest';
-return ret;
+  var ret='';
+  if (index==0) ret='https://hls-js.netlify.app/dist/hls.js';
+  if (index==1) ret='https://cdn.jsdelivr.net/npm/hls.js@latest';
+  if (index==2) ret='http://cdn.jsdelivr.net/npm/hls.js@latest';
+  return ret;
 }
+
 var mediafile=decodeURIComponent($_GET('media'));
 var width=Math.floor((window.screen.height*100)/window.screen.width)+'%';
 var height=Math.floor((window.screen.height*100)/window.screen.width)+'%';
@@ -29,36 +30,35 @@ if (mediafile=='') {
 }
 
 function submit(){
-window.location=formsubmit(['media','width','height','mirror']);
-window.location;
+  window.location=formsubmit(['media','width','height','mirror']);
+  window.location;
 }
 
 function play(media,mirror){
-document.write('<video id="video" width="'+width+'" height="'+height+'" controls></video>');
-var script = document.createElement("script");
-script.type = "text/javascript";
-script.src = getmirrors(mirror);
-script.onload = function(){
-if(Hls.isSupported()) {
-    var config = {
-       liveBackBufferLength : 3600,
-       maxBufferLength: 30,
-       maxBufferSize : 1024*1024*1024,
-       maxMaxBufferLength : 3600
-    };
-    var hls = new Hls(config);
-    hls.attachMedia(document.getElementById('video'));
-    var playcounter=0;
-    document.getElementById('video').addEventListener(
-    'play',
-    function() {
-        if (playcounter==0) hls.loadSource(media);
-        document.getElementById('video').play();
-        playcounter=1;
-    },
-    false);
-}}
-document.body.appendChild(script);
+  document.write('<video id="video" width="'+width+'" height="'+height+'" controls></video>');
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = getmirrors(mirror);
+  script.onload = function(){
+    if(Hls.isSupported()) {
+       var config = {
+           maxBufferSize : 1024*1024*1024,
+           maxMaxBufferLength : 3600
+       };
+       var hls = new Hls(config);
+       hls.attachMedia(document.getElementById('video'));
+       var playcounter=0;
+       document.getElementById('video').addEventListener(
+         'play',
+         function() {
+           if (playcounter==0) hls.loadSource(media);
+           document.getElementById('video').play();
+           playcounter=1;
+         },
+         false);
+    }
+  }
+  document.body.appendChild(script);
 }
 
 if (!$_GET('media')==''&&!$_GET('isembedded')=='1') document.write(embedcode()+"<br><a href='index.html'>Restart</a><br>");

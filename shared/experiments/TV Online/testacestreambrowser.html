@@ -4,6 +4,11 @@
 <script>
 function getchprop(propname,index){
 var ret='';
+if (propname=='server'){
+if (index==0) ret='http://127.0.0.1';
+if (index==1) ret='http://192.168.1.7';
+if (index==2) ret='http://192.168.80.128';
+}
 if (propname=='fchname'){
 if (index==0) ret='Cartoon Network';
 if (index==1) ret='Boomerang';
@@ -22,16 +27,22 @@ return ret;
 }
 
 function submit(){
-window.location=formsubmit(['channel','player','stop']);
+window.location=formsubmit(['server','channel','player','stop']);
 window.location;
 }
 
+var server=0;
 var channel=0;
 var player=0;
 var stop=0;
+if (!$_GET('server')=='') server=$_GET('server');
 if (!$_GET('channel')=='') channel=$_GET('channel');
 if (!$_GET('player')=='') player=$_GET('player');
 if (!$_GET('stop')=='') stop=$_GET('stop');
+
+document.write("Server<select id='server'></select>");
+serverselect = document.getElementById('server');
+for(i=0;i<=2;i++) serverselect.options[serverselect.options.length] = new Option(getchprop('server',i),i);
 
 document.write("Channel<select id='channel'></select>");
 channelselect = document.getElementById('channel');
@@ -43,11 +54,12 @@ for(i=0;i<4;i++) playerselect.options[playerselect.options.length] = new Option(
 
 document.write("<input type='hidden' id='stop' value='0'/>");
 document.write("<input type='button' value='Submit' onclick='submit()'/><br/>");
+serverselect.selectedIndex=server;
 channelselect.selectedIndex=channel;
 playerselect.selectedIndex=player;
 
 if(!channel==''){
-   var mediafile='http://127.0.0.1:6878/ace/manifest.m3u8?id='+getchprop('chid',channel);
+   var mediafile=getchprop('server',server)+':6878/ace/manifest.m3u8?id='+getchprop('chid',channel);
    document.write("<center><a href='"+mediafile+"'>Stream URL</a>&nbsp;&nbsp;&nbsp;<a href='"+window.location.toString().substr(0,window.location.toString().length-1)+"0'>Reload</a>");
    if(player==0) document.write("&nbsp;&nbsp;&nbsp;<a href='"+window.location.toString().substr(0,window.location.toString().length-1)+"1'>Stop</a>");
    document.write("</center>");
