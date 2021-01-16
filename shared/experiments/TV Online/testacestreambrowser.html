@@ -11,11 +11,13 @@ if (index==2) ret='http://192.168.80.128';
 }
 if (propname=='fchname'){
 if (index==0) ret='Cartoon Network';
-if (index==1) ret='Boomerang';
+if (index==1) ret='Cartoon Network (backup)';
+if (index==2) ret='Boomerang';
 }
 if (propname=='chid'){
 if (index==0) ret='d47384c77019406ae25212d3c90427d6bc423ab1';
-if (index==1) ret='af58c0b0b4607c822d02cbd1ffc77ae4e3b853c3';
+if (index==1) ret='ab3b2a7cd30d838308fd654ed2f1dafe3b975215';
+if (index==2) ret='af58c0b0b4607c822d02cbd1ffc77ae4e3b853c3';
 }
 if (propname=='player'){
 if (index==0) ret='JW';
@@ -46,7 +48,7 @@ for(i=0;i<=2;i++) serverselect.options[serverselect.options.length] = new Option
 
 document.write("Channel<select id='channel'></select>");
 channelselect = document.getElementById('channel');
-for(i=0;i<2;i++) channelselect.options[channelselect.options.length] = new Option(getchprop('fchname',i),i);
+for(i=0;i<=2;i++) channelselect.options[channelselect.options.length] = new Option(getchprop('fchname',i),i);
 
 document.write("Player<select id='player'></select>");
 playerselect = document.getElementById('player');
