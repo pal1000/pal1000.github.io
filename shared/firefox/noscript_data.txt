@@ -176,19 +176,6 @@
             "fetch"
           ],
           "temp": false
-        },
-        "https://accounts.google.com": {
-          "capabilities": [
-            "script",
-            "media",
-            "frame",
-            "fetch",
-            "other",
-            "ping",
-            "object",
-            "webgl"
-          ],
-          "temp": false
         }
       }
     },
@@ -196,7 +183,7 @@
     "autoAllowTop": false
   },
   "local": {
-    "debug": false,
+    "debug": true,
     "showCtxMenuItem": false,
     "showCountBadge": true,
     "showFullAddresses": true,
