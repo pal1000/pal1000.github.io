@@ -12,7 +12,8 @@
         "fetch",
         "other",
         "ping",
-        "object"
+        "object",
+        "noscript"
       ],
       "temp": false
     },
@@ -63,14 +64,12 @@
         "https://uup.rg-adguard.net",
         "https://support.microsoft.com",
         "https://block.malwarebytes.com",
-        "https://openload.co",
         "https://text-compare.com",
         "https://www1.putlockerr.is",
         "https://www5.putlockerr.is",
         "https://www.mailinator.com",
         "https://captcha.realtek.com",
         "http://portal.just.ro",
-        "https://tt1.openload.co",
         "https://www.station-drivers.com",
         "https://station-drivers.com",
         "https://bl.rutube.ru",
@@ -119,8 +118,6 @@
         "https://gitlab.freedesktop.org",
         "https://login.live.com",
         "https://hls-js.netlify.app",
-        "https://edge76.rcs-rds.ro",
-        "https://edge126.rcs-rds.ro",
         "https://login.microsoftonline.com",
         "https://amcdn.msftauth.net",
         "https://dev.azure.com",
