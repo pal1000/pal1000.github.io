@@ -12,6 +12,10 @@ if (index==2) ret='http://192.168.80.128';
 if (propname=='chid'){
 ret=index.replace("acestream:","").replace("//","").replace("/","");
 }
+if (propname=='format'){
+if (index==0) ret='WEB';
+if (index==1) ret='RAW';
+}
 if (propname=='player'){
 if (index==0) ret='JW';
 if (index==1) ret='HLS-JS HTTPS 1';
@@ -22,14 +26,16 @@ return ret;
 }
 
 function submit(){
-window.location=formsubmit(['server','channel','player','stop']);
+window.location=formsubmit(['server','channel','format','player','stop']);
 window.location;
 }
 
 var server=0;
+var format=0;
 var player=0;
 var stop=0;
 if (!$_GET('server')=='') server=$_GET('server');
+if (!$_GET('format')=='') format=$_GET('format');
 channel=decodeURIComponent($_GET('channel'));
 if (!$_GET('player')=='') player=$_GET('player');
 if (!$_GET('stop')=='') stop=$_GET('stop');
@@ -38,7 +44,11 @@ document.write("Server<select id='server'></select>");
 serverselect = document.getElementById('server');
 for(i=0;i<=2;i++) serverselect.options[serverselect.options.length] = new Option(getchprop('server',i),i);
 
-document.write("Channel<input type='text' id='channel' size='80' value='"+decodeURIComponent($_GET('channel'))+"'/>");
+document.write("Format<select id='format'></select>");
+formatselect = document.getElementById('format');
+for(i=0;i<2;i++) formatselect.options[formatselect.options.length] = new Option(getchprop('format',i),i);
+
+document.write("Channel<input type='text' id='channel' size='53' value='"+decodeURIComponent($_GET('channel'))+"'/>");
 
 document.write("Player<select id='player'></select>");
 playerselect = document.getElementById('player');
@@ -47,20 +57,24 @@ for(i=0;i<4;i++) playerselect.options[playerselect.options.length] = new Option(
 document.write("<input type='hidden' id='stop' value='0'/>");
 document.write("<input type='button' value='Submit' onclick='submit()'/><br/>");
 serverselect.selectedIndex=server;
+formatselect.selectedIndex=format;
 playerselect.selectedIndex=player;
 
-document.write("<center><a href='"+formsubmit(['server','player'])+"&stop=0&channel=0fe69d38a42207b676ba0fcba0f7667e4df861ca'>Cartoon Network</a>&nbsp;&nbsp;&nbsp;<a href='"+formsubmit(['server','player'])+"&stop=0&channel=af58c0b0b4607c822d02cbd1ffc77ae4e3b853c3'>Boomerang</a>");
+document.write("<center><a href='"+formsubmit(['server','player','format'])+"&channel=0fe69d38a42207b676ba0fcba0f7667e4df861ca&stop=0'>Cartoon Network</a>");
 
 if(!channel==''){
-   var mediafile=getchprop('server',server)+':6878/ace/manifest.m3u8?id='+getchprop('chid',channel);
+   var mediafile=getchprop('server',server)+':6878/ace/';
+   if(getchprop('format',format)=='WEB') mediafile+='manifest.m3u8';
+   if(getchprop('format',format)=='RAW') mediafile+='getstream';
+   mediafile+='?id='+getchprop('chid',channel);
    document.write("&nbsp;&nbsp;&nbsp;<a href='"+mediafile+"'>Stream URL</a>&nbsp;&nbsp;&nbsp;<a href='"+window.location.toString().substr(0,window.location.toString().length-1)+"0'>Reload</a>");
    if(player==0) document.write("&nbsp;&nbsp;&nbsp;<a href='"+window.location.toString().substr(0,window.location.toString().length-1)+"1'>Stop</a>");
 }
-   document.write("</center>");
+document.write("</center>");
 
 if(!channel==''){
-   if(player==0&&stop==0) document.write("<iframe src='../../../tools/jwembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&isembedded=1' width='97%' height='97%' allowfullscreen='true'/>");
-   if(player>0) document.write("<iframe src='../../../tools/hlsembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&mirror="+parseInt(player-1)+"&isembedded=1' width='97%' height='97%' allowfullscreen='true'/>");
+   if(player==0&&stop==0&&format==0) document.write("<iframe src='../../../tools/jwembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&isembedded=1' width='97%' height='97%' allowfullscreen='true'></iframe>");
+   if(player>0&&format==0) document.write("<iframe src='../../../tools/hlsembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&mirror="+parseInt(player-1)+"&isembedded=1' width='97%' height='97%' allowfullscreen='true'></iframe>");
 }
 </script>
 </body></html>
