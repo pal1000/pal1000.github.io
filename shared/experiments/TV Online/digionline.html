@@ -5,14 +5,8 @@
 function getchprop(propname,index){
 var ret='';
 if (propname=='address'){
-if (index==0) ret='https://edge76.rcs-rds.ro';
-if (index==1) ret='https://edge126.rcs-rds.ro';
-if (index==2) ret='http://edge76.rcs-rds.ro';
-if (index==3) ret='http://edge126.rcs-rds.ro';
-if (index==4) ret='http://edge76.rdsnet.ro';
-if (index==5) ret='http://edge126.rdsnet.ro';
-if (index==6) ret='http://82.76.40.76';
-if (index==7) ret='http://81.196.0.126';
+if (index==0) ret='https://canale.live/dg.m3u8?id=';
+if (index==1) ret='https://opentv.deploys.work/digi.m3u8/?id=';
 }
 if (propname=='fchname'){
 if (index==0) ret='Disney Channel';
@@ -23,34 +17,12 @@ if (index==4) ret='Cartoon Network';
 if (index==5) ret='Boomerang';
 }
 if (propname=='chname'){
-if (index==0) ret='disneychannel';
-if (index==1) ret='disneyjunior';
+if (index==0) ret='disney-channel';
+if (index==1) ret='disney-junior';
 if (index==2) ret='nickelodeon';
 if (index==3) ret='minimax';
-if (index==4) ret='cartoonnetwork';
+if (index==4) ret='cartoon-network';
 if (index==5) ret='boomerang';
-}
-if (propname=='chid'){
-if (index==0) ret=17;
-if (index==1) ret=18;
-if (index==2) ret=28;
-if (index==3) ret=37;
-if (index==4) ret=89;
-if (index==5) ret=90;
-}
-if (propname=='edge'){
-if (index>=0&&index<=3) ret=2;
-if (index>=4&&index<=5) ret=3;
-}
-if (propname=='qname'){
-if (index==0) ret='lq';
-if (index==1) ret='mq';
-if (index==2) ret='hq';
-}
-if (propname=='fqname'){
-if (index==0) ret='Low';
-if (index==1) ret='Medium';
-if (index==2) ret='High';
 }
 if (propname=='player'){
 if (index==0) ret='JW';
@@ -62,32 +34,26 @@ return ret;
 }
 
 function submit(){
-window.location=formsubmit(['server','channel','quality','player','stop']);
+window.location=formsubmit(['server','channel','player','stop']);
 window.location;
 }
 
 var server=0;
 var channel=0;
-var quality=2;
 var player=0;
 var stop=0;
 if (!$_GET('server')=='') server=$_GET('server');
 if (!$_GET('channel')=='') channel=$_GET('channel');
-if (!$_GET('quality')=='') quality=$_GET('quality');
 if (!$_GET('player')=='') player=$_GET('player');
 if (!$_GET('stop')=='') stop=$_GET('stop');
 
 document.write("Server<select id='server'></select>");
 serverselect = document.getElementById('server');
-for(i=0;i<=7;i++) serverselect.options[serverselect.options.length] = new Option(getchprop('address',i),i);
+for(i=0;i<=1;i++) serverselect.options[serverselect.options.length] = new Option(getchprop('address',i),i);
 
 document.write("Channel<select id='channel'></select>");
 channelselect = document.getElementById('channel');
 for(i=0;i<=5;i++) channelselect.options[channelselect.options.length] = new Option(getchprop('fchname',i),i);
-
-document.write("Quality<select id='quality'></select>");
-qualityselect = document.getElementById('quality');
-for(i=0;i<3;i++) qualityselect.options[qualityselect.options.length] = new Option(getchprop('fqname',i),i);
 
 document.write("Player<select id='player'></select>");
 playerselect = document.getElementById('player');
@@ -97,16 +63,15 @@ document.write("<input type='hidden' id='stop' value='0'/>");
 document.write("<input type='button' value='Submit' onclick='submit()'/><br/>");
 serverselect.selectedIndex=server;
 channelselect.selectedIndex=channel;
-qualityselect.selectedIndex=quality;
 playerselect.selectedIndex=player;
 
 if(!channel==''){
-   var mediafile=getchprop('address',server)+"/digiedge"+getchprop('edge',channel)+"/"+getchprop('chname',channel)+"e"+getchprop('qname',quality)+".stream/index.m3u8?is="+getchprop('chid',channel)+"&t=00000000000000000000000000000000";
+   var mediafile=getchprop('address',server)+getchprop('chname',channel);
    document.write("<center><a href='"+mediafile+"'>Stream URL</a>&nbsp;&nbsp;&nbsp;<a href='"+window.location.toString().substr(0,window.location.toString().length-1)+"0'>Reload</a>");
    if(player==0) document.write("&nbsp;&nbsp;&nbsp;<a href='"+window.location.toString().substr(0,window.location.toString().length-1)+"1'>Stop</a>");
-   document.write("</center>");
-   if(player==0&&stop==0) document.write("<iframe src='../../../tools/jwembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&isembedded=1' width='97%' height='97%' allowfullscreen='true'/>");
-   if(player>0) document.write("<iframe src='../../../tools/hlsembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&mirror="+parseInt(player-1)+"&isembedded=1' width='97%' height='97%' allowfullscreen='true'/>");
+   document.write("</center><iframe src='"+mediafile+"' width='97%' height='97%'></iframe>");
+   if(player==0&&stop==0) document.write("<iframe src='../../../tools/jwembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&isembedded=1' width='97%' height='97%' allowfullscreen='true'></iframe>");
+   if(player>0) document.write("<iframe src='../../../tools/hlsembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&mirror="+parseInt(player-1)+"&isembedded=1' width='97%' height='97%' allowfullscreen='true'></iframe>");
 }
 </script>
 </body></html>

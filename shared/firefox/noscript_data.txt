@@ -13,7 +13,8 @@
         "other",
         "ping",
         "object",
-        "noscript"
+        "noscript",
+        "csspp0"
       ],
       "temp": false
     },
@@ -146,7 +147,8 @@
         "§:googleusercontent.com",
         "https://entitlements.jwplayer.com",
         "https://edgecast-vod.yimg.com",
-        "file:///C:/Software/Development/projects/pal1000.github.io/shared/experiments/TV%20Online/testacestreambrowser.html"
+        "file:///C:/Software/Development/projects/pal1000.github.io/shared/experiments/TV%20Online/testacestreambrowser.html",
+        "https://hqq.tv"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -164,7 +166,8 @@
           "capabilities": [
             "script",
             "webgl",
-            "fetch"
+            "fetch",
+            "csspp0"
           ],
           "temp": false
         },
