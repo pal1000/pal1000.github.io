@@ -4,25 +4,21 @@
 <script>
 function getchprop(propname,index){
 var ret='';
-if (propname=='address'){
-if (index==0) ret='https://canale.live/dg.m3u8?id=';
-if (index==1) ret='https://opentv.deploys.work/digi.m3u8/?id=';
-}
 if (propname=='fchname'){
 if (index==0) ret='Disney Channel';
-if (index==1) ret='Disney Junior';
-if (index==2) ret='Nickelodeon';
-if (index==3) ret='Minimax';
-if (index==4) ret='Cartoon Network';
-if (index==5) ret='Boomerang';
+// if (index==1) ret='Disney Junior';
+if (index==1) ret='Nickelodeon';
+if (index==2) ret='Minimax';
+if (index==3) ret='Cartoon Network';
+if (index==4) ret='Boomerang';
 }
 if (propname=='chname'){
-if (index==0) ret='disney-channel';
-if (index==1) ret='disney-junior';
-if (index==2) ret='nickelodeon';
-if (index==3) ret='minimax';
-if (index==4) ret='cartoon-network';
-if (index==5) ret='boomerang';
+if (index==0) ret='157';
+// if (index==1) ret='disney-junior';
+if (index==1) ret='158';
+if (index==2) ret='156';
+if (index==3) ret='155';
+if (index==4) ret='159';
 }
 if (propname=='player'){
 if (index==0) ret='JW';
@@ -34,26 +30,20 @@ return ret;
 }
 
 function submit(){
-window.location=formsubmit(['server','channel','player','stop']);
+window.location=formsubmit(['channel','player','stop']);
 window.location;
 }
 
-var server=0;
 var channel=0;
 var player=0;
 var stop=0;
-if (!$_GET('server')=='') server=$_GET('server');
 if (!$_GET('channel')=='') channel=$_GET('channel');
 if (!$_GET('player')=='') player=$_GET('player');
 if (!$_GET('stop')=='') stop=$_GET('stop');
 
-document.write("Server<select id='server'></select>");
-serverselect = document.getElementById('server');
-for(i=0;i<=1;i++) serverselect.options[serverselect.options.length] = new Option(getchprop('address',i),i);
-
 document.write("Channel<select id='channel'></select>");
 channelselect = document.getElementById('channel');
-for(i=0;i<=5;i++) channelselect.options[channelselect.options.length] = new Option(getchprop('fchname',i),i);
+for(i=0;i<5;i++) channelselect.options[channelselect.options.length] = new Option(getchprop('fchname',i),i);
 
 document.write("Player<select id='player'></select>");
 playerselect = document.getElementById('player');
@@ -61,15 +51,14 @@ for(i=0;i<4;i++) playerselect.options[playerselect.options.length] = new Option(
 
 document.write("<input type='hidden' id='stop' value='0'/>");
 document.write("<input type='button' value='Submit' onclick='submit()'/><br/>");
-serverselect.selectedIndex=server;
 channelselect.selectedIndex=channel;
 playerselect.selectedIndex=player;
 
 if(!channel==''){
-   var mediafile=getchprop('address',server)+getchprop('chname',channel);
+   var mediafile='https://srv.canale.live:2083/'+getchprop('chname',channel)+'.m3u8&auth=ODYuMTI3LjE2My42';
    document.write("<center><a href='"+mediafile+"'>Stream URL</a>&nbsp;&nbsp;&nbsp;<a href='"+window.location.toString().substr(0,window.location.toString().length-1)+"0'>Reload</a>");
    if(player==0) document.write("&nbsp;&nbsp;&nbsp;<a href='"+window.location.toString().substr(0,window.location.toString().length-1)+"1'>Stop</a>");
-   document.write("</center><iframe src='"+mediafile+"' width='97%' height='97%'></iframe>");
+   // document.write("</center><iframe src='"+mediafile+"' width='97%' height='97%'></iframe>");
    if(player==0&&stop==0) document.write("<iframe src='../../../tools/jwembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&isembedded=1' width='97%' height='97%' allowfullscreen='true'></iframe>");
    if(player>0) document.write("<iframe src='../../../tools/hlsembed/index.html?media="+encodeURIComponent(mediafile)+"&width=97%25&height=97%25&mirror="+parseInt(player-1)+"&isembedded=1' width='97%' height='97%' allowfullscreen='true'></iframe>");
 }
