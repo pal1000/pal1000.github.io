@@ -55,7 +55,7 @@ channelselect.selectedIndex=channel;
 playerselect.selectedIndex=player;
 
 if(!channel==''){
-   var mediafile='https://srv.canale.live:2083/'+getchprop('chname',channel)+'.m3u8&auth=ODYuMTI3LjE2My42';
+   var mediafile='https://static.240.188.251.148.clients.your-server.de:2083/'+getchprop('chname',channel)+'.m3u8&auth=ODYuMTI3LjE2My4xMzg=';
    document.write("<center><a href='"+mediafile+"'>Stream URL</a>&nbsp;&nbsp;&nbsp;<a href='"+window.location.toString().substr(0,window.location.toString().length-1)+"0'>Reload</a>");
    if(player==0) document.write("&nbsp;&nbsp;&nbsp;<a href='"+window.location.toString().substr(0,window.location.toString().length-1)+"1'>Stop</a>");
    // document.write("</center><iframe src='"+mediafile+"' width='97%' height='97%'></iframe>");
