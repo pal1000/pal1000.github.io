@@ -14,7 +14,7 @@
         "ping",
         "object",
         "noscript",
-        "csspp0"
+        "unchecked_css"
       ],
       "temp": false
     },
@@ -148,7 +148,13 @@
         "file:///C:/Software/Development/projects/pal1000.github.io/shared/experiments/TV%20Online/testacestreambrowser.html",
         "https://hqq.tv",
         "https://dl-mail.ymail.com",
-        "https://apis.mail.yahoo.com"
+        "https://apis.mail.yahoo.com",
+        "https://195-154-191-39.rev.poneytelecom.eu:2083",
+        "https://ns3051855.ip-46-105-124.eu:2096",
+        "https://dns.deploys.work:2083",
+        "https://canale.live",
+        "https://dns2.deploys.work:2083",
+        "https://195-154-191-39.rev.poneytelecom.eu:2053"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -167,7 +173,7 @@
             "script",
             "webgl",
             "fetch",
-            "csspp0"
+            "unchecked_css"
           ],
           "temp": false
         },
