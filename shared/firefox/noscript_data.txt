@@ -154,7 +154,14 @@
         "https://dns.deploys.work:2083",
         "https://canale.live",
         "https://dns2.deploys.work:2083",
-        "https://195-154-191-39.rev.poneytelecom.eu:2053"
+        "https://195-154-191-39.rev.poneytelecom.eu:2053",
+        "https://login.yahoo.com",
+        "https://ro.yahoo.com",
+        "https://sport.deploys.work:2083",
+        "https://edge3.deploys.work:2083",
+        "https://digi5.canale.live",
+        "https://ovh.deploys.work:2096",
+        "https://edge2.deploys.work:2083"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
