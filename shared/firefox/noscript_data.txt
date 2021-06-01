@@ -161,7 +161,8 @@
         "https://edge3.deploys.work:2083",
         "https://digi5.canale.live",
         "https://ovh.deploys.work:2096",
-        "https://edge2.deploys.work:2083"
+        "https://edge2.deploys.work:2083",
+        "https://cdn.deploys.work"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
