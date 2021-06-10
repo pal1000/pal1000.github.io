@@ -162,7 +162,14 @@
         "https://digi5.canale.live",
         "https://ovh.deploys.work:2096",
         "https://edge2.deploys.work:2083",
-        "https://cdn.deploys.work"
+        "https://auction.deploys.work:2083",
+        "https://deploys.work",
+        "https://ovh.deploys.work",
+        "https://deployswork-19748.kxcdn.com",
+        "https://canalelive-19748.kxcdn.com",
+        "https://fotbaltv.biz",
+        "https://cdn.fluidplayer.com",
+        "https://edge.deploys.work:2083"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
