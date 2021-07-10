@@ -176,7 +176,9 @@
         "https://op.wmsxx.ml",
         "https://op.streamnode.gq",
         "https://op.deploys.work",
-        "https://op.streamingnode.gq"
+        "https://op.streamingnode.gq",
+        "https://srv.canale.live",
+        "https://5950x.canale.live"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
