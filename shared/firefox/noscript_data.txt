@@ -187,7 +187,6 @@
         "https://ssl.google-analytics.com",
         "https://www.googletagservices.com",
         "http://fonts.gstatic.com",
-        "https://www.googletagmanager.com",
         "https://www.google-analytics.com",
         "https://fonts.gstatic.com"
       ],
