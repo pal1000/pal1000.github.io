@@ -162,7 +162,14 @@
         "https://dedi2.canale.live",
         "https://srv.canale.live",
         "https://5950x.canale.live",
-        "https://srv.canale.live:440"
+        "https://srv.canale.live:440",
+        "https://static.anaf.ro",
+        "https://login.yahoo.net",
+        "https://incoming-selecting-limitation-pee.trycloudflare.com",
+        "https://h4.ustvgo.la",
+        "https://h3.ustvgo.la",
+        "https://h2.ustvgo.la",
+        "https://h1.ustvgo.la"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
