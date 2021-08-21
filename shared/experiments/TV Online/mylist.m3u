@@ -6,9 +6,3 @@ http://127.0.0.1:6878/ace/getstream?id=bfeb64f363ebc45277c5c06b8e58e229a43889c0
 #EXTINF:-1,Disney Junior (new)
 http://127.0.0.1:6878/ace/getstream?id=78ff8cc9f4ce880e2ee5a59f43f167bdfaf018ae
 
-#EXTINF:-1,Disney Junior
-http://127.0.0.1:6878/ace/getstream?id=283bd7be92b4a9bcc0e50ba2cc3b313197d8c330
-
-#EXTINF:-1,Cartoon Network
-http://127.0.0.1:6878/ace/getstream?id=0fe69d38a42207b676ba0fcba0f7667e4df861ca
-
