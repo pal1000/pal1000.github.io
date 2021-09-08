@@ -215,7 +215,13 @@
         "https://streamani.net",
         "https://deseneledublate.com",
         "https://kimdesene.org",
-        "https://ustvgo.tv"
+        "https://ustvgo.tv",
+        "https://tna5.bozztv.com",
+        "http://s4.dontlookback.xyz",
+        "http://s5.dontlookback.xyz",
+        "https://www.cinemagia.ro",
+        "https://static.cinemagia.ro",
+        "https://pull-2551.5centscdn.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
