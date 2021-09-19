@@ -221,7 +221,12 @@
         "http://s5.dontlookback.xyz",
         "https://www.cinemagia.ro",
         "https://static.cinemagia.ro",
-        "https://pull-2551.5centscdn.com"
+        "https://pull-2551.5centscdn.com",
+        "https://srv.tvhd-online.com:2083",
+        "https://lb6.tvhd-online.com:8443",
+        "https://lb5.tvhd-online.com:8443",
+        "https://lb4.tvhd-online.com:8443",
+        "https://filme24.club"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
