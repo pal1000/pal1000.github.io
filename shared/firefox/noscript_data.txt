@@ -226,7 +226,18 @@
         "https://lb6.tvhd-online.com:8443",
         "https://lb5.tvhd-online.com:8443",
         "https://lb4.tvhd-online.com:8443",
-        "https://filme24.club"
+        "https://filme24.club",
+        "https://lb7.tvhd-online.com:8443",
+        "https://lb8.tvhd-online.com:8443",
+        "https://my.malwarebytes.com",
+        "https://my-sso.malwarebytes.com",
+        "https://goload.one",
+        "https://s.yimg.com",
+        "https://calendar.yahoo.com",
+        "https://get.123tv.live",
+        "https://www.luxubu.review",
+        "https://fvs.io",
+        "https://srv.canale.live:8443"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
