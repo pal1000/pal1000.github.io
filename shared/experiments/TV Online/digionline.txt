@@ -1,0 +1,7 @@
+https://balancer2.digi24.ro/streamer/make_key.php
+https://balancer2.digi24.ro/streamer.php?&scope=digisport1desk&key=992abb98b009fe5c3fd759679febd921&outputFormat=json&type=abr&quality=hq&is=1&ns=digisport1&pe=site&s=site&sn=digisport.ro&p=browser&pd=windows
+
+https://canale.live/digi.m3u8?id=cartoon-network
+https://canale.live/digi.m3u8?id=boomerang
+https://canale.live/digi.m3u8/?id=nickelodeon
+https://canale.live/digi.m3u8?id=minimax
