@@ -237,7 +237,10 @@
         "https://get.123tv.live",
         "https://www.luxubu.review",
         "https://fvs.io",
-        "https://srv.canale.live:8443"
+        "https://srv.canale.live:8443",
+        "https://include.canale.live",
+        "https://ivm.licenses4.me:8443",
+        "http://dspdolj.ro"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
