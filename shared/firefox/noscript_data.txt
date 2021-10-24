@@ -239,8 +239,9 @@
         "https://fvs.io",
         "https://srv.canale.live:8443",
         "https://include.canale.live",
-        "https://ivm.licenses4.me:8443",
-        "http://dspdolj.ro"
+        "http://dspdolj.ro",
+        "https://ingest.licenses4.me",
+        "http://kisscenter.net"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
