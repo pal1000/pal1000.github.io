@@ -255,7 +255,12 @@
         "https://key.fotbaltv.biz",
         "https://key.licenses4.me",
         "https://bitmovin-a.akamaihd.net",
-        "https://eplayer.click"
+        "https://eplayer.click",
+        "https://iron1.jarvisx.xyz",
+        "https://rohan1.ultronx.xyz",
+        "https://atlantida1.aquax.xyz",
+        "https://www.cool-etv.net",
+        "https://cdn.cool-tvweb.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
