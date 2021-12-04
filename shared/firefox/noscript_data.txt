@@ -206,7 +206,6 @@
         "http://s4.donotgiveup.xyz",
         "https://inbox.publi24.ro",
         "https://www.publi24.ro",
-        "https://gogoanime.pe",
         "https://cdn.gogocdn.net",
         "https://ajax.gogo-load.com",
         "https://kimcartoon.li",
@@ -251,7 +250,6 @@
         "https://drm2.licenses4.me",
         "https://m7rovideolive.solocoo.tv",
         "https://player.hulu.com",
-        "https://gogoplay1.com",
         "https://key.fotbaltv.biz",
         "https://key.licenses4.me",
         "https://bitmovin-a.akamaihd.net",
@@ -260,7 +258,11 @@
         "https://rohan1.ultronx.xyz",
         "https://atlantida1.aquax.xyz",
         "https://www.cool-etv.net",
-        "https://cdn.cool-tvweb.com"
+        "https://gogoanime.cm",
+        "https://h5.ustvgo.la",
+        "https://objects-origin.githubusercontent.com",
+        "https://evenimentdeolt.ro",
+        "https://lb.comedyshow.to"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
