@@ -201,7 +201,10 @@
         "https://referrer.disqus.com",
         "file:///C:/Software/Development/projects/pal1000.github.io/index.js",
         "http://tv4embed.com",
-        "https://stream-1-2.loadshare.org"
+        "https://stream-1-2.loadshare.org",
+        "https://objects.githubusercontent.com",
+        "https://haveibeenpwned.com",
+        "https://api.pwnedpasswords.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
