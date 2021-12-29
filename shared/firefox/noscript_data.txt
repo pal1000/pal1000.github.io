@@ -168,7 +168,6 @@
         "https://thor1.syndula.xyz",
         "https://licenses4.me:8443",
         "https://player.ssl.cdn.cra.cz",
-        "https://include.canale.live",
         "https://programare.vaccinare-covid.gov.ro",
         "https://tvhd-online.com",
         "https://drm2.licenses4.me",
@@ -176,7 +175,6 @@
         "https://player.hulu.com",
         "https://key.licenses4.me",
         "https://bitmovin-a.akamaihd.net",
-        "https://eplayer.click",
         "https://iron1.jarvisx.xyz",
         "https://rohan1.ultronx.xyz",
         "https://atlantida1.aquax.xyz",
@@ -204,7 +202,11 @@
         "https://stream-1-2.loadshare.org",
         "https://objects.githubusercontent.com",
         "https://haveibeenpwned.com",
-        "https://api.pwnedpasswords.com"
+        "https://api.pwnedpasswords.com",
+        "https://cdn7.comicsonline.to",
+        "https://licensing.bitmovin.com",
+        "https://eplayer.click",
+        "https://videocdn.click"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
