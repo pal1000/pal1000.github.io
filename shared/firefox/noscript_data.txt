@@ -204,6 +204,7 @@
         "https://api.pwnedpasswords.com",
         "https://cdn7.comicsonline.to",
         "https://licensing.bitmovin.com",
+        "https://videocdn.click",
         "https://eplayer.click"
       ],
       "untrusted": [
