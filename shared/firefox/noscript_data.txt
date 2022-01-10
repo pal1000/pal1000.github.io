@@ -150,7 +150,6 @@
         "https://kimcartoon.li",
         "https://ghosthis.review",
         "https://kisscenter.net",
-        "https://deseneledublate.com",
         "https://kimdesene.org",
         "https://ustvgo.tv",
         "https://www.cinemagia.ro",
@@ -205,8 +204,7 @@
         "https://api.pwnedpasswords.com",
         "https://cdn7.comicsonline.to",
         "https://licensing.bitmovin.com",
-        "https://eplayer.click",
-        "https://videocdn.click"
+        "https://eplayer.click"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
