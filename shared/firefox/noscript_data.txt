@@ -205,7 +205,8 @@
         "https://cdn7.comicsonline.to",
         "https://licensing.bitmovin.com",
         "https://videocdn.click",
-        "https://eplayer.click"
+        "https://eplayer.click",
+        "https://videos2-h.sendvid.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
