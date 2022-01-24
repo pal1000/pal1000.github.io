@@ -206,7 +206,9 @@
         "https://licensing.bitmovin.com",
         "https://videocdn.click",
         "https://eplayer.click",
-        "https://videos2-h.sendvid.com"
+        "https://videos2-h.sendvid.com",
+        "https://gogoplay.io",
+        "https://vidstreamingcdn.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
