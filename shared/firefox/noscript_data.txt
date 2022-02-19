@@ -76,16 +76,7 @@
         "https://github-production-release-asset-2e65be.s3.amazonaws.com",
         "https://mail.yahoo.com",
         "https://s4.tinyvid.net",
-        "https://vkcdnservice.appspot.com.storage.googleapis.com",
-        "https://cembed.cartooncrazy.tv",
-        "https://www1.cartooncrazy.tv",
-        "https://player.cartooncrazy.net",
-        "https://wwwstatic.chia-anime.tv",
         "https://majorgeekscom.disqus.com",
-        "§:vkcache.com",
-        "https://deliver.vkcdnservice.com",
-        "https://www1.cartooncrazy.net",
-        "https://player.cartooncrazy.tv",
         "https://www.anaf.ro",
         "https://pfinternet.anaf.ro",
         "https://openbenchmarking.org",
@@ -134,7 +125,6 @@
         "https://pipelines.actions.githubusercontent.com",
         "https://static.anaf.ro",
         "https://login.yahoo.net",
-        "https://incoming-selecting-limitation-pee.trycloudflare.com",
         "https://h4.ustvgo.la",
         "https://h3.ustvgo.la",
         "https://h2.ustvgo.la",
@@ -160,20 +150,13 @@
         "https://calendar.yahoo.com",
         "https://www.luxubu.review",
         "https://fvs.io",
-        "https://ivm.licenses4.me:8443",
         "http://dspdolj.ro",
-        "https://ingest.licenses4.me",
         "http://kisscenter.net",
         "https://thor1.syndula.xyz",
-        "https://licenses4.me:8443",
-        "https://player.ssl.cdn.cra.cz",
         "https://programare.vaccinare-covid.gov.ro",
         "https://tvhd-online.com",
-        "https://drm2.licenses4.me",
         "https://m7rovideolive.solocoo.tv",
         "https://player.hulu.com",
-        "https://key.licenses4.me",
-        "https://bitmovin-a.akamaihd.net",
         "https://iron1.jarvisx.xyz",
         "https://rohan1.ultronx.xyz",
         "https://atlantida1.aquax.xyz",
@@ -187,28 +170,29 @@
         "https://cdn5.comicsonline.to",
         "https://cdn6.comicsonline.to",
         "https://cdn3.comicsonline.to",
-        "https://stream-2-2.loadshare.org",
         "https://stream-1-1-ip4.loadshare.org",
         "https://cdn2.comicsonline.to",
         "https://cdn1.comicsonline.to",
         "https://api.github.com",
         "https://collector.githubapp.com",
         "https://github-production-user-asset-6210df.s3.amazonaws.com",
-        "https://x-disney-datg-stgec.uplynk.com",
         "https://referrer.disqus.com",
         "file:///C:/Software/Development/projects/pal1000.github.io/index.js",
         "http://tv4embed.com",
-        "https://stream-1-2.loadshare.org",
         "https://objects.githubusercontent.com",
         "https://haveibeenpwned.com",
         "https://api.pwnedpasswords.com",
         "https://cdn7.comicsonline.to",
-        "https://licensing.bitmovin.com",
-        "https://videocdn.click",
-        "https://eplayer.click",
         "https://videos2-h.sendvid.com",
         "https://gogoplay.io",
-        "https://vidstreamingcdn.com"
+        "https://m7cz.solocoo.tv",
+        "https://tv-he.orange.ro",
+        "https://oro.solocoo.tv",
+        "https://tvron.net",
+        "https://versuri24.com",
+        "https://tvonline.biz",
+        "https://videocdn.click",
+        "https://bitmovin-a.akamaihd.net"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -234,6 +218,18 @@
           "capabilities": [
             "fetch"
           ],
+          "temp": false
+        },
+        "https://www.googletagmanager.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            }
+          },
           "temp": false
         }
       }
