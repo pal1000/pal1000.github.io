@@ -116,9 +116,6 @@
         "https://canale.live",
         "https://login.yahoo.com",
         "https://ro.yahoo.com",
-        "https://mega.nz",
-        "https://g.api.mega.co.nz",
-        "https://eu.static.mega.co.nz",
         "https://downloads.malwarebytes.com",
         "https://data-cdn.mbamupdates.com",
         "https://swarm.video",
@@ -192,7 +189,12 @@
         "https://versuri24.com",
         "https://tvonline.biz",
         "https://videocdn.click",
-        "https://bitmovin-a.akamaihd.net"
+        "https://bitmovin-a.akamaihd.net",
+        "https://vidstreamingcdn.com",
+        "https://mega.nz",
+        "https://eu.static.mega.co.nz",
+        "https://g.api.mega.co.nz",
+        "https://www-csoonline-com.translate.goog"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
