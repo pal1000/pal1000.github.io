@@ -194,7 +194,8 @@
         "https://mega.nz",
         "https://eu.static.mega.co.nz",
         "https://g.api.mega.co.nz",
-        "https://www-csoonline-com.translate.goog"
+        "https://www-csoonline-com.translate.goog",
+        "https://k1.ustvgo.la"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -233,6 +234,36 @@
             }
           },
           "temp": false
+        },
+        "§:fbcdn.net": {
+          "capabilities": [],
+          "contextual": {
+            "§:facebook.com": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://www.facebook.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:facebook.com": {
+              "capabilities": [
+                "script",
+                "object",
+                "media",
+                "frame",
+                "fetch",
+                "unchecked_css",
+                "other"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
         }
       }
     },
@@ -247,7 +278,22 @@
     "amnesticUpdates": false,
     "storage": "local",
     "uuid": "ee5b21c2-107e-4636-b055-3bb97d22e1e4",
-    "highContrast": false
+    "highContrast": false,
+    "toolbarLayout": {
+      "left": [
+        "close",
+        "reload",
+        "options"
+      ],
+      "right": [
+        "revoke-temp"
+      ],
+      "hidden": [
+        "enforce",
+        "enforce-tab",
+        "temp-trust-page"
+      ]
+    }
   },
   "sync": {
     "global": false,
