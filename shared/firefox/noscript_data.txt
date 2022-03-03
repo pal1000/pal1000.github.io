@@ -187,7 +187,6 @@
         "https://oro.solocoo.tv",
         "https://tvron.net",
         "https://versuri24.com",
-        "https://tvonline.biz",
         "https://videocdn.click",
         "https://bitmovin-a.akamaihd.net",
         "https://vidstreamingcdn.com",
@@ -195,7 +194,8 @@
         "https://eu.static.mega.co.nz",
         "https://g.api.mega.co.nz",
         "https://www-csoonline-com.translate.goog",
-        "https://k1.ustvgo.la"
+        "https://k1.ustvgo.la",
+        "https://tvron.live"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
