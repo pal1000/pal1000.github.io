@@ -181,7 +181,6 @@
         "https://tv-he.orange.ro",
         "https://tvron.net",
         "https://versuri24.com",
-        "https://videocdn.click",
         "https://bitmovin-a.akamaihd.net",
         "https://vidstreamingcdn.com",
         "https://mega.nz",
@@ -196,7 +195,15 @@
         "https://static-mh.content.disney.io",
         "https://mail.google.com",
         "https://tvonline.biz",
-        "https://cdn.akamaizeb.co"
+        "https://cdn.akamaizeb.co",
+        "https://m7cz.solocoo.tv",
+        "https://m7rovideolive.solocoo.tv",
+        "https://content-aeuf1.uplynk.com",
+        "http://content-aeuf1.uplynk.com",
+        "https://x-disney-datg-stgec.uplynk.com",
+        "http://x-disney-datg-stgec.uplynk.com",
+        "https://videocdn.click",
+        "https://cdn.casamireasa.biz"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
