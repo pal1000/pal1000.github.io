@@ -240,7 +240,14 @@
         "https://stvron.com",
         "https://cdn.filmesuper.com",
         "https://cdn.nowmovies.is",
-        "https://cdn.filmsubtitrat.net"
+        "https://cdn.filmsubtitrat.net",
+        "https://cdn.ketosavediet.com",
+        "https://cdn.bemovies.cc",
+        "http://s4.dfgdfgdfgdfg.xyz",
+        "http://s2.dfgdfgdfgdfg.xyz",
+        "http://s3.dfgdfgdfgdfg.xyz",
+        "http://s1.dfgdfgdfgdfg.xyz",
+        "http://s5.dfgdfgdfgdfg.xyz"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
