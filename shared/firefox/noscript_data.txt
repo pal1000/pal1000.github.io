@@ -220,7 +220,6 @@
         "https://cdn2.ohmovies.to",
         "https://cdn2.ketosavediet.com",
         "https://cdn2.kanald.online",
-        "https://cdn.jsdelivr.net",
         "https://cdn2.flixtor.ws",
         "https://cdn2.filmsubtitrat.net",
         "https://cdn2.filmexseriale.com",
@@ -247,7 +246,10 @@
         "http://s2.dfgdfgdfgdfg.xyz",
         "http://s3.dfgdfgdfgdfg.xyz",
         "http://s1.dfgdfgdfgdfg.xyz",
-        "http://s5.dfgdfgdfgdfg.xyz"
+        "http://s5.dfgdfgdfgdfg.xyz",
+        "https://cdn.spinomaster.com",
+        "https://filmele-online.com",
+        "https://cdn.danimocanu.ro"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
