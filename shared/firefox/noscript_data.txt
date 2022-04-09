@@ -249,7 +249,8 @@
         "http://s5.dfgdfgdfgdfg.xyz",
         "https://cdn.spinomaster.com",
         "https://filmele-online.com",
-        "https://cdn.danimocanu.ro"
+        "https://cdn.danimocanu.ro",
+        "https://cmpv2.csoonline.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -354,8 +355,8 @@
     "xss": true,
     "cascadeRestrictions": true,
     "overrideTorBrowserPolicy": false,
-    "clearclick": true,
-    "storage": "sync"
+    "storage": "sync",
+    "clearclick": true
   },
   "xssUserChoices": {}
 }
