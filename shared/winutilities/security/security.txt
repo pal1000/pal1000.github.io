@@ -11,7 +11,7 @@
 2. Firewall
 -----------
 - Block all inbound connections;
-- Block all outbound SMB connections (remote ports 137-139, 445 both TCP and UDP). DO NOT APPLY IN A VM. Virtualbox networking requires SMB to work in guest OS for DNS to work as well.
+- Block all outbound SMB and RPC connections (remote ports 135, 137-139, 445 both TCP and UDP). DO NOT APPLY IN A VM. Virtualbox networking requires SMB to work in guest OS for DNS to work as well.
 
 3. Mitigate DNSMasq vulnerability
 ---------------------------------
