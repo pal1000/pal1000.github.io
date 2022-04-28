@@ -228,7 +228,9 @@
         "https://cdn.filmele-online.com",
         "https://cdn.yesmoviesgo.com",
         "https://cdn2.ketosavediet.com",
-        "http://hls.123tv.live"
+        "http://hls.123tv.live",
+        "https://translate.googleapis.com",
+        "https://mycez.cezinfo.ro"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -290,6 +292,25 @@
                 "media",
                 "frame",
                 "fetch",
+                "unchecked_css",
+                "other"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://m.facebook.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:facebook.com": {
+              "capabilities": [
+                "script",
+                "media",
+                "frame",
+                "fetch",
+                "ping",
+                "noscript",
                 "unchecked_css",
                 "other"
               ],
