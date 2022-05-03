@@ -230,7 +230,8 @@
         "https://cdn2.ketosavediet.com",
         "http://hls.123tv.live",
         "https://translate.googleapis.com",
-        "https://mycez.cezinfo.ro"
+        "https://mycez.cezinfo.ro",
+        "https://cloudflare.hcaptcha.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
