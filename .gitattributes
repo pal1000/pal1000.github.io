@@ -1,3 +1,2 @@
-* text=auto
 *.cmd text eol=crlf
 *.reg diff
