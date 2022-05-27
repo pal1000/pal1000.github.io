@@ -130,8 +130,6 @@
         "https://routersecurity-org.translate.goog",
         "https://inbox.publi24.ro",
         "https://www.publi24.ro",
-        "https://cdn.gogocdn.net",
-        "https://ajax.gogo-load.com",
         "https://kimcartoon.li",
         "https://ghosthis.review",
         "https://kisscenter.net",
@@ -231,7 +229,14 @@
         "http://hls.123tv.live",
         "https://translate.googleapis.com",
         "https://mycez.cezinfo.ro",
-        "https://cloudflare.hcaptcha.com"
+        "https://cloudflare.hcaptcha.com",
+        "http://live.tv247.club",
+        "http://live.buoitoi.xyz",
+        "http://get.123tv.live",
+        "https://cdn.gogocdn.net",
+        "https://ajax.gogo-load.com",
+        "https://cf-assets.hcaptcha.com",
+        "https://store.rg-adguard.net"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
