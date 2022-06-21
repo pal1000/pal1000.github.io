@@ -236,7 +236,9 @@
         "https://cdn.gogocdn.net",
         "https://ajax.gogo-load.com",
         "https://cf-assets.hcaptcha.com",
-        "https://store.rg-adguard.net"
+        "https://store.rg-adguard.net",
+        "https://newassets.hcaptcha.com",
+        "https://forums.malwarebytes.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
