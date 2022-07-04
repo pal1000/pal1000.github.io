@@ -238,7 +238,9 @@
         "https://cf-assets.hcaptcha.com",
         "https://store.rg-adguard.net",
         "https://newassets.hcaptcha.com",
-        "https://forums.malwarebytes.com"
+        "https://forums.malwarebytes.com",
+        "https://agentia.gdfsuez.ro",
+        "http://live.uplynnk.xyz"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -278,18 +280,6 @@
           },
           "temp": false
         },
-        "§:fbcdn.net": {
-          "capabilities": [],
-          "contextual": {
-            "§:facebook.com": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "https://www.facebook.com": {
           "capabilities": [],
           "contextual": {
@@ -301,7 +291,8 @@
                 "frame",
                 "fetch",
                 "unchecked_css",
-                "other"
+                "other",
+                "ping"
               ],
               "temp": false
             }
@@ -321,6 +312,32 @@
                 "noscript",
                 "unchecked_css",
                 "other"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:fbcdn.net": {
+          "capabilities": [],
+          "contextual": {
+            "§:facebook.com": {
+              "capabilities": [
+                "script",
+                "media",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://vcdnads.ru.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "script"
               ],
               "temp": false
             }
