@@ -1,4 +1,3 @@
-@echo off
 @cd /d "%~dp0"
 @set "ERRORLEVEL="
 @CMD /C EXIT 0
@@ -9,7 +8,7 @@
 )
 :--------------------------------------
 @IF EXIST "%ProgramFiles%\PackageManagement\ProviderAssemblies\nuget" RD /S /Q "%ProgramFiles%\PackageManagement\ProviderAssemblies\nuget"
-(
+@(
 @echo Install-PackageProvider -Name nuget
 @echo Y
 @echo Install-Module -Name SpeculationControl
@@ -20,6 +19,6 @@
 @echo Get-SpeculationControlSettings
 @echo Set-ExecutionPolicy $SaveExecutionPolicy -Scope CurrentUser
 @echo UnInstall-Module -Name SpeculationControl
-) | powershell
+) | powershell -NoLogo
 @IF EXIST "%ProgramFiles%\PackageManagement\ProviderAssemblies\nuget" RD /S /Q "%ProgramFiles%\PackageManagement\ProviderAssemblies\nuget"
 @pause

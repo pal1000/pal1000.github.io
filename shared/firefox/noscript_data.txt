@@ -124,7 +124,6 @@
         "https://h3.ustvgo.la",
         "https://h2.ustvgo.la",
         "https://h1.ustvgo.la",
-        "https://defined-ranked-joined-written.trycloudflare.com",
         "https://negotiation-subscriber-weed-fred.trycloudflare.com",
         "https://translate.google.com",
         "https://routersecurity-org.translate.goog",
@@ -211,21 +210,11 @@
         "https://cnvideo.sercomkc.org",
         "https://time.ten.ngtv.io",
         "https://galandriel1.thobias.xyz",
-        "https://tls-ech-experiment-c.cloudflareresearch.com",
-        "https://tls-ech-experiment.cloudflareresearch.com",
-        "https://kokos.terranovax.xyz",
         "https://flash1.bogulus.xyz",
         "http://cdn.espnfree.xyz",
         "http://guide.espnfree.xyz",
-        "https://cdn.ketosavediet.com",
-        "https://cdn2.kanald.online",
         "https://cdn2.filmele-online.com",
-        "https://cdn2.spinomaster.com",
-        "https://cdn.spinomaster.com",
-        "https://cdn2.yesmoviesgo.com",
         "https://cdn.filmele-online.com",
-        "https://cdn.yesmoviesgo.com",
-        "https://cdn2.ketosavediet.com",
         "http://hls.123tv.live",
         "https://translate.googleapis.com",
         "https://mycez.cezinfo.ro",
@@ -240,7 +229,8 @@
         "https://newassets.hcaptcha.com",
         "https://forums.malwarebytes.com",
         "https://agentia.gdfsuez.ro",
-        "http://live.uplynnk.xyz"
+        "http://live.uplynnk.xyz",
+        "https://kokos.terranovax.xyz"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -336,6 +326,50 @@
           "capabilities": [],
           "contextual": {
             "§:canale.live": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://commentsengine.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:deseneledublate.com": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            },
+            "§:kimdesene.org": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://www.google.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:gitlab.freedesktop.org": {
+              "capabilities": [
+                "script",
+                "frame",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://www.gstatic.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:gitlab.freedesktop.org": {
               "capabilities": [
                 "script"
               ],
