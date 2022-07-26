@@ -348,6 +348,10 @@
                 "script"
               ],
               "temp": false
+            },
+            "§:desenefaine.net": {
+              "capabilities": [],
+              "temp": false
             }
           },
           "temp": false
@@ -356,6 +360,14 @@
           "capabilities": [],
           "contextual": {
             "§:gitlab.freedesktop.org": {
+              "capabilities": [
+                "script",
+                "frame",
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:gdfsuez.ro": {
               "capabilities": [
                 "script",
                 "frame",
@@ -372,6 +384,36 @@
             "§:gitlab.freedesktop.org": {
               "capabilities": [
                 "script"
+              ],
+              "temp": false
+            },
+            "§:gdfsuez.ro": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            },
+            "§:google.com": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            },
+            "§:www-csoonline-com.translate.goog": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:cizgifilmlerizle.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:wcostream.com": {
+              "capabilities": [
+                "media"
               ],
               "temp": false
             }
