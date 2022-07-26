@@ -374,6 +374,10 @@
                 "fetch"
               ],
               "temp": false
+            },
+            "§:google.com": {
+              "capabilities": [],
+              "temp": false
             }
           },
           "temp": false
@@ -414,6 +418,18 @@
             "§:wcostream.com": {
               "capabilities": [
                 "media"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:mega.co.nz": {
+          "capabilities": [],
+          "contextual": {
+            "§:mega.nz": {
+              "capabilities": [
+                "fetch"
               ],
               "temp": false
             }
