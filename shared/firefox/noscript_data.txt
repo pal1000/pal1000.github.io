@@ -232,7 +232,11 @@
         "http://live.uplynnk.xyz",
         "https://kokos.terranovax.xyz",
         "https://consent.yahoo.com",
-        "https://vulkan.lunarg.com"
+        "https://vulkan.lunarg.com",
+        "https://webirc.oftc.net:8443",
+        "https://webchat.oftc.net",
+        "https://www.wcostream.com",
+        "https://gitea.treehouse.systems"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -258,18 +262,6 @@
           "capabilities": [
             "fetch"
           ],
-          "temp": false
-        },
-        "https://www.googletagmanager.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:canale.live": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            }
-          },
           "temp": false
         },
         "https://www.facebook.com": {
@@ -379,7 +371,10 @@
             },
             "§:google.com": {
               "capabilities": [
-                "script"
+                "script",
+                "fetch",
+                "ping",
+                "frame"
               ],
               "temp": false
             }
@@ -439,6 +434,57 @@
             }
           },
           "temp": false
+        },
+        "§:ru.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch",
+                "script"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://www.googletagmanager.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "http://192.168.1.1": {
+          "capabilities": [],
+          "contextual": {
+            "http://192.168.1.1": {
+              "capabilities": [
+                "frame",
+                "script",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://providesbytou.ml": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
         }
       }
     },
@@ -473,6 +519,7 @@
   "sync": {
     "global": false,
     "xss": true,
+    "TabGuardMode": "incognito",
     "cascadeRestrictions": true,
     "overrideTorBrowserPolicy": false,
     "storage": "sync",
