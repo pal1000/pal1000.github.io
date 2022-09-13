@@ -211,15 +211,10 @@
         "https://time.ten.ngtv.io",
         "https://galandriel1.thobias.xyz",
         "https://flash1.bogulus.xyz",
-        "http://cdn.espnfree.xyz",
-        "http://guide.espnfree.xyz",
-        "https://cdn2.filmele-online.com",
-        "https://cdn.filmele-online.com",
         "http://hls.123tv.live",
         "https://translate.googleapis.com",
         "https://mycez.cezinfo.ro",
         "https://cloudflare.hcaptcha.com",
-        "http://live.tv247.club",
         "http://live.buoitoi.xyz",
         "http://get.123tv.live",
         "https://cdn.gogocdn.net",
@@ -229,14 +224,19 @@
         "https://newassets.hcaptcha.com",
         "https://forums.malwarebytes.com",
         "https://agentia.gdfsuez.ro",
-        "http://live.uplynnk.xyz",
         "https://kokos.terranovax.xyz",
         "https://consent.yahoo.com",
         "https://vulkan.lunarg.com",
         "https://webirc.oftc.net:8443",
         "https://webchat.oftc.net",
-        "https://www.wcostream.com",
-        "https://gitea.treehouse.systems"
+        "https://gitea.treehouse.systems",
+        "https://www.digi.ro",
+        "https://cdn.espnfree.xyz",
+        "https://guide.espnfree.xyz",
+        "https://live.tv247.club",
+        "https://live.uplynnk.xyz",
+        "https://www.tvonline.biz",
+        "https://cdn2.tvhdonline.pro"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -310,18 +310,6 @@
                 "script",
                 "media",
                 "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "https://vcdnads.ru.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:canale.live": {
-              "capabilities": [
-                "script"
               ],
               "temp": false
             }
@@ -414,7 +402,7 @@
         "§:cizgifilmlerizle.com": {
           "capabilities": [],
           "contextual": {
-            "§:wcostream.com": {
+            "§:wcostream.net": {
               "capabilities": [
                 "media"
               ],
@@ -474,7 +462,67 @@
           },
           "temp": false
         },
-        "https://providesbytou.ml": {
+        "https://searchg2.crownpeak.net": {
+          "capabilities": [],
+          "contextual": {
+            "§:malwarebytes.com": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:tk": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:ga": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:ml": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:cf": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:gq": {
           "capabilities": [],
           "contextual": {
             "§:canale.live": {
