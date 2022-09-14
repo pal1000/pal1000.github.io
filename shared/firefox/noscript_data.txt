@@ -334,6 +334,12 @@
             "§:desenefaine.net": {
               "capabilities": [],
               "temp": false
+            },
+            "§:0123movie.watch": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
             }
           },
           "temp": false
