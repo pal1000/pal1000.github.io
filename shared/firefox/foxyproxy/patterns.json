@@ -1,1 +1,0 @@
-{"patterns":[{"enabled":true,"name":"1","pattern":"*http://edge24.rdsnet.ro/*","isRegEx":false,"caseSensitive":false,"blackList":false,"multiLine":false},{"enabled":true,"name":"2","pattern":"*http://82.76.249.33/*","isRegEx":false,"caseSensitive":false,"blackList":false,"multiLine":false}]}

@@ -155,14 +155,7 @@
         "https://h5.ustvgo.la",
         "https://objects-origin.githubusercontent.com",
         "https://evenimentdeolt.ro",
-        "https://lb.comedyshow.to",
-        "https://cdn4.comicsonline.to",
-        "https://cdn5.comicsonline.to",
-        "https://cdn6.comicsonline.to",
-        "https://cdn3.comicsonline.to",
         "https://stream-1-1-ip4.loadshare.org",
-        "https://cdn2.comicsonline.to",
-        "https://cdn1.comicsonline.to",
         "https://api.github.com",
         "https://collector.githubapp.com",
         "https://github-production-user-asset-6210df.s3.amazonaws.com",
@@ -172,7 +165,6 @@
         "https://objects.githubusercontent.com",
         "https://haveibeenpwned.com",
         "https://api.pwnedpasswords.com",
-        "https://cdn7.comicsonline.to",
         "https://videos2-h.sendvid.com",
         "https://tvron.net",
         "https://versuri24.com",
@@ -201,12 +193,6 @@
         "http://content-aeui1.uplynk.com",
         "https://content-aeui1.uplynk.com",
         "https://www.youtube.com",
-        "http://s4.dfgdfgdfgdfg.xyz",
-        "http://s2.dfgdfgdfgdfg.xyz",
-        "http://s3.dfgdfgdfgdfg.xyz",
-        "http://s1.dfgdfgdfgdfg.xyz",
-        "http://s5.dfgdfgdfgdfg.xyz",
-        "https://cmpv2.csoonline.com",
         "https://cnvideo.sercomkc.org",
         "https://time.ten.ngtv.io",
         "https://galandriel1.thobias.xyz",
@@ -236,7 +222,13 @@
         "https://live.tv247.club",
         "https://live.uplynnk.xyz",
         "https://www.tvonline.biz",
-        "https://cdn2.tvhdonline.pro"
+        "https://cdn2.tvhdonline.pro",
+        "https://comedyshow.to",
+        "https://arcdocker5.top",
+        "https://arcdocker4.top",
+        "https://arcdocker3.top",
+        "https://arcdocker2.top",
+        "https://arcdocker1.top"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -534,6 +526,30 @@
             "§:canale.live": {
               "capabilities": [
                 "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "liveforward.click": {
+          "capabilities": [],
+          "contextual": {
+            "http://123tv.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://ssl.gstatic.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:google.com": {
+              "capabilities": [
+                "script"
               ],
               "temp": false
             }
