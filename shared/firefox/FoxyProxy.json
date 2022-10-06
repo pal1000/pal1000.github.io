@@ -47,8 +47,8 @@
     "size": 100,
     "active": false
   },
-  "mode": "disabled",
-  "browserVersion": "104.0.2",
+  "mode": "patterns",
+  "browserVersion": "105.0.2",
   "foxyProxyVersion": "7.5.1",
   "foxyProxyEdition": "standard"
 }

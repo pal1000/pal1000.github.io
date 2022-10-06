@@ -86,7 +86,6 @@
         "https://login.microsoftonline.com",
         "https://amcdn.msftauth.net",
         "https://dev.azure.com",
-        "https://spsprodweu2.vssps.visualstudio.com",
         "https://aadcdn.msauth.net",
         "https://logincdn.msauth.net",
         "https://lgincdnvzeuno.azureedge.net",
@@ -196,7 +195,6 @@
         "https://cnvideo.sercomkc.org",
         "https://time.ten.ngtv.io",
         "https://galandriel1.thobias.xyz",
-        "https://flash1.bogulus.xyz",
         "http://hls.123tv.live",
         "https://translate.googleapis.com",
         "https://mycez.cezinfo.ro",
@@ -228,7 +226,23 @@
         "https://arcdocker4.top",
         "https://arcdocker3.top",
         "https://arcdocker2.top",
-        "https://arcdocker1.top"
+        "https://arcdocker1.top",
+        "https://www.wcostream.net",
+        "https://spsprodweu2.vssps.visualstudio.com",
+        "https://arcdocker12.top",
+        "https://arcdocker13.top",
+        "https://arcdocker14.top",
+        "https://arcdocker15.top",
+        "https://arcdocker11.top",
+        "https://github.dev",
+        "https://main.vscode-cdn.net",
+        "https://ms-vscode.vscode-unpkg.net",
+        "https://github.vscode-unpkg.net",
+        "https://marketplace.visualstudio.com",
+        "https://vscodeexperiments.azureedge.net",
+        "https://thor1.syndula.cfd",
+        "https://flash1.bogulus.xyz",
+        "https://tv247.us"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -332,6 +346,12 @@
                 "script"
               ],
               "temp": false
+            },
+            "§:dozaanimata.ro": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
             }
           },
           "temp": false
@@ -391,18 +411,6 @@
             "§:www-csoonline-com.translate.goog": {
               "capabilities": [
                 "script"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "§:cizgifilmlerizle.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:wcostream.net": {
-              "capabilities": [
-                "media"
               ],
               "temp": false
             }
@@ -550,6 +558,30 @@
             "§:google.com": {
               "capabilities": [
                 "script"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:cizgifilmlerizle.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:wcostream.net": {
+              "capabilities": [
+                "media"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:watchanimesub.net": {
+          "capabilities": [],
+          "contextual": {
+            "§:wcostream.net": {
+              "capabilities": [
+                "media"
               ],
               "temp": false
             }
