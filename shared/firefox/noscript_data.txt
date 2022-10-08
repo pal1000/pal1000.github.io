@@ -222,18 +222,8 @@
         "https://www.tvonline.biz",
         "https://cdn2.tvhdonline.pro",
         "https://comedyshow.to",
-        "https://arcdocker5.top",
-        "https://arcdocker4.top",
-        "https://arcdocker3.top",
-        "https://arcdocker2.top",
-        "https://arcdocker1.top",
         "https://www.wcostream.net",
         "https://spsprodweu2.vssps.visualstudio.com",
-        "https://arcdocker12.top",
-        "https://arcdocker13.top",
-        "https://arcdocker14.top",
-        "https://arcdocker15.top",
-        "https://arcdocker11.top",
         "https://github.dev",
         "https://main.vscode-cdn.net",
         "https://ms-vscode.vscode-unpkg.net",
@@ -582,6 +572,18 @@
             "§:wcostream.net": {
               "capabilities": [
                 "media"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:top": {
+          "capabilities": [],
+          "contextual": {
+            "§:watchcartoononline.bz": {
+              "capabilities": [
+                "fetch"
               ],
               "temp": false
             }
