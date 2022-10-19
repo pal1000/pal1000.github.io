@@ -74,7 +74,6 @@
         "https://github.githubassets.com",
         "https://github.com",
         "https://github-production-release-asset-2e65be.s3.amazonaws.com",
-        "https://mail.yahoo.com",
         "https://s4.tinyvid.net",
         "https://majorgeekscom.disqus.com",
         "https://www.anaf.ro",
@@ -106,19 +105,13 @@
         "https://msx.linksgen.com",
         "§:googleusercontent.com",
         "https://entitlements.jwplayer.com",
-        "https://edgecast-vod.yimg.com",
         "file:///C:/Software/Development/projects/pal1000.github.io/shared/experiments/TV%20Online/testacestreambrowser.html",
         "https://hqq.tv",
-        "https://dl-mail.ymail.com",
-        "https://apis.mail.yahoo.com",
         "https://canale.live",
-        "https://login.yahoo.com",
-        "https://ro.yahoo.com",
         "https://downloads.malwarebytes.com",
         "https://data-cdn.mbamupdates.com",
         "https://pipelines.actions.githubusercontent.com",
         "https://static.anaf.ro",
-        "https://login.yahoo.net",
         "https://h4.ustvgo.la",
         "https://h3.ustvgo.la",
         "https://h2.ustvgo.la",
@@ -137,8 +130,6 @@
         "https://static.cinemagia.ro",
         "https://my.malwarebytes.com",
         "https://my-sso.malwarebytes.com",
-        "https://s.yimg.com",
-        "https://calendar.yahoo.com",
         "https://www.luxubu.review",
         "https://fvs.io",
         "http://dspdolj.ro",
@@ -209,7 +200,6 @@
         "https://forums.malwarebytes.com",
         "https://agentia.gdfsuez.ro",
         "https://kokos.terranovax.xyz",
-        "https://consent.yahoo.com",
         "https://vulkan.lunarg.com",
         "https://webirc.oftc.net:8443",
         "https://webchat.oftc.net",
@@ -232,7 +222,47 @@
         "https://vscodeexperiments.azureedge.net",
         "https://thor1.syndula.cfd",
         "https://flash1.bogulus.xyz",
-        "https://tv247.us"
+        "https://tv247.us",
+        "https://edgecast-vod.yimg.com",
+        "https://rohan1.ultronx.cfd",
+        "https://s.yimg.com",
+        "https://collector.github.com",
+        "https://consent.cmp.oath.com",
+        "https://changlam19.top",
+        "https://changlam20.top",
+        "https://changlam21.top",
+        "https://changlam25.top",
+        "https://changlam26.top",
+        "https://changlam27.top",
+        "https://changlam22.top",
+        "https://changlam23.top",
+        "https://changlam24.top",
+        "https://watchcartoononline.bz",
+        "https://changlam10.top",
+        "https://changlam12.top",
+        "https://changlam11.top",
+        "https://changlam13.top",
+        "https://changlam14.top",
+        "https://changlam15.top",
+        "https://changlam16.top",
+        "https://changlam17.top",
+        "https://changlam18.top",
+        "https://arcdocker11.top",
+        "https://arcdocker12.top",
+        "https://arcdocker13.top",
+        "https://arcdocker14.top",
+        "https://arcdocker15.top",
+        "https://arcdocker1.top",
+        "https://arcdocker2.top",
+        "https://arcdocker3.top",
+        "https://arcdocker4.top",
+        "https://arcdocker5.top",
+        "https://dl-mail.ymail.com",
+        "https://arcdocker6.top",
+        "https://arcdocker7.top",
+        "https://arcdocker8.top",
+        "https://arcdocker9.top",
+        "https://arcdocker10.top"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -308,6 +338,12 @@
                 "fetch"
               ],
               "temp": false
+            },
+            "§:instagram.com": {
+              "capabilities": [
+                "media"
+              ],
+              "temp": false
             }
           },
           "temp": false
@@ -338,6 +374,12 @@
               "temp": false
             },
             "§:dozaanimata.ro": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            },
+            "§:musteata.com": {
               "capabilities": [
                 "script"
               ],
@@ -419,19 +461,6 @@
           },
           "temp": false
         },
-        "§:ru.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:canale.live": {
-              "capabilities": [
-                "fetch",
-                "script"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "https://www.googletagmanager.com": {
           "capabilities": [],
           "contextual": {
@@ -464,66 +493,6 @@
             "§:malwarebytes.com": {
               "capabilities": [
                 "script"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "§:tk": {
-          "capabilities": [],
-          "contextual": {
-            "§:canale.live": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "§:ga": {
-          "capabilities": [],
-          "contextual": {
-            "§:canale.live": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "§:ml": {
-          "capabilities": [],
-          "contextual": {
-            "§:canale.live": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "§:cf": {
-          "capabilities": [],
-          "contextual": {
-            "§:canale.live": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "§:gq": {
-          "capabilities": [],
-          "contextual": {
-            "§:canale.live": {
-              "capabilities": [
-                "fetch"
               ],
               "temp": false
             }
@@ -578,10 +547,26 @@
           },
           "temp": false
         },
-        "§:top": {
+        "§:yahoo.com": {
           "capabilities": [],
           "contextual": {
-            "§:watchcartoononline.bz": {
+            "§:yahoo.com": {
+              "capabilities": [
+                "script",
+                "noscript",
+                "frame",
+                "fetch",
+                "ping"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://tvhdonline.pro": {
+          "capabilities": [],
+          "contextual": {
+            "§:tvonline.biz": {
               "capabilities": [
                 "fetch"
               ],
