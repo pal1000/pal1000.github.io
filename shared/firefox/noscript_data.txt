@@ -262,7 +262,8 @@
         "https://arcdocker7.top",
         "https://arcdocker8.top",
         "https://arcdocker9.top",
-        "https://arcdocker10.top"
+        "https://arcdocker10.top",
+        "https://zcri.openhd.lol"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -567,6 +568,30 @@
           "capabilities": [],
           "contextual": {
             "§:tvonline.biz": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:ru.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:shop": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
               "capabilities": [
                 "fetch"
               ],
