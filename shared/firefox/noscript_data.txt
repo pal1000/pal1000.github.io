@@ -186,12 +186,10 @@
         "https://cnvideo.sercomkc.org",
         "https://time.ten.ngtv.io",
         "https://galandriel1.thobias.xyz",
-        "http://hls.123tv.live",
         "https://translate.googleapis.com",
         "https://mycez.cezinfo.ro",
         "https://cloudflare.hcaptcha.com",
         "http://live.buoitoi.xyz",
-        "http://get.123tv.live",
         "https://cdn.gogocdn.net",
         "https://ajax.gogo-load.com",
         "https://cf-assets.hcaptcha.com",
@@ -207,7 +205,6 @@
         "https://www.digi.ro",
         "https://cdn.espnfree.xyz",
         "https://guide.espnfree.xyz",
-        "https://live.tv247.club",
         "https://live.uplynnk.xyz",
         "https://www.tvonline.biz",
         "https://cdn2.tvhdonline.pro",
@@ -263,7 +260,22 @@
         "https://arcdocker8.top",
         "https://arcdocker9.top",
         "https://arcdocker10.top",
-        "https://zcri.openhd.lol"
+        "https://zcri.openhd.lol",
+        "https://iron1.jarvisx.cfd",
+        "https://webudi.openhd.lol",
+        "https://live.tv247us.com",
+        "https://gardomel1.pikorex.xyz",
+        "https://k3.ustvgo.la",
+        "https://123tv.live",
+        "https://get.123tv.live",
+        "https://hls.123tv.live",
+        "https://9live.club",
+        "https://azureedge.xyz",
+        "https://hcaptcha.com",
+        "https://discord.com",
+        "https://status.discord.com",
+        "https://cdn.discordapp.com",
+        "https://recaptcha.net"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -272,8 +284,8 @@
         "https://ssl.google-analytics.com",
         "https://www.googletagservices.com",
         "http://fonts.gstatic.com",
-        "https://www.google-analytics.com",
-        "https://fonts.gstatic.com"
+        "https://fonts.gstatic.com",
+        "https://www.google-analytics.com"
       ],
       "custom": {
         "https://instnsp.maps.arcgis.com": {
@@ -462,18 +474,6 @@
           },
           "temp": false
         },
-        "https://www.googletagmanager.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:canale.live": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "http://192.168.1.1": {
           "capabilities": [],
           "contextual": {
@@ -494,18 +494,6 @@
             "§:malwarebytes.com": {
               "capabilities": [
                 "script"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "liveforward.click": {
-          "capabilities": [],
-          "contextual": {
-            "http://123tv.live": {
-              "capabilities": [
-                "fetch"
               ],
               "temp": false
             }
@@ -592,6 +580,20 @@
           "capabilities": [],
           "contextual": {
             "§:canale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:liveforward.click": {
+          "capabilities": [
+            "fetch"
+          ],
+          "contextual": {
+            "§:123tv.live": {
               "capabilities": [
                 "fetch"
               ],
