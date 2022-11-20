@@ -269,13 +269,15 @@
         "https://123tv.live",
         "https://get.123tv.live",
         "https://hls.123tv.live",
-        "https://9live.club",
         "https://azureedge.xyz",
         "https://hcaptcha.com",
         "https://discord.com",
         "https://status.discord.com",
         "https://cdn.discordapp.com",
-        "https://recaptcha.net"
+        "https://recaptcha.net",
+        "https://www.tvpassport.com",
+        "https://embed.watchanimesub.net",
+        "https://catalog.update.microsoft.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -428,6 +430,14 @@
                 "frame"
               ],
               "temp": false
+            },
+            "§:mydigitallife.net": {
+              "capabilities": [
+                "script",
+                "frame",
+                "fetch"
+              ],
+              "temp": false
             }
           },
           "temp": false
@@ -454,6 +464,12 @@
               "temp": false
             },
             "§:www-csoonline-com.translate.goog": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            },
+            "§:mydigitallife.net": {
               "capabilities": [
                 "script"
               ],
@@ -513,18 +529,6 @@
           "temp": false
         },
         "§:cizgifilmlerizle.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:wcostream.net": {
-              "capabilities": [
-                "media"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "§:watchanimesub.net": {
           "capabilities": [],
           "contextual": {
             "§:wcostream.net": {
