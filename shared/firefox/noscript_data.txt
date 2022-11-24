@@ -151,7 +151,6 @@
         "https://github-production-user-asset-6210df.s3.amazonaws.com",
         "https://referrer.disqus.com",
         "file:///C:/Software/Development/projects/pal1000.github.io/index.js",
-        "http://tv4embed.com",
         "https://objects.githubusercontent.com",
         "https://haveibeenpwned.com",
         "https://api.pwnedpasswords.com",
@@ -172,15 +171,12 @@
         "https://mail.google.com",
         "https://tvonline.biz",
         "https://content-aeuf1.uplynk.com",
-        "http://content-aeuf1.uplynk.com",
         "https://x-disney-datg-stgec.uplynk.com",
-        "http://x-disney-datg-stgec.uplynk.com",
         "https://videocdn.click",
         "https://cdn.casamireasa.biz",
         "https://duckduckgo.com",
         "https://links.duckduckgo.com",
         "https://improving.duckduckgo.com",
-        "http://content-aeui1.uplynk.com",
         "https://content-aeui1.uplynk.com",
         "https://www.youtube.com",
         "https://cnvideo.sercomkc.org",
@@ -189,7 +185,6 @@
         "https://translate.googleapis.com",
         "https://mycez.cezinfo.ro",
         "https://cloudflare.hcaptcha.com",
-        "http://live.buoitoi.xyz",
         "https://cdn.gogocdn.net",
         "https://ajax.gogo-load.com",
         "https://cf-assets.hcaptcha.com",
@@ -262,7 +257,6 @@
         "https://arcdocker10.top",
         "https://zcri.openhd.lol",
         "https://iron1.jarvisx.cfd",
-        "https://webudi.openhd.lol",
         "https://live.tv247us.com",
         "https://gardomel1.pikorex.xyz",
         "https://k3.ustvgo.la",
@@ -277,7 +271,13 @@
         "https://recaptcha.net",
         "https://www.tvpassport.com",
         "https://embed.watchanimesub.net",
-        "https://catalog.update.microsoft.com"
+        "https://catalog.update.microsoft.com",
+        "https://webdi.openhd.lol",
+        "https://s5.liveforward.click",
+        "https://s2.liveforward.click",
+        "https://s3.liveforward.click",
+        "https://s1.liveforward.click",
+        "https://s4.liveforward.click"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -584,20 +584,6 @@
           "capabilities": [],
           "contextual": {
             "§:canale.live": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "§:liveforward.click": {
-          "capabilities": [
-            "fetch"
-          ],
-          "contextual": {
-            "§:123tv.live": {
               "capabilities": [
                 "fetch"
               ],
