@@ -37,6 +37,34 @@
         "type": 1,
         "protocols": 1,
         "active": true
+      },
+      {
+        "title": "Cartoon Network USA Part 1",
+        "pattern": "*.cartoonnetwork.com",
+        "type": 1,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "Cartoon Network USA Part 2",
+        "pattern": "*.cdn.turner.com",
+        "type": 1,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "Cartoon Network USA Part 3",
+        "pattern": "*.warnermediacdn.com",
+        "type": 1,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "Cartoon Network USA Part 4",
+        "pattern": "token.ngtv.io",
+        "type": 1,
+        "protocols": 1,
+        "active": true
       }
     ],
     "blackPatterns": [],
@@ -48,7 +76,7 @@
     "active": false
   },
   "mode": "patterns",
-  "browserVersion": "105.0.3",
+  "browserVersion": "107.0.1",
   "foxyProxyVersion": "7.5.1",
   "foxyProxyEdition": "standard"
 }

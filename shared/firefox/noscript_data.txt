@@ -200,7 +200,6 @@
         "https://www.digi.ro",
         "https://cdn.espnfree.xyz",
         "https://guide.espnfree.xyz",
-        "https://live.uplynnk.xyz",
         "https://www.tvonline.biz",
         "https://cdn2.tvhdonline.pro",
         "https://comedyshow.to",
@@ -257,7 +256,6 @@
         "https://arcdocker10.top",
         "https://zcri.openhd.lol",
         "https://iron1.jarvisx.cfd",
-        "https://live.tv247us.com",
         "https://gardomel1.pikorex.xyz",
         "https://k3.ustvgo.la",
         "https://123tv.live",
@@ -277,7 +275,11 @@
         "https://s2.liveforward.click",
         "https://s3.liveforward.click",
         "https://s1.liveforward.click",
-        "https://s4.liveforward.click"
+        "https://s4.liveforward.click",
+        "https://client.petrosky.io",
+        "https://atlantida1.aquax.cfd",
+        "https://live.tv247us.com",
+        "https://glmrtothemoon.xyz"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -363,46 +365,6 @@
           },
           "temp": false
         },
-        "https://commentsengine.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:deseneledublate.com": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:kimdesene.org": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:desenefaine.net": {
-              "capabilities": [],
-              "temp": false
-            },
-            "§:0123movie.watch": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:dozaanimata.ro": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:musteata.com": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "https://www.google.com": {
           "capabilities": [],
           "contextual": {
@@ -432,6 +394,14 @@
               "temp": false
             },
             "§:mydigitallife.net": {
+              "capabilities": [
+                "script",
+                "frame",
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:petrosky.io": {
               "capabilities": [
                 "script",
                 "frame",
@@ -470,6 +440,12 @@
               "temp": false
             },
             "§:mydigitallife.net": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            },
+            "§:petrosky.io": {
               "capabilities": [
                 "script"
               ],
@@ -590,6 +566,12 @@
               "temp": false
             }
           },
+          "temp": false
+        },
+        "§:cfeucdn.com": {
+          "capabilities": [
+            "fetch"
+          ],
           "temp": false
         }
       }
