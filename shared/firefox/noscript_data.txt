@@ -279,7 +279,13 @@
         "https://client.petrosky.io",
         "https://atlantida1.aquax.cfd",
         "https://live.tv247us.com",
-        "https://glmrtothemoon.xyz"
+        "https://onyx1.mofta.cfd",
+        "https://hulky1.lokix.cfd",
+        "https://glmrtothemoon.xyz",
+        "https://program-tv.net",
+        "https://playback.brightcovecdn.com",
+        "https://tvnz-prod-01.brightcovecdn.com",
+        "https://manifest.prod.boltdns.net"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -572,6 +578,21 @@
           "capabilities": [
             "fetch"
           ],
+          "temp": false
+        },
+        "§:tvnz.co.nz": {
+          "capabilities": [],
+          "contextual": {
+            "§:tvnz.co.nz": {
+              "capabilities": [
+                "script",
+                "noscript",
+                "fetch",
+                "media"
+              ],
+              "temp": false
+            }
+          },
           "temp": false
         }
       }
