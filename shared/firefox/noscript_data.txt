@@ -254,7 +254,6 @@
         "https://arcdocker8.top",
         "https://arcdocker9.top",
         "https://arcdocker10.top",
-        "https://zcri.openhd.lol",
         "https://iron1.jarvisx.cfd",
         "https://gardomel1.pikorex.xyz",
         "https://k3.ustvgo.la",
@@ -270,7 +269,6 @@
         "https://www.tvpassport.com",
         "https://embed.watchanimesub.net",
         "https://catalog.update.microsoft.com",
-        "https://webdi.openhd.lol",
         "https://s5.liveforward.click",
         "https://s2.liveforward.click",
         "https://s3.liveforward.click",
@@ -285,7 +283,9 @@
         "https://program-tv.net",
         "https://playback.brightcovecdn.com",
         "https://tvnz-prod-01.brightcovecdn.com",
-        "https://manifest.prod.boltdns.net"
+        "https://manifest.prod.boltdns.net",
+        "https://zcri.openhd.lol",
+        "https://webdi.openhd.lol"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -589,6 +589,128 @@
                 "noscript",
                 "fetch",
                 "media"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://encrypted-vtbn0.gstatic.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:google.com": {
+              "capabilities": [
+                "media"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://trollvideo.xyz": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://trolltelevision.bar": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://sdfew.bar": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://mscftv.bar": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://dscftv.bar": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://msdowncdn.bar": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://trollervideo.bar": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://trollcdn.bar": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://141.95.203.79:8006": {
+          "capabilities": [],
+          "contextual": {
+            "§:141.95.203.79": {
+              "capabilities": [
+                "script",
+                "media",
+                "fetch"
               ],
               "temp": false
             }
