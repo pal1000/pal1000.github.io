@@ -260,7 +260,6 @@
         "https://123tv.live",
         "https://get.123tv.live",
         "https://hls.123tv.live",
-        "https://azureedge.xyz",
         "https://hcaptcha.com",
         "https://discord.com",
         "https://status.discord.com",
@@ -285,7 +284,10 @@
         "https://tvnz-prod-01.brightcovecdn.com",
         "https://manifest.prod.boltdns.net",
         "https://zcri.openhd.lol",
-        "https://webdi.openhd.lol"
+        "https://webdi.openhd.lol",
+        "https://www.tvmania.ro",
+        "https://openhd.lol",
+        "https://no1.openhd.lol"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -456,6 +458,12 @@
                 "script"
               ],
               "temp": false
+            },
+            "§:paypal.com": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
             }
           },
           "temp": false
@@ -480,18 +488,6 @@
                 "frame",
                 "script",
                 "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "https://searchg2.crownpeak.net": {
-          "capabilities": [],
-          "contextual": {
-            "§:malwarebytes.com": {
-              "capabilities": [
-                "script"
               ],
               "temp": false
             }
@@ -607,102 +603,6 @@
           },
           "temp": false
         },
-        "https://trollvideo.xyz": {
-          "capabilities": [],
-          "contextual": {
-            "§:canale.live": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "https://trolltelevision.bar": {
-          "capabilities": [],
-          "contextual": {
-            "§:canale.live": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "https://sdfew.bar": {
-          "capabilities": [],
-          "contextual": {
-            "§:canale.live": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "https://mscftv.bar": {
-          "capabilities": [],
-          "contextual": {
-            "§:canale.live": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "https://dscftv.bar": {
-          "capabilities": [],
-          "contextual": {
-            "§:canale.live": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "https://msdowncdn.bar": {
-          "capabilities": [],
-          "contextual": {
-            "§:canale.live": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "https://trollervideo.bar": {
-          "capabilities": [],
-          "contextual": {
-            "§:canale.live": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "https://trollcdn.bar": {
-          "capabilities": [],
-          "contextual": {
-            "§:canale.live": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "https://141.95.203.79:8006": {
           "capabilities": [],
           "contextual": {
@@ -711,6 +611,18 @@
                 "script",
                 "media",
                 "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://searchg2.crownpeak.net": {
+          "capabilities": [],
+          "contextual": {
+            "§:malwarebytes.com": {
+              "capabilities": [
+                "script"
               ],
               "temp": false
             }
