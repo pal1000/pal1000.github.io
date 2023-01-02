@@ -107,7 +107,6 @@
         "https://entitlements.jwplayer.com",
         "file:///C:/Software/Development/projects/pal1000.github.io/shared/experiments/TV%20Online/testacestreambrowser.html",
         "https://hqq.tv",
-        "https://canale.live",
         "https://downloads.malwarebytes.com",
         "https://data-cdn.mbamupdates.com",
         "https://pipelines.actions.githubusercontent.com",
@@ -287,7 +286,10 @@
         "https://webdi.openhd.lol",
         "https://www.tvmania.ro",
         "https://openhd.lol",
-        "https://no1.openhd.lol"
+        "https://no1.openhd.lol",
+        "https://www.canale.live",
+        "https://piranda.zokares.xyz",
+        "https://universulanime.eu"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -623,6 +625,117 @@
             "§:malwarebytes.com": {
               "capabilities": [
                 "script"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://dscftv.bar": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://trollcdn.bar": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://msdowncdn.bar": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://trolltelevision.bar": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://trollervideo.bar": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://trollvideo.xyz": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://sdfew.bar": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://ro-ro.facebook.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:facebook.com": {
+              "capabilities": [
+                "script",
+                "fetch",
+                "ping",
+                "media"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://mscftv.bar": {
+          "capabilities": [],
+          "contextual": {
+            "§:canale.live": {
+              "capabilities": [
+                "fetch"
               ],
               "temp": false
             }
