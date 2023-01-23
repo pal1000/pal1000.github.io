@@ -181,7 +181,6 @@
         "https://cnvideo.sercomkc.org",
         "https://time.ten.ngtv.io",
         "https://galandriel1.thobias.xyz",
-        "https://translate.googleapis.com",
         "https://mycez.cezinfo.ro",
         "https://cloudflare.hcaptcha.com",
         "https://cdn.gogocdn.net",
@@ -282,14 +281,19 @@
         "https://playback.brightcovecdn.com",
         "https://tvnz-prod-01.brightcovecdn.com",
         "https://manifest.prod.boltdns.net",
-        "https://zcri.openhd.lol",
-        "https://webdi.openhd.lol",
         "https://www.tvmania.ro",
-        "https://openhd.lol",
-        "https://no1.openhd.lol",
         "https://www.canale.live",
         "https://piranda.zokares.xyz",
-        "https://universulanime.eu"
+        "https://universulanime.eu",
+        "https://wwv.canale.live",
+        "https://cdn.webtv1.lol",
+        "https://cn.webtv1.lol",
+        "https://bno1.webtv1.lol",
+        "https://archive.firevideoplayer.com",
+        "http://tlu.dl.delivery.mp.microsoft.com",
+        "http://dl.delivery.mp.microsoft.com",
+        "https://translate.googleapis.com",
+        "https://tv247us.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -466,6 +470,12 @@
                 "script"
               ],
               "temp": false
+            },
+            "§:youtube.com": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
             }
           },
           "temp": false
@@ -504,16 +514,10 @@
                 "script"
               ],
               "temp": false
-            }
-          },
-          "temp": false
-        },
-        "§:cizgifilmlerizle.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:wcostream.net": {
+            },
+            "§:youtube.com": {
               "capabilities": [
-                "media"
+                "script"
               ],
               "temp": false
             }
@@ -736,6 +740,48 @@
             "§:canale.live": {
               "capabilities": [
                 "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:cizgifilmlerizle.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:wcostream.net": {
+              "capabilities": [
+                "media"
+              ],
+              "temp": false
+            },
+            "§:watchanimesub.net": {
+              "capabilities": [
+                "media"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:watchanimesub.net": {
+          "capabilities": [],
+          "contextual": {
+            "§:wcostream.net": {
+              "capabilities": [
+                "media"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://content.invisioncic.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:malwarebytes.com": {
+              "capabilities": [
+                "script"
               ],
               "temp": false
             }
