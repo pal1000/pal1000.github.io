@@ -11,20 +11,6 @@
     "password": "",
     "whitePatterns": [
       {
-        "title": "ustvgo part 1",
-        "pattern": "ustvgo.tv",
-        "type": 1,
-        "protocols": 1,
-        "active": true
-      },
-      {
-        "title": "ustvgo part 2",
-        "pattern": "*.ustvgo.la",
-        "type": 1,
-        "protocols": 1,
-        "active": true
-      },
-      {
         "title": "Brightcove CDN TVNZ",
         "pattern": "tvnz-prod-*.brightcovecdn.com",
         "type": 1,
@@ -67,36 +53,14 @@
         "active": true
       },
       {
-        "title": "Youtube TV",
-        "pattern": "*.tv.youtube.com",
+        "title": "Cartoon Network USA Live",
+        "pattern": "turnerlive.akamaized.net",
         "type": 1,
         "protocols": 1,
         "active": true
       }
     ],
-    "blackPatterns": [
-      {
-        "title": "local hostnames (usually no dots in the name). Pattern exists because 'Do not use this proxy for localhost and intranet/private IP addresses' is checked.",
-        "pattern": "^(?:[^:@/]+(?::[^@/]+)?@)?(?:localhost|127\\.\\d+\\.\\d+\\.\\d+)(?::\\d+)?(?:/.*)?$",
-        "type": 2,
-        "protocols": 1,
-        "active": true
-      },
-      {
-        "title": "local subnets (IANA reserved address space). Pattern exists because 'Do not use this proxy for localhost and intranet/private IP addresses' is checked.",
-        "pattern": "^(?:[^:@/]+(?::[^@/]+)?@)?(?:192\\.168\\.\\d+\\.\\d+|10\\.\\d+\\.\\d+\\.\\d+|172\\.(?:1[6789]|2[0-9]|3[01])\\.\\d+\\.\\d+)(?::\\d+)?(?:/.*)?$",
-        "type": 2,
-        "protocols": 1,
-        "active": true
-      },
-      {
-        "title": "localhost - matches the local host optionally prefixed by a user:password authentication string and optionally suffixed by a port number. The entire local subnet (127.0.0.0/8) matches. Pattern exists because 'Do not use this proxy for localhost and intranet/private IP addresses' is checked.",
-        "pattern": "^(?:[^:@/]+(?::[^@/]+)?@)?[\\w-]+(?::\\d+)?(?:/.*)?$",
-        "type": 2,
-        "protocols": 1,
-        "active": true
-      }
-    ],
+    "blackPatterns": [],
     "pacURL": "",
     "index": -1
   },
@@ -105,7 +69,7 @@
     "active": false
   },
   "mode": "disabled",
-  "browserVersion": "109.0",
+  "browserVersion": "110.0.1",
   "foxyProxyVersion": "7.5.1",
   "foxyProxyEdition": "standard"
 }
