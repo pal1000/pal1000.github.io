@@ -1,8 +1,36 @@
 #EXTM3U
-
-#EXTINF:-1,Teen Nick
-http://127.0.0.1:6878/ace/getstream?id=bfeb64f363ebc45277c5c06b8e58e229a43889c0
+#EXTINF:-1,Disney Channel
+http://mains.vip:2086/live/Jhbxcgoisnm/56756756765722222/347.ts
 
 #EXTINF:-1,Disney Junior
-http://127.0.0.1:6878/ace/getstream?id=9a5130f0f8d9346f027c9e3f07d360d37f27b2a2
+http://mains.vip:2086/live/Jhbxcgoisnm/56756756765722222/13566.ts
 
+#EXTINF:-1,Disney XD
+http://mains.vip:2086/live/Jhbxcgoisnm/56756756765722222/14943.ts
+
+#EXTINF:-1,Cartoon Network
+http://mains.services/live/Jhbxcgoisnm/56756756765722222/5d569be7-1479-4211-97c7-afdd7ee580e2.ts
+
+#EXTINF:-1,Disney Channel (DaddyHDlive)
+#EXTVLCOPT:http-referrer="https://ntuplay.xyz/"
+https://webudit.cdnhks.lol/lb/premium312/index.m3u8
+
+#EXTINF:-1,Disney XD (DaddyHDlive)
+#EXTVLCOPT:http-referrer="https://ntuplay.xyz/"
+https://webudit.cdnhks.lol/lb/premium314/index.m3u8
+
+#EXTINF:-1,Cartoon Network (DaddyHDlive)
+#EXTVLCOPT:http-referrer="https://ntuplay.xyz/"
+https://webudit.cdnhks.lol/lb/premium339/index.m3u8
+
+#EXTINF:-1,Disney Junior (DaddyHDlive)
+#EXTVLCOPT:http-referrer="https://ntuplay.xyz/"
+https://webudit.cdnhks.lol/lb/premium652/index.m3u8
+
+#EXTINF:-1,Disney Channel (tv247.us)
+#EXTVLCOPT:http-referrer="https://tv247.us/"&Origin="https://tv247.us"
+https://cdn.espnfreenew.xyz/channel/disney.m3u8
+
+#EXTINF:-1,Disney Junior (tv247.us)
+#EXTVLCOPT:http-referrer="https://tv247.us/"&Origin="https://tv247.us"
+https://cdn.espnfreenew.xyz/channel/disneyjunior.m3u8
