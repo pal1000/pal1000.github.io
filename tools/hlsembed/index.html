@@ -4,7 +4,7 @@
 <script>
 function getmirrors(index){
   var ret='';
-  if (index==0) ret='https://hls-js.netlify.app/dist/hls.js';
+  if (index==0) ret='https://hlsjs.video-dev.org/dist/hls.js';
   if (index==1) ret='https://cdn.jsdelivr.net/npm/hls.js@latest';
   if (index==2) ret='http://cdn.jsdelivr.net/npm/hls.js@latest';
   return ret;
@@ -35,7 +35,7 @@ function submit(){
 }
 
 function play(media,mirror){
-  document.write('<video id="video" width="'+width+'" height="'+height+'" controls></video>');
+  document.write('<center><a href="'+mediafile+'">Link to streeam</a></center><video id="video" width="'+width+'" height="'+height+'" controls></video>');
   var script = document.createElement("script");
   script.type = "text/javascript";
   script.src = getmirrors(mirror);
@@ -46,16 +46,11 @@ function play(media,mirror){
            maxMaxBufferLength : 3600
        };
        var hls = new Hls(config);
+       hls.loadSource(media);
        hls.attachMedia(document.getElementById('video'));
-       var playcounter=0;
-       document.getElementById('video').addEventListener(
-         'play',
-         function() {
-           if (playcounter==0) hls.loadSource(media);
-           document.getElementById('video').play();
-           playcounter=1;
-         },
-         false);
+       hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+          video.play();
+        });
     }
   }
   document.body.appendChild(script);
