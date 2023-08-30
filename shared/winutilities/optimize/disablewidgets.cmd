@@ -8,5 +8,5 @@
 )
 :--------------------------------------
 @echo Get-AppxPackage -AllUsers ^^^| Where-Object {$_.Name -like "*WebExperience*"} ^^^| Remove-AppxPackage -AllUsers -ErrorAction SilentlyContinue | powershell -NoLogo
-@ecmd /c echo.
+@cmd /c echo.
 @cmd /c pause
