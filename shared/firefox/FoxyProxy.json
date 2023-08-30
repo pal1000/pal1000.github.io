@@ -1,0 +1,75 @@
+{
+  "9n0hef1663668305668": {
+    "type": 1,
+    "color": "#66cc66",
+    "title": "Hola",
+    "active": true,
+    "address": "127.0.0.1",
+    "port": 8080,
+    "proxyDNS": false,
+    "username": "",
+    "password": "",
+    "whitePatterns": [
+      {
+        "title": "Brightcove CDN TVNZ",
+        "pattern": "tvnz-prod-*.brightcovecdn.com",
+        "type": 1,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "Brightcove CDN TVNZ",
+        "pattern": "playback.brightcovecdn.com",
+        "type": 1,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "Cartoon Network USA Videos Part 1",
+        "pattern": "*.cartoonnetwork.com",
+        "type": 1,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "Cartoon Network USA Videos Part 2",
+        "pattern": "*.cdn.turner.com",
+        "type": 1,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "Cartoon Network USA Videos Part 3",
+        "pattern": "*.warnermediacdn.com",
+        "type": 1,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "Cartoon Network USA Videos Part 4",
+        "pattern": "token.ngtv.io",
+        "type": 1,
+        "protocols": 1,
+        "active": true
+      },
+      {
+        "title": "Rai Italy",
+        "pattern": "mediapolisvod.rai.it",
+        "type": 1,
+        "protocols": 1,
+        "active": true
+      }
+    ],
+    "blackPatterns": [],
+    "pacURL": "",
+    "index": -1
+  },
+  "logging": {
+    "size": 100,
+    "active": false
+  },
+  "mode": "patterns",
+  "browserVersion": "116.0.3",
+  "foxyProxyVersion": "7.5.1",
+  "foxyProxyEdition": "standard"
+}
