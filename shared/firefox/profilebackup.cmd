@@ -37,6 +37,10 @@
 @IF EXIST "%profiledir%\places.sqlite" copy /Y "%profiledir%\places.sqlite" .
 @IF EXIST "%profiledir%\sessionstore.jsonlz4" copy /Y "%profiledir%\sessionstore.jsonlz4" .
 @echo Done.
+@cd ..
+@if %nogit% EQU 0 git add firefox/*.*
+@if %nogit% EQU 0 For /f "tokens=1-3 delims=/ " %%a in ('date /t') do @For /f "tokens=1-2 delims=/:" %%d in ('time /t') do @git commit -m "Backup %%a-%%b-%%c_%%d%%e"
+@if %nogit% EQU 0 git push origin master
 
 :exit
-@timeoout /t 3 > nul 2>&1
+@timeout /t 3 > nul 2>&1
