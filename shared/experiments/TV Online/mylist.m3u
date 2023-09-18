@@ -1,31 +1,27 @@
 #EXTM3U
-#EXTINF:-1,Disney Channel
-http://mains.vip:2086/live/Jhbxcgoisnm/56756756765722222/347.m3u8
+#EXTINF:-1,Disney Channel (thetvapp.to)
+http://localhost/thetvappto.php?chname=disney-channel-east-live-stream
 
-#EXTINF:-1,Disney Junior
-http://mains.vip:2086/live/Jhbxcgoisnm/56756756765722222/13566.m3u8
+#EXTINF:-1,Disney Junior (thetvapp.to)
+http://localhost/thetvappto.php?chname=disney-junior-live-stream
 
-#EXTINF:-1,Disney XD
-http://mains.vip:2086/live/Jhbxcgoisnm/56756756765722222/14943.m3u8
+#EXTINF:-1,Disney XD (thetvapp.to)
+http://localhost/thetvappto.php?chname=disney-xd-live-stream
 
-#EXTINF:-1,Cartoon Network
-http://mains.services/live/Jhbxcgoisnm/56756756765722222/5d569be7-1479-4211-97c7-afdd7ee580e2.m3u8
+#EXTINF:-1,Cartoon Network (thetvapp.to)
+http://localhost/thetvappto.php?chname=cartoon-network-live-stream
 
 #EXTINF:-1,Disney Channel (DaddyHDlive)
-#EXTVLCOPT:http-referrer="https://ntuplay.xyz/"
-https://webudit.cdnhks.lol/lb/premium312/index.m3u8
+https://webudit.webdicdn.lol/lb/premium312/index.m3u8|User-Agent=Mozilla/5.0+(Windows NT+10.0;+Win64;+x64;+rv:109.0) +Gecko/20100101+Firefox/117.0&Origin=https://ntuplay.xyz&verifypeer=false&Referer=https://ntuplay.xyz/
 
 #EXTINF:-1,Disney XD (DaddyHDlive)
-#EXTVLCOPT:http-referrer="https://ntuplay.xyz/"
-https://webudit.cdnhks.lol/lb/premium314/index.m3u8
+https://webudit.webdicdn.lol/lb/premium314/index.m3u8|User-Agent==Mozilla/5.0+(Windows NT+10.0;+Win64;+x64;+rv:109.0) +Gecko/20100101+Firefox/117.0&Origin=https://ntuplay.xyz&verifypeer=false&Referer=https://ntuplay.xyz/
 
 #EXTINF:-1,Cartoon Network (DaddyHDlive)
-#EXTVLCOPT:http-referrer="https://ntuplay.xyz/"
-https://webudit.cdnhks.lol/lb/premium339/index.m3u8
+https://webudit.webdicdn.lol/lb/premium339/index.m3u8|User-Agent==Mozilla/5.0+(Windows NT+10.0;+Win64;+x64;+rv:109.0) +Gecko/20100101+Firefox/117.0&Origin=https://ntuplay.xyz&verifypeer=false&Referer=https://ntuplay.xyz/
 
 #EXTINF:-1,Disney Junior (DaddyHDlive)
-#EXTVLCOPT:http-referrer="https://ntuplay.xyz/"
-https://webudit.cdnhks.lol/lb/premium652/index.m3u8
+https://webudit.webdicdn.lol/lb/premium652/index.m3u8|User-Agent==Mozilla/5.0+(Windows NT+10.0;+Win64;+x64;+rv:109.0) +Gecko/20100101+Firefox/117.0&Origin=https://ntuplay.xyz&verifypeer=false&Referer=https://ntuplay.xyz/
 
 #EXTINF:-1,Disney Channel (tv247.us)
 #EXTVLCOPT:http-referrer="https://tv247.us/"&Origin="https://tv247.us"

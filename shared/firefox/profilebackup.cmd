@@ -13,6 +13,7 @@
 @cmd /C EXIT 0
 @where /q git.exe
 @IF NOT "%ERRORLEVEL%"=="0" set nogit=1
+@cd "%~dp0"
 @cd ..\..\..
 @if %nogit% EQU 1 IF NOT EXIST "pal1000-private\" (
 @echo Fatal: Cannot obtain pal1000 repository.
