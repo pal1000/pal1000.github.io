@@ -361,14 +361,11 @@
         "http://mains.services",
         "https://thetvapp.to",
         "https://e1.thetvapp.to",
-        "https://webudit.cdndac.lol",
-        "https://ddy5.cdndac.lol",
         "https://www.unixtimestamp.com",
         "https://www.raiplay.it",
         "https://mediapolisvod.rai.it",
         "https://www.rai.it",
         "https://license.theoplayer.com",
-        "https://ddh2.cdndac.lol",
         "https://e2.thetvapp.to",
         "https://static.wikia.nocookie.net",
         "https://player.desenefaine.net",
@@ -385,14 +382,20 @@
         "https://lb2.tvhdonline.info",
         "https://lb11.tvhdonline.info",
         "https://lb1.tvhdonline.info",
-        "https://ddh1.cdndac.lol",
         "https://dlhd.sx",
         "https://t.ssl.ak.dynamic.tiles.virtualearth.net",
         "https://www.wco.tv",
         "https://wikiwebcast4k.xyz",
-        "https://webudit.cdnbos.lol",
-        "https://ddy5.cdnbos.lol",
-        "https://challenges.cloudflare.com"
+        "https://challenges.cloudflare.com",
+        "https://ddolahdplay.xyz",
+        "https://stackoverflow.com",
+        "https://cdn.sstatic.net",
+        "https://e4.thetvapp.to",
+        "https://e5.thetvapp.to",
+        "https://livehdplay.ru",
+        "https://invitations.microsoft.com",
+        "https://gramthanos.github.io",
+        "https://bugzilla.mozilla.org"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -965,20 +968,6 @@
           },
           "temp": false
         },
-        "§:yahoo.net": {
-          "capabilities": [],
-          "contextual": {
-            "§:yahoo.com": {
-              "capabilities": [
-                "fetch",
-                "script",
-                "frame"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "§:fandom.com": {
           "capabilities": [],
           "contextual": {
@@ -1199,6 +1188,24 @@
                 "fetch",
                 "frame",
                 "font"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:webdicdn.lol": {
+          "capabilities": [],
+          "contextual": {
+            "§:pal1000.github.io": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:dlhd.sx": {
+              "capabilities": [
+                "fetch"
               ],
               "temp": false
             }

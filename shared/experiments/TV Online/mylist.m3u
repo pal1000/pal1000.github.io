@@ -1,15 +1,15 @@
 #EXTM3U
 #EXTINF:-1,Disney Channel (thetvapp.to)
-http://localhost/thetvappto.php?chname=disney-channel-east-live-stream
+https://pal1000.000webhostapp.com/thetvappto.php?chname=disney-channel-east-live-stream
 
 #EXTINF:-1,Disney Junior (thetvapp.to)
-http://localhost/thetvappto.php?chname=disney-junior-live-stream
+https://pal1000.000webhostapp.com/thetvappto.php?chname=disney-junior-live-stream
 
 #EXTINF:-1,Disney XD (thetvapp.to)
-http://localhost/thetvappto.php?chname=disney-xd-live-stream
+https://pal1000.000webhostapp.com/thetvappto.php?chname=disney-xd-live-stream
 
 #EXTINF:-1,Cartoon Network (thetvapp.to)
-http://localhost/thetvappto.php?chname=cartoon-network-live-stream
+https://pal1000.000webhostapp.com/thetvappto.php?chname=cartoon-network-live-stream
 
 #EXTINF:-1,Disney Channel (DaddyHDlive)
 https://webudit.webdicdn.lol/lb/premium312/index.m3u8|User-Agent=Mozilla/5.0+(Windows NT+10.0;+Win64;+x64;+rv:109.0) +Gecko/20100101+Firefox/117.0&Origin=https://ntuplay.xyz&verifypeer=false&Referer=https://ntuplay.xyz/

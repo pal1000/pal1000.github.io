@@ -69,7 +69,7 @@
     "active": false
   },
   "mode": "patterns",
-  "browserVersion": "116.0.3",
+  "browserVersion": "117.0.1",
   "foxyProxyVersion": "7.5.1",
   "foxyProxyEdition": "standard"
 }
