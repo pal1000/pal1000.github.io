@@ -13,11 +13,5 @@ $cookie_1=substr(print_r($http_response_header,true),$strposstart,$strposend-$st
 $strposstart=strpos(print_r($http_response_header,true),"tvnow_session",$strposend);
 $strposend=strpos(print_r($http_response_header,true),';',$strposstart);
 $cookie_2=substr(print_r($http_response_header,true),$strposstart,$strposend-$strposstart);
-$httpreq=array(
-  'http'=>array(
-    'method' => "POST",
-    'header'=>['X-CSRF-TOKEN: '.$token,'Cookie: '.$cookie_1.';'.$cookie_2]
-  )
-);
-header('Location: '.file_get_contents("https://thetvapp.to/token/".$chid,false,stream_context_create($httpreq)));
+header('Location: '.file_get_contents("https://thetvapp.to/token/".$chid,false,stream_context_create(['http'=>['method'=>"POST",'header'=>['X-CSRF-TOKEN: '.$token,'Cookie: '.$cookie_1.';'.$cookie_2]]])));
 ?>
