@@ -60,7 +60,6 @@
         "https://edge.api.brightcove.com",
         "file:///C:/Software/Development/projects/pal1000.github.io/tools/strlen/index.html",
         "https://uup.rg-adguard.net",
-        "https://support.microsoft.com",
         "https://block.malwarebytes.com",
         "https://text-compare.com",
         "https://www.mailinator.com",
@@ -89,7 +88,6 @@
         "https://lgincdnvzeuno.azureedge.net",
         "https://lgincdnmsftuswe2.azureedge.net",
         "https://aadcdn.msftauth.net",
-        "https://www.catalog.update.microsoft.com",
         "https://live3vox.antenaplay.ro",
         "https://ivm.antenaplay.ro",
         "https://f.vimeocdn.com",
@@ -236,7 +234,6 @@
         "https://cdn.discordapp.com",
         "https://recaptcha.net",
         "https://www.tvpassport.com",
-        "https://catalog.update.microsoft.com",
         "https://s5.liveforward.click",
         "https://s2.liveforward.click",
         "https://s3.liveforward.click",
@@ -263,7 +260,7 @@
         "https://daddylivehd.sx",
         "https://mycez.cezinfo.ro",
         "https://www.cool-etv.net",
-        "https://main.tvhdonline.info",
+        "https://tv.canaletv.live",
         "https://tvonline123.com",
         "http://ajutor.canale-tv.net",
         "http://s104.ucoz.net",
@@ -278,17 +275,12 @@
         "https://imasdk.googleapis.com",
         "https://forums.mydigitallife.net",
         "https://z.cdn.turner.com",
-        "https://www.microsoft.com",
         "https://ajax.aspnetcdn.com",
         "https://c.s-microsoft.com",
-        "https://download.microsoft.com",
-        "https://wcpstatic.microsoft.com",
         "https://js.monitor.azure.com",
         "https://mem.gfx.ms",
         "https://assets.onestore.ms",
-        "https://browser.events.data.microsoft.com",
         "https://cdnjs.cloudflare.com",
-        "https://devblogs.microsoft.com",
         "https://engie.ro",
         "https://www.engie.ro",
         "https://gwss.engie.ro",
@@ -343,7 +335,7 @@
         "file:///c:/Software/Development/projects/pal1000.github.io/tools/hlsembed/index.html",
         "https://www.wcostream.org",
         "https://admin.genieessp.com",
-        "https://srv1.tvhdonline.info",
+        "https://srv1.canaletv.live",
         "https://player.kimdesene.org",
         "https://www.recaptcha.net",
         "https://cdn.streamlive.to",
@@ -370,7 +362,6 @@
         "https://static.wikia.nocookie.net",
         "https://player.desenefaine.net",
         "https://youtube.com",
-        "https://learn.microsoft.com",
         "https://vjs.zencdn.net",
         "https://e3.thetvapp.to",
         "https://daddylivehd.click",
@@ -378,10 +369,10 @@
         "https://acctcdn.msauth.net",
         "https://sync.springserve.com",
         "https://vid.springserve.com",
-        "https://lb3.tvhdonline.info",
-        "https://lb2.tvhdonline.info",
-        "https://lb11.tvhdonline.info",
-        "https://lb1.tvhdonline.info",
+        "https://lb3.canaletv.live",
+        "https://lb2.canaletv.live",
+        "https://lb11.canaletv.live",
+        "https://lb1.canaletv.live",
         "https://dlhd.sx",
         "https://t.ssl.ak.dynamic.tiles.virtualearth.net",
         "https://www.wco.tv",
@@ -393,13 +384,18 @@
         "https://e4.thetvapp.to",
         "https://e5.thetvapp.to",
         "https://livehdplay.ru",
-        "https://invitations.microsoft.com",
         "https://gramthanos.github.io",
-        "https://bugzilla.mozilla.org"
+        "https://bugzilla.mozilla.org",
+        "https://pal1000.000webhostapp.com",
+        "https://my.engie.ro",
+        "https://lb17.canaletv.live",
+        "https://v-edge-1.thetvapp.to",
+        "https://v-edge-3.thetvapp.to",
+        "https://v-edge-2.thetvapp.to",
+        "https://v-edge-5.thetvapp.to"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
-        "https://web.vortex.data.microsoft.com",
         "https://ssl.google-analytics.com",
         "https://www.googletagservices.com",
         "https://pagead2.googlesyndication.com"
@@ -441,168 +437,14 @@
           "temp": false
         },
         "https://www.gstatic.com": {
-          "capabilities": [],
+          "capabilities": [
+            "script"
+          ],
           "contextual": {
-            "§:gitlab.freedesktop.org": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
             "§:google.com": {
               "capabilities": [
                 "script",
                 "fetch"
-              ],
-              "temp": false
-            },
-            "§:www-csoonline-com.translate.goog": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:mydigitallife.net": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:petrosky.io": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:paypal.com": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:youtube.com": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            },
-            "§:engie.ro": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:whoxy.com": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:gen.xyz": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:streamwink.com": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:whois.com": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:rotld.ro": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:domaintools.com": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:domain.com": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:foxtel.com.au": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:drvhub.net": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:pal1000.github.io": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:kimdesene.org": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:aaaaaaaa-g2-xrea-com.translate.goog": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:icann.org": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:urlscan.io": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:disqus.com": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:cezinfo.ro": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:eurodns.com": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:intel.com": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:yahoo.com": {
-              "capabilities": [
-                "script"
               ],
               "temp": false
             }
@@ -769,21 +611,6 @@
           },
           "temp": false
         },
-        "https://my.engie.ro": {
-          "capabilities": [
-            "script",
-            "media",
-            "frame",
-            "fetch",
-            "other",
-            "ping",
-            "object",
-            "noscript",
-            "unchecked_css",
-            "font"
-          ],
-          "temp": false
-        },
         "§:ru.com": {
           "capabilities": [],
           "contextual": {
@@ -880,92 +707,6 @@
           "capabilities": [
             "fetch"
           ],
-          "temp": false
-        },
-        "§:google.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:google.com": {
-              "capabilities": [
-                "script",
-                "frame",
-                "fetch",
-                "ping"
-              ],
-              "temp": false
-            },
-            "§:cezinfo.ro": {
-              "capabilities": [
-                "script",
-                "frame",
-                "fetch"
-              ],
-              "temp": false
-            },
-            "§:engie.ro": {
-              "capabilities": [
-                "script",
-                "frame",
-                "fetch"
-              ],
-              "temp": false
-            },
-            "§:whoxy.com": {
-              "capabilities": [
-                "script",
-                "frame",
-                "fetch"
-              ],
-              "temp": false
-            },
-            "§:eurodns.com": {
-              "capabilities": [
-                "script",
-                "frame",
-                "fetch"
-              ],
-              "temp": false
-            },
-            "§:domaintools.com": {
-              "capabilities": [
-                "script",
-                "frame",
-                "fetch"
-              ],
-              "temp": false
-            },
-            "§:intel.com": {
-              "capabilities": [
-                "script",
-                "frame",
-                "fetch"
-              ],
-              "temp": false
-            },
-            "§:yahoo.com": {
-              "capabilities": [
-                "script",
-                "frame",
-                "fetch"
-              ],
-              "temp": false
-            },
-            "§:youtube.com": {
-              "capabilities": [
-                "frame",
-                "script"
-              ],
-              "temp": false
-            },
-            "§:petrosky.io": {
-              "capabilities": [
-                "script",
-                "frame",
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
           "temp": false
         },
         "§:fandom.com": {
@@ -1194,7 +935,45 @@
           },
           "temp": false
         },
-        "§:webdicdn.lol": {
+        "§:microsoft.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:microsoft.com": {
+              "capabilities": [
+                "script",
+                "object",
+                "media",
+                "frame",
+                "fetch",
+                "ping",
+                "noscript",
+                "unchecked_css",
+                "other"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://www.google.com": {
+          "capabilities": [
+            "script",
+            "frame",
+            "fetch"
+          ],
+          "contextual": {
+            "§:google.com": {
+              "capabilities": [
+                "script",
+                "frame",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:vipboxtv.stream": {
           "capabilities": [],
           "contextual": {
             "§:pal1000.github.io": {
@@ -1206,6 +985,18 @@
             "§:dlhd.sx": {
               "capabilities": [
                 "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:google.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:google.com": {
+              "capabilities": [
+                "script"
               ],
               "temp": false
             }

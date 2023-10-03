@@ -12,16 +12,24 @@ https://pal1000.000webhostapp.com/thetvappto.php?chname=disney-xd-live-stream
 https://pal1000.000webhostapp.com/thetvappto.php?chname=cartoon-network-live-stream
 
 #EXTINF:-1,Disney Channel (DaddyHDlive)
-https://webudit.webdicdn.lol/lb/premium312/index.m3u8|User-Agent=Mozilla/5.0+(Windows NT+10.0;+Win64;+x64;+rv:109.0) +Gecko/20100101+Firefox/117.0&Origin=https://ntuplay.xyz&verifypeer=false&Referer=https://ntuplay.xyz/
+#EXTVLCOPT:http-referrer=https://ntuplay.xyz/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:109.0)+Gecko/20100101+Firefox/118.0
+https://webudit.vipboxtv.stream/lb/premium312/index.m3u8
 
 #EXTINF:-1,Disney XD (DaddyHDlive)
-https://webudit.webdicdn.lol/lb/premium314/index.m3u8|User-Agent==Mozilla/5.0+(Windows NT+10.0;+Win64;+x64;+rv:109.0) +Gecko/20100101+Firefox/117.0&Origin=https://ntuplay.xyz&verifypeer=false&Referer=https://ntuplay.xyz/
+#EXTVLCOPT:http-referrer=https://ntuplay.xyz/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:109.0)+Gecko/20100101+Firefox/118.0
+https://webudit.vipboxtv.stream/lb/premium314/index.m3u8
 
 #EXTINF:-1,Cartoon Network (DaddyHDlive)
-https://webudit.webdicdn.lol/lb/premium339/index.m3u8|User-Agent==Mozilla/5.0+(Windows NT+10.0;+Win64;+x64;+rv:109.0) +Gecko/20100101+Firefox/117.0&Origin=https://ntuplay.xyz&verifypeer=false&Referer=https://ntuplay.xyz/
+#EXTVLCOPT:http-referrer=https://ntuplay.xyz/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:109.0)+Gecko/20100101+Firefox/118.0
+https://webudit.vipboxtv.stream/lb/premium339/index.m3u8
 
 #EXTINF:-1,Disney Junior (DaddyHDlive)
-https://webudit.webdicdn.lol/lb/premium652/index.m3u8|User-Agent==Mozilla/5.0+(Windows NT+10.0;+Win64;+x64;+rv:109.0) +Gecko/20100101+Firefox/117.0&Origin=https://ntuplay.xyz&verifypeer=false&Referer=https://ntuplay.xyz/
+#EXTVLCOPT:http-referrer=https://ntuplay.xyz/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:109.0)+Gecko/20100101+Firefox/118.0
+https://webudit.vipboxtv.stream/lb/premium652/index.m3u8
 
 #EXTINF:-1,Disney Channel (tv247.us)
 #EXTVLCOPT:http-referrer="https://tv247.us/"&Origin="https://tv247.us"

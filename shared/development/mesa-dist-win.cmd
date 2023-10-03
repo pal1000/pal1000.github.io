@@ -1,4 +1,5 @@
 @TITLE Mesa3D
+@cd "%~dp0"
 @set "ERRORLEVEL="
 @CMD /C EXIT 0
 @where /q git.exe
