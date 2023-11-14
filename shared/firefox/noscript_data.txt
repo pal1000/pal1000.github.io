@@ -259,9 +259,7 @@
         "https://streamservicehd.click",
         "https://daddylivehd.sx",
         "https://mycez.cezinfo.ro",
-        "https://www.cool-etv.net",
         "https://tv.canaletv.live",
-        "https://tvonline123.com",
         "http://ajutor.canale-tv.net",
         "http://s104.ucoz.net",
         "https://login.uid.me",
@@ -289,7 +287,6 @@
         "https://tve-live-lln.warnermediacdn.com",
         "https://discord-attachments-uploads-prd.storage.googleapis.com",
         "https://media.tenor.com",
-        "https://www.wcostream.net",
         "https://embed.watchanimesub.net",
         "https://catalog.s.download.windowsupdate.com",
         "https://git-scm.com",
@@ -333,7 +330,6 @@
         "https://tvhdonline.org",
         "https://netdna.bootstrapcdn.com",
         "file:///c:/Software/Development/projects/pal1000.github.io/tools/hlsembed/index.html",
-        "https://www.wcostream.org",
         "https://admin.genieessp.com",
         "https://srv1.canaletv.live",
         "https://player.kimdesene.org",
@@ -378,12 +374,10 @@
         "https://www.wco.tv",
         "https://wikiwebcast4k.xyz",
         "https://challenges.cloudflare.com",
-        "https://ddolahdplay.xyz",
         "https://stackoverflow.com",
         "https://cdn.sstatic.net",
         "https://e4.thetvapp.to",
         "https://e5.thetvapp.to",
-        "https://livehdplay.ru",
         "https://gramthanos.github.io",
         "https://bugzilla.mozilla.org",
         "https://pal1000.000webhostapp.com",
@@ -392,7 +386,17 @@
         "https://v-edge-1.thetvapp.to",
         "https://v-edge-3.thetvapp.to",
         "https://v-edge-2.thetvapp.to",
-        "https://v-edge-5.thetvapp.to"
+        "https://v-edge-5.thetvapp.to",
+        "https://www.tvonline123.com",
+        "https://v-edge-4.thetvapp.to",
+        "https://www.wcoanimedub.tv",
+        "https://www.wcostream.tv",
+        "https://maps.googleapis.com",
+        "https://www.cool-etv.net",
+        "https://saruman1.tharen.cfd",
+        "https://entitlement.auth.adobe.com",
+        "https://sp.auth.adobe.com",
+        "https://medium.ngtv.io"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -444,7 +448,13 @@
             "§:google.com": {
               "capabilities": [
                 "script",
-                "fetch"
+                "fetch",
+                "object",
+                "frame",
+                "ping",
+                "noscript",
+                "unchecked_css",
+                "other"
               ],
               "temp": false
             }
@@ -951,6 +961,10 @@
                 "other"
               ],
               "temp": false
+            },
+            "§:visualstudio.com": {
+              "capabilities": [],
+              "temp": false
             }
           },
           "temp": false
@@ -966,6 +980,42 @@
               "capabilities": [
                 "script",
                 "frame",
+                "fetch",
+                "ping",
+                "object",
+                "noscript",
+                "unchecked_css",
+                "other"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:google.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:google.com": {
+              "capabilities": [
+                "script",
+                "fetch",
+                "ping",
+                "frame",
+                "object",
+                "noscript",
+                "unchecked_css",
+                "other"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:actions.githubusercontent.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:github.com": {
+              "capabilities": [
                 "fetch"
               ],
               "temp": false
@@ -981,8 +1031,14 @@
                 "fetch"
               ],
               "temp": false
-            },
-            "§:dlhd.sx": {
+            }
+          },
+          "temp": false
+        },
+        "§:hlsjs.ru": {
+          "capabilities": [],
+          "contextual": {
+            "§:pal1000.github.io": {
               "capabilities": [
                 "fetch"
               ],
@@ -991,12 +1047,40 @@
           },
           "temp": false
         },
-        "§:google.com": {
+        "§:cartoonnetwork.com": {
           "capabilities": [],
           "contextual": {
-            "§:google.com": {
+            "§:cartoonnetwork.com": {
               "capabilities": [
-                "script"
+                "script",
+                "noscript",
+                "object",
+                "media",
+                "frame",
+                "fetch",
+                "ping",
+                "unchecked_css",
+                "other"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:turner.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:cartoonnetwork.com": {
+              "capabilities": [
+                "script",
+                "fetch",
+                "object",
+                "media",
+                "frame",
+                "ping",
+                "noscript",
+                "unchecked_css",
+                "other"
               ],
               "temp": false
             }

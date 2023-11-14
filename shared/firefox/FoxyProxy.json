@@ -39,20 +39,6 @@
         "active": true
       },
       {
-        "title": "Cartoon Network USA Videos Part 3",
-        "pattern": "*.warnermediacdn.com",
-        "type": 1,
-        "protocols": 1,
-        "active": true
-      },
-      {
-        "title": "Cartoon Network USA Videos Part 4",
-        "pattern": "token.ngtv.io",
-        "type": 1,
-        "protocols": 1,
-        "active": true
-      },
-      {
         "title": "Rai Italy",
         "pattern": "mediapolisvod.rai.it",
         "type": 1,
@@ -69,7 +55,7 @@
     "active": false
   },
   "mode": "patterns",
-  "browserVersion": "117.0.1",
+  "browserVersion": "119.0.1",
   "foxyProxyVersion": "7.5.1",
   "foxyProxyEdition": "standard"
 }
