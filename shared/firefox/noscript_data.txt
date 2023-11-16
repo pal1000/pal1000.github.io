@@ -396,7 +396,9 @@
         "https://saruman1.tharen.cfd",
         "https://entitlement.auth.adobe.com",
         "https://sp.auth.adobe.com",
-        "https://medium.ngtv.io"
+        "https://medium.ngtv.io",
+        "https://discourse.llvm.org",
+        "https://global.discourse-cdn.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
