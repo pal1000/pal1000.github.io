@@ -1,61 +1,56 @@
 {
-  "9n0hef1663668305668": {
-    "type": 1,
-    "color": "#66cc66",
-    "title": "Hola",
-    "active": true,
-    "address": "127.0.0.1",
-    "port": 8080,
-    "proxyDNS": false,
-    "username": "",
-    "password": "",
-    "whitePatterns": [
-      {
-        "title": "Brightcove CDN TVNZ",
-        "pattern": "tvnz-prod-*.brightcovecdn.com",
-        "type": 1,
-        "protocols": 1,
-        "active": true
-      },
-      {
-        "title": "Brightcove CDN TVNZ",
-        "pattern": "playback.brightcovecdn.com",
-        "type": 1,
-        "protocols": 1,
-        "active": true
-      },
-      {
-        "title": "Cartoon Network USA Videos Part 1",
-        "pattern": "*.cartoonnetwork.com",
-        "type": 1,
-        "protocols": 1,
-        "active": true
-      },
-      {
-        "title": "Cartoon Network USA Videos Part 2",
-        "pattern": "*.cdn.turner.com",
-        "type": 1,
-        "protocols": 1,
-        "active": true
-      },
-      {
-        "title": "Rai Italy",
-        "pattern": "mediapolisvod.rai.it",
-        "type": 1,
-        "protocols": 1,
-        "active": true
-      }
-    ],
-    "blackPatterns": [],
-    "pacURL": "",
-    "index": -1
-  },
-  "logging": {
-    "size": 100,
-    "active": false
-  },
-  "mode": "patterns",
-  "browserVersion": "119.0.1",
-  "foxyProxyVersion": "7.5.1",
-  "foxyProxyEdition": "standard"
+  "mode": "disable",
+  "sync": false,
+  "proxyDNS": true,
+  "passthrough": "",
+  "data": [
+    {
+      "active": true,
+      "title": "Hola",
+      "color": "#66cc66",
+      "type": "http",
+      "hostname": "127.0.0.1",
+      "port": 8080,
+      "username": "",
+      "password": "",
+      "cc": "",
+      "city": "",
+      "include": [
+        {
+          "title": "Brightcove CDN TVNZ",
+          "pattern": "*://tvnz-prod-*.brightcovecdn.com/",
+          "type": "wildcard",
+          "active": true
+        },
+        {
+          "title": "Brightcove CDN TVNZ",
+          "pattern": "*://playback.brightcovecdn.com/",
+          "type": "wildcard",
+          "active": true
+        },
+        {
+          "title": "Cartoon Network USA Videos Part 1",
+          "pattern": "*://*.cartoonnetwork.com/",
+          "type": "wildcard",
+          "active": true
+        },
+        {
+          "title": "Cartoon Network USA Videos Part 2",
+          "pattern": "*://*.cdn.turner.com/",
+          "type": "wildcard",
+          "active": true
+        },
+        {
+          "title": "Rai Italy",
+          "pattern": "*://mediapolisvod.rai.it/",
+          "type": "wildcard",
+          "active": true
+        }
+      ],
+      "exclude": [],
+      "pac": ""
+    }
+  ],
+  "container": {},
+  "commands": {}
 }
