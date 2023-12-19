@@ -1,8 +1,20 @@
 {
-  "mode": "disable",
+  "mode": "pattern",
   "sync": false,
   "proxyDNS": true,
   "passthrough": "",
+  "container": {
+    "incognito": "",
+    "container-1": "",
+    "container-2": "",
+    "container-3": "",
+    "container-4": ""
+  },
+  "commands": {
+    "setProxy": "",
+    "setTabProxy": "",
+    "quickAdd": ""
+  },
   "data": [
     {
       "active": true,
@@ -10,47 +22,58 @@
       "color": "#66cc66",
       "type": "http",
       "hostname": "127.0.0.1",
-      "port": 8080,
+      "port": "8080",
       "username": "",
       "password": "",
       "cc": "",
       "city": "",
       "include": [
         {
+          "type": "wildcard",
           "title": "Brightcove CDN TVNZ",
           "pattern": "*://tvnz-prod-*.brightcovecdn.com/",
-          "type": "wildcard",
           "active": true
         },
         {
+          "type": "wildcard",
           "title": "Brightcove CDN TVNZ",
           "pattern": "*://playback.brightcovecdn.com/",
-          "type": "wildcard",
           "active": true
         },
         {
+          "type": "wildcard",
           "title": "Cartoon Network USA Videos Part 1",
           "pattern": "*://*.cartoonnetwork.com/",
-          "type": "wildcard",
           "active": true
         },
         {
+          "type": "wildcard",
           "title": "Cartoon Network USA Videos Part 2",
           "pattern": "*://*.cdn.turner.com/",
-          "type": "wildcard",
           "active": true
         },
         {
+          "type": "wildcard",
+          "title": "Cartoon Network USA Videos Part 3",
+          "pattern": "*://token.ngtv.io/",
+          "active": true
+        },
+        {
+          "type": "wildcard",
+          "title": "Cartoon Network USA Videos Part 4",
+          "pattern": "*://tve-vod-aka.warnermediacdn.com/",
+          "active": true
+        },
+        {
+          "type": "wildcard",
           "title": "Rai Italy",
           "pattern": "*://mediapolisvod.rai.it/",
-          "type": "wildcard",
           "active": true
         }
       ],
       "exclude": [],
-      "pac": ""
+      "pac": "",
+      "pacString": ""
     }
-  ],
-  "container": {},
-  "commands": {}
+  ]
 }

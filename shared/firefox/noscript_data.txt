@@ -401,9 +401,14 @@
         "https://logincdn.msftauth.net",
         "https://amp.azure.net",
         "https://wus-streaming-video-rt-microsoft-com.akamaized.net",
+        "https://maps.googleapis.com",
+        "https://manutv.org",
         "https://gwss.engie.ro",
         "https://my.engie.ro",
-        "https://maps.googleapis.com"
+        "https://tve-vod-aka.warnermediacdn.com",
+        "https://token.ngtv.io",
+        "https://media.truex.com",
+        "https://cartoonnetworknewmedia.hb.omtrdc.net"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -492,14 +497,7 @@
               "capabilities": [
                 "frame",
                 "script",
-                "fetch",
-                "ping",
-                "noscript",
-                "unchecked_css",
-                "lan",
-                "other",
-                "object",
-                "media"
+                "fetch"
               ],
               "temp": false
             }
@@ -620,20 +618,6 @@
           },
           "temp": false
         },
-        "https://162.19.87.100:8006": {
-          "capabilities": [],
-          "contextual": {
-            "§:162.19.87.100": {
-              "capabilities": [
-                "script",
-                "media",
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "§:ru.com": {
           "capabilities": [],
           "contextual": {
@@ -712,6 +696,12 @@
               "temp": false
             },
             "§:wco.tv": {
+              "capabilities": [
+                "media"
+              ],
+              "temp": false
+            },
+            "§:wcostream.tv": {
               "capabilities": [
                 "media"
               ],
@@ -1119,6 +1109,19 @@
           "contextual": {
             "§:pal1000.github.io": {
               "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://163.5.254.3:8006": {
+          "capabilities": [],
+          "contextual": {
+            "§:163.5.254.3": {
+              "capabilities": [
+                "script",
                 "fetch"
               ],
               "temp": false
