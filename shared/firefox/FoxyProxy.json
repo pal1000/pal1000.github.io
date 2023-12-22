@@ -54,6 +54,12 @@
         },
         {
           "type": "wildcard",
+          "title": "Rai Italy",
+          "pattern": "*://mediapolisvod.rai.it/",
+          "active": true
+        },
+        {
+          "type": "wildcard",
           "title": "Cartoon Network USA Videos Part 3",
           "pattern": "*://token.ngtv.io/",
           "active": true
@@ -62,12 +68,6 @@
           "type": "wildcard",
           "title": "Cartoon Network USA Videos Part 4",
           "pattern": "*://tve-vod-aka.warnermediacdn.com/",
-          "active": true
-        },
-        {
-          "type": "wildcard",
-          "title": "Rai Italy",
-          "pattern": "*://mediapolisvod.rai.it/",
           "active": true
         }
       ],
