@@ -408,7 +408,17 @@
         "https://tve-vod-aka.warnermediacdn.com",
         "https://token.ngtv.io",
         "https://media.truex.com",
-        "https://cartoonnetworknewmedia.hb.omtrdc.net"
+        "https://cartoonnetworknewmedia.hb.omtrdc.net",
+        "https://edge-auth.api.brightcove.com",
+        "https://deseneanimate.net",
+        "https://cdn.tv24.gdn",
+        "https://cdn13.tv24.gdn",
+        "https://v2.thetvapp.to",
+        "https://v3.thetvapp.to",
+        "https://v1.thetvapp.to",
+        "https://v5.thetvapp.to",
+        "https://v4.thetvapp.to",
+        "https://content.googleapis.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -822,7 +832,8 @@
               "capabilities": [
                 "script",
                 "fetch",
-                "ping"
+                "ping",
+                "webgl"
               ],
               "temp": false
             }
