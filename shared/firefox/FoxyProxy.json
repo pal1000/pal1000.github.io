@@ -2,8 +2,8 @@
   "mode": "pattern",
   "sync": false,
   "autoBackup": false,
-  "showPatternProxy": false,
   "passthrough": "",
+  "theme": "",
   "container": {
     "incognito": "",
     "container-1": "",

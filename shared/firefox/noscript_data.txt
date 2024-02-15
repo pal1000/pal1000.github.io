@@ -418,7 +418,12 @@
         "https://v1.thetvapp.to",
         "https://v5.thetvapp.to",
         "https://v4.thetvapp.to",
-        "https://content.googleapis.com"
+        "https://content.googleapis.com",
+        "https://www.elevenforum.com",
+        "https://cgit.freedesktop.org",
+        "https://api.steampowered.com",
+        "https://store.steampowered.com",
+        "https://store.cloudflare.steamstatic.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -1133,7 +1138,8 @@
             "§:163.5.254.3": {
               "capabilities": [
                 "script",
-                "fetch"
+                "fetch",
+                "media"
               ],
               "temp": false
             }
