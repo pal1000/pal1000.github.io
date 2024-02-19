@@ -396,7 +396,6 @@
         "https://medium.ngtv.io",
         "https://discourse.llvm.org",
         "https://global.discourse-cdn.com",
-        "https://weblivehdplay.ru",
         "https://prod-video-cms-rt-microsoft-com.akamaized.net",
         "https://logincdn.msftauth.net",
         "https://amp.azure.net",
@@ -423,7 +422,14 @@
         "https://cgit.freedesktop.org",
         "https://api.steampowered.com",
         "https://store.steampowered.com",
-        "https://store.cloudflare.steamstatic.com"
+        "https://store.cloudflare.steamstatic.com",
+        "https://www.bleepingcomputer.com",
+        "https://www.bleepstatic.com",
+        "https://weblivehdplay.ru",
+        "https://claplivehdplay.ru",
+        "https://ntv.onrender.com",
+        "https://www.majorgeeks.com",
+        "https://disq.us"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -1068,18 +1074,6 @@
           },
           "temp": false
         },
-        "§:hlsjs.ru": {
-          "capabilities": [],
-          "contextual": {
-            "§:pal1000.github.io": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "§:cartoonnetwork.com": {
           "capabilities": [],
           "contextual": {
@@ -1120,18 +1114,6 @@
           },
           "temp": false
         },
-        "§:webhd.ru": {
-          "capabilities": [],
-          "contextual": {
-            "§:pal1000.github.io": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "https://163.5.254.3:8006": {
           "capabilities": [],
           "contextual": {
@@ -1140,6 +1122,18 @@
                 "script",
                 "fetch",
                 "media"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:onlinehdhls.ru": {
+          "capabilities": [],
+          "contextual": {
+            "§:pal1000.github.io": {
+              "capabilities": [
+                "fetch"
               ],
               "temp": false
             }
