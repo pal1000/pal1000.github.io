@@ -368,7 +368,6 @@
         "https://lb2.canaletv.live",
         "https://lb11.canaletv.live",
         "https://lb1.canaletv.live",
-        "https://dlhd.sx",
         "https://t.ssl.ak.dynamic.tiles.virtualearth.net",
         "https://www.wco.tv",
         "https://wikiwebcast4k.xyz",
@@ -429,7 +428,16 @@
         "https://claplivehdplay.ru",
         "https://ntv.onrender.com",
         "https://www.majorgeeks.com",
-        "https://disq.us"
+        "https://disq.us",
+        "https://raw.githubusercontent.com",
+        "https://livehdplay.ru",
+        "https://dgpci.mai.gov.ro",
+        "https://thetvapp.cote.ws",
+        "https://rocanale.org",
+        "https://tvhdonline.net",
+        "https://1.dlhd.sx",
+        "https://dlhd.sx",
+        "https://docs.mesa3d.org"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -647,6 +655,12 @@
                 "fetch"
               ],
               "temp": false
+            },
+            "§:dlhd.sx": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
             }
           },
           "temp": false
@@ -655,6 +669,12 @@
           "capabilities": [],
           "contextual": {
             "§:pal1000.github.io": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:dlhd.sx": {
               "capabilities": [
                 "fetch"
               ],
@@ -1134,6 +1154,36 @@
             "§:pal1000.github.io": {
               "capabilities": [
                 "fetch"
+              ],
+              "temp": false
+            },
+            "§:dlhd.sx": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "http://127.0.0.1:6878": {
+          "capabilities": [],
+          "contextual": {
+            "§:cool-etv.net": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:discordapp.net": {
+          "capabilities": [],
+          "contextual": {
+            "§:discord.com": {
+              "capabilities": [
+                "media"
               ],
               "temp": false
             }
