@@ -40,7 +40,7 @@
 @echo Done.
 @cd ..
 @if %nogit% EQU 0 git add firefox/*.*
-@if %nogit% EQU 0 IF EXIST firefox/logins.csv git reset firefox/logins.csv
+@if %nogit% EQU 0 IF EXIST firefox/*.csv git reset firefox/*.csv
 @if %nogit% EQU 0 For /f "tokens=1-3 delims=/ " %%a in ('date /t') do @For /f "tokens=1-2 delims=/:" %%d in ('time /t') do @git commit -m "Backup %%a-%%b-%%c_%%d%%e"
 @if %nogit% EQU 0 git push origin master
 
