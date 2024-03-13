@@ -347,18 +347,15 @@
         "http://mains.services:2086",
         "http://mains.services",
         "https://thetvapp.to",
-        "https://e1.thetvapp.to",
         "https://www.unixtimestamp.com",
         "https://www.raiplay.it",
         "https://mediapolisvod.rai.it",
         "https://www.rai.it",
         "https://license.theoplayer.com",
-        "https://e2.thetvapp.to",
         "https://static.wikia.nocookie.net",
         "https://player.desenefaine.net",
         "https://youtube.com",
         "https://vjs.zencdn.net",
-        "https://e3.thetvapp.to",
         "https://daddylivehd.click",
         "https://account.live.com",
         "https://acctcdn.msauth.net",
@@ -374,18 +371,11 @@
         "https://challenges.cloudflare.com",
         "https://stackoverflow.com",
         "https://cdn.sstatic.net",
-        "https://e4.thetvapp.to",
-        "https://e5.thetvapp.to",
         "https://gramthanos.github.io",
         "https://bugzilla.mozilla.org",
         "https://pal1000.000webhostapp.com",
         "https://lb17.canaletv.live",
-        "https://v-edge-1.thetvapp.to",
-        "https://v-edge-3.thetvapp.to",
-        "https://v-edge-2.thetvapp.to",
-        "https://v-edge-5.thetvapp.to",
         "https://www.tvonline123.com",
-        "https://v-edge-4.thetvapp.to",
         "https://www.wcoanimedub.tv",
         "https://www.wcostream.tv",
         "https://www.cool-etv.net",
@@ -411,11 +401,6 @@
         "https://deseneanimate.net",
         "https://cdn.tv24.gdn",
         "https://cdn13.tv24.gdn",
-        "https://v2.thetvapp.to",
-        "https://v3.thetvapp.to",
-        "https://v1.thetvapp.to",
-        "https://v5.thetvapp.to",
-        "https://v4.thetvapp.to",
         "https://content.googleapis.com",
         "https://www.elevenforum.com",
         "https://cgit.freedesktop.org",
@@ -1184,6 +1169,18 @@
             "§:discord.com": {
               "capabilities": [
                 "media"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:thetvapp.to": {
+          "capabilities": [],
+          "contextual": {
+            "§:thetvapp.to": {
+              "capabilities": [
+                "fetch"
               ],
               "temp": false
             }
