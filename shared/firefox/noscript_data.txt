@@ -391,8 +391,6 @@
         "https://wus-streaming-video-rt-microsoft-com.akamaized.net",
         "https://maps.googleapis.com",
         "https://manutv.org",
-        "https://gwss.engie.ro",
-        "https://my.engie.ro",
         "https://tve-vod-aka.warnermediacdn.com",
         "https://token.ngtv.io",
         "https://media.truex.com",
@@ -422,7 +420,8 @@
         "https://tvhdonline.net",
         "https://1.dlhd.sx",
         "https://dlhd.sx",
-        "https://docs.mesa3d.org"
+        "https://docs.mesa3d.org",
+        "https://www.digionline.ro"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -1181,6 +1180,21 @@
             "§:thetvapp.to": {
               "capabilities": [
                 "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:engie.ro": {
+          "capabilities": [],
+          "contextual": {
+            "§:engie.ro": {
+              "capabilities": [
+                "script",
+                "font",
+                "fetch",
+                "frame"
               ],
               "temp": false
             }
