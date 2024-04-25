@@ -258,7 +258,6 @@
         "https://tv247us.com",
         "https://streamservicehd.click",
         "https://daddylivehd.sx",
-        "https://mycez.cezinfo.ro",
         "https://tv.canaletv.live",
         "http://ajutor.canale-tv.net",
         "http://s104.ucoz.net",
@@ -421,7 +420,10 @@
         "https://1.dlhd.sx",
         "https://dlhd.sx",
         "https://docs.mesa3d.org",
-        "https://www.digionline.ro"
+        "https://www.digionline.ro",
+        "https://www.distributieoltenia.ro",
+        "https://www.dozaanimata.net",
+        "https://myinfo.premierenergy.ro"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -479,6 +481,13 @@
                 "noscript",
                 "unchecked_css",
                 "other"
+              ],
+              "temp": false
+            },
+            "§:dozaanimata.net": {
+              "capabilities": [
+                "script",
+                "fetch"
               ],
               "temp": false
             }
@@ -755,22 +764,6 @@
                 "script",
                 "fetch",
                 "frame"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "https://vidmoly.to": {
-          "capabilities": [],
-          "contextual": {
-            "§:kimcartoon.li": {
-              "capabilities": [
-                "script",
-                "frame",
-                "fetch",
-                "object",
-                "media"
               ],
               "temp": false
             }
@@ -1195,6 +1188,70 @@
                 "font",
                 "fetch",
                 "frame"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://html-load.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:text-compare.com": {
+              "capabilities": [
+                "script",
+                "fetch",
+                "frame"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://vidmoly.me": {
+          "capabilities": [],
+          "contextual": {
+            "§:kimcartoon.li": {
+              "capabilities": [
+                "script",
+                "object",
+                "media",
+                "frame",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://www.geeks3d.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:geeks3d.com": {
+              "capabilities": [
+                "webgl",
+                "script"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://98.js.org": {
+          "capabilities": [],
+          "contextual": {
+            "§:98.js.org": {
+              "capabilities": [
+                "script",
+                "media",
+                "frame",
+                "fetch",
+                "webgl",
+                "ping",
+                "noscript",
+                "unchecked_css",
+                "other",
+                "object"
               ],
               "temp": false
             }
