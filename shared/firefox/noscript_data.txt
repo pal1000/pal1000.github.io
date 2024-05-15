@@ -61,7 +61,6 @@
         "file:///C:/Software/Development/projects/pal1000.github.io/tools/strlen/index.html",
         "https://uup.rg-adguard.net",
         "https://block.malwarebytes.com",
-        "https://text-compare.com",
         "https://www.mailinator.com",
         "https://captcha.realtek.com",
         "http://portal.just.ro",
@@ -263,7 +262,6 @@
         "http://s104.ucoz.net",
         "https://login.uid.me",
         "https://s0.ucoz.net",
-        "https://cdn.jsdelivr.net",
         "https://code.jquery.com",
         "https://ajax.googleapis.com",
         "https://www.dozaanimata.ro",
@@ -423,7 +421,13 @@
         "https://www.digionline.ro",
         "https://www.distributieoltenia.ro",
         "https://www.dozaanimata.net",
-        "https://myinfo.premierenergy.ro"
+        "https://myinfo.premierenergy.ro",
+        "https://text-compare.com",
+        "https://cdn.jsdelivr.net",
+        "https://trackorders.postisgate.com",
+        "https://config.postisgate.com",
+        "https://hls.tv24.gdn",
+        "https://eus-streaming-video-rt-microsoft-com.akamaized.net"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -1194,20 +1198,6 @@
           },
           "temp": false
         },
-        "https://html-load.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:text-compare.com": {
-              "capabilities": [
-                "script",
-                "fetch",
-                "frame"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "https://vidmoly.me": {
           "capabilities": [],
           "contextual": {
@@ -1252,6 +1242,47 @@
                 "unchecked_css",
                 "other",
                 "object"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://vidmoly.to": {
+          "capabilities": [],
+          "contextual": {
+            "§:kimcartoon.li": {
+              "capabilities": [
+                "frame",
+                "script",
+                "media",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:vmeas.cloud": {
+          "capabilities": [],
+          "contextual": {
+            "§:kimcartoon.li": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:html-load.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:text-compare.com": {
+              "capabilities": [
+                "script",
+                "frame",
+                "fetch"
               ],
               "temp": false
             }
