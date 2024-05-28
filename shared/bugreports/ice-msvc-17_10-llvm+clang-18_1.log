@@ -1,0 +1,512 @@
+Available compile toolchains
+1.Visual Studio Community 2022 v17.10.0
+2. MSYS2 Mingw-w64
+
+Select toolchain:1
+
+Select processor architecture to build for
+1. x86 32-bit (Default)
+2. x64 (x86 64-bit)
+Enter choice:2
+
+Use previous LLVM major version (y/n):
+
+Select Python installation
+1.  -V:3.12 *        Python 3.12 (64-bit)
+
+Select Python version by entering its index from the table above:1
+
+Using Python 3.12.3 from "C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python.exe".
+
+Update python packages (y/n):
+
+Do you want to throttle build. Enter number of parallel jobs. Defaults to 6 which represents the number of your CPU available hyperthreads. You should not enter a value greater than that:3
+
+Update Nuget CLI tool (y/n):
+
+Updating pkgconf source code...
+Previous HEAD position was 06120a8 pkgconf 2.2.0
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+Already up to date.
+Note: switching to 'pkgconf-2.2.0'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 06120a8 pkgconf 2.2.0
+
+Do you want to rebuild pkgconf (y/n):
+
+Updating CLonD3D12 ICD source code...
+Already up to date.
+
+Build Microsoft OpenCL over D3D12 driver (y/n):
+
+Updating SPIRV tools source code...
+Previous HEAD position was dd4b663e Prepare release v2024.2 (#5651)
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+Already up to date.
+Note: switching to 'v2024.2.rc1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at dd4b663e Prepare release v2024.2 (#5651)
+
+Build SPIRV Tools (y/n):
+
+Switching VA-API source code to stable release...
+Previous HEAD position was 0b01aed update NEWS for libva 2.21.0
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+Already up to date.
+Note: switching to '2.21.0'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 0b01aed update NEWS for libva 2.21.0
+
+Do you want to build VA-API library (y/n):
+
+Update MSYS2 packages (y/n):
+
+warning: flex-2.6.4-3 is up to date -- skipping
+warning: bison-3.8.2-5 is up to date -- skipping
+warning: patch-2.7.6-2 is up to date -- skipping
+warning: tar-1.35-2 is up to date -- skipping
+ there is nothing to do
+
+Switching zstd source code to stable release...
+Previous HEAD position was 1232d4c4 Merge pull request #3931 from bgilbert/pthread
+Switched to branch 'dev'
+Your branch is up to date with 'origin/dev'.
+Already up to date.
+Note: switching to '1232d4c45d18f124e44fe382b11dee095566b610'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 1232d4c4 Merge pull request #3931 from bgilbert/pthread
+
+Do you want to build zstd compressor (y/n):
+
+Generate LLVM build configuration command (y/n):y
+
+Updating LLVM source code...
+Initialized empty Git repository in C:/llvm-project/.git/
+remote: Enumerating objects: 146008, done.
+remote: Counting objects: 100% (146008/146008), done.
+remote: Compressing objects: 100% (111261/111261), done.
+remote: Total 146008 (delta 34683), reused 90952 (delta 30498), pack-reused 0
+Receiving objects: 100% (146008/146008), 209.55 MiB | 12.07 MiB/s, done.
+Resolving deltas: 100% (34683/34683), done.
+From https://github.com/llvm/llvm-project
+ * tag                   llvmorg-18.1.5 -> FETCH_HEAD
+Updating files: 100% (138902/138902), done.
+Note: switching to 'FETCH_HEAD'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 617a15a9e [clang codegen] Fix MS ABI detection of user-provided constructors. (#90151)
+Removing .github/workflows/pr-request-release-note.yml
+Removing clang/test/CodeGen/RISCV/riscv-metadata-arch.c
+Removing llvm/test/CodeGen/AArch64/interleaved-load-combine-pr90695.ll
+Removing llvm/test/CodeGen/AArch64/pr92062.ll
+Removing llvm/test/CodeGen/Hexagon/arg-copy-elison.ll
+Removing llvm/test/CodeGen/PowerPC/mergeable-string-pool-exceptions.ll
+Removing llvm/test/CodeGen/RISCV/attributes-module-flag.ll
+Removing llvm/test/CodeGen/RISCV/module-elf-flags.ll
+Removing llvm/test/CodeGen/RISCV/tlsdesc-symbol.ll
+Removing llvm/test/CodeGen/SystemZ/splitMove_addressReg.mir
+Removing llvm/test/CodeGen/X86/pr90844.ll
+Removing llvm/test/CodeGen/X86/pr91005.ll
+Removing llvm/test/Transforms/GlobalOpt/alias-weak.ll
+
+Use Ninja build system for less storage device strain and faster build than MsBuild (y/n):y
+
+Build clang - required for OpenCL (y/n):y
+
+LLVM build configuration command: cmake -GNinja -DCMAKE_BUILD_TYPE=Release -DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded -DLLVM_ENABLE_PROJECTS="clang" -DLLVM_TARGETS_TO_BUILD=X86 -DLLVM_OPTIMIZED_TABLEGEN=TRUE -DLLVM_INCLUDE_UTILS=OFF -DLLVM_INCLUDE_RUNTIMES=OFF -DLLVM_INCLUDE_TESTS=OFF -DLLVM_INCLUDE_EXAMPLES=OFF -DLLVM_INCLUDE_BENCHMARKS=OFF -DLLVM_BUILD_LLVM_C_DYLIB=OFF -DLLVM_ENABLE_DIA_SDK=OFF -DCLANG_BUILD_TOOLS=ON -DLLVM_ENABLE_RTTI=ON -DLLVM_ENABLE_TERMINFO=OFF -DCMAKE_INSTALL_PREFIX="C:\llvm\build\x64" "C:\llvm-project\llvm"
+
+Begin LLVM build (y/n):y
+
+Cleanning LLVM build. Please wait...
+
+Press any key to continue . . .
+
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.10.0
+** Copyright (c) 2022 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+
+CMake Deprecation Warning at C:/llvm-project/cmake/Modules/CMakePolicy.cmake:6 (cmake_policy):
+  The OLD behavior for policy CMP0114 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+Call Stack (most recent call first):
+  CMakeLists.txt:6 (include)
+
+
+CMake Deprecation Warning at C:/llvm-project/cmake/Modules/CMakePolicy.cmake:11 (cmake_policy):
+  The OLD behavior for policy CMP0116 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+Call Stack (most recent call first):
+  CMakeLists.txt:6 (include)
+
+
+-- The C compiler identification is MSVC 19.40.33808.0
+-- The CXX compiler identification is MSVC 19.40.33808.0
+-- The ASM compiler identification is MSVC
+-- Found assembler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/cl.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- bolt project is disabled
+-- clang project is enabled
+-- clang-tools-extra project is disabled
+-- compiler-rt project is disabled
+-- cross-project-tests project is disabled
+-- libc project is disabled
+-- libclc project is disabled
+-- lld project is disabled
+-- lldb project is disabled
+-- mlir project is disabled
+-- openmp project is disabled
+-- polly project is disabled
+-- pstl project is disabled
+-- flang project is disabled
+-- Found Python3: C:/mesa-dist-win/buildscript/assets/venv/Scripts/python.exe (found suitable version "3.12.3", minimum required is "3.0") found components: Interpreter
+-- Looking for dlfcn.h
+-- Looking for dlfcn.h - not found
+-- Looking for errno.h
+-- Looking for errno.h - found
+-- Looking for fcntl.h
+-- Looking for fcntl.h - found
+-- Looking for link.h
+-- Looking for link.h - not found
+-- Looking for malloc/malloc.h
+-- Looking for malloc/malloc.h - not found
+-- Looking for signal.h
+-- Looking for signal.h - found
+-- Looking for sys/ioctl.h
+-- Looking for sys/ioctl.h - not found
+-- Looking for sys/mman.h
+-- Looking for sys/mman.h - not found
+-- Looking for sys/param.h
+-- Looking for sys/param.h - not found
+-- Looking for sys/resource.h
+-- Looking for sys/resource.h - not found
+-- Looking for sys/stat.h
+-- Looking for sys/stat.h - found
+-- Looking for sys/time.h
+-- Looking for sys/time.h - not found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for sysexits.h
+-- Looking for sysexits.h - not found
+-- Looking for termios.h
+-- Looking for termios.h - not found
+-- Looking for unistd.h
+-- Looking for unistd.h - not found
+-- Looking for valgrind/valgrind.h
+-- Looking for valgrind/valgrind.h - not found
+-- Looking for fenv.h
+-- Looking for fenv.h - found
+-- Looking for FE_ALL_EXCEPT
+-- Looking for FE_ALL_EXCEPT - found
+-- Looking for FE_INEXACT
+-- Looking for FE_INEXACT - found
+-- Performing Test HAVE_BUILTIN_THREAD_POINTER
+-- Performing Test HAVE_BUILTIN_THREAD_POINTER - Failed
+-- Looking for mach/mach.h
+-- Looking for mach/mach.h - not found
+-- Looking for CrashReporterClient.h
+-- Looking for CrashReporterClient.h - not found
+-- Looking for pfm_initialize in pfm
+-- Looking for pfm_initialize in pfm - not found
+-- Could NOT find ZLIB (missing: ZLIB_LIBRARY ZLIB_INCLUDE_DIR)
+-- Could NOT find LibXml2 (missing: LIBXML2_LIBRARY LIBXML2_INCLUDE_DIR)
+-- Looking for arc4random
+-- Looking for arc4random - not found
+-- Looking for backtrace
+-- Looking for backtrace - not found
+-- Could NOT find Backtrace (missing: Backtrace_LIBRARY Backtrace_INCLUDE_DIR)
+-- Performing Test C_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW
+-- Performing Test C_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW - Failed
+-- Looking for __register_frame
+-- Looking for __register_frame - not found
+-- Looking for __deregister_frame
+-- Looking for __deregister_frame - not found
+-- Looking for __unw_add_dynamic_fde
+-- Looking for __unw_add_dynamic_fde - not found
+-- Looking for _Unwind_Backtrace
+-- Looking for _Unwind_Backtrace - not found
+-- Looking for getpagesize
+-- Looking for getpagesize - not found
+-- Looking for sysconf
+-- Looking for sysconf - not found
+-- Looking for getrusage
+-- Looking for getrusage - not found
+-- Looking for setrlimit
+-- Looking for setrlimit - not found
+-- Looking for isatty
+-- Looking for isatty - not found
+-- Looking for futimens
+-- Looking for futimens - not found
+-- Looking for futimes
+-- Looking for futimes - not found
+-- Looking for sigaltstack
+-- Looking for sigaltstack - not found
+-- Looking for mallctl
+-- Looking for mallctl - not found
+-- Looking for mallinfo
+-- Looking for mallinfo - not found
+-- Looking for mallinfo2
+-- Looking for mallinfo2 - not found
+-- Looking for malloc_zone_statistics
+-- Looking for malloc_zone_statistics - not found
+-- Looking for getrlimit
+-- Looking for getrlimit - not found
+-- Looking for posix_spawn
+-- Looking for posix_spawn - not found
+-- Looking for pread
+-- Looking for pread - not found
+-- Looking for sbrk
+-- Looking for sbrk - not found
+-- Looking for strerror_r
+-- Looking for strerror_r - not found
+-- Looking for strerror_s
+-- Looking for strerror_s - found
+-- Looking for setenv
+-- Looking for setenv - not found
+-- Looking for _chsize_s
+-- Looking for _chsize_s - found
+-- Looking for _alloca
+-- Looking for _alloca - not found
+-- Looking for __alloca
+-- Looking for __alloca - not found
+-- Looking for __chkstk
+-- Looking for __chkstk - found
+-- Looking for __chkstk_ms
+-- Looking for __chkstk_ms - not found
+-- Looking for ___chkstk
+-- Looking for ___chkstk - not found
+-- Looking for ___chkstk_ms
+-- Looking for ___chkstk_ms - not found
+-- Looking for __ashldi3
+-- Looking for __ashldi3 - not found
+-- Looking for __ashrdi3
+-- Looking for __ashrdi3 - not found
+-- Looking for __divdi3
+-- Looking for __divdi3 - not found
+-- Looking for __fixdfdi
+-- Looking for __fixdfdi - not found
+-- Looking for __fixsfdi
+-- Looking for __fixsfdi - not found
+-- Looking for __floatdidf
+-- Looking for __floatdidf - not found
+-- Looking for __lshrdi3
+-- Looking for __lshrdi3 - not found
+-- Looking for __moddi3
+-- Looking for __moddi3 - not found
+-- Looking for __udivdi3
+-- Looking for __udivdi3 - not found
+-- Looking for __umoddi3
+-- Looking for __umoddi3 - not found
+-- Looking for __main
+-- Looking for __main - not found
+-- Looking for __cmpdi2
+-- Looking for __cmpdi2 - not found
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC - Failed
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIM_TV_NSEC
+-- Performing Test HAVE_STRUCT_STAT_ST_MTIM_TV_NSEC - Failed
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - not found
+-- Looking for proc_pid_rusage
+-- Looking for proc_pid_rusage - not found
+-- Performing Test LLVM_HAS_ATOMICS
+-- Performing Test LLVM_HAS_ATOMICS - Success
+-- Performing Test SUPPORTS_VARIADIC_MACROS_FLAG
+-- Performing Test SUPPORTS_VARIADIC_MACROS_FLAG - Failed
+-- Performing Test SUPPORTS_GNU_ZERO_VARIADIC_MACRO_ARGUMENTS_FLAG
+-- Performing Test SUPPORTS_GNU_ZERO_VARIADIC_MACRO_ARGUMENTS_FLAG - Failed
+-- LLVM host triple: x86_64-pc-windows-msvc
+-- Native target architecture is X86
+-- Threads enabled.
+-- Doxygen disabled.
+-- Ninja version: 1.12.1
+-- Could NOT find OCaml (missing: OCAMLFIND OCAML_VERSION OCAML_STDLIB_PATH)
+-- OCaml bindings disabled.
+-- Could NOT find Python module pygments
+-- Could NOT find Python module pygments.lexers.c_cpp
+-- Could NOT find Python module yaml
+-- LLVM default target triple: x86_64-pc-windows-msvc
+-- Looking for os_signpost_interval_begin
+-- Looking for os_signpost_interval_begin - not found
+-- Performing Test HAS_WERROR_GLOBAL_CTORS
+-- Performing Test HAS_WERROR_GLOBAL_CTORS - Failed
+-- Looking for _M_X64
+-- Looking for _M_X64 - found
+-- The ASM_MASM compiler identification is MSVC
+-- Found assembler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/ml64.exe
+-- Found Git: C:/Git/cmd/git.exe (found version "2.45.1.windows.1")
+-- LLVMHello ignored -- Loadable modules not supported on this platform.
+-- Targeting X86
+CMake Deprecation Warning at C:/llvm-project/cmake/Modules/CMakePolicy.cmake:6 (cmake_policy):
+  The OLD behavior for policy CMP0114 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+Call Stack (most recent call first):
+  C:/llvm-project/clang/CMakeLists.txt:6 (include)
+
+
+CMake Deprecation Warning at C:/llvm-project/cmake/Modules/CMakePolicy.cmake:11 (cmake_policy):
+  The OLD behavior for policy CMP0116 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+Call Stack (most recent call first):
+  C:/llvm-project/clang/CMakeLists.txt:6 (include)
+
+
+-- Looking for sys/resource.h
+-- Looking for sys/resource.h - not found
+-- Looking for dlfcn.h
+-- Looking for dlfcn.h - not found
+-- Clang version: 18.1.5
+-- BugpointPasses ignored -- Loadable modules not supported on this platform.
+-- Configuring done (19.0s)
+-- Generating done (2.7s)
+-- Build files have been written to: C:/llvm-project/build/buildsys-x64
+
+Press any key to continue . . .
+
+Build started at Thu-05-23_0422 AM.
+[152/3809] Building ASM_MASM object lib\Support...ke3.dir\blake3_sse2_x86-64_windows_msvc.asm.ob
+Microsoft (R) Macro Assembler (x64) Version 14.40.33808.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+ Assembling: C:\llvm-project\llvm\lib\Support\BLAKE3\blake3_sse2_x86-64_windows_msvc.asm
+[153/3809] Building ASM_MASM object lib\Support...e3.dir\blake3_sse41_x86-64_windows_msvc.asm.ob
+Microsoft (R) Macro Assembler (x64) Version 14.40.33808.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+ Assembling: C:\llvm-project\llvm\lib\Support\BLAKE3\blake3_sse41_x86-64_windows_msvc.asm
+[154/3809] Building ASM_MASM object lib\Support...ke3.dir\blake3_avx2_x86-64_windows_msvc.asm.ob
+Microsoft (R) Macro Assembler (x64) Version 14.40.33808.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+ Assembling: C:\llvm-project\llvm\lib\Support\BLAKE3\blake3_avx2_x86-64_windows_msvc.asm
+[155/3809] Building ASM_MASM object lib\Support...3.dir\blake3_avx512_x86-64_windows_msvc.asm.ob
+Microsoft (R) Macro Assembler (x64) Version 14.40.33808.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+ Assembling: C:\llvm-project\llvm\lib\Support\BLAKE3\blake3_avx512_x86-64_windows_msvc.asm
+[2499/3809] Building CXX object tools\clang\lib...taticAnalyzerCheckers.dir\StreamChecker.cpp.ob
+FAILED: tools/clang/lib/StaticAnalyzer/Checkers/CMakeFiles/obj.clangStaticAnalyzerCheckers.dir/StreamChecker.cpp.obj
+C:\PROGRA~1\MICROS~1\2022\COMMUN~1\VC\Tools\MSVC\1440~1.338\bin\Hostx64\x64\cl.exe  /nologo /TP -DUNICODE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_DEPRECATE -D_CRT_SECURE_NO_WARNINGS -D_HAS_EXCEPTIONS=0 -D_SCL_SECURE_NO_DEPRECATE -D_SCL_SECURE_NO_WARNINGS -D_UNICODE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -IC:\llvm-project\build\buildsys-x64\tools\clang\lib\StaticAnalyzer\Checkers -IC:\llvm-project\clang\lib\StaticAnalyzer\Checkers -IC:\llvm-project\clang\include -IC:\llvm-project\build\buildsys-x64\tools\clang\include -IC:\llvm-project\build\buildsys-x64\include -IC:\llvm-project\llvm\include /DWIN32 /D_WINDOWS   /Zc:inline /Zc:preprocessor /Zc:__cplusplus /Oi /bigobj /permissive- /W4 -wd4141 -wd4146 -wd4244 -wd4267 -wd4291 -wd4351 -wd4456 -wd4457 -wd4458 -wd4459 -wd4503 -wd4624 -wd4722 -wd4100 -wd4127 -wd4512 -wd4505 -wd4610 -wd4510 -wd4702 -wd4245 -wd4706 -wd4310 -wd4701 -wd4703 -wd4389 -wd4611 -wd4805 -wd4204 -wd4577 -wd4091 -wd4592 -wd4319 -wd4709 -wd5105 -wd4324 -w14062 -we4238 /Gw /O2 /Ob2 /DNDEBUG -std:c++17 -MT  /EHs-c- /GR /showIncludes /Fotools\clang\lib\StaticAnalyzer\Checkers\CMakeFiles\obj.clangStaticAnalyzerCheckers.dir\StreamChecker.cpp.obj /Fdtools\clang\lib\StaticAnalyzer\Checkers\CMakeFiles\obj.clangStaticAnalyzerCheckers.dir\ /FS -c C:\llvm-project\clang\lib\StaticAnalyzer\Checkers\StreamChecker.cpp
+C:\llvm-project\clang\lib\StaticAnalyzer\Checkers\StreamChecker.cpp(1486) : fatal error C1001: Internal compiler error.
+(compiler file 'D:\a\_work\1\s\src\vctools\Compiler\Utc\src\p2\main.c', line 242)
+ To work around this problem, try simplifying or changing the program near the locations listed above.
+If possible please provide a repro here: https://developercommunity.visualstudio.com
+Please choose the Technical Support command on the Visual C++
+ Help menu, or open the Technical Support help file for more information
+  cl!RaiseException()+0x6c
+  cl!RaiseException()+0x6c
+  cl!InvokeCompilerPassW()+0x9077f
+  cl!InvokeCompilerPassW()+0xf926e
+
+[2501/3809] Building CXX object tools\clang\lib...zerCheckers.dir\TestAfterDivZeroChecker.cpp.ob
+ninja: build stopped: subcommand failed.
+Build finished at Thu-05-23_0606 AM.
+
+Press any key to continue . . .
