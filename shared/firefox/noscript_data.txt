@@ -427,7 +427,17 @@
         "https://trackorders.postisgate.com",
         "https://config.postisgate.com",
         "https://hls.tv24.gdn",
-        "https://eus-streaming-video-rt-microsoft-com.akamaized.net"
+        "https://eus-streaming-video-rt-microsoft-com.akamaized.net",
+        "https://login.premierenergy.ro",
+        "https://my.premierenergy.ro",
+        "https://uicustomlogin.blob.core.windows.net",
+        "https://dlhd.so",
+        "https://vsstatus.visualstudio.com",
+        "https://res-1.cdn.office.net",
+        "https://sendvsfeedback2-secondary.azurewebsites.net",
+        "https://spoppe-b.azureedge.net",
+        "https://www.diffchecker.com",
+        "https://api.diffchecker.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -989,7 +999,9 @@
               "temp": false
             },
             "§:visualstudio.com": {
-              "capabilities": [],
+              "capabilities": [
+                "script"
+              ],
               "temp": false
             },
             "§:nuget.org": {
@@ -1282,6 +1294,47 @@
               "capabilities": [
                 "script",
                 "frame",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://lewblivehdplay.ru": {
+          "capabilities": [],
+          "contextual": {
+            "§:pal1000.github.io": {
+              "capabilities": [
+                "frame",
+                "script",
+                "fetch",
+                "object",
+                "media"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:visualstudio.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:visualstudio.com": {
+              "capabilities": [
+                "fetch",
+                "script"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://pagead2.googlesyndication.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:tvhdonline.net": {
+              "capabilities": [
                 "fetch"
               ],
               "temp": false
