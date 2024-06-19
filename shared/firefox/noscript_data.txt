@@ -437,7 +437,9 @@
         "https://sendvsfeedback2-secondary.azurewebsites.net",
         "https://spoppe-b.azureedge.net",
         "https://www.diffchecker.com",
-        "https://api.diffchecker.com"
+        "https://api.diffchecker.com",
+        "https://www.premierenergy.info",
+        "https://deseneledublate.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -862,18 +864,6 @@
           },
           "temp": false
         },
-        "https://www.bing.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:msn.com": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "http://www.ustvplus.com": {
           "capabilities": [],
           "contextual": {
@@ -1010,6 +1000,12 @@
                 "object",
                 "media",
                 "frame",
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:msn.com": {
+              "capabilities": [
                 "fetch"
               ],
               "temp": false
@@ -1335,6 +1331,31 @@
           "contextual": {
             "§:tvhdonline.net": {
               "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:mizhls.ru": {
+          "capabilities": [],
+          "contextual": {
+            "§:pal1000.github.io": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:bing.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:msn.com": {
+              "capabilities": [
+                "script",
                 "fetch"
               ],
               "temp": false
