@@ -45,7 +45,7 @@ git clone https://github.com/pal1000/pal1000-private.git pal1000-private
 @GOTO Choice
 
 :Update_local
-git pull -v --progress origin
+git pull -v --progress origin master
 @GOTO Choice
 
 :Update_remote

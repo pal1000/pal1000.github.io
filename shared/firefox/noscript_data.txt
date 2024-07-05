@@ -439,7 +439,12 @@
         "https://www.diffchecker.com",
         "https://api.diffchecker.com",
         "https://www.premierenergy.info",
-        "https://deseneledublate.com"
+        "https://deseneledublate.com",
+        "https://rds.live",
+        "https://p8.stirilepe.net",
+        "https://tvron.tv",
+        "https://100gbs.tv24.gdn",
+        "https://qqwebplay.xyz"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -665,7 +670,7 @@
               ],
               "temp": false
             },
-            "§:dlhd.sx": {
+            "§:dlhd.so": {
               "capabilities": [
                 "fetch"
               ],
@@ -683,7 +688,7 @@
               ],
               "temp": false
             },
-            "§:dlhd.sx": {
+            "§:dlhd.so": {
               "capabilities": [
                 "fetch"
               ],
@@ -1145,12 +1150,6 @@
                 "fetch"
               ],
               "temp": false
-            },
-            "§:dlhd.sx": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
             }
           },
           "temp": false
@@ -1264,7 +1263,8 @@
                 "frame",
                 "script",
                 "media",
-                "fetch"
+                "fetch",
+                "object"
               ],
               "temp": false
             }
@@ -1334,6 +1334,12 @@
                 "fetch"
               ],
               "temp": false
+            },
+            "§:kimcartoon.li": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
             }
           },
           "temp": false
@@ -1342,6 +1348,12 @@
           "capabilities": [],
           "contextual": {
             "§:pal1000.github.io": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:dlhd.so": {
               "capabilities": [
                 "fetch"
               ],
@@ -1361,6 +1373,24 @@
               "temp": false
             }
           },
+          "temp": false
+        },
+        "https://hideiframe.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:dozaanimata.net": {
+              "capabilities": [
+                "frame"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://www.hideiframe.com": {
+          "capabilities": [
+            "frame"
+          ],
           "temp": false
         }
       }
