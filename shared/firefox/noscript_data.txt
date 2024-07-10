@@ -1334,12 +1334,6 @@
                 "fetch"
               ],
               "temp": false
-            },
-            "§:kimcartoon.li": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
             }
           },
           "temp": false
@@ -1391,6 +1385,26 @@
           "capabilities": [
             "frame"
           ],
+          "temp": false
+        },
+        "https://www.googletagmanager.com": {
+          "capabilities": [],
+          "temp": false
+        },
+        "https://www.google-analytics.com": {
+          "capabilities": [],
+          "temp": false
+        },
+        "https://platform.bidgear.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:kimcartoon.li": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
           "temp": false
         }
       }

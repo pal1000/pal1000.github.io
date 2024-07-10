@@ -11,7 +11,7 @@
 @exit
 )
 @IF EXIST "%ProgramFiles%\Mozilla Firefox\" RD /S /Q "%ProgramFiles%\Mozilla Firefox"
-@IF EXIST "%ALLUSERSPROFILE%\Mozilla\" RD /S /Q "%ALLUSERSPROFILE%\Mozilla"
+@for /f delims^=^ eol^= %%a in ('dir /b /a^:d "%ALLUSERSPROFILE%\Mozill*" 2^>^&1') do @IF EXIST "%ALLUSERSPROFILE%\%%~nxa\" RD /S /Q "%ALLUSERSPROFILE%\%%~nxa"
 @IF EXIST "%APPDATA%\Mozilla\" RD /S /Q "%APPDATA%\Mozilla"
 @IF EXIST "%LOCALAPPDATA%\Mozilla\" RD /S /Q "%LOCALAPPDATA%\Mozilla"
 @IF EXIST "%LOCALAPPDATA%Low\Mozilla\" RD /S /Q "%LOCALAPPDATA%Low\Mozilla"
