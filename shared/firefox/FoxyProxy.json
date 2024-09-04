@@ -47,14 +47,8 @@
         {
           "type": "wildcard",
           "title": "Cartoon Network USA Videos Part 1",
-          "pattern": "*://*.cartoonnetwork.com/",
-          "active": true
-        },
-        {
-          "type": "wildcard",
-          "title": "Cartoon Network USA Videos Part 2",
-          "pattern": "*://*.cdn.turner.com/",
-          "active": true
+          "pattern": "*://*.max.com/",
+          "active": false
         },
         {
           "type": "wildcard",
@@ -64,14 +58,38 @@
         },
         {
           "type": "wildcard",
-          "title": "Cartoon Network USA Videos Part 3",
-          "pattern": "*://token.ngtv.io/",
-          "active": true
+          "title": "thetvapp.to",
+          "pattern": "*://thetvapp.to/",
+          "active": false
         },
         {
           "type": "wildcard",
-          "title": "Cartoon Network USA Videos Part 4",
-          "pattern": "*://tve-vod-aka.warnermediacdn.com/",
+          "title": "Cartoon Network USA Videos Part 2",
+          "pattern": "*://*.cartoonnetwork.com/",
+          "active": true
+        }
+      ],
+      "exclude": []
+    },
+    {
+      "active": true,
+      "title": "USA 2",
+      "type": "socks5",
+      "hostname": "23.19.244.109",
+      "port": "1080",
+      "username": "",
+      "password": "",
+      "cc": "US",
+      "city": "",
+      "color": "#ffb6c1",
+      "pac": "",
+      "pacString": "",
+      "proxyDNS": true,
+      "include": [
+        {
+          "type": "wildcard",
+          "title": "thetvapp.to",
+          "pattern": "*://thetvapp.to/",
           "active": true
         }
       ],

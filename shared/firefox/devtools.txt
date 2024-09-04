@@ -1,0 +1,4 @@
+- menu: separate window;
+- menu/settings: disable everything except network tool and F12 shortcut;
+- debugger: disable breakpoints;
+- network: persist logs

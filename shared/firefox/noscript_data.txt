@@ -14,7 +14,8 @@
         "ping",
         "object",
         "noscript",
-        "unchecked_css"
+        "unchecked_css",
+        "lazy_load"
       ],
       "temp": false
     },
@@ -243,7 +244,6 @@
         "https://live.tv247us.com",
         "https://onyx1.mofta.cfd",
         "https://hulky1.lokix.cfd",
-        "https://program-tv.net",
         "https://playback.brightcovecdn.com",
         "https://tvnz-prod-01.brightcovecdn.com",
         "https://manifest.prod.boltdns.net",
@@ -334,7 +334,6 @@
         "https://daddylivehd.com",
         "https://hlsjs.video-dev.org",
         "http://mains.vip:2086",
-        "http://38.84.24.29:8089",
         "https://consent.youtube.com",
         "https://escorte-tecuci.info",
         "https://d.daddylivehd.sx",
@@ -343,7 +342,6 @@
         "https://buc01.cdn.vodafone.ro",
         "http://mains.services:2086",
         "http://mains.services",
-        "https://thetvapp.to",
         "https://www.unixtimestamp.com",
         "https://www.raiplay.it",
         "https://mediapolisvod.rai.it",
@@ -362,10 +360,8 @@
         "https://lb2.canaletv.live",
         "https://lb11.canaletv.live",
         "https://lb1.canaletv.live",
-        "https://t.ssl.ak.dynamic.tiles.virtualearth.net",
         "https://www.wco.tv",
         "https://wikiwebcast4k.xyz",
-        "https://challenges.cloudflare.com",
         "https://stackoverflow.com",
         "https://cdn.sstatic.net",
         "https://gramthanos.github.io",
@@ -444,7 +440,40 @@
         "https://p8.stirilepe.net",
         "https://tvron.tv",
         "https://100gbs.tv24.gdn",
-        "https://qqwebplay.xyz"
+        "https://qqwebplay.xyz",
+        "https://tvonline123.com",
+        "https://js.hcaptcha.com",
+        "https://play.channelsfree.org",
+        "https://play1.channelsfree.org:8443",
+        "https://gpt.mail.yahoo.net",
+        "https://tvhe.tv24.gdn",
+        "https://p9.stirilepe.net",
+        "https://cdn.porktv.cfd",
+        "https://cdn5.porktv.cfd",
+        "https://vssps.dev.azure.com",
+        "https://www.ontvtonight.com",
+        "https://desenefaine.com",
+        "https://tvron.tv.tvonline.ws",
+        "https://thetvapp.to",
+        "https://lewblivehdplay.ru",
+        "https://quest4play.xyz",
+        "https://artv.watch",
+        "https://fl5.moveonjoy.com",
+        "https://www.disneychannel.ca",
+        "https://www.disneyxd.ca",
+        "https://videos-cloudfront-usp.jwpsrv.com",
+        "https://developer-tools.jwplayer.com",
+        "https://img3.whatsnew247.net",
+        "https://abs.twimg.com",
+        "https://api.x.com",
+        "https://api.imgur.com",
+        "https://imgur.com",
+        "https://s.imgur.com",
+        "https://program-tv.ro",
+        "https://www.olx.ro",
+        "https://topembed.pw",
+        "https://24livetv.us",
+        "https://ts.artv.watch"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -457,7 +486,8 @@
             "script",
             "webgl",
             "fetch",
-            "unchecked_css"
+            "unchecked_css",
+            "lazy_load"
           ],
           "temp": false
         },
@@ -474,7 +504,8 @@
               "capabilities": [
                 "script",
                 "media",
-                "fetch"
+                "fetch",
+                "lazy_load"
               ],
               "temp": false
             },
@@ -489,7 +520,8 @@
         },
         "https://www.gstatic.com": {
           "capabilities": [
-            "script"
+            "script",
+            "lazy_load"
           ],
           "contextual": {
             "§:google.com": {
@@ -501,14 +533,16 @@
                 "ping",
                 "noscript",
                 "unchecked_css",
-                "other"
+                "other",
+                "lazy_load"
               ],
               "temp": false
             },
             "§:dozaanimata.net": {
               "capabilities": [
                 "script",
-                "fetch"
+                "fetch",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -540,7 +574,8 @@
               "capabilities": [
                 "frame",
                 "script",
-                "fetch"
+                "fetch",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -554,13 +589,15 @@
               "capabilities": [
                 "script",
                 "fetch",
-                "media"
+                "media",
+                "lazy_load"
               ],
               "temp": false
             },
             "§:youtube.com": {
               "capabilities": [
-                "script"
+                "script",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -577,7 +614,8 @@
                 "frame",
                 "fetch",
                 "ping",
-                "media"
+                "media",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -592,7 +630,8 @@
                 "script",
                 "noscript",
                 "fetch",
-                "media"
+                "media",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -616,7 +655,8 @@
           "contextual": {
             "§:malwarebytes.com": {
               "capabilities": [
-                "script"
+                "script",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -654,7 +694,8 @@
           "contextual": {
             "§:malwarebytes.com": {
               "capabilities": [
-                "script"
+                "script",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -671,6 +712,18 @@
               "temp": false
             },
             "§:dlhd.so": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:tvcanale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:24livetv.us": {
               "capabilities": [
                 "fetch"
               ],
@@ -693,6 +746,18 @@
                 "fetch"
               ],
               "temp": false
+            },
+            "§:tvcanale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:24livetv.us": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
             }
           },
           "temp": false
@@ -710,7 +775,8 @@
                 "ping",
                 "object",
                 "noscript",
-                "unchecked_css"
+                "unchecked_css",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -784,7 +850,8 @@
               "capabilities": [
                 "script",
                 "fetch",
-                "frame"
+                "frame",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -803,22 +870,11 @@
           },
           "temp": false
         },
-        "whatsnew247.net": {
-          "capabilities": [],
-          "contextual": {
-            "§:kimcartoon.li": {
-              "capabilities": [
-                "media"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "https://cdn.cookielaw.org": {
           "capabilities": [
             "script",
-            "fetch"
+            "fetch",
+            "lazy_load"
           ],
           "temp": false
         },
@@ -834,7 +890,8 @@
                 "other",
                 "unchecked_css",
                 "ping",
-                "object"
+                "object",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -847,7 +904,8 @@
             "§:streamwink.com": {
               "capabilities": [
                 "fetch",
-                "script"
+                "script",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -862,7 +920,8 @@
                 "script",
                 "fetch",
                 "ping",
-                "webgl"
+                "webgl",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -875,7 +934,8 @@
             "http://www.ustvplus.com": {
               "capabilities": [
                 "script",
-                "media"
+                "media",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -888,19 +948,8 @@
             "http://www.ustvplus.com": {
               "capabilities": [
                 "fetch",
-                "script"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "http://172.111.36.88:25461": {
-          "capabilities": [],
-          "contextual": {
-            "http://www.ustvplus.com": {
-              "capabilities": [
-                "fetch"
+                "script",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -913,7 +962,8 @@
             "§:streamwink.com": {
               "capabilities": [
                 "script",
-                "media"
+                "media",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -928,7 +978,8 @@
                 "frame",
                 "script",
                 "fetch",
-                "media"
+                "media",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -954,7 +1005,8 @@
               "capabilities": [
                 "script",
                 "frame",
-                "fetch"
+                "fetch",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -969,7 +1021,8 @@
                 "script",
                 "fetch",
                 "frame",
-                "font"
+                "font",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -989,13 +1042,15 @@
                 "ping",
                 "noscript",
                 "unchecked_css",
-                "other"
+                "other",
+                "lazy_load"
               ],
               "temp": false
             },
             "§:visualstudio.com": {
               "capabilities": [
-                "script"
+                "script",
+                "lazy_load"
               ],
               "temp": false
             },
@@ -1005,7 +1060,8 @@
                 "object",
                 "media",
                 "frame",
-                "fetch"
+                "fetch",
+                "lazy_load"
               ],
               "temp": false
             },
@@ -1022,7 +1078,8 @@
           "capabilities": [
             "script",
             "frame",
-            "fetch"
+            "fetch",
+            "lazy_load"
           ],
           "contextual": {
             "§:google.com": {
@@ -1034,7 +1091,8 @@
                 "object",
                 "noscript",
                 "unchecked_css",
-                "other"
+                "other",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -1053,7 +1111,8 @@
                 "object",
                 "noscript",
                 "unchecked_css",
-                "other"
+                "other",
+                "lazy_load"
               ],
               "temp": false
             },
@@ -1101,7 +1160,8 @@
                 "fetch",
                 "ping",
                 "unchecked_css",
-                "other"
+                "other",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -1121,21 +1181,14 @@
                 "ping",
                 "noscript",
                 "unchecked_css",
-                "other"
+                "other",
+                "lazy_load"
               ],
               "temp": false
-            }
-          },
-          "temp": false
-        },
-        "https://163.5.254.3:8006": {
-          "capabilities": [],
-          "contextual": {
-            "§:163.5.254.3": {
+            },
+            "§:artv.watch": {
               "capabilities": [
-                "script",
-                "fetch",
-                "media"
+                "fetch"
               ],
               "temp": false
             }
@@ -1178,18 +1231,6 @@
           },
           "temp": false
         },
-        "§:thetvapp.to": {
-          "capabilities": [],
-          "contextual": {
-            "§:thetvapp.to": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "§:engie.ro": {
           "capabilities": [],
           "contextual": {
@@ -1198,7 +1239,8 @@
                 "script",
                 "font",
                 "fetch",
-                "frame"
+                "frame",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -1214,7 +1256,8 @@
                 "object",
                 "media",
                 "frame",
-                "fetch"
+                "fetch",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -1227,7 +1270,8 @@
             "§:geeks3d.com": {
               "capabilities": [
                 "webgl",
-                "script"
+                "script",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -1248,7 +1292,8 @@
                 "noscript",
                 "unchecked_css",
                 "other",
-                "object"
+                "object",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -1264,7 +1309,8 @@
                 "script",
                 "media",
                 "fetch",
-                "object"
+                "object",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -1290,23 +1336,8 @@
               "capabilities": [
                 "script",
                 "frame",
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "https://lewblivehdplay.ru": {
-          "capabilities": [],
-          "contextual": {
-            "§:pal1000.github.io": {
-              "capabilities": [
-                "frame",
-                "script",
                 "fetch",
-                "object",
-                "media"
+                "lazy_load"
               ],
               "temp": false
             }
@@ -1319,7 +1350,8 @@
             "§:visualstudio.com": {
               "capabilities": [
                 "fetch",
-                "script"
+                "script",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -1352,6 +1384,18 @@
                 "fetch"
               ],
               "temp": false
+            },
+            "§:tvcanale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:24livetv.us": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
             }
           },
           "temp": false
@@ -1362,7 +1406,8 @@
             "§:msn.com": {
               "capabilities": [
                 "script",
-                "fetch"
+                "fetch",
+                "lazy_load"
               ],
               "temp": false
             }
@@ -1382,9 +1427,15 @@
           "temp": false
         },
         "https://www.hideiframe.com": {
-          "capabilities": [
-            "frame"
-          ],
+          "capabilities": [],
+          "contextual": {
+            "§:dozaanimata.net": {
+              "capabilities": [
+                "frame"
+              ],
+              "temp": false
+            }
+          },
           "temp": false
         },
         "https://www.googletagmanager.com": {
@@ -1395,11 +1446,301 @@
           "capabilities": [],
           "temp": false
         },
-        "https://platform.bidgear.com": {
+        "https://twitter.com": {
           "capabilities": [],
           "contextual": {
-            "§:kimcartoon.li": {
+            "§:twitter.com": {
               "capabilities": [
+                "script",
+                "lazy_load"
+              ],
+              "temp": false
+            },
+            "§:x.com": {
+              "capabilities": [
+                "script",
+                "object",
+                "media",
+                "frame",
+                "fetch",
+                "ping",
+                "noscript",
+                "unchecked_css",
+                "other",
+                "lazy_load"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://x.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:x.com": {
+              "capabilities": [
+                "script",
+                "object",
+                "media",
+                "frame",
+                "fetch",
+                "ping",
+                "noscript",
+                "unchecked_css",
+                "other",
+                "lazy_load"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:orange.ro": {
+          "capabilities": [],
+          "contextual": {
+            "§:orange.ro": {
+              "capabilities": [
+                "script",
+                "fetch",
+                "lazy_load"
+              ],
+              "temp": false
+            },
+            "§:tvonline123.com": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://d2po7v53a8yrck.cloudfront.net": {
+          "capabilities": [],
+          "contextual": {
+            "§:ontvtonight.com": {
+              "capabilities": [
+                "script",
+                "lazy_load"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://challenges.cloudflare.com": {
+          "capabilities": [
+            "script",
+            "frame",
+            "fetch",
+            "webgl",
+            "ping",
+            "noscript",
+            "unchecked_css",
+            "other",
+            "object",
+            "media",
+            "font",
+            "lazy_load"
+          ],
+          "temp": false
+        },
+        "https://www.redditstatic.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:reddit.com": {
+              "capabilities": [
+                "script",
+                "lazy_load"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://www.reddit.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:reddit.com": {
+              "capabilities": [
+                "script",
+                "fetch",
+                "ping",
+                "lazy_load"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://w3-reporting.reddit.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:reddit.com": {
+              "capabilities": [
+                "fetch",
+                "ping"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:virtualearth.net": {
+          "capabilities": [],
+          "contextual": {
+            "§:msn.com": {
+              "capabilities": [
+                "fetch",
+                "script",
+                "lazy_load"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:thetvapp.to": {
+          "capabilities": [],
+          "contextual": {
+            "http://192.227.211.165": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:thetvapp.to": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:vodafone.ro": {
+          "capabilities": [],
+          "contextual": {
+            "§:tvhdonline.net": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:tvonline123.com": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://cdncloudtv.pics": {
+          "capabilities": [],
+          "contextual": {
+            "§:tv247.us": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:tv247us.com": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://v.redd.it": {
+          "capabilities": [],
+          "contextual": {
+            "§:reddit.com": {
+              "capabilities": [
+                "fetch",
+                "media"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://tamashaweb.com": {
+          "capabilities": [
+            "script",
+            "media",
+            "frame",
+            "fetch",
+            "other",
+            "ping",
+            "object",
+            "noscript",
+            "unchecked_css",
+            "webgl",
+            "lazy_load"
+          ],
+          "temp": false
+        },
+        "https://195.128.248.251": {
+          "capabilities": [],
+          "contextual": {
+            "§:195.128.248.251": {
+              "capabilities": [
+                "fetch",
+                "script",
+                "lazy_load"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:olxcdn.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:olx.ro": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:olx.org": {
+          "capabilities": [],
+          "contextual": {
+            "§:olx.ro": {
+              "capabilities": [
+                "fetch",
+                "script"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:olx.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:olx.ro": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://83.136.208.3:8006": {
+          "capabilities": [],
+          "contextual": {
+            "§:83.136.208.3": {
+              "capabilities": [
+                "script",
+                "media",
                 "fetch"
               ],
               "temp": false
@@ -1417,6 +1758,7 @@
     "showCtxMenuItem": false,
     "showCountBadge": true,
     "showFullAddresses": true,
+    "showProbePlaceholders": true,
     "amnesticUpdates": false,
     "storage": "local",
     "uuid": "ee5b21c2-107e-4636-b055-3bb97d22e1e4",
