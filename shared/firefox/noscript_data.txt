@@ -382,7 +382,6 @@
         "https://logincdn.msftauth.net",
         "https://amp.azure.net",
         "https://wus-streaming-video-rt-microsoft-com.akamaized.net",
-        "https://maps.googleapis.com",
         "https://manutv.org",
         "https://tve-vod-aka.warnermediacdn.com",
         "https://token.ngtv.io",
@@ -400,13 +399,10 @@
         "https://store.cloudflare.steamstatic.com",
         "https://www.bleepingcomputer.com",
         "https://www.bleepstatic.com",
-        "https://weblivehdplay.ru",
-        "https://claplivehdplay.ru",
         "https://ntv.onrender.com",
         "https://www.majorgeeks.com",
         "https://disq.us",
         "https://raw.githubusercontent.com",
-        "https://livehdplay.ru",
         "https://dgpci.mai.gov.ro",
         "https://thetvapp.cote.ws",
         "https://rocanale.org",
@@ -455,7 +451,6 @@
         "https://desenefaine.com",
         "https://tvron.tv.tvonline.ws",
         "https://thetvapp.to",
-        "https://lewblivehdplay.ru",
         "https://quest4play.xyz",
         "https://artv.watch",
         "https://fl5.moveonjoy.com",
@@ -473,7 +468,23 @@
         "https://www.olx.ro",
         "https://topembed.pw",
         "https://24livetv.us",
-        "https://ts.artv.watch"
+        "https://ts.artv.watch",
+        "https://challenges.cloudflare.com",
+        "https://mydpd.dpd.ro",
+        "https://cdn27.porktv.cfd",
+        "https://kimcartoon.com.co",
+        "https://auth.hostinger.com",
+        "https://maps.googleapis.com",
+        "https://kimcartoon.si",
+        "https://embed.vodstream.xyz",
+        "https://fl2.moveonjoy.com",
+        "https://e-licitatie.ro",
+        "https://ilovetoplay.xyz",
+        "https://hztzz.webhd.ru",
+        "https://topembed.webhd.ru",
+        "https://key.webhd.ru",
+        "https://xyzdddd.webhd.ru",
+        "https://ddh1zz.webhd.ru"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -1195,18 +1206,6 @@
           },
           "temp": false
         },
-        "§:onlinehdhls.ru": {
-          "capabilities": [],
-          "contextual": {
-            "§:pal1000.github.io": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "http://127.0.0.1:6878": {
           "capabilities": [],
           "contextual": {
@@ -1313,6 +1312,26 @@
                 "lazy_load"
               ],
               "temp": false
+            },
+            "§:kimcartoon.com.co": {
+              "capabilities": [
+                "script",
+                "object",
+                "media",
+                "frame",
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:kimcartoon.si": {
+              "capabilities": [
+                "frame",
+                "script",
+                "object",
+                "media",
+                "fetch"
+              ],
+              "temp": false
             }
           },
           "temp": false
@@ -1321,6 +1340,18 @@
           "capabilities": [],
           "contextual": {
             "§:kimcartoon.li": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:kimcartoon.com.co": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:kimcartoon.si": {
               "capabilities": [
                 "fetch"
               ],
@@ -1366,32 +1397,8 @@
                 "fetch"
               ],
               "temp": false
-            }
-          },
-          "temp": false
-        },
-        "§:mizhls.ru": {
-          "capabilities": [],
-          "contextual": {
-            "§:pal1000.github.io": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
             },
-            "§:dlhd.so": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            },
-            "§:tvcanale.live": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            },
-            "§:24livetv.us": {
+            "§:tvonline123.com": {
               "capabilities": [
                 "fetch"
               ],
@@ -1440,6 +1447,14 @@
         },
         "https://www.googletagmanager.com": {
           "capabilities": [],
+          "contextual": {
+            "§:cool-etv.net": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            }
+          },
           "temp": false
         },
         "https://www.google-analytics.com": {
@@ -1526,23 +1541,6 @@
               "temp": false
             }
           },
-          "temp": false
-        },
-        "https://challenges.cloudflare.com": {
-          "capabilities": [
-            "script",
-            "frame",
-            "fetch",
-            "webgl",
-            "ping",
-            "noscript",
-            "unchecked_css",
-            "other",
-            "object",
-            "media",
-            "font",
-            "lazy_load"
-          ],
           "temp": false
         },
         "https://www.redditstatic.com": {
@@ -1741,6 +1739,83 @@
               "capabilities": [
                 "script",
                 "media",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "http://143.244.60.97": {
+          "capabilities": [],
+          "contextual": {
+            "§:pal1000.github.io": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:hostinger.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:hostinger.com": {
+              "capabilities": [
+                "ping",
+                "fetch",
+                "frame",
+                "object",
+                "script",
+                "noscript",
+                "lazy_load",
+                "unchecked_css",
+                "other"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:disneynow.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:disneynow.com": {
+              "capabilities": [
+                "script",
+                "fetch",
+                "ping",
+                "object",
+                "media",
+                "frame",
+                "noscript",
+                "lazy_load",
+                "unchecked_css",
+                "other"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "http://84.17.40.25": {
+          "capabilities": [],
+          "contextual": {
+            "§:pal1000.github.io": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:guardstorage.net": {
+          "capabilities": [],
+          "contextual": {
+            "§:desenefaine.com": {
+              "capabilities": [
                 "fetch"
               ],
               "temp": false
