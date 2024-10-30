@@ -126,7 +126,6 @@
         "https://player.hulu.com",
         "https://iron1.jarvisx.xyz",
         "https://rohan1.ultronx.xyz",
-        "https://atlantida1.aquax.xyz",
         "https://objects-origin.githubusercontent.com",
         "https://evenimentdeolt.ro",
         "https://stream-1-1-ip4.loadshare.org",
@@ -184,48 +183,14 @@
         "https://marketplace.visualstudio.com",
         "https://vscodeexperiments.azureedge.net",
         "https://thor1.syndula.cfd",
-        "https://flash1.bogulus.xyz",
         "https://tv247.us",
         "https://edgecast-vod.yimg.com",
         "https://rohan1.ultronx.cfd",
         "https://s.yimg.com",
         "https://collector.github.com",
         "https://consent.cmp.oath.com",
-        "https://changlam19.top",
-        "https://changlam20.top",
-        "https://changlam21.top",
-        "https://changlam25.top",
-        "https://changlam26.top",
-        "https://changlam27.top",
-        "https://changlam22.top",
-        "https://changlam23.top",
-        "https://changlam24.top",
         "https://watchcartoononline.bz",
-        "https://changlam10.top",
-        "https://changlam12.top",
-        "https://changlam11.top",
-        "https://changlam13.top",
-        "https://changlam14.top",
-        "https://changlam15.top",
-        "https://changlam16.top",
-        "https://changlam17.top",
-        "https://changlam18.top",
-        "https://arcdocker11.top",
-        "https://arcdocker12.top",
-        "https://arcdocker13.top",
-        "https://arcdocker14.top",
-        "https://arcdocker15.top",
-        "https://arcdocker1.top",
-        "https://arcdocker2.top",
-        "https://arcdocker3.top",
-        "https://arcdocker4.top",
-        "https://arcdocker5.top",
         "https://dl-mail.ymail.com",
-        "https://arcdocker6.top",
-        "https://arcdocker7.top",
-        "https://arcdocker8.top",
-        "https://arcdocker9.top",
-        "https://arcdocker10.top",
         "https://iron1.jarvisx.cfd",
         "https://gardomel1.pikorex.xyz",
         "https://hcaptcha.com",
@@ -257,7 +222,6 @@
         "https://tv247us.com",
         "https://streamservicehd.click",
         "https://daddylivehd.sx",
-        "https://tv.canaletv.live",
         "http://ajutor.canale-tv.net",
         "http://s104.ucoz.net",
         "https://login.uid.me",
@@ -327,7 +291,6 @@
         "https://netdna.bootstrapcdn.com",
         "file:///c:/Software/Development/projects/pal1000.github.io/tools/hlsembed/index.html",
         "https://admin.genieessp.com",
-        "https://srv1.canaletv.live",
         "https://player.kimdesene.org",
         "https://www.recaptcha.net",
         "https://cdn.streamlive.to",
@@ -356,10 +319,6 @@
         "https://acctcdn.msauth.net",
         "https://sync.springserve.com",
         "https://vid.springserve.com",
-        "https://lb3.canaletv.live",
-        "https://lb2.canaletv.live",
-        "https://lb11.canaletv.live",
-        "https://lb1.canaletv.live",
         "https://www.wco.tv",
         "https://wikiwebcast4k.xyz",
         "https://stackoverflow.com",
@@ -367,7 +326,6 @@
         "https://gramthanos.github.io",
         "https://bugzilla.mozilla.org",
         "https://pal1000.000webhostapp.com",
-        "https://lb17.canaletv.live",
         "https://www.tvonline123.com",
         "https://www.wcoanimedub.tv",
         "https://www.wcostream.tv",
@@ -439,8 +397,6 @@
         "https://qqwebplay.xyz",
         "https://tvonline123.com",
         "https://js.hcaptcha.com",
-        "https://play.channelsfree.org",
-        "https://play1.channelsfree.org:8443",
         "https://gpt.mail.yahoo.net",
         "https://tvhe.tv24.gdn",
         "https://p9.stirilepe.net",
@@ -452,7 +408,6 @@
         "https://tvron.tv.tvonline.ws",
         "https://thetvapp.to",
         "https://quest4play.xyz",
-        "https://artv.watch",
         "https://fl5.moveonjoy.com",
         "https://www.disneychannel.ca",
         "https://www.disneyxd.ca",
@@ -468,7 +423,6 @@
         "https://www.olx.ro",
         "https://topembed.pw",
         "https://24livetv.us",
-        "https://ts.artv.watch",
         "https://challenges.cloudflare.com",
         "https://mydpd.dpd.ro",
         "https://cdn27.porktv.cfd",
@@ -480,11 +434,25 @@
         "https://fl2.moveonjoy.com",
         "https://e-licitatie.ro",
         "https://ilovetoplay.xyz",
-        "https://hztzz.webhd.ru",
-        "https://topembed.webhd.ru",
-        "https://key.webhd.ru",
-        "https://xyzdddd.webhd.ru",
-        "https://ddh1zz.webhd.ru"
+        "https://fpa-cdn.arstechnica.com",
+        "https://depunerefotovoltaice.afm.ro",
+        "https://afmb2cprod.b2clogin.com",
+        "https://stoafmadb2cprod.blob.core.windows.net",
+        "https://inscrierionline.afm.ro",
+        "https://bigembed.hlsjs.ru",
+        "https://top2.iosplayer.ru",
+        "https://key.mizhls.ru",
+        "https://key.keylocking.ru",
+        "https://p10.stirilepe.net",
+        "https://code.videolan.org",
+        "https://xyzdddd.mizhls.ru",
+        "https://ddh1.iosplayer.ru",
+        "https://totp.danhersam.com",
+        "https://www.pdfescape.com",
+        "https://um.pdfescape.com",
+        "https://api-gw.pdfescape.com",
+        "https://prodpdfescape.blob.core.windows.net",
+        "https://thedaddy.to"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -1130,6 +1098,12 @@
             "§:routersecurity-org.translate.goog": {
               "capabilities": [],
               "temp": false
+            },
+            "§:learnweb.top": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
             }
           },
           "temp": false
@@ -1270,28 +1244,6 @@
               "capabilities": [
                 "webgl",
                 "script",
-                "lazy_load"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "https://98.js.org": {
-          "capabilities": [],
-          "contextual": {
-            "§:98.js.org": {
-              "capabilities": [
-                "script",
-                "media",
-                "frame",
-                "fetch",
-                "webgl",
-                "ping",
-                "noscript",
-                "unchecked_css",
-                "other",
-                "object",
                 "lazy_load"
               ],
               "temp": false
@@ -1634,24 +1586,6 @@
           },
           "temp": false
         },
-        "https://cdncloudtv.pics": {
-          "capabilities": [],
-          "contextual": {
-            "§:tv247.us": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            },
-            "§:tv247us.com": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "https://v.redd.it": {
           "capabilities": [],
           "contextual": {
@@ -1815,6 +1749,36 @@
           "capabilities": [],
           "contextual": {
             "§:desenefaine.com": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://cdn-nlru.xyz": {
+          "capabilities": [],
+          "contextual": {
+            "§:tv247us.com": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:tv247.us": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:elastic-cloud.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:pdfescape.com": {
               "capabilities": [
                 "fetch"
               ],
