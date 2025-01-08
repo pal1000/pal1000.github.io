@@ -45,4 +45,4 @@
 @if %nogit% EQU 0 git push origin master
 
 :exit
-@timeout /t 3 > nul 2>&1
+@timeout /t 10 > nul 2>&1

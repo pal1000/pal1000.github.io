@@ -70,8 +70,6 @@
         "https://bl.rutube.ru",
         "https://rutube.ru",
         "https://static.rutube.ru",
-        "https://github.githubassets.com",
-        "https://github.com",
         "https://github-production-release-asset-2e65be.s3.amazonaws.com",
         "https://s4.tinyvid.net",
         "https://majorgeekscom.disqus.com",
@@ -214,7 +212,6 @@
         "https://manifest.prod.boltdns.net",
         "https://www.tvmania.ro",
         "https://piranda.zokares.xyz",
-        "https://universulanime.eu",
         "https://archive.firevideoplayer.com",
         "http://tlu.dl.delivery.mp.microsoft.com",
         "http://dl.delivery.mp.microsoft.com",
@@ -292,7 +289,6 @@
         "file:///c:/Software/Development/projects/pal1000.github.io/tools/hlsembed/index.html",
         "https://admin.genieessp.com",
         "https://player.kimdesene.org",
-        "https://www.recaptcha.net",
         "https://cdn.streamlive.to",
         "https://daddylivehd.com",
         "https://hlsjs.video-dev.org",
@@ -373,7 +369,6 @@
         "https://www.dozaanimata.net",
         "https://myinfo.premierenergy.ro",
         "https://text-compare.com",
-        "https://cdn.jsdelivr.net",
         "https://trackorders.postisgate.com",
         "https://config.postisgate.com",
         "https://hls.tv24.gdn",
@@ -391,7 +386,6 @@
         "https://www.premierenergy.info",
         "https://deseneledublate.com",
         "https://rds.live",
-        "https://p8.stirilepe.net",
         "https://tvron.tv",
         "https://100gbs.tv24.gdn",
         "https://qqwebplay.xyz",
@@ -399,7 +393,6 @@
         "https://js.hcaptcha.com",
         "https://gpt.mail.yahoo.net",
         "https://tvhe.tv24.gdn",
-        "https://p9.stirilepe.net",
         "https://cdn.porktv.cfd",
         "https://cdn5.porktv.cfd",
         "https://vssps.dev.azure.com",
@@ -443,7 +436,6 @@
         "https://top2.iosplayer.ru",
         "https://key.mizhls.ru",
         "https://key.keylocking.ru",
-        "https://p10.stirilepe.net",
         "https://code.videolan.org",
         "https://xyzdddd.mizhls.ru",
         "https://ddh1.iosplayer.ru",
@@ -452,7 +444,39 @@
         "https://um.pdfescape.com",
         "https://api-gw.pdfescape.com",
         "https://prodpdfescape.blob.core.windows.net",
-        "https://thedaddy.to"
+        "https://thedaddy.to",
+        "https://tvcanale.live",
+        "https://canale.webhd.ru",
+        "https://key2.keylocking.ru",
+        "https://vclock.com",
+        "https://ddy1.iosplayer.ru",
+        "https://login.aol.com",
+        "https://www.rauman24.ro",
+        "https://mw.kancelar24.cz",
+        "https://c.seznam.cz",
+        "https://shoptet.webotvurci.cz",
+        "https://cdn.myshoptet.com",
+        "https://p11.magicplaces.eu",
+        "https://account.teamviewer.com",
+        "https://www.recaptcha.net",
+        "https://universulanime.eu",
+        "https://store.fastly.steamstatic.com",
+        "https://login.steampowered.com",
+        "https://help.steampowered.com",
+        "https://github.githubassets.com",
+        "https://github.com",
+        "https://p11.vasile21.com",
+        "https://p11.vasile22.com",
+        "https://ivanturbinca.com",
+        "https://ddh2.iosplayer.ru",
+        "https://dolphin-emu.org",
+        "https://www.disneyjunior.ca",
+        "https://cookiewebplay.xyz",
+        "https://ddv2.iosplayer.ru",
+        "https://porctv.cloud",
+        "https://mseqdr.org",
+        "https://img.cartooncdn.xyz",
+        "https://ga.kvideo.io"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -597,6 +621,14 @@
                 "lazy_load"
               ],
               "temp": false
+            },
+            "§:aol.com": {
+              "capabilities": [
+                "script",
+                "fetch",
+                "ping"
+              ],
+              "temp": false
             }
           },
           "temp": false
@@ -707,6 +739,12 @@
                 "fetch"
               ],
               "temp": false
+            },
+            "§:tvonline123.com": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
             }
           },
           "temp": false
@@ -733,6 +771,12 @@
               "temp": false
             },
             "§:24livetv.us": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:tvonline123.com": {
               "capabilities": [
                 "fetch"
               ],
@@ -804,6 +848,13 @@
             "§:wcostream.tv": {
               "capabilities": [
                 "media"
+              ],
+              "temp": false
+            },
+            "§:wcoanimedub.tv": {
+              "capabilities": [
+                "media",
+                "fetch"
               ],
               "temp": false
             }
@@ -1373,30 +1424,6 @@
           },
           "temp": false
         },
-        "https://hideiframe.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:dozaanimata.net": {
-              "capabilities": [
-                "frame"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "https://www.hideiframe.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:dozaanimata.net": {
-              "capabilities": [
-                "frame"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "https://www.googletagmanager.com": {
           "capabilities": [],
           "contextual": {
@@ -1561,7 +1588,8 @@
             },
             "§:thetvapp.to": {
               "capabilities": [
-                "fetch"
+                "fetch",
+                "script"
               ],
               "temp": false
             }
@@ -1779,6 +1807,122 @@
           "capabilities": [],
           "contextual": {
             "§:pdfescape.com": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://web.teamviewer.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:teamviewer.com": {
+              "capabilities": [
+                "script",
+                "webgl",
+                "frame",
+                "fetch",
+                "ping"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://cdn.jsdelivr.net": {
+          "capabilities": [],
+          "contextual": {
+            "§:urgentcargus.ro": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            },
+            "§:pal1000.github.io": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            },
+            "§:24livetv.us": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            },
+            "§:tv247.us": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            },
+            "§:thedaddy.to": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            },
+            "§:ketaiptv.me": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            },
+            "§:thetvapp.to": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://www.hideiframe.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:dozaanimata.net": {
+              "capabilities": [
+                "frame"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://hideiframe.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:dozaanimata.net": {
+              "capabilities": [
+                "frame"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:archive.org": {
+          "capabilities": [],
+          "contextual": {
+            "§:archive.org": {
+              "capabilities": [
+                "script",
+                "lazy_load",
+                "fetch",
+                "ping",
+                "frame"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:voe-network.net": {
+          "capabilities": [],
+          "contextual": {
+            "§:desenefaine.com": {
               "capabilities": [
                 "fetch"
               ],

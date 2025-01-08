@@ -75,8 +75,8 @@
       "active": true,
       "title": "USA 2",
       "type": "socks5",
-      "hostname": "148.77.34.199",
-      "port": "60606",
+      "hostname": "192.111.135.17",
+      "port": "18302",
       "username": "",
       "password": "",
       "cc": "US",
@@ -90,7 +90,13 @@
           "type": "wildcard",
           "title": "thetvapp.to",
           "pattern": "*://thetvapp.to/",
-          "active": true
+          "active": false
+        },
+        {
+          "type": "wildcard",
+          "title": "RDS live",
+          "pattern": "https://p11.magicplaces.eu/*",
+          "active": false
         }
       ],
       "exclude": []
