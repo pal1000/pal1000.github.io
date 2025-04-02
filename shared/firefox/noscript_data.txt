@@ -399,7 +399,6 @@
         "https://www.ontvtonight.com",
         "https://desenefaine.com",
         "https://tvron.tv.tvonline.ws",
-        "https://thetvapp.to",
         "https://quest4play.xyz",
         "https://fl5.moveonjoy.com",
         "https://www.disneychannel.ca",
@@ -432,13 +431,8 @@
         "https://afmb2cprod.b2clogin.com",
         "https://stoafmadb2cprod.blob.core.windows.net",
         "https://inscrierionline.afm.ro",
-        "https://bigembed.hlsjs.ru",
-        "https://top2.iosplayer.ru",
-        "https://key.mizhls.ru",
         "https://key.keylocking.ru",
         "https://code.videolan.org",
-        "https://xyzdddd.mizhls.ru",
-        "https://ddh1.iosplayer.ru",
         "https://totp.danhersam.com",
         "https://www.pdfescape.com",
         "https://um.pdfescape.com",
@@ -446,10 +440,8 @@
         "https://prodpdfescape.blob.core.windows.net",
         "https://thedaddy.to",
         "https://tvcanale.live",
-        "https://canale.webhd.ru",
         "https://key2.keylocking.ru",
         "https://vclock.com",
-        "https://ddy1.iosplayer.ru",
         "https://login.aol.com",
         "https://www.rauman24.ro",
         "https://mw.kancelar24.cz",
@@ -468,20 +460,35 @@
         "https://p11.vasile21.com",
         "https://p11.vasile22.com",
         "https://ivanturbinca.com",
-        "https://ddh2.iosplayer.ru",
         "https://dolphin-emu.org",
         "https://www.disneyjunior.ca",
         "https://cookiewebplay.xyz",
-        "https://ddv2.iosplayer.ru",
         "https://porctv.cloud",
         "https://mseqdr.org",
         "https://img.cartooncdn.xyz",
-        "https://ga.kvideo.io"
+        "https://ga.kvideo.io",
+        "https://api-gw.avanquest.com",
+        "https://www.dormeo.ro",
+        "https://tvpass.org",
+        "https://bugs.dolphin-emu.org",
+        "https://translate-pa.googleapis.com",
+        "https://newembedplay.xyz",
+        "https://ro.jimjam.tv",
+        "https://www.minimaxro.tv",
+        "https://canale-tv.com",
+        "https://daddylive.mp",
+        "https://cdn.jsdelivr.net",
+        "https://fbcdntv247.cfd",
+        "https://video.fastly.steamstatic.com",
+        "https://steamcommunity.com",
+        "https://programetv.program24.ro",
+        "https://fl6.moveonjoy.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
         "https://ssl.google-analytics.com",
-        "https://www.googletagservices.com"
+        "https://www.googletagservices.com",
+        "https://cdn.jsdelivr.net/npm/disable-devtool@latest/disable-devtool.min.js"
       ],
       "custom": {
         "https://instnsp.maps.arcgis.com": {
@@ -778,6 +785,14 @@
             },
             "§:tvonline123.com": {
               "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:daddylivehd1.click": {
+              "capabilities": [
+                "frame",
+                "script",
                 "fetch"
               ],
               "temp": false
@@ -1153,6 +1168,14 @@
             "§:learnweb.top": {
               "capabilities": [
                 "script"
+              ],
+              "temp": false
+            },
+            "§:ro-jimjam-tv.translate.goog": {
+              "capabilities": [
+                "frame",
+                "script",
+                "fetch"
               ],
               "temp": false
             }
@@ -1588,8 +1611,19 @@
             },
             "§:thetvapp.to": {
               "capabilities": [
-                "fetch",
-                "script"
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:tvpass.org": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:pal1000.github.io": {
+              "capabilities": [
+                "fetch"
               ],
               "temp": false
             }
@@ -1831,54 +1865,6 @@
           },
           "temp": false
         },
-        "https://cdn.jsdelivr.net": {
-          "capabilities": [],
-          "contextual": {
-            "§:urgentcargus.ro": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:pal1000.github.io": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:24livetv.us": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:tv247.us": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:thedaddy.to": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:ketaiptv.me": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:thetvapp.to": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "https://www.hideiframe.com": {
           "capabilities": [],
           "contextual": {
@@ -1912,7 +1898,8 @@
                 "lazy_load",
                 "fetch",
                 "ping",
-                "frame"
+                "frame",
+                "media"
               ],
               "temp": false
             }
@@ -1923,6 +1910,116 @@
           "capabilities": [],
           "contextual": {
             "§:desenefaine.com": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://thetvapp.to": {
+          "capabilities": [
+            "script",
+            "media",
+            "frame",
+            "fetch",
+            "other",
+            "ping",
+            "object",
+            "noscript",
+            "unchecked_css",
+            "lazy_load"
+          ],
+          "temp": false
+        },
+        "§:cloudflarestorage.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:pal1000.github.io": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:24livetv.us": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:tvcanale.live": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:daddylivehd1.click": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:daddylive.mp": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:dailymotion.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:dailymotion.com": {
+              "capabilities": [
+                "script",
+                "frame",
+                "fetch",
+                "media"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:dmcdn.net": {
+          "capabilities": [],
+          "contextual": {
+            "§:dailymotion.com": {
+              "capabilities": [
+                "fetch",
+                "script"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://zorroplay.xyz": {
+          "capabilities": [],
+          "contextual": {
+            "§:tvcanale.live": {
+              "capabilities": [
+                "fetch",
+                "script"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:koskoros.ru": {
+          "capabilities": [],
+          "contextual": {
+            "§:pal1000.github.io": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:daddylive.mp": {
               "capabilities": [
                 "fetch"
               ],
