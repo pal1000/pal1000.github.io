@@ -4,17 +4,12 @@
   "autoBackup": false,
   "passthrough": "",
   "theme": "",
-  "container": {
-    "incognito": "",
-    "container-1": "",
-    "container-2": "",
-    "container-3": "",
-    "container-4": ""
-  },
+  "container": {},
   "commands": {
     "setProxy": "",
     "setTabProxy": "",
-    "quickAdd": ""
+    "includeHost": "",
+    "excludeHost": ""
   },
   "data": [
     {
@@ -67,9 +62,22 @@
           "title": "Cartoon Network USA Videos Part 2",
           "pattern": "*://*.cartoonnetwork.com/",
           "active": true
+        },
+        {
+          "type": "wildcard",
+          "title": "Cartoon Network USA Videos Part 3",
+          "pattern": "*://*.warnermediacdn.com/",
+          "active": true
+        },
+        {
+          "type": "wildcard",
+          "title": "DisneyNOW",
+          "pattern": "*://*.us-abc.symphony.edgedatg.go.com/",
+          "active": true
         }
       ],
-      "exclude": []
+      "exclude": [],
+      "tabProxy": []
     },
     {
       "active": true,
@@ -99,7 +107,8 @@
           "active": false
         }
       ],
-      "exclude": []
+      "exclude": [],
+      "tabProxy": []
     }
   ]
 }

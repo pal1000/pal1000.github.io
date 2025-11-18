@@ -15,7 +15,8 @@
         "object",
         "noscript",
         "unchecked_css",
-        "lazy_load"
+        "lazy_load",
+        "wasm"
       ],
       "temp": false
     },
@@ -122,7 +123,6 @@
         "https://thor1.syndula.xyz",
         "https://programare.vaccinare-covid.gov.ro",
         "https://player.hulu.com",
-        "https://iron1.jarvisx.xyz",
         "https://rohan1.ultronx.xyz",
         "https://objects-origin.githubusercontent.com",
         "https://evenimentdeolt.ro",
@@ -137,7 +137,6 @@
         "https://api.pwnedpasswords.com",
         "https://videos2-h.sendvid.com",
         "https://tvron.net",
-        "https://versuri24.com",
         "https://bitmovin-a.akamaihd.net",
         "https://vidstreamingcdn.com",
         "https://mega.nz",
@@ -158,7 +157,6 @@
         "https://www.youtube.com",
         "https://cnvideo.sercomkc.org",
         "https://time.ten.ngtv.io",
-        "https://galandriel1.thobias.xyz",
         "https://cloudflare.hcaptcha.com",
         "https://cdn.gogocdn.net",
         "https://ajax.gogo-load.com",
@@ -180,16 +178,13 @@
         "https://github.vscode-unpkg.net",
         "https://marketplace.visualstudio.com",
         "https://vscodeexperiments.azureedge.net",
-        "https://thor1.syndula.cfd",
         "https://tv247.us",
         "https://edgecast-vod.yimg.com",
-        "https://rohan1.ultronx.cfd",
         "https://s.yimg.com",
         "https://collector.github.com",
         "https://consent.cmp.oath.com",
         "https://watchcartoononline.bz",
         "https://dl-mail.ymail.com",
-        "https://iron1.jarvisx.cfd",
         "https://gardomel1.pikorex.xyz",
         "https://hcaptcha.com",
         "https://discord.com",
@@ -203,9 +198,7 @@
         "https://s1.liveforward.click",
         "https://s4.liveforward.click",
         "https://client.petrosky.io",
-        "https://atlantida1.aquax.cfd",
         "https://live.tv247us.com",
-        "https://onyx1.mofta.cfd",
         "https://hulky1.lokix.cfd",
         "https://playback.brightcovecdn.com",
         "https://tvnz-prod-01.brightcovecdn.com",
@@ -236,9 +229,6 @@
         "https://js.monitor.azure.com",
         "https://mem.gfx.ms",
         "https://assets.onestore.ms",
-        "https://cdnjs.cloudflare.com",
-        "https://engie.ro",
-        "https://www.engie.ro",
         "https://c0.wp.com",
         "https://turnerlive.akamaized.net",
         "https://tve-live-lln.warnermediacdn.com",
@@ -247,7 +237,6 @@
         "https://embed.watchanimesub.net",
         "https://catalog.s.download.windowsupdate.com",
         "https://git-scm.com",
-        "https://galandriel1.thobias.cfd",
         "https://flash1.bogulus.cfd",
         "https://iptvcat.com",
         "https://iptvcat.net",
@@ -325,10 +314,6 @@
         "https://www.tvonline123.com",
         "https://www.wcoanimedub.tv",
         "https://www.wcostream.tv",
-        "https://www.cool-etv.net",
-        "https://saruman1.tharen.cfd",
-        "https://entitlement.auth.adobe.com",
-        "https://sp.auth.adobe.com",
         "https://medium.ngtv.io",
         "https://discourse.llvm.org",
         "https://global.discourse-cdn.com",
@@ -435,7 +420,6 @@
         "https://code.videolan.org",
         "https://totp.danhersam.com",
         "https://www.pdfescape.com",
-        "https://um.pdfescape.com",
         "https://api-gw.pdfescape.com",
         "https://prodpdfescape.blob.core.windows.net",
         "https://thedaddy.to",
@@ -457,8 +441,6 @@
         "https://help.steampowered.com",
         "https://github.githubassets.com",
         "https://github.com",
-        "https://p11.vasile21.com",
-        "https://p11.vasile22.com",
         "https://ivanturbinca.com",
         "https://dolphin-emu.org",
         "https://www.disneyjunior.ca",
@@ -482,7 +464,46 @@
         "https://video.fastly.steamstatic.com",
         "https://steamcommunity.com",
         "https://programetv.program24.ro",
-        "https://fl6.moveonjoy.com"
+        "https://fl6.moveonjoy.com",
+        "https://trac.ffmpeg.org",
+        "https://playrds.com",
+        "https://caolt.ro",
+        "https://daddylive.dad",
+        "https://fastly-signed-us-east-1-prod.brightcovecdn.com",
+        "https://thedaddy.click",
+        "https://zorroplay.xyz",
+        "https://cdnjs.cloudflare.com",
+        "https://embed.wcostream.com",
+        "https://dlhd.click",
+        "https://aly.fbcdntv247.cfd",
+        "https://monstaftp.com",
+        "https://www.monstaftp.com",
+        "https://sapi.emag.ro",
+        "https://www.emag.ro",
+        "https://fl3.moveonjoy.com",
+        "https://gls-group.com",
+        "https://fl7.moveonjoy.com",
+        "https://onyx1.mofta1.cfd",
+        "https://thedaddy.dad",
+        "https://thedaddy.top",
+        "https://daddylivestream.com",
+        "https://atlantida1.aquax1.cfd",
+        "https://iron1.jarvisx1.cfd",
+        "https://saruman1.tharen1.cfd",
+        "https://um.pdfescape.com",
+        "https://track.pdfescape.com",
+        "https://prod.gatekeeper.us-abc.symphony.edgedatg.com",
+        "https://api.config.watchabc.go.com",
+        "https://api.contents.watchabc.go.com",
+        "https://prod.gatekeeper.us-abc.symphony.edgedatg.go.com",
+        "https://assets-cdn.watchdisneyfe.com",
+        "https://api.pluto.watchabc.go.com",
+        "https://dlhd.dad",
+        "https://dtproxy5.yahoo.eu.clients.ipqs.com",
+        "https://dtproxy6.yahoo.eu.clients.ipqs.com",
+        "https://api.ticketbot.xyz",
+        "https://cp.ticketbot.xyz",
+        "https://galandriel1.thobias.cfd"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -495,9 +516,7 @@
           "capabilities": [
             "script",
             "webgl",
-            "fetch",
-            "unchecked_css",
-            "lazy_load"
+            "fetch"
           ],
           "temp": false
         },
@@ -514,8 +533,7 @@
               "capabilities": [
                 "script",
                 "media",
-                "fetch",
-                "lazy_load"
+                "fetch"
               ],
               "temp": false
             },
@@ -530,8 +548,8 @@
         },
         "https://www.gstatic.com": {
           "capabilities": [
-            "script",
-            "lazy_load"
+            "lazy_load",
+            "script"
           ],
           "contextual": {
             "§:google.com": {
@@ -584,8 +602,7 @@
               "capabilities": [
                 "frame",
                 "script",
-                "fetch",
-                "lazy_load"
+                "fetch"
               ],
               "temp": false
             }
@@ -1286,8 +1303,7 @@
                 "script",
                 "font",
                 "fetch",
-                "frame",
-                "lazy_load"
+                "frame"
               ],
               "temp": false
             }
@@ -1397,6 +1413,23 @@
                 "lazy_load"
               ],
               "temp": false
+            },
+            "§:infinityfree.com": {
+              "capabilities": [
+                "script",
+                "fetch",
+                "frame",
+                "wasm"
+              ],
+              "temp": false
+            },
+            "§:filemanager.ai": {
+              "capabilities": [
+                "fetch",
+                "script",
+                "frame"
+              ],
+              "temp": false
             }
           },
           "temp": false
@@ -1445,22 +1478,6 @@
               "temp": false
             }
           },
-          "temp": false
-        },
-        "https://www.googletagmanager.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:cool-etv.net": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "https://www.google-analytics.com": {
-          "capabilities": [],
           "temp": false
         },
         "https://twitter.com": {
@@ -1659,22 +1676,6 @@
               "temp": false
             }
           },
-          "temp": false
-        },
-        "https://tamashaweb.com": {
-          "capabilities": [
-            "script",
-            "media",
-            "frame",
-            "fetch",
-            "other",
-            "ping",
-            "object",
-            "noscript",
-            "unchecked_css",
-            "webgl",
-            "lazy_load"
-          ],
           "temp": false
         },
         "https://195.128.248.251": {
@@ -1934,7 +1935,9 @@
           "temp": false
         },
         "§:cloudflarestorage.com": {
-          "capabilities": [],
+          "capabilities": [
+            "fetch"
+          ],
           "contextual": {
             "§:pal1000.github.io": {
               "capabilities": [
@@ -1961,6 +1964,12 @@
               "temp": false
             },
             "§:daddylive.mp": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:thedaddy.click": {
               "capabilities": [
                 "fetch"
               ],
@@ -1997,19 +2006,6 @@
           },
           "temp": false
         },
-        "https://zorroplay.xyz": {
-          "capabilities": [],
-          "contextual": {
-            "§:tvcanale.live": {
-              "capabilities": [
-                "fetch",
-                "script"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "§:koskoros.ru": {
           "capabilities": [],
           "contextual": {
@@ -2020,6 +2016,120 @@
               "temp": false
             },
             "§:daddylive.mp": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:newkso.ru": {
+          "capabilities": [
+            "fetch"
+          ],
+          "temp": false
+        },
+        "§:coveo.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:intel.com": {
+              "capabilities": [
+                "fetch",
+                "script"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://www.cool-etv.net": {
+          "capabilities": [],
+          "contextual": {
+            "§:cool-etv.net": {
+              "capabilities": [
+                "script",
+                "frame",
+                "fetch",
+                "media"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:gog.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:gog.com": {
+              "capabilities": [
+                "frame",
+                "fetch",
+                "media",
+                "object",
+                "script"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:gog-statics.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:gog.com": {
+              "capabilities": [
+                "script",
+                "object",
+                "media",
+                "frame",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:wcostream.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:wcostream.tv": {
+              "capabilities": [
+                "fetch",
+                "media"
+              ],
+              "temp": false
+            },
+            "§:wco.tv": {
+              "capabilities": [
+                "media",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://www.googletagmanager.com": {
+          "capabilities": [],
+          "temp": false
+        },
+        "§:cfcdn247.space": {
+          "capabilities": [],
+          "contextual": {
+            "§:tv247.us": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:uplynk.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:disneynow.com": {
               "capabilities": [
                 "fetch"
               ],
@@ -2068,6 +2178,5 @@
     "overrideTorBrowserPolicy": false,
     "storage": "sync",
     "clearclick": true
-  },
-  "xssUserChoices": {}
+  }
 }
