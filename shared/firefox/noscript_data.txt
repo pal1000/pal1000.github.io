@@ -1,4 +1,23 @@
 {
+  "exportMeta": {
+    "version": "13.5.12",
+    "knownCapabilities": [
+      "script",
+      "object",
+      "media",
+      "frame",
+      "font",
+      "wasm",
+      "webgl",
+      "fetch",
+      "ping",
+      "noscript",
+      "lazy_load",
+      "unchecked_css",
+      "lan",
+      "other"
+    ]
+  },
   "policy": {
     "DEFAULT": {
       "capabilities": [],
@@ -49,7 +68,6 @@
         "https://cf-hls-media.sndcdn.com",
         "https://api-widget.soundcloud.com",
         "https://jwpsrv-vh.akamaihd.net",
-        "§:googlevideo.com",
         "https://html5-player.libsyn.com",
         "https://static.libsyn.com",
         "https://traffic.libsyn.com",
@@ -180,7 +198,6 @@
         "https://vscodeexperiments.azureedge.net",
         "https://tv247.us",
         "https://edgecast-vod.yimg.com",
-        "https://s.yimg.com",
         "https://collector.github.com",
         "https://consent.cmp.oath.com",
         "https://watchcartoononline.bz",
@@ -208,7 +225,6 @@
         "https://archive.firevideoplayer.com",
         "http://tlu.dl.delivery.mp.microsoft.com",
         "http://dl.delivery.mp.microsoft.com",
-        "https://translate.googleapis.com",
         "https://tv247us.com",
         "https://streamservicehd.click",
         "https://daddylivehd.sx",
@@ -376,7 +392,6 @@
         "https://qqwebplay.xyz",
         "https://tvonline123.com",
         "https://js.hcaptcha.com",
-        "https://gpt.mail.yahoo.net",
         "https://tvhe.tv24.gdn",
         "https://cdn.porktv.cfd",
         "https://cdn5.porktv.cfd",
@@ -453,7 +468,6 @@
         "https://www.dormeo.ro",
         "https://tvpass.org",
         "https://bugs.dolphin-emu.org",
-        "https://translate-pa.googleapis.com",
         "https://newembedplay.xyz",
         "https://ro.jimjam.tv",
         "https://www.minimaxro.tv",
@@ -476,8 +490,6 @@
         "https://embed.wcostream.com",
         "https://dlhd.click",
         "https://aly.fbcdntv247.cfd",
-        "https://monstaftp.com",
-        "https://www.monstaftp.com",
         "https://sapi.emag.ro",
         "https://www.emag.ro",
         "https://fl3.moveonjoy.com",
@@ -503,7 +515,26 @@
         "https://dtproxy6.yahoo.eu.clients.ipqs.com",
         "https://api.ticketbot.xyz",
         "https://cp.ticketbot.xyz",
-        "https://galandriel1.thobias.cfd"
+        "https://galandriel1.thobias.cfd",
+        "https://gpt.mail.yahoo.net",
+        "https://s.yimg.com",
+        "https://www.phoronix.com",
+        "https://cdn.plyr.io",
+        "https://tv247us.live",
+        "https://tvron.ro",
+        "https://www.mediashop.ro",
+        "https://awb.fancourier.ro",
+        "https://thetvapp-to.translate.goog",
+        "https://telecloud.sbs",
+        "https://cybercdn.cyou",
+        "https://thetvapp.to",
+        "https://cdn.tailwindcss.com",
+        "https://tvpass-org.translate.goog",
+        "https://www.base64decode.org",
+        "https://app.fancourier.eu",
+        "https://frilla.ro",
+        "https://sentry.hs-plus.com",
+        "https://posthog.hs-plus.com"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -637,12 +668,11 @@
             "§:yahoo.com": {
               "capabilities": [
                 "script",
-                "noscript",
                 "frame",
                 "fetch",
                 "ping",
-                "media",
-                "lazy_load"
+                "lazy_load",
+                "media"
               ],
               "temp": false
             },
@@ -1195,6 +1225,13 @@
                 "fetch"
               ],
               "temp": false
+            },
+            "§:rds.live": {
+              "capabilities": [
+                "fetch",
+                "script"
+              ],
+              "temp": false
             }
           },
           "temp": false
@@ -1462,6 +1499,12 @@
                 "fetch"
               ],
               "temp": false
+            },
+            "§:fastp.org": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
             }
           },
           "temp": false
@@ -1618,7 +1661,9 @@
           "temp": false
         },
         "§:thetvapp.to": {
-          "capabilities": [],
+          "capabilities": [
+            "fetch"
+          ],
           "contextual": {
             "http://192.227.211.165": {
               "capabilities": [
@@ -1919,21 +1964,6 @@
           },
           "temp": false
         },
-        "https://thetvapp.to": {
-          "capabilities": [
-            "script",
-            "media",
-            "frame",
-            "fetch",
-            "other",
-            "ping",
-            "object",
-            "noscript",
-            "unchecked_css",
-            "lazy_load"
-          ],
-          "temp": false
-        },
         "§:cloudflarestorage.com": {
           "capabilities": [
             "fetch"
@@ -2137,6 +2167,39 @@
             }
           },
           "temp": false
+        },
+        "http://195.181.163.243": {
+          "capabilities": [],
+          "contextual": {
+            "§:pal1000.github.io": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:googlevideo.com": {
+          "capabilities": [
+            "fetch"
+          ],
+          "temp": false
+        },
+        "https://www.monstaftp.com": {
+          "capabilities": [
+            "script",
+            "unchecked_css",
+            "font",
+            "fetch"
+          ],
+          "temp": false
+        },
+        "https://monstaftp.com": {
+          "capabilities": [
+            "script"
+          ],
+          "temp": false
         }
       }
     },
@@ -2150,6 +2213,7 @@
     "showFullAddresses": true,
     "showProbePlaceholders": true,
     "amnesticUpdates": false,
+    "autoReload": true,
     "storage": "local",
     "uuid": "ee5b21c2-107e-4636-b055-3bb97d22e1e4",
     "highContrast": false,
@@ -2174,9 +2238,11 @@
     "xss": true,
     "TabGuardMode": "incognito",
     "TabGuardPrompt": "post",
+    "cascadePermissions": false,
     "cascadeRestrictions": true,
     "overrideTorBrowserPolicy": false,
     "storage": "sync",
     "clearclick": true
-  }
+  },
+  "xssUserChoices": {}
 }
