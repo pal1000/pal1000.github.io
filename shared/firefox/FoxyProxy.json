@@ -1,5 +1,5 @@
 {
-  "mode": "pattern",
+  "mode": "disable",
   "sync": false,
   "autoBackup": false,
   "passthrough": "",
@@ -80,10 +80,10 @@
       "tabProxy": []
     },
     {
-      "active": true,
+      "active": false,
       "title": "USA SOCKS",
       "type": "socks5",
-      "hostname": "192.241.156.17",
+      "hostname": "110.235.252.146",
       "port": "1080",
       "username": "",
       "password": "",
@@ -105,12 +105,6 @@
           "title": "tvpass.org",
           "pattern": "https://tvpass.org",
           "active": true
-        },
-        {
-          "type": "wildcard",
-          "title": "thetvapp.to 2",
-          "pattern": "https://*.thetvapp.to",
-          "active": true
         }
       ],
       "exclude": [],
@@ -120,8 +114,8 @@
       "active": false,
       "title": "USA HTTP",
       "type": "http",
-      "hostname": "205.164.192.115",
-      "port": "999",
+      "hostname": "159.112.235.87",
+      "port": "80",
       "username": "",
       "password": "",
       "cc": "",
@@ -141,12 +135,6 @@
           "type": "wildcard",
           "title": "tvpass.org",
           "pattern": "https://tvpass.org",
-          "active": true
-        },
-        {
-          "type": "wildcard",
-          "title": "thetvapp.to 2",
-          "pattern": "https://*.thetvapp.to",
           "active": true
         }
       ],

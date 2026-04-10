@@ -1,6 +1,6 @@
 {
   "exportMeta": {
-    "version": "13.5.12",
+    "version": "13.6.13",
     "knownCapabilities": [
       "script",
       "object",
@@ -534,12 +534,30 @@
         "https://app.fancourier.eu",
         "https://frilla.ro",
         "https://sentry.hs-plus.com",
-        "https://posthog.hs-plus.com"
+        "https://posthog.hs-plus.com",
+        "https://proxyium.com",
+        "https://api.cfbu247.sbs",
+        "https://player.cfbu247.sbs",
+        "https://tv247us.vip",
+        "https://cdn.proxyium.com",
+        "https://m.wcostream.tv",
+        "https://www.eurowebtv.com",
+        "https://uv.eurowebtv.com",
+        "https://dm.mygls.ro",
+        "https://api.dm.mygls.hu",
+        "https://ocr.space",
+        "https://en.wikipedia.org",
+        "https://flash1.bogulus1.cfd",
+        "https://packages.msys2.org",
+        "https://m.program-tv.ro",
+        "https://canale-tv.net"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
         "https://ssl.google-analytics.com",
         "https://www.googletagservices.com",
+        "https://cdn.jsdelivr.net/npm/disable-devtool",
+        "https://cdn.jsdelivr.net/npm/disable-devtool@latest",
         "https://cdn.jsdelivr.net/npm/disable-devtool@latest/disable-devtool.min.js"
       ],
       "custom": {
@@ -593,7 +611,9 @@
                 "noscript",
                 "unchecked_css",
                 "other",
-                "lazy_load"
+                "lazy_load",
+                "media",
+                "wasm"
               ],
               "temp": false
             },
@@ -648,7 +668,14 @@
                 "script",
                 "fetch",
                 "media",
-                "lazy_load"
+                "lazy_load",
+                "wasm",
+                "frame",
+                "object",
+                "ping",
+                "noscript",
+                "unchecked_css",
+                "other"
               ],
               "temp": false
             },
@@ -672,7 +699,11 @@
                 "fetch",
                 "ping",
                 "lazy_load",
-                "media"
+                "media",
+                "object",
+                "noscript",
+                "unchecked_css",
+                "other"
               ],
               "temp": false
             },
@@ -840,6 +871,16 @@
               "capabilities": [
                 "frame",
                 "script",
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:daddylives.top": {
+              "capabilities": [
+                "script",
+                "object",
+                "media",
+                "frame",
                 "fetch"
               ],
               "temp": false
@@ -1184,7 +1225,9 @@
                 "noscript",
                 "unchecked_css",
                 "other",
-                "lazy_load"
+                "lazy_load",
+                "media",
+                "wasm"
               ],
               "temp": false
             }
@@ -1204,7 +1247,10 @@
                 "noscript",
                 "unchecked_css",
                 "other",
-                "lazy_load"
+                "lazy_load",
+                "media",
+                "wasm",
+                "webgl"
               ],
               "temp": false
             },
@@ -1223,13 +1269,6 @@
                 "frame",
                 "script",
                 "fetch"
-              ],
-              "temp": false
-            },
-            "§:rds.live": {
-              "capabilities": [
-                "fetch",
-                "script"
               ],
               "temp": false
             }
@@ -1300,18 +1339,6 @@
               "temp": false
             },
             "§:artv.watch": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "http://127.0.0.1:6878": {
-          "capabilities": [],
-          "contextual": {
-            "§:cool-etv.net": {
               "capabilities": [
                 "fetch"
               ],
@@ -1465,6 +1492,39 @@
                 "fetch",
                 "script",
                 "frame"
+              ],
+              "temp": false
+            },
+            "§:base64decode.org": {
+              "capabilities": [
+                "script",
+                "fetch",
+                "frame"
+              ],
+              "temp": false
+            },
+            "§:onlinegdb.com": {
+              "capabilities": [
+                "script",
+                "fetch",
+                "frame",
+                "object",
+                "media",
+                "noscript",
+                "other",
+                "ping",
+                "lazy_load",
+                "unchecked_css",
+                "webgl",
+                "wasm"
+              ],
+              "temp": false
+            },
+            "§:urldecoder.org": {
+              "capabilities": [
+                "script",
+                "frame",
+                "fetch"
               ],
               "temp": false
             }
@@ -2200,6 +2260,110 @@
             "script"
           ],
           "temp": false
+        },
+        "https://51.159.194.246": {
+          "capabilities": [],
+          "contextual": {
+            "§:51.159.194.246": {
+              "capabilities": [
+                "fetch",
+                "script"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:workers.dev": {
+          "capabilities": [
+            "fetch"
+          ],
+          "temp": false
+        },
+        "https://195.3.220.223": {
+          "capabilities": [],
+          "contextual": {
+            "§:195.3.220.223": {
+              "capabilities": [
+                "script",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://185.16.38.114": {
+          "capabilities": [],
+          "contextual": {
+            "§:185.16.38.114": {
+              "capabilities": [
+                "script",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://185.16.38.230": {
+          "capabilities": [],
+          "contextual": {
+            "§:185.16.38.230": {
+              "capabilities": [
+                "fetch",
+                "script",
+                "object",
+                "frame",
+                "ping",
+                "lazy_load",
+                "unchecked_css",
+                "other"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://185.16.38.113": {
+          "capabilities": [],
+          "contextual": {
+            "§:185.16.38.113": {
+              "capabilities": [
+                "script",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://51.159.194.245": {
+          "capabilities": [],
+          "contextual": {
+            "§:51.159.194.245": {
+              "capabilities": [
+                "script",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://192.168.1.1": {
+          "capabilities": [],
+          "contextual": {
+            "§:192.168.1.1": {
+              "capabilities": [
+                "frame",
+                "script",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
         }
       }
     },
@@ -2214,6 +2378,7 @@
     "showProbePlaceholders": true,
     "amnesticUpdates": false,
     "autoReload": true,
+    "gestureEnabled": false,
     "storage": "local",
     "uuid": "ee5b21c2-107e-4636-b055-3bb97d22e1e4",
     "highContrast": false,
@@ -2244,5 +2409,7 @@
     "storage": "sync",
     "clearclick": true
   },
-  "xssUserChoices": {}
+  "xssUserChoices": {
+    "https://www.wco.tv>https://embed.wcostream.com": "allow"
+  }
 }

@@ -39,10 +39,10 @@
 @IF EXIST "%profiledir%\sessionstore.jsonlz4" copy /Y "%profiledir%\sessionstore.jsonlz4" .
 @echo Done.
 @cd ..
-@if %nogit% EQU 0 git add firefox/*.*
-@if %nogit% EQU 0 IF EXIST firefox/*.csv git reset firefox/*.csv
-@if %nogit% EQU 0 For /f "tokens=1-3 delims=/ " %%a in ('date /t') do @For /f "tokens=1-2 delims=/:" %%d in ('time /t') do @git commit -m "Backup %%a-%%b-%%c_%%d%%e"
-@if %nogit% EQU 0 git push origin master
+@if %nogit% EQU 0 IF "%1"=="" git add firefox/*.*
+@if %nogit% EQU 0 IF "%1"=="" IF EXIST firefox/*.csv git reset firefox/*.csv
+@if %nogit% EQU 0 IF "%1"=="" For /f "tokens=1-3 delims=/ " %%a in ('date /t') do @For /f "tokens=1-2 delims=/:" %%d in ('time /t') do @git commit -m "Backup %%a-%%b-%%c_%%d%%e"
+@if %nogit% EQU 0 IF "%1"=="" git push origin master
 
 :exit
-@timeout /t 10 > nul 2>&1
+@IF "%1"=="" timeout /t 10 > nul 2>&1

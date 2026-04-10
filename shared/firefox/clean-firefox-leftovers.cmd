@@ -4,6 +4,7 @@
 @CMD /C EXIT 0
 @"%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system" >nul 2>&1
 @if NOT "%ERRORLEVEL%"=="0" (
+@call profilebackup.cmd /noupload
 @IF EXIST "%APPDATA%\Mozilla\" RD /S /Q "%APPDATA%\Mozilla"
 @IF EXIST "%LOCALAPPDATA%\Mozilla\" RD /S /Q "%LOCALAPPDATA%\Mozilla"
 @IF EXIST "%LOCALAPPDATA%Low\Mozilla\" RD /S /Q "%LOCALAPPDATA%Low\Mozilla"
