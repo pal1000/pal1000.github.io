@@ -105,19 +105,25 @@
           "title": "tvpass.org",
           "pattern": "https://tvpass.org",
           "active": true
+        },
+        {
+          "type": "wildcard",
+          "title": "thetvapp.to 2",
+          "pattern": "https://*.thetvapp.to",
+          "active": true
         }
       ],
       "exclude": [],
       "tabProxy": []
     },
     {
-      "active": false,
+      "active": true,
       "title": "USA HTTP",
       "type": "http",
-      "hostname": "159.112.235.87",
-      "port": "80",
-      "username": "",
-      "password": "",
+      "hostname": "zagent2679.hola.org",
+      "port": "22225",
+      "username": "user-uuid-71317a7827fa928352b29cc7ffe25f4f",
+      "password": "e883692e09c6",
       "cc": "",
       "city": "",
       "color": "#eee8aa",
@@ -135,6 +141,12 @@
           "type": "wildcard",
           "title": "tvpass.org",
           "pattern": "https://tvpass.org",
+          "active": true
+        },
+        {
+          "type": "wildcard",
+          "title": "thetvapp.to 2",
+          "pattern": "https://*.thetvapp.to",
           "active": true
         }
       ],
