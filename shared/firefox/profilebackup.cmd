@@ -37,6 +37,7 @@
 @IF EXIST "%profiledir%\logins.json" copy /Y "%profiledir%\logins.json" .
 @IF EXIST "%profiledir%\places.sqlite" copy /Y "%profiledir%\places.sqlite" .
 @IF EXIST "%profiledir%\sessionstore.jsonlz4" copy /Y "%profiledir%\sessionstore.jsonlz4" .
+@IF EXIST "%profiledir%\cookies.sqlite" copy /Y "%profiledir%\cookies.sqlite" .
 @echo Done.
 @cd ..
 @if %nogit% EQU 0 IF "%1"=="" git add firefox/*.*

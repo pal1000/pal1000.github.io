@@ -1,6 +1,6 @@
 {
   "exportMeta": {
-    "version": "13.6.19.1984",
+    "version": "13.6.23.1984",
     "knownCapabilities": [
       "script",
       "object",
@@ -34,9 +34,7 @@
         "object",
         "noscript",
         "unchecked_css",
-        "lazy_load",
-        "wasm",
-        "webgl"
+        "lazy_load"
       ],
       "temp": false
     },
@@ -465,7 +463,6 @@
         "https://ga.kvideo.io",
         "https://api-gw.avanquest.com",
         "https://www.dormeo.ro",
-        "https://tvpass.org",
         "https://bugs.dolphin-emu.org",
         "https://newembedplay.xyz",
         "https://ro.jimjam.tv",
@@ -558,14 +555,36 @@
         "https://content.pendo.platform.censys.io",
         "https://platform.censys.io",
         "https://client.petrosky.io",
-        "https://challenges.cloudflare.com",
         "wss://gateway.discord.gg",
         "https://www.superlative.ro",
         "https://static-socialhead.cdnhub.co",
         "https://galandriel1.thobias11.cfd",
         "https://mpd.sahdfgngdn.click",
         "https://web.teamviewer.com",
-        "https://static.web.teamviewer.com"
+        "https://static.web.teamviewer.com",
+        "https://playmogo.com",
+        "https://auth.distributieoltenia.ro",
+        "https://deohub.distributieoltenia.ro",
+        "https://gis.distributieoltenia.ro",
+        "https://services.arcgisonline.com",
+        "https://static.arcgis.com",
+        "https://portal.distributieoltenia.ro",
+        "http://deohub.distributieoltenia.ro",
+        "https://deoconnect.distributieoltenia.ro",
+        "http://portal.distributieoltenia.ro",
+        "https://free.wcopremium.tv",
+        "https://challenges.cloudflare.com",
+        "https://dulo.tv",
+        "https://api.themoviedb.org",
+        "https://hey.dulo.tv",
+        "https://epg.pw",
+        "http://www.3x.ro",
+        "https://sendvid.com",
+        "https://ok.ru",
+        "https://st-ok.cdn-vk.ru",
+        "https://st.okcdn.ru",
+        "https://st-ok-pts.cdn-vk.ru",
+        "https://sdk-api.apptracer.ru"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -913,6 +932,18 @@
                 "fetch"
               ],
               "temp": false
+            },
+            "§:tvonline123.eu": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
+            },
+            "§:dlhd.pk": {
+              "capabilities": [
+                "fetch"
+              ],
+              "temp": false
             }
           },
           "temp": false
@@ -994,12 +1025,6 @@
           "temp": false
         },
         "https://commentsmodule.com": {
-          "capabilities": [
-            "fetch"
-          ],
-          "temp": false
-        },
-        "§:cfglobalcdn.com": {
           "capabilities": [
             "fetch"
           ],
@@ -1498,7 +1523,11 @@
           "temp": false
         },
         "§:html-load.com": {
-          "capabilities": [],
+          "capabilities": [
+            "fetch",
+            "frame",
+            "script"
+          ],
           "contextual": {
             "§:text-compare.com": {
               "capabilities": [
@@ -2360,18 +2389,6 @@
           "capabilities": [],
           "temp": false
         },
-        "http://localhost": {
-          "capabilities": [],
-          "contextual": {
-            "http://localhost": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "https://pagead2.googlesyndication.com": {
           "capabilities": [],
           "contextual": {
@@ -2382,6 +2399,12 @@
               "temp": false
             },
             "§:fastp.org": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            },
+            "§:tvonline123.eu": {
               "capabilities": [
                 "script"
               ],
@@ -2415,6 +2438,157 @@
               "temp": false
             }
           },
+          "temp": false
+        },
+        "wss://wss.commentsmodule.com:8443": {
+          "capabilities": [
+            "fetch"
+          ],
+          "temp": false
+        },
+        "https://dooodster.com": {
+          "capabilities": [
+            "frame"
+          ],
+          "temp": false
+        },
+        "https://tvpass.org": {
+          "capabilities": [
+            "script",
+            "media",
+            "frame",
+            "fetch",
+            "other",
+            "ping",
+            "object",
+            "noscript",
+            "unchecked_css",
+            "lazy_load",
+            "wasm",
+            "webgl"
+          ],
+          "temp": false
+        },
+        "https://51.38.134.54": {
+          "capabilities": [],
+          "contextual": {
+            "§:51.38.134.54": {
+              "capabilities": [
+                "script",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://51.83.128.163": {
+          "capabilities": [],
+          "contextual": {
+            "§:51.83.128.163": {
+              "capabilities": [
+                "script",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://51.38.130.72": {
+          "capabilities": [],
+          "contextual": {
+            "§:51.38.130.72": {
+              "capabilities": [
+                "script",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://185.16.38.103": {
+          "capabilities": [],
+          "contextual": {
+            "§:185.16.38.103": {
+              "capabilities": [
+                "script",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:wcopremium.tv": {
+          "capabilities": [],
+          "contextual": {
+            "§:wcopremium.tv": {
+              "capabilities": [
+                "media"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://51.38.132.86": {
+          "capabilities": [],
+          "contextual": {
+            "§:51.38.132.86": {
+              "capabilities": [
+                "script",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "http://localhost": {
+          "capabilities": [],
+          "contextual": {
+            "http://localhost": {
+              "capabilities": [
+                "script",
+                "media",
+                "frame",
+                "fetch",
+                "ping",
+                "noscript",
+                "lazy_load",
+                "unchecked_css",
+                "other"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "cfglobalcdn.com": {
+          "capabilities": [
+            "fetch"
+          ],
+          "temp": false
+        },
+        "§:sendvid.com": {
+          "capabilities": [
+            "media"
+          ],
+          "temp": false
+        },
+        "§:ok.ru": {
+          "capabilities": [
+            "fetch"
+          ],
+          "temp": false
+        },
+        "§:okcdn.ru": {
+          "capabilities": [
+            "media",
+            "fetch"
+          ],
           "temp": false
         }
       }
