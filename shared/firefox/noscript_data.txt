@@ -1,6 +1,6 @@
 {
   "exportMeta": {
-    "version": "13.6.23.1984",
+    "version": "13.6.31.1984",
     "knownCapabilities": [
       "script",
       "object",
@@ -225,7 +225,6 @@
         "http://dl.delivery.mp.microsoft.com",
         "https://tv247us.com",
         "https://streamservicehd.click",
-        "https://daddylivehd.sx",
         "http://ajutor.canale-tv.net",
         "http://s104.ucoz.net",
         "https://login.uid.me",
@@ -293,12 +292,10 @@
         "https://admin.genieessp.com",
         "https://player.kimdesene.org",
         "https://cdn.streamlive.to",
-        "https://daddylivehd.com",
         "https://hlsjs.video-dev.org",
         "http://mains.vip:2086",
         "https://consent.youtube.com",
         "https://escorte-tecuci.info",
-        "https://d.daddylivehd.sx",
         "https://cdn.vodafone.ro",
         "https://cluj01.cdn.vodafone.ro",
         "https://buc01.cdn.vodafone.ro",
@@ -313,7 +310,6 @@
         "https://player.desenefaine.net",
         "https://youtube.com",
         "https://vjs.zencdn.net",
-        "https://daddylivehd.click",
         "https://account.live.com",
         "https://acctcdn.msauth.net",
         "https://sync.springserve.com",
@@ -324,7 +320,6 @@
         "https://cdn.sstatic.net",
         "https://gramthanos.github.io",
         "https://bugzilla.mozilla.org",
-        "https://pal1000.000webhostapp.com",
         "https://www.tvonline123.com",
         "https://www.wcoanimedub.tv",
         "https://www.wcostream.tv",
@@ -360,8 +355,6 @@
         "https://thetvapp.cote.ws",
         "https://rocanale.org",
         "https://tvhdonline.net",
-        "https://1.dlhd.sx",
-        "https://dlhd.sx",
         "https://docs.mesa3d.org",
         "https://www.digionline.ro",
         "https://www.distributieoltenia.ro",
@@ -375,7 +368,6 @@
         "https://login.premierenergy.ro",
         "https://my.premierenergy.ro",
         "https://uicustomlogin.blob.core.windows.net",
-        "https://dlhd.so",
         "https://vsstatus.visualstudio.com",
         "https://res-1.cdn.office.net",
         "https://sendvsfeedback2-secondary.azurewebsites.net",
@@ -468,7 +460,6 @@
         "https://ro.jimjam.tv",
         "https://www.minimaxro.tv",
         "https://canale-tv.com",
-        "https://daddylive.mp",
         "https://cdn.jsdelivr.net",
         "https://fbcdntv247.cfd",
         "https://video.fastly.steamstatic.com",
@@ -478,13 +469,10 @@
         "https://trac.ffmpeg.org",
         "https://playrds.com",
         "https://caolt.ro",
-        "https://daddylive.dad",
         "https://fastly-signed-us-east-1-prod.brightcovecdn.com",
-        "https://thedaddy.click",
         "https://zorroplay.xyz",
         "https://cdnjs.cloudflare.com",
         "https://embed.wcostream.com",
-        "https://dlhd.click",
         "https://aly.fbcdntv247.cfd",
         "https://sapi.emag.ro",
         "https://www.emag.ro",
@@ -492,9 +480,6 @@
         "https://gls-group.com",
         "https://fl7.moveonjoy.com",
         "https://onyx1.mofta1.cfd",
-        "https://thedaddy.dad",
-        "https://thedaddy.top",
-        "https://daddylivestream.com",
         "https://atlantida1.aquax1.cfd",
         "https://iron1.jarvisx1.cfd",
         "https://saruman1.tharen1.cfd",
@@ -506,7 +491,6 @@
         "https://prod.gatekeeper.us-abc.symphony.edgedatg.go.com",
         "https://assets-cdn.watchdisneyfe.com",
         "https://api.pluto.watchabc.go.com",
-        "https://dlhd.dad",
         "https://dtproxy5.yahoo.eu.clients.ipqs.com",
         "https://dtproxy6.yahoo.eu.clients.ipqs.com",
         "https://api.ticketbot.xyz",
@@ -573,7 +557,6 @@
         "https://deoconnect.distributieoltenia.ro",
         "http://portal.distributieoltenia.ro",
         "https://free.wcopremium.tv",
-        "https://challenges.cloudflare.com",
         "https://dulo.tv",
         "https://api.themoviedb.org",
         "https://hey.dulo.tv",
@@ -584,7 +567,19 @@
         "https://st-ok.cdn-vk.ru",
         "https://st.okcdn.ru",
         "https://st-ok-pts.cdn-vk.ru",
-        "https://sdk-api.apptracer.ru"
+        "https://sdk-api.apptracer.ru",
+        "https://bppkbjyfrtjuvrwrayop.supabase.co",
+        "https://bridge.dulo.tv",
+        "https://gotcha.dulo.tv",
+        "https://lb3.dulo.tv",
+        "https://dark.ideapad.cc",
+        "https://co.cc",
+        "https://cc.cc",
+        "https://short-img1.cc.cc",
+        "https://freedomain.one",
+        "https://filemanager.ai",
+        "https://static.cloudflareinsights.com",
+        "https://dlhd.st"
       ],
       "untrusted": [
         "https://ra.majorgeeks.com",
@@ -594,7 +589,8 @@
         "https://cdn.jsdelivr.net/npm/disable-devtool@latest",
         "https://cdn.jsdelivr.net/npm/disable-devtool@latest/disable-devtool.min.js",
         "https://embed.wcostream.com/inc/js/adblock-detector-wcostream.js",
-        "https://embed.wcostream.com/inc/js/adblock-detector-hardened.js"
+        "https://embed.wcostream.com/inc/js/adblock-detector-hardened.js",
+        "https://api.cdnlivetv.tv/api/v1/disable-devtool/"
       ],
       "custom": {
         "https://instnsp.maps.arcgis.com": {
@@ -1030,21 +1026,6 @@
           ],
           "temp": false
         },
-        "§:fandom.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:fandom.com": {
-              "capabilities": [
-                "script",
-                "fetch",
-                "frame",
-                "lazy_load"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "§:airedplus.com": {
           "capabilities": [],
           "contextual": {
@@ -1202,22 +1183,6 @@
           },
           "temp": false
         },
-        "§:000webhost.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:000webhost.com": {
-              "capabilities": [
-                "script",
-                "fetch",
-                "frame",
-                "font",
-                "lazy_load"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "§:microsoft.com": {
           "capabilities": [],
           "contextual": {
@@ -1268,7 +1233,8 @@
             "script",
             "frame",
             "fetch",
-            "lazy_load"
+            "lazy_load",
+            "media"
           ],
           "contextual": {
             "§:google.com": {
@@ -1326,6 +1292,10 @@
                 "script",
                 "fetch"
               ],
+              "temp": false
+            },
+            "§:infinityfree.com": {
+              "capabilities": [],
               "temp": false
             }
           },
@@ -1515,75 +1485,6 @@
             },
             "§:kimcartoon.si": {
               "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "§:html-load.com": {
-          "capabilities": [
-            "fetch",
-            "frame",
-            "script"
-          ],
-          "contextual": {
-            "§:text-compare.com": {
-              "capabilities": [
-                "script",
-                "frame",
-                "fetch",
-                "lazy_load"
-              ],
-              "temp": false
-            },
-            "§:infinityfree.com": {
-              "capabilities": [
-                "script",
-                "fetch",
-                "frame",
-                "wasm"
-              ],
-              "temp": false
-            },
-            "§:filemanager.ai": {
-              "capabilities": [
-                "fetch",
-                "script",
-                "frame"
-              ],
-              "temp": false
-            },
-            "§:base64decode.org": {
-              "capabilities": [
-                "script",
-                "fetch",
-                "frame"
-              ],
-              "temp": false
-            },
-            "§:onlinegdb.com": {
-              "capabilities": [
-                "script",
-                "fetch",
-                "frame",
-                "object",
-                "media",
-                "noscript",
-                "other",
-                "ping",
-                "lazy_load",
-                "unchecked_css",
-                "webgl",
-                "wasm"
-              ],
-              "temp": false
-            },
-            "§:urldecoder.org": {
-              "capabilities": [
-                "script",
-                "frame",
                 "fetch"
               ],
               "temp": false
@@ -2389,30 +2290,6 @@
           "capabilities": [],
           "temp": false
         },
-        "https://pagead2.googlesyndication.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:yahoo.com": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            },
-            "§:fastp.org": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            },
-            "§:tvonline123.eu": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "https://83.136.208.3:8006": {
           "capabilities": [],
           "contextual": {
@@ -2432,7 +2309,7 @@
           "contextual": {
             "§:yahoo.com": {
               "capabilities": [
-                "fetch",
+                "frame",
                 "script"
               ],
               "temp": false
@@ -2587,6 +2464,140 @@
         "§:okcdn.ru": {
           "capabilities": [
             "media",
+            "fetch"
+          ],
+          "temp": false
+        },
+        "§:antifandom.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:antifandom.com": {
+              "capabilities": [
+                "script"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:fandom.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:antifandom.com": {
+              "capabilities": [
+                "fetch",
+                "script"
+              ],
+              "temp": false
+            },
+            "§:fandom.com": {
+              "capabilities": [
+                "lazy_load",
+                "fetch",
+                "ping",
+                "unchecked_css",
+                "other",
+                "frame",
+                "media",
+                "object",
+                "script"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://dash.infinityfree.com": {
+          "capabilities": [
+            "script",
+            "media",
+            "frame",
+            "fetch",
+            "other",
+            "ping",
+            "object",
+            "noscript",
+            "unchecked_css",
+            "lazy_load",
+            "webgl",
+            "wasm"
+          ],
+          "temp": false
+        },
+        "https://brunhild.challenges.cloudflare.com": {
+          "capabilities": [
+            "script",
+            "media",
+            "frame",
+            "fetch",
+            "other",
+            "ping",
+            "object",
+            "noscript",
+            "unchecked_css",
+            "lazy_load",
+            "wasm",
+            "webgl"
+          ],
+          "temp": false
+        },
+        "https://challenges.cloudflare.com": {
+          "capabilities": [
+            "script",
+            "media",
+            "frame",
+            "fetch",
+            "other",
+            "ping",
+            "object",
+            "noscript",
+            "unchecked_css",
+            "lazy_load",
+            "webgl",
+            "wasm"
+          ],
+          "temp": false
+        },
+        "https://pagead2.googlesyndication.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:infinityfree.com": {
+              "capabilities": [
+                "script",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://www.googletagmanager.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:infinityfree.com": {
+              "capabilities": [
+                "script",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:html-load.com": {
+          "capabilities": [
+            "script",
+            "fetch",
+            "frame",
+            "media"
+          ],
+          "temp": false
+        },
+        "§:content-loader.com": {
+          "capabilities": [
+            "script",
+            "media",
+            "frame",
             "fetch"
           ],
           "temp": false

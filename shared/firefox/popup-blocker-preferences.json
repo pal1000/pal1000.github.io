@@ -1,0 +1,11 @@
+{
+	"popup-hosts": [
+		"ogs.google.com",
+		"my.engie.ro"
+	],
+	"top-hosts": [
+		"canale-tv.net",
+		"canale-tv.com"
+	],
+	"whitelist-mode": "top-hosts"
+}

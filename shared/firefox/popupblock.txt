@@ -1,5 +1,0 @@
-Allow pages
-canale-tv.net, canale-tv.com
-
-Allow origins
-ogs.google.com
