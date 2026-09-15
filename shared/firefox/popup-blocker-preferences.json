@@ -5,7 +5,8 @@
 	],
 	"top-hosts": [
 		"canale-tv.net",
-		"canale-tv.com"
+		"canale-tv.com",
+		"discord.com"
 	],
 	"whitelist-mode": "top-hosts"
 }

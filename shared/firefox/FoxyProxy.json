@@ -1,5 +1,5 @@
 {
-  "mode": "disable",
+  "mode": "pattern",
   "sync": false,
   "autoBackup": false,
   "passthrough": "",
@@ -73,6 +73,12 @@
           "type": "wildcard",
           "title": "DisneyNOW",
           "pattern": "https://*.bamgrid.com",
+          "active": true
+        },
+        {
+          "type": "wildcard",
+          "title": "DisneyNOW",
+          "pattern": "https://vod-disneynow-*.media.dssott.com",
           "active": true
         }
       ],
